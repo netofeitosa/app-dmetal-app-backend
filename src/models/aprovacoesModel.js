@@ -1,12 +1,12 @@
-const { sql } = require("./connectionSQL");
+const {
+  PrismaClient: PrismaClientMSSQL,
+} = require("../../prisma/generated/mssql");
+
+const prismaMSSQL = new PrismaClientMSSQL();
 
 const getAprovacoes = async () => {
-  try {
-    const result = await sql.query`select * from VW_AUTORIZACOES_WEB_DEV`;
-    return result;
-  } catch (error) {
-    return error;
-  }
+  const aprovacoes = await prismaMSSQL.VW_AUTORIZACOES_WEB_DEV.findMany();
+  return aprovacoes;
 };
 
 module.exports = {

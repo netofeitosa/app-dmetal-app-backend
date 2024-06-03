@@ -1,0 +1,19 @@
+// mssql-schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated/mssql"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_MSSQL_URL")
+}
+
+model VW_AUTORIZACOES_WEB_DEV {
+  id            Int @id
+  despesas      Int
+  descontos     Int
+  saidas        Int
+  cancelamentos Int
+}

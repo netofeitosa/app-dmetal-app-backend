@@ -1,0 +1,20 @@
+// mysql-schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated/mysql"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_MYSQL_URL")
+}
+
+model users {
+  login     Int     @id
+  usuario   String  @unique
+  nome      String
+  image_url String?
+  senha     String
+  token     String  @default("")
+}
