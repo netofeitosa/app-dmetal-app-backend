@@ -1,6 +1,6 @@
 const {
   PrismaClient: PrismaClientMySQL,
-} = require("../../prisma/generated/mysql");
+} = require("../prisma/generated/mysql");
 const prismaMySQL = new PrismaClientMySQL();
 
 const { v4: uuidv4 } = require("uuid");

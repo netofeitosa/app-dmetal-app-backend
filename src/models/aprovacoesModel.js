@@ -1,6 +1,6 @@
 const {
   PrismaClient: PrismaClientMSSQL,
-} = require("../../prisma/generated/mssql");
+} = require("../prisma/generated/mssql");
 
 const prismaMSSQL = new PrismaClientMSSQL();
 

@@ -85,16 +85,16 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
   ReadUncommitted: 'ReadUncommitted',
   ReadCommitted: 'ReadCommitted',
   RepeatableRead: 'RepeatableRead',
-  Serializable: 'Serializable'
+  Serializable: 'Serializable',
+  Snapshot: 'Snapshot'
 });
 
-exports.Prisma.UsersScalarFieldEnum = {
-  login: 'login',
-  usuario: 'usuario',
-  nome: 'nome',
-  image_url: 'image_url',
-  senha: 'senha',
-  token: 'token'
+exports.Prisma.VW_AUTORIZACOES_WEB_DEVScalarFieldEnum = {
+  id: 'id',
+  despesas: 'despesas',
+  descontos: 'descontos',
+  saidas: 'saidas',
+  cancelamentos: 'cancelamentos'
 };
 
 exports.Prisma.SortOrder = {
@@ -102,14 +102,9 @@ exports.Prisma.SortOrder = {
   desc: 'desc'
 };
 
-exports.Prisma.NullsOrder = {
-  first: 'first',
-  last: 'last'
-};
-
 
 exports.Prisma.ModelName = {
-  users: 'users'
+  VW_AUTORIZACOES_WEB_DEV: 'VW_AUTORIZACOES_WEB_DEV'
 };
 /**
  * Create the Client
@@ -122,7 +117,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Projects\\dev-app-dmetal-backend\\prisma\\generated\\mysql",
+      "value": "C:\\Projects\\dev-app-dmetal-backend\\src\\prisma\\generated\\mssql",
       "fromEnvVar": null
     },
     "config": {
@@ -139,8 +134,7 @@ const config = {
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../../.env",
-    "schemaEnvPath": "../../../.env"
+    "rootEnvPath": "../../../../.env"
   },
   "relativePath": "../..",
   "clientVersion": "5.14.0",
@@ -148,18 +142,18 @@ const config = {
   "datasourceNames": [
     "db"
   ],
-  "activeProvider": "mysql",
+  "activeProvider": "sqlserver",
   "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
-        "fromEnvVar": "DATABASE_MYSQL_URL",
+        "fromEnvVar": "DATABASE_MSSQL_URL",
         "value": null
       }
     }
   },
-  "inlineSchema": "// mysql-schema.prisma\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"./generated/mysql\"\n}\n\ndatasource db {\n  provider = \"mysql\"\n  url      = env(\"DATABASE_MYSQL_URL\")\n}\n\nmodel users {\n  login     Int     @id\n  usuario   String  @unique\n  nome      String\n  image_url String?\n  senha     String\n  token     String  @default(\"\")\n}\n",
-  "inlineSchemaHash": "e8ae4c2d35a7741c221133676e9558b5c92d5965da995fc806aba282f33d1546",
+  "inlineSchema": "// mssql-schema.prisma\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"./generated/mssql\"\n}\n\ndatasource db {\n  provider = \"sqlserver\"\n  url      = env(\"DATABASE_MSSQL_URL\")\n}\n\nmodel VW_AUTORIZACOES_WEB_DEV {\n  id            Int @id\n  despesas      Int\n  descontos     Int\n  saidas        Int\n  cancelamentos Int\n}\n",
+  "inlineSchemaHash": "e6eea5750226b07ede7a44f5416709aa4e51508aca2892a81ed6b7c4a448518e",
   "copyEngine": true
 }
 
@@ -168,8 +162,8 @@ const fs = require('fs')
 config.dirname = __dirname
 if (!fs.existsSync(path.join(__dirname, 'schema.prisma'))) {
   const alternativePaths = [
-    "prisma/generated/mysql",
-    "generated/mysql",
+    "generated/mssql",
+    "mssql",
   ]
   
   const alternativePath = alternativePaths.find((altPath) => {
@@ -180,7 +174,7 @@ if (!fs.existsSync(path.join(__dirname, 'schema.prisma'))) {
   config.isBundled = true
 }
 
-config.runtimeDataModel = JSON.parse("{\"models\":{\"users\":{\"dbName\":null,\"fields\":[{\"name\":\"login\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":true,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"Int\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"usuario\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":true,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"nome\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"image_url\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":false,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"senha\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"token\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":true,\"type\":\"String\",\"default\":\"\",\"isGenerated\":false,\"isUpdatedAt\":false}],\"primaryKey\":null,\"uniqueFields\":[],\"uniqueIndexes\":[],\"isGenerated\":false}},\"enums\":{},\"types\":{}}")
+config.runtimeDataModel = JSON.parse("{\"models\":{\"VW_AUTORIZACOES_WEB_DEV\":{\"dbName\":null,\"fields\":[{\"name\":\"id\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":true,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"Int\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"despesas\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"Int\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"descontos\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"Int\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"saidas\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"Int\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"cancelamentos\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"Int\",\"isGenerated\":false,\"isUpdatedAt\":false}],\"primaryKey\":null,\"uniqueFields\":[],\"uniqueIndexes\":[],\"isGenerated\":false}},\"enums\":{},\"types\":{}}")
 defineDmmfProperty(exports.Prisma, config.runtimeDataModel)
 config.engineWasm = undefined
 
@@ -198,7 +192,7 @@ Object.assign(exports, Prisma)
 
 // file annotations for bundling tools to include these files
 path.join(__dirname, "query_engine-windows.dll.node");
-path.join(process.cwd(), "prisma/generated/mysql/query_engine-windows.dll.node")
+path.join(process.cwd(), "generated/mssql/query_engine-windows.dll.node")
 // file annotations for bundling tools to include these files
 path.join(__dirname, "schema.prisma");
-path.join(process.cwd(), "prisma/generated/mysql/schema.prisma")
+path.join(process.cwd(), "generated/mssql/schema.prisma")
