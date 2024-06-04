@@ -16,5 +16,10 @@ router.post("/login", usersControllers.login);
 router.post("/validatetoken", usersControllers.validadeToken);
 
 router.get("/aprovacoes", aprovacoesController.getAprovacoes);
+router.post("/aprovacoes", aprovacoesController.postAprovacoes);
+router.get("/despesas", aprovacoesController.getDespesas);
+router.get("/descontos", aprovacoesController.getDescontos);
+router.get("/cancelamentos", aprovacoesController.getCancelamentos);
+router.get("/saidas", aprovacoesController.getSaidas);
 
 module.exports = router;

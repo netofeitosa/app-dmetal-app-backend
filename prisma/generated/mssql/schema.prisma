@@ -18,3 +18,76 @@ model VW_AUTORIZACOES_WEB_DEV {
   saidas        Int
   cancelamentos Int
 }
+
+model VW_AUTORIZACOES_DESPESAS_COFRE_DEV {
+  key           Int     @id
+  despesa       Int
+  loja          Int
+  data          String
+  movimento     String
+  nome_fantasia String
+  valor         String
+  valor_2       Decimal
+  observacao    String
+  ged           Int
+}
+
+model VW_AUTORIZACOES_DESCONTOS_LOJAS_DEV {
+  key                Int     @id
+  registro           Int
+  documento          Int
+  data               String
+  cliente            String
+  empresa            Int
+  nome_fantasia      String
+  total_bruto        String
+  desconto_comercial String
+  valor              String
+  valor_2            Decimal
+  desconto           String
+  desconto_perc      Int
+  valor_liquido      String
+  valor_liquido_2    Decimal
+  desconto_total     String
+  observacao         String
+}
+
+model VW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV {
+  key           Int      @id
+  registro      Int
+  empresa       Int
+  nome_fantasia String
+  data_hora     DateTime
+  movimento     String
+  prevenda      Int
+  valor         String
+  valor_2       Decimal
+  observacao    String
+}
+
+model VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV {
+  key            Int    @id
+  registro       Int
+  data           String
+  centro_estoque String
+  empresa        Int
+  filial         Int
+  id_usuario     Int
+  usuario        String
+  quantidade     Int
+  observacao     String
+}
+
+model AUTORIZACOES_WEB_BARRAMENTOS_DEV {
+  id                  Int       @id @default(autoincrement())
+  registro            Int
+  cod_origem          Int
+  origem              String
+  data_hora           DateTime?
+  autorizado          Int
+  importado           String?
+  data_hora_importado DateTime?
+  mensagem            String?
+  data_hora_mensagem  DateTime?
+  usuario             Int
+}

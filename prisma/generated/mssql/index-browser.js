@@ -128,14 +128,97 @@ exports.Prisma.VW_AUTORIZACOES_WEB_DEVScalarFieldEnum = {
   cancelamentos: 'cancelamentos'
 };
 
+exports.Prisma.VW_AUTORIZACOES_DESPESAS_COFRE_DEVScalarFieldEnum = {
+  key: 'key',
+  despesa: 'despesa',
+  loja: 'loja',
+  data: 'data',
+  movimento: 'movimento',
+  nome_fantasia: 'nome_fantasia',
+  valor: 'valor',
+  valor_2: 'valor_2',
+  observacao: 'observacao',
+  ged: 'ged'
+};
+
+exports.Prisma.VW_AUTORIZACOES_DESCONTOS_LOJAS_DEVScalarFieldEnum = {
+  key: 'key',
+  registro: 'registro',
+  documento: 'documento',
+  data: 'data',
+  cliente: 'cliente',
+  empresa: 'empresa',
+  nome_fantasia: 'nome_fantasia',
+  total_bruto: 'total_bruto',
+  desconto_comercial: 'desconto_comercial',
+  valor: 'valor',
+  valor_2: 'valor_2',
+  desconto: 'desconto',
+  desconto_perc: 'desconto_perc',
+  valor_liquido: 'valor_liquido',
+  valor_liquido_2: 'valor_liquido_2',
+  desconto_total: 'desconto_total',
+  observacao: 'observacao'
+};
+
+exports.Prisma.VW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEVScalarFieldEnum = {
+  key: 'key',
+  registro: 'registro',
+  empresa: 'empresa',
+  nome_fantasia: 'nome_fantasia',
+  data_hora: 'data_hora',
+  movimento: 'movimento',
+  prevenda: 'prevenda',
+  valor: 'valor',
+  valor_2: 'valor_2',
+  observacao: 'observacao'
+};
+
+exports.Prisma.VW_AUTORIZACOES_SAIDAS_AVULSAS_DEVScalarFieldEnum = {
+  key: 'key',
+  registro: 'registro',
+  data: 'data',
+  centro_estoque: 'centro_estoque',
+  empresa: 'empresa',
+  filial: 'filial',
+  id_usuario: 'id_usuario',
+  usuario: 'usuario',
+  quantidade: 'quantidade',
+  observacao: 'observacao'
+};
+
+exports.Prisma.AUTORIZACOES_WEB_BARRAMENTOS_DEVScalarFieldEnum = {
+  id: 'id',
+  registro: 'registro',
+  cod_origem: 'cod_origem',
+  origem: 'origem',
+  data_hora: 'data_hora',
+  autorizado: 'autorizado',
+  importado: 'importado',
+  data_hora_importado: 'data_hora_importado',
+  mensagem: 'mensagem',
+  data_hora_mensagem: 'data_hora_mensagem',
+  usuario: 'usuario'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
 };
 
+exports.Prisma.NullsOrder = {
+  first: 'first',
+  last: 'last'
+};
+
 
 exports.Prisma.ModelName = {
-  VW_AUTORIZACOES_WEB_DEV: 'VW_AUTORIZACOES_WEB_DEV'
+  VW_AUTORIZACOES_WEB_DEV: 'VW_AUTORIZACOES_WEB_DEV',
+  VW_AUTORIZACOES_DESPESAS_COFRE_DEV: 'VW_AUTORIZACOES_DESPESAS_COFRE_DEV',
+  VW_AUTORIZACOES_DESCONTOS_LOJAS_DEV: 'VW_AUTORIZACOES_DESCONTOS_LOJAS_DEV',
+  VW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV: 'VW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV',
+  VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV: 'VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV',
+  AUTORIZACOES_WEB_BARRAMENTOS_DEV: 'AUTORIZACOES_WEB_BARRAMENTOS_DEV'
 };
 
 /**
