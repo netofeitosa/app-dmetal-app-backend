@@ -5,6 +5,7 @@ npm-debug.log*
 
 .env
 node_modules
+src
 dist
 dist-ssr
 *.local
