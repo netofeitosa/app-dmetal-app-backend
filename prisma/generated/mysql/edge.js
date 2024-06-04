@@ -121,7 +121,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Projects\\dev-app-dmetal-backend\\src\\prisma\\generated\\mysql",
+      "value": "C:\\Projects\\dev-app-dmetal-backend\\prisma\\generated\\mysql",
       "fromEnvVar": null
     },
     "config": {
@@ -138,7 +138,8 @@ const config = {
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../../../.env"
+    "rootEnvPath": "../../../.env",
+    "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../..",
   "clientVersion": "5.14.0",
