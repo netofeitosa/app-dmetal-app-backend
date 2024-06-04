@@ -132,13 +132,17 @@ const config = {
         "fromEnvVar": null,
         "value": "windows",
         "native": true
+      },
+      {
+        "fromEnvVar": null,
+        "value": "rhel-openssl-3.0.x"
       }
     ],
     "previewFeatures": [],
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../..",
@@ -157,8 +161,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "// mysql-schema.prisma\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"./generated/mysql\"\n}\n\ndatasource db {\n  provider = \"mysql\"\n  url      = env(\"DATABASE_MYSQL_URL\")\n}\n\nmodel users {\n  login     Int     @id\n  usuario   String  @unique\n  nome      String\n  image_url String?\n  senha     String\n  token     String  @default(\"\")\n}\n",
-  "inlineSchemaHash": "e8ae4c2d35a7741c221133676e9558b5c92d5965da995fc806aba282f33d1546",
+  "inlineSchema": "// mysql-schema.prisma\n\ngenerator client {\n  provider      = \"prisma-client-js\"\n  output        = \"./generated/mysql\"\n  binaryTargets = [\"native\", \"rhel-openssl-3.0.x\"]\n}\n\ndatasource db {\n  provider = \"mysql\"\n  url      = env(\"DATABASE_MYSQL_URL\")\n}\n\nmodel users {\n  login     Int     @id\n  usuario   String  @unique\n  nome      String\n  image_url String?\n  senha     String\n  token     String  @default(\"\")\n}\n",
+  "inlineSchemaHash": "010c5d7ea154ad8e6ced771cc7e2268697a3543b432ac9aa75b46e628d99f5d6",
   "copyEngine": true
 }
 config.dirname = '/'

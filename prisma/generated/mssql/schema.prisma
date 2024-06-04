@@ -1,8 +1,9 @@
 // mssql-schema.prisma
 
 generator client {
-  provider = "prisma-client-js"
-  output   = "./generated/mssql"
+  provider      = "prisma-client-js"
+  output        = "./generated/mssql"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
 }
 
 datasource db {

@@ -1,8 +1,9 @@
 // mysql-schema.prisma
 
 generator client {
-  provider = "prisma-client-js"
-  output   = "./generated/mysql"
+  provider      = "prisma-client-js"
+  output        = "./generated/mysql"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
 }
 
 datasource db {

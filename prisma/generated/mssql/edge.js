@@ -127,13 +127,17 @@ const config = {
         "fromEnvVar": null,
         "value": "windows",
         "native": true
+      },
+      {
+        "fromEnvVar": null,
+        "value": "rhel-openssl-3.0.x"
       }
     ],
     "previewFeatures": [],
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../..",
@@ -152,8 +156,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "// mssql-schema.prisma\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"./generated/mssql\"\n}\n\ndatasource db {\n  provider = \"sqlserver\"\n  url      = env(\"DATABASE_MSSQL_URL\")\n}\n\nmodel VW_AUTORIZACOES_WEB_DEV {\n  id            Int @id\n  despesas      Int\n  descontos     Int\n  saidas        Int\n  cancelamentos Int\n}\n",
-  "inlineSchemaHash": "e6eea5750226b07ede7a44f5416709aa4e51508aca2892a81ed6b7c4a448518e",
+  "inlineSchema": "// mssql-schema.prisma\n\ngenerator client {\n  provider      = \"prisma-client-js\"\n  output        = \"./generated/mssql\"\n  binaryTargets = [\"native\", \"rhel-openssl-3.0.x\"]\n}\n\ndatasource db {\n  provider = \"sqlserver\"\n  url      = env(\"DATABASE_MSSQL_URL\")\n}\n\nmodel VW_AUTORIZACOES_WEB_DEV {\n  id            Int @id\n  despesas      Int\n  descontos     Int\n  saidas        Int\n  cancelamentos Int\n}\n",
+  "inlineSchemaHash": "b7c0f89d3cbdedde3b31c0d28bba3a604d3d7f1f6612494c8b3e4551d57f133f",
   "copyEngine": true
 }
 config.dirname = '/'
