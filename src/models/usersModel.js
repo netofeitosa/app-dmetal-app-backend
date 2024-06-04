@@ -9,12 +9,7 @@ const bcrypt = require("bcrypt");
 const saltRounds = 10;
 
 const getAll = async () => {
-  try {
-    const users = await prismaMySQL.users.findMany();
-    return users;
-  } catch (error) {
-    throw error;
-  }
+  return await prismaMySQL.users.findMany();
 };
 
 const createUser = async (login, usuario, nome, senha) => {
@@ -32,14 +27,35 @@ const createUser = async (login, usuario, nome, senha) => {
   });
 };
 
-const findUser = async (usuario, login) => {
-  return prismaMySQL.users.findFirst({
-    where: { OR: [{ usuario: usuario }, { login: login }] },
+const deleteUser = async (login) => {
+  return await prismaMySQL.users.delete({
+    where: { login: login },
+  });
+};
+
+const findUserUsuario = async (usuario) => {
+  return await prismaMySQL.users.findFirst({
+    where: { usuario: usuario },
+  });
+};
+
+const findUserLogin = async (login) => {
+  return await prismaMySQL.users.findFirst({
+    where: { login: login },
+  });
+};
+
+const findUserToken = async (authToken) => {
+  return await prismaMySQL.users.findFirst({
+    where: { token: authToken },
   });
 };
 
 module.exports = {
   getAll,
   createUser,
-  findUser,
+  deleteUser,
+  findUserUsuario,
+  findUserLogin,
+  findUserToken,
 };

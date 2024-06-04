@@ -7,9 +7,13 @@ const router = express.Router();
 router.get("/", (_req, res) => {
   res.status(200).json({ message: "Server OK" });
 });
+
 router.get("/users", usersControllers.getAll);
 router.post("/users", usersControllers.createUser);
+router.delete("/users/:login", usersControllers.deleteUser);
+
 router.post("/login", usersControllers.login);
+router.post("/validatetoken", usersControllers.validadeToken);
 
 router.get("/aprovacoes", aprovacoesController.getAprovacoes);
 

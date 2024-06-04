@@ -3,15 +3,25 @@ const usersModel = require("../models/usersModel");
 
 const getAll = async (req, res) => {
   const users = await usersModel.getAll();
+  if (!users) {
+    return res.status(500).json({ error: "Erro ao localizar usuarios" });
+  }
   return res.status(200).json(users);
 };
 
 const createUser = async (req, res) => {
   const { login, usuario, nome, senha } = req.body;
 
-  const existingUser = await usersModel.findUser(usuario, login);
+  const existingUser = await usersModel.findUserUsuario(usuario);
   if (existingUser) {
-    return res.status(400).json({ error: "Usuário ou login já tem cadastro" });
+    return res
+      .status(400)
+      .json({ error: "Usuario ja tem cadastro no sistema" });
+  }
+
+  const existingLogin = await usersModel.findUserLogin(login);
+  if (existingLogin) {
+    return res.status(400).json({ error: "Login ja tem cadastro no sistema" });
   }
 
   const user = await usersModel.createUser(login, usuario, nome, senha);
@@ -22,9 +32,23 @@ const createUser = async (req, res) => {
   }
 };
 
+const deleteUser = async (req, res) => {
+  const login = parseInt(req.params.login);
+
+  const existingLogin = await usersModel.findUserLogin(login);
+  if (!existingLogin) {
+    return res.status(400).json({ error: "Usuario nao existe no sistema" });
+  }
+
+  const user = await usersModel.deleteUser(login);
+  if (user) {
+    return res.status(200).json({ message: "Usuario deletado com sucesso" });
+  }
+};
+
 const login = async (req, res) => {
   const { usuario, senha } = req.body;
-  const user = await usersModel.findUser(usuario);
+  const user = await usersModel.findUserUsuario(usuario);
   if (!user) {
     return res.status(401).json({ error: "Usuário ou senha inválidos" });
   }
@@ -35,8 +59,26 @@ const login = async (req, res) => {
   return res.status(201).json(user);
 };
 
+const validadeToken = async (req, res) => {
+  const { authToken, validateToken } = req.body;
+  const timeInMs = Date.now();
+
+  const user = await usersModel.findUserToken(authToken);
+  if (!user) {
+    return res.status(401).json({ error: "Token invalido" });
+  }
+
+  if (validateToken < timeInMs) {
+    return res.status(401).json({ error: "Token expirado" });
+  }
+
+  return res.status(201).json(user);
+};
+
 module.exports = {
   getAll,
   login,
   createUser,
+  deleteUser,
+  validadeToken,
 };
