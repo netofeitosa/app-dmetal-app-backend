@@ -63,8 +63,8 @@ const validadeToken = async (req, res) => {
   const { authToken, validateToken } = req.body;
   const timeInMs = Date.now();
 
-  const user = await usersModel.findUserToken(authToken);
-  if (!user) {
+  const result = await usersModel.findUserToken(authToken);
+  if (!result) {
     return res.status(401).json({ error: "Token invalido" });
   }
 
@@ -72,7 +72,7 @@ const validadeToken = async (req, res) => {
     return res.status(401).json({ error: "Token expirado" });
   }
 
-  return res.status(201).json(user);
+  return res.status(201).json(result);
 };
 
 module.exports = {
