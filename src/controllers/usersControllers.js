@@ -10,7 +10,7 @@ const getAll = async (req, res) => {
 };
 
 const createUser = async (req, res) => {
-  const { login, usuario, nome, senha } = req.body;
+  const { login, usuario, nome, senha, image_url } = req.body;
 
   const existingUser = await usersModel.findUserUsuario(usuario);
   if (existingUser) {
@@ -24,7 +24,13 @@ const createUser = async (req, res) => {
     return res.status(400).json({ error: "Login ja tem cadastro no sistema" });
   }
 
-  const user = await usersModel.createUser(login, usuario, nome, senha);
+  const user = await usersModel.createUser(
+    login,
+    usuario,
+    nome,
+    senha,
+    image_url
+  );
   if (!user) {
     return res.status(500).json({ error: "Erro ao criar usuário" });
   } else {

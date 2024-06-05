@@ -12,7 +12,7 @@ const getAll = async () => {
   return await prismaMySQL.users.findMany();
 };
 
-const createUser = async (login, usuario, nome, senha) => {
+const createUser = async (login, usuario, nome, senha, image_url) => {
   const token = uuidv4();
   const hashedPassword = await bcrypt.hash(senha, saltRounds);
 
@@ -21,6 +21,7 @@ const createUser = async (login, usuario, nome, senha) => {
       login: login,
       usuario: usuario,
       nome: nome,
+      image_url: image_url,
       senha: hashedPassword,
       token: token,
     },
