@@ -33,9 +33,9 @@ const deleteUser = async (login) => {
   });
 };
 
-const findUserUsuario = async (usuario) => {
+const findUserUsuario = async (user) => {
   return await prismaMySQL.users.findFirst({
-    where: { usuario: usuario },
+    where: { usuario: user },
   });
 };
 
