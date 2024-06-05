@@ -91,3 +91,88 @@ model AUTORIZACOES_WEB_BARRAMENTOS_DEV {
   data_hora_mensagem  DateTime?
   usuario             Int
 }
+
+model VW_APP_VENDAS_LOJAS_NEW {
+  key                              Int     @id
+  loja                             Int
+  descricao                        String
+  descricao_completa               String
+  segmento                         String
+  media_pcs_ano                    Int
+  media_venda_ano                  Decimal
+  media_venda_ano_varejo           Decimal
+  media_venda_ano_atacado          Decimal
+  media_venda_ano_site             Decimal
+  venda_dia_loja                   Decimal
+  venda_dia_anterior_loja          Decimal
+  venda_mes_loja                   Decimal
+  venda_mes_anterior_loja          Decimal
+  venda_dia_atacado                Decimal
+  venda_dia_anterior_atacado       Decimal
+  ind_venda_dia_atacado            Int
+  dif_venda_dia_atacado            Decimal
+  venda_dia_varejo                 Decimal
+  venda_dia_anterior_varejo        Decimal
+  ind_venda_dia_varejo             Int
+  dif_venda_dia_varejo             Decimal
+  venda_dia_ecommerce              Decimal
+  ind_venda_dia_ecommerce          Int
+  dif_venda_dia_ecommerce          Decimal
+  venda_dia                        Decimal
+  venda_dia_anterior               Decimal
+  ind_venda_dia                    Int
+  dif_venda_dia                    Decimal
+  venda_mes_atacado                Decimal
+  venda_mes_anterior_atacado       Decimal
+  ind_venda_mes_atacado            Int
+  dif_venda_mes_atacado            Decimal
+  venda_mes_varejo                 Decimal
+  venda_mes_anterior_varejo        Decimal
+  ind_venda_mes_varejo             Int
+  dif_venda_mes_varejo             Decimal
+  venda_mes_ecommerce              Decimal
+  venda_mes_anterior_ecommerce     Decimal
+  ind_venda_mes_ecommerce          Int
+  dif_venda_mes_ecommerce          Decimal
+  venda_mes                        Decimal
+  venda_mes_anterior               Decimal
+  ind_venda_mes                    Int
+  dif_venda_mes                    Decimal
+  quant_pcs_mes_atacado            Int
+  quant_pcs_mes_anterior_atacado   Int
+  ind_quant_pcs_mes_atacado        Int
+  dif_quant_pcs_mes_atacado        Int
+  quant_pcs_mes_varejo             Int
+  quant_pcs_mes_anterior_varejo    Int
+  ind_quant_pcs_mes_varejo         Int
+  dif_quant_pcs_mes_varejo         Int
+  quant_pcs_mes_ecommerce          Int
+  quant_pcs_mes_anterior_ecommerce Int
+  ind_quant_pcs_mes_ecommerce      Int
+  dif_quant_pcs_mes_ecommerce      Int
+  quant_pcs_mes                    Int
+  quant_pcs_mes_anterior           Int
+  ind_quant_pcs_mes                Int
+  dif_quant_pcs_mes                Int
+  pm_atacado                       Decimal
+  pm_varejo                        Decimal
+  pm_ecommerce                     Decimal
+  meta                             Decimal
+  ultima_atualizacao               String
+}
+
+model VW_APP_VENDAS_CUPONS_NEW {
+  key                         Int     @id
+  loja                        Int
+  nome_fantasia               String
+  total_venda                 Decimal
+  total_venda_format          String
+  total_cupom                 Decimal
+  total_cupom_format          String
+  perc                        Int
+  total_venda_anterior        Decimal
+  total_venda_anterior_format String
+  total_cupom_anterior        Decimal
+  total_cupom_anterior_format String
+  perc_anterior               Int
+}

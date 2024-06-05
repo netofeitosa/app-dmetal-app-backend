@@ -201,6 +201,91 @@ exports.Prisma.AUTORIZACOES_WEB_BARRAMENTOS_DEVScalarFieldEnum = {
   usuario: 'usuario'
 };
 
+exports.Prisma.VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum = {
+  key: 'key',
+  loja: 'loja',
+  descricao: 'descricao',
+  descricao_completa: 'descricao_completa',
+  segmento: 'segmento',
+  media_pcs_ano: 'media_pcs_ano',
+  media_venda_ano: 'media_venda_ano',
+  media_venda_ano_varejo: 'media_venda_ano_varejo',
+  media_venda_ano_atacado: 'media_venda_ano_atacado',
+  media_venda_ano_site: 'media_venda_ano_site',
+  venda_dia_loja: 'venda_dia_loja',
+  venda_dia_anterior_loja: 'venda_dia_anterior_loja',
+  venda_mes_loja: 'venda_mes_loja',
+  venda_mes_anterior_loja: 'venda_mes_anterior_loja',
+  venda_dia_atacado: 'venda_dia_atacado',
+  venda_dia_anterior_atacado: 'venda_dia_anterior_atacado',
+  ind_venda_dia_atacado: 'ind_venda_dia_atacado',
+  dif_venda_dia_atacado: 'dif_venda_dia_atacado',
+  venda_dia_varejo: 'venda_dia_varejo',
+  venda_dia_anterior_varejo: 'venda_dia_anterior_varejo',
+  ind_venda_dia_varejo: 'ind_venda_dia_varejo',
+  dif_venda_dia_varejo: 'dif_venda_dia_varejo',
+  venda_dia_ecommerce: 'venda_dia_ecommerce',
+  ind_venda_dia_ecommerce: 'ind_venda_dia_ecommerce',
+  dif_venda_dia_ecommerce: 'dif_venda_dia_ecommerce',
+  venda_dia: 'venda_dia',
+  venda_dia_anterior: 'venda_dia_anterior',
+  ind_venda_dia: 'ind_venda_dia',
+  dif_venda_dia: 'dif_venda_dia',
+  venda_mes_atacado: 'venda_mes_atacado',
+  venda_mes_anterior_atacado: 'venda_mes_anterior_atacado',
+  ind_venda_mes_atacado: 'ind_venda_mes_atacado',
+  dif_venda_mes_atacado: 'dif_venda_mes_atacado',
+  venda_mes_varejo: 'venda_mes_varejo',
+  venda_mes_anterior_varejo: 'venda_mes_anterior_varejo',
+  ind_venda_mes_varejo: 'ind_venda_mes_varejo',
+  dif_venda_mes_varejo: 'dif_venda_mes_varejo',
+  venda_mes_ecommerce: 'venda_mes_ecommerce',
+  venda_mes_anterior_ecommerce: 'venda_mes_anterior_ecommerce',
+  ind_venda_mes_ecommerce: 'ind_venda_mes_ecommerce',
+  dif_venda_mes_ecommerce: 'dif_venda_mes_ecommerce',
+  venda_mes: 'venda_mes',
+  venda_mes_anterior: 'venda_mes_anterior',
+  ind_venda_mes: 'ind_venda_mes',
+  dif_venda_mes: 'dif_venda_mes',
+  quant_pcs_mes_atacado: 'quant_pcs_mes_atacado',
+  quant_pcs_mes_anterior_atacado: 'quant_pcs_mes_anterior_atacado',
+  ind_quant_pcs_mes_atacado: 'ind_quant_pcs_mes_atacado',
+  dif_quant_pcs_mes_atacado: 'dif_quant_pcs_mes_atacado',
+  quant_pcs_mes_varejo: 'quant_pcs_mes_varejo',
+  quant_pcs_mes_anterior_varejo: 'quant_pcs_mes_anterior_varejo',
+  ind_quant_pcs_mes_varejo: 'ind_quant_pcs_mes_varejo',
+  dif_quant_pcs_mes_varejo: 'dif_quant_pcs_mes_varejo',
+  quant_pcs_mes_ecommerce: 'quant_pcs_mes_ecommerce',
+  quant_pcs_mes_anterior_ecommerce: 'quant_pcs_mes_anterior_ecommerce',
+  ind_quant_pcs_mes_ecommerce: 'ind_quant_pcs_mes_ecommerce',
+  dif_quant_pcs_mes_ecommerce: 'dif_quant_pcs_mes_ecommerce',
+  quant_pcs_mes: 'quant_pcs_mes',
+  quant_pcs_mes_anterior: 'quant_pcs_mes_anterior',
+  ind_quant_pcs_mes: 'ind_quant_pcs_mes',
+  dif_quant_pcs_mes: 'dif_quant_pcs_mes',
+  pm_atacado: 'pm_atacado',
+  pm_varejo: 'pm_varejo',
+  pm_ecommerce: 'pm_ecommerce',
+  meta: 'meta',
+  ultima_atualizacao: 'ultima_atualizacao'
+};
+
+exports.Prisma.VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum = {
+  key: 'key',
+  loja: 'loja',
+  nome_fantasia: 'nome_fantasia',
+  total_venda: 'total_venda',
+  total_venda_format: 'total_venda_format',
+  total_cupom: 'total_cupom',
+  total_cupom_format: 'total_cupom_format',
+  perc: 'perc',
+  total_venda_anterior: 'total_venda_anterior',
+  total_venda_anterior_format: 'total_venda_anterior_format',
+  total_cupom_anterior: 'total_cupom_anterior',
+  total_cupom_anterior_format: 'total_cupom_anterior_format',
+  perc_anterior: 'perc_anterior'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -218,7 +303,9 @@ exports.Prisma.ModelName = {
   VW_AUTORIZACOES_DESCONTOS_LOJAS_DEV: 'VW_AUTORIZACOES_DESCONTOS_LOJAS_DEV',
   VW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV: 'VW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV',
   VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV: 'VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV',
-  AUTORIZACOES_WEB_BARRAMENTOS_DEV: 'AUTORIZACOES_WEB_BARRAMENTOS_DEV'
+  AUTORIZACOES_WEB_BARRAMENTOS_DEV: 'AUTORIZACOES_WEB_BARRAMENTOS_DEV',
+  VW_APP_VENDAS_LOJAS_NEW: 'VW_APP_VENDAS_LOJAS_NEW',
+  VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW'
 };
 
 /**

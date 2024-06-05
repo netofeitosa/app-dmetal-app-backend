@@ -43,6 +43,16 @@ export type VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV = $Result.DefaultSelection<Prisma
  * 
  */
 export type AUTORIZACOES_WEB_BARRAMENTOS_DEV = $Result.DefaultSelection<Prisma.$AUTORIZACOES_WEB_BARRAMENTOS_DEVPayload>
+/**
+ * Model VW_APP_VENDAS_LOJAS_NEW
+ * 
+ */
+export type VW_APP_VENDAS_LOJAS_NEW = $Result.DefaultSelection<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload>
+/**
+ * Model VW_APP_VENDAS_CUPONS_NEW
+ * 
+ */
+export type VW_APP_VENDAS_CUPONS_NEW = $Result.DefaultSelection<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -225,6 +235,26 @@ export class PrismaClient<
     * ```
     */
   get aUTORIZACOES_WEB_BARRAMENTOS_DEV(): Prisma.AUTORIZACOES_WEB_BARRAMENTOS_DEVDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_VENDAS_LOJAS_NEW`: Exposes CRUD operations for the **VW_APP_VENDAS_LOJAS_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_VENDAS_LOJAS_NEWS
+    * const vW_APP_VENDAS_LOJAS_NEWS = await prisma.vW_APP_VENDAS_LOJAS_NEW.findMany()
+    * ```
+    */
+  get vW_APP_VENDAS_LOJAS_NEW(): Prisma.VW_APP_VENDAS_LOJAS_NEWDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_VENDAS_CUPONS_NEW`: Exposes CRUD operations for the **VW_APP_VENDAS_CUPONS_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_VENDAS_CUPONS_NEWS
+    * const vW_APP_VENDAS_CUPONS_NEWS = await prisma.vW_APP_VENDAS_CUPONS_NEW.findMany()
+    * ```
+    */
+  get vW_APP_VENDAS_CUPONS_NEW(): Prisma.VW_APP_VENDAS_CUPONS_NEWDelegate<ExtArgs>;
 }
 
 export namespace Prisma {
@@ -707,7 +737,9 @@ export namespace Prisma {
     VW_AUTORIZACOES_DESCONTOS_LOJAS_DEV: 'VW_AUTORIZACOES_DESCONTOS_LOJAS_DEV',
     VW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV: 'VW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV',
     VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV: 'VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV',
-    AUTORIZACOES_WEB_BARRAMENTOS_DEV: 'AUTORIZACOES_WEB_BARRAMENTOS_DEV'
+    AUTORIZACOES_WEB_BARRAMENTOS_DEV: 'AUTORIZACOES_WEB_BARRAMENTOS_DEV',
+    VW_APP_VENDAS_LOJAS_NEW: 'VW_APP_VENDAS_LOJAS_NEW',
+    VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -724,7 +756,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     meta: {
-      modelProps: 'vW_AUTORIZACOES_WEB_DEV' | 'vW_AUTORIZACOES_DESPESAS_COFRE_DEV' | 'vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV' | 'vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV' | 'vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV' | 'aUTORIZACOES_WEB_BARRAMENTOS_DEV'
+      modelProps: 'vW_AUTORIZACOES_WEB_DEV' | 'vW_AUTORIZACOES_DESPESAS_COFRE_DEV' | 'vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV' | 'vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV' | 'vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV' | 'aUTORIZACOES_WEB_BARRAMENTOS_DEV' | 'vW_APP_VENDAS_LOJAS_NEW' | 'vW_APP_VENDAS_CUPONS_NEW'
       txIsolationLevel: Prisma.TransactionIsolationLevel
     },
     model: {
@@ -1121,6 +1153,138 @@ export namespace Prisma {
           count: {
             args: Prisma.AUTORIZACOES_WEB_BARRAMENTOS_DEVCountArgs<ExtArgs>,
             result: $Utils.Optional<AUTORIZACOES_WEB_BARRAMENTOS_DEVCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_VENDAS_LOJAS_NEW: {
+        payload: Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_VENDAS_LOJAS_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_VENDAS_LOJAS_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_VENDAS_LOJAS_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_VENDAS_LOJAS_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_VENDAS_LOJAS_NEWCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_VENDAS_CUPONS_NEW: {
+        payload: Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_VENDAS_CUPONS_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_VENDAS_CUPONS_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_VENDAS_CUPONS_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_VENDAS_CUPONS_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_VENDAS_CUPONS_NEWCountAggregateOutputType> | number
           }
         }
       }
@@ -7096,6 +7260,2817 @@ export namespace Prisma {
 
 
   /**
+   * Model VW_APP_VENDAS_LOJAS_NEW
+   */
+
+  export type AggregateVW_APP_VENDAS_LOJAS_NEW = {
+    _count: VW_APP_VENDAS_LOJAS_NEWCountAggregateOutputType | null
+    _avg: VW_APP_VENDAS_LOJAS_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_VENDAS_LOJAS_NEWSumAggregateOutputType | null
+    _min: VW_APP_VENDAS_LOJAS_NEWMinAggregateOutputType | null
+    _max: VW_APP_VENDAS_LOJAS_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWAvgAggregateOutputType = {
+    key: number | null
+    loja: number | null
+    media_pcs_ano: number | null
+    media_venda_ano: Decimal | null
+    media_venda_ano_varejo: Decimal | null
+    media_venda_ano_atacado: Decimal | null
+    media_venda_ano_site: Decimal | null
+    venda_dia_loja: Decimal | null
+    venda_dia_anterior_loja: Decimal | null
+    venda_mes_loja: Decimal | null
+    venda_mes_anterior_loja: Decimal | null
+    venda_dia_atacado: Decimal | null
+    venda_dia_anterior_atacado: Decimal | null
+    ind_venda_dia_atacado: number | null
+    dif_venda_dia_atacado: Decimal | null
+    venda_dia_varejo: Decimal | null
+    venda_dia_anterior_varejo: Decimal | null
+    ind_venda_dia_varejo: number | null
+    dif_venda_dia_varejo: Decimal | null
+    venda_dia_ecommerce: Decimal | null
+    ind_venda_dia_ecommerce: number | null
+    dif_venda_dia_ecommerce: Decimal | null
+    venda_dia: Decimal | null
+    venda_dia_anterior: Decimal | null
+    ind_venda_dia: number | null
+    dif_venda_dia: Decimal | null
+    venda_mes_atacado: Decimal | null
+    venda_mes_anterior_atacado: Decimal | null
+    ind_venda_mes_atacado: number | null
+    dif_venda_mes_atacado: Decimal | null
+    venda_mes_varejo: Decimal | null
+    venda_mes_anterior_varejo: Decimal | null
+    ind_venda_mes_varejo: number | null
+    dif_venda_mes_varejo: Decimal | null
+    venda_mes_ecommerce: Decimal | null
+    venda_mes_anterior_ecommerce: Decimal | null
+    ind_venda_mes_ecommerce: number | null
+    dif_venda_mes_ecommerce: Decimal | null
+    venda_mes: Decimal | null
+    venda_mes_anterior: Decimal | null
+    ind_venda_mes: number | null
+    dif_venda_mes: Decimal | null
+    quant_pcs_mes_atacado: number | null
+    quant_pcs_mes_anterior_atacado: number | null
+    ind_quant_pcs_mes_atacado: number | null
+    dif_quant_pcs_mes_atacado: number | null
+    quant_pcs_mes_varejo: number | null
+    quant_pcs_mes_anterior_varejo: number | null
+    ind_quant_pcs_mes_varejo: number | null
+    dif_quant_pcs_mes_varejo: number | null
+    quant_pcs_mes_ecommerce: number | null
+    quant_pcs_mes_anterior_ecommerce: number | null
+    ind_quant_pcs_mes_ecommerce: number | null
+    dif_quant_pcs_mes_ecommerce: number | null
+    quant_pcs_mes: number | null
+    quant_pcs_mes_anterior: number | null
+    ind_quant_pcs_mes: number | null
+    dif_quant_pcs_mes: number | null
+    pm_atacado: Decimal | null
+    pm_varejo: Decimal | null
+    pm_ecommerce: Decimal | null
+    meta: Decimal | null
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWSumAggregateOutputType = {
+    key: number | null
+    loja: number | null
+    media_pcs_ano: number | null
+    media_venda_ano: Decimal | null
+    media_venda_ano_varejo: Decimal | null
+    media_venda_ano_atacado: Decimal | null
+    media_venda_ano_site: Decimal | null
+    venda_dia_loja: Decimal | null
+    venda_dia_anterior_loja: Decimal | null
+    venda_mes_loja: Decimal | null
+    venda_mes_anterior_loja: Decimal | null
+    venda_dia_atacado: Decimal | null
+    venda_dia_anterior_atacado: Decimal | null
+    ind_venda_dia_atacado: number | null
+    dif_venda_dia_atacado: Decimal | null
+    venda_dia_varejo: Decimal | null
+    venda_dia_anterior_varejo: Decimal | null
+    ind_venda_dia_varejo: number | null
+    dif_venda_dia_varejo: Decimal | null
+    venda_dia_ecommerce: Decimal | null
+    ind_venda_dia_ecommerce: number | null
+    dif_venda_dia_ecommerce: Decimal | null
+    venda_dia: Decimal | null
+    venda_dia_anterior: Decimal | null
+    ind_venda_dia: number | null
+    dif_venda_dia: Decimal | null
+    venda_mes_atacado: Decimal | null
+    venda_mes_anterior_atacado: Decimal | null
+    ind_venda_mes_atacado: number | null
+    dif_venda_mes_atacado: Decimal | null
+    venda_mes_varejo: Decimal | null
+    venda_mes_anterior_varejo: Decimal | null
+    ind_venda_mes_varejo: number | null
+    dif_venda_mes_varejo: Decimal | null
+    venda_mes_ecommerce: Decimal | null
+    venda_mes_anterior_ecommerce: Decimal | null
+    ind_venda_mes_ecommerce: number | null
+    dif_venda_mes_ecommerce: Decimal | null
+    venda_mes: Decimal | null
+    venda_mes_anterior: Decimal | null
+    ind_venda_mes: number | null
+    dif_venda_mes: Decimal | null
+    quant_pcs_mes_atacado: number | null
+    quant_pcs_mes_anterior_atacado: number | null
+    ind_quant_pcs_mes_atacado: number | null
+    dif_quant_pcs_mes_atacado: number | null
+    quant_pcs_mes_varejo: number | null
+    quant_pcs_mes_anterior_varejo: number | null
+    ind_quant_pcs_mes_varejo: number | null
+    dif_quant_pcs_mes_varejo: number | null
+    quant_pcs_mes_ecommerce: number | null
+    quant_pcs_mes_anterior_ecommerce: number | null
+    ind_quant_pcs_mes_ecommerce: number | null
+    dif_quant_pcs_mes_ecommerce: number | null
+    quant_pcs_mes: number | null
+    quant_pcs_mes_anterior: number | null
+    ind_quant_pcs_mes: number | null
+    dif_quant_pcs_mes: number | null
+    pm_atacado: Decimal | null
+    pm_varejo: Decimal | null
+    pm_ecommerce: Decimal | null
+    meta: Decimal | null
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWMinAggregateOutputType = {
+    key: number | null
+    loja: number | null
+    descricao: string | null
+    descricao_completa: string | null
+    segmento: string | null
+    media_pcs_ano: number | null
+    media_venda_ano: Decimal | null
+    media_venda_ano_varejo: Decimal | null
+    media_venda_ano_atacado: Decimal | null
+    media_venda_ano_site: Decimal | null
+    venda_dia_loja: Decimal | null
+    venda_dia_anterior_loja: Decimal | null
+    venda_mes_loja: Decimal | null
+    venda_mes_anterior_loja: Decimal | null
+    venda_dia_atacado: Decimal | null
+    venda_dia_anterior_atacado: Decimal | null
+    ind_venda_dia_atacado: number | null
+    dif_venda_dia_atacado: Decimal | null
+    venda_dia_varejo: Decimal | null
+    venda_dia_anterior_varejo: Decimal | null
+    ind_venda_dia_varejo: number | null
+    dif_venda_dia_varejo: Decimal | null
+    venda_dia_ecommerce: Decimal | null
+    ind_venda_dia_ecommerce: number | null
+    dif_venda_dia_ecommerce: Decimal | null
+    venda_dia: Decimal | null
+    venda_dia_anterior: Decimal | null
+    ind_venda_dia: number | null
+    dif_venda_dia: Decimal | null
+    venda_mes_atacado: Decimal | null
+    venda_mes_anterior_atacado: Decimal | null
+    ind_venda_mes_atacado: number | null
+    dif_venda_mes_atacado: Decimal | null
+    venda_mes_varejo: Decimal | null
+    venda_mes_anterior_varejo: Decimal | null
+    ind_venda_mes_varejo: number | null
+    dif_venda_mes_varejo: Decimal | null
+    venda_mes_ecommerce: Decimal | null
+    venda_mes_anterior_ecommerce: Decimal | null
+    ind_venda_mes_ecommerce: number | null
+    dif_venda_mes_ecommerce: Decimal | null
+    venda_mes: Decimal | null
+    venda_mes_anterior: Decimal | null
+    ind_venda_mes: number | null
+    dif_venda_mes: Decimal | null
+    quant_pcs_mes_atacado: number | null
+    quant_pcs_mes_anterior_atacado: number | null
+    ind_quant_pcs_mes_atacado: number | null
+    dif_quant_pcs_mes_atacado: number | null
+    quant_pcs_mes_varejo: number | null
+    quant_pcs_mes_anterior_varejo: number | null
+    ind_quant_pcs_mes_varejo: number | null
+    dif_quant_pcs_mes_varejo: number | null
+    quant_pcs_mes_ecommerce: number | null
+    quant_pcs_mes_anterior_ecommerce: number | null
+    ind_quant_pcs_mes_ecommerce: number | null
+    dif_quant_pcs_mes_ecommerce: number | null
+    quant_pcs_mes: number | null
+    quant_pcs_mes_anterior: number | null
+    ind_quant_pcs_mes: number | null
+    dif_quant_pcs_mes: number | null
+    pm_atacado: Decimal | null
+    pm_varejo: Decimal | null
+    pm_ecommerce: Decimal | null
+    meta: Decimal | null
+    ultima_atualizacao: string | null
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWMaxAggregateOutputType = {
+    key: number | null
+    loja: number | null
+    descricao: string | null
+    descricao_completa: string | null
+    segmento: string | null
+    media_pcs_ano: number | null
+    media_venda_ano: Decimal | null
+    media_venda_ano_varejo: Decimal | null
+    media_venda_ano_atacado: Decimal | null
+    media_venda_ano_site: Decimal | null
+    venda_dia_loja: Decimal | null
+    venda_dia_anterior_loja: Decimal | null
+    venda_mes_loja: Decimal | null
+    venda_mes_anterior_loja: Decimal | null
+    venda_dia_atacado: Decimal | null
+    venda_dia_anterior_atacado: Decimal | null
+    ind_venda_dia_atacado: number | null
+    dif_venda_dia_atacado: Decimal | null
+    venda_dia_varejo: Decimal | null
+    venda_dia_anterior_varejo: Decimal | null
+    ind_venda_dia_varejo: number | null
+    dif_venda_dia_varejo: Decimal | null
+    venda_dia_ecommerce: Decimal | null
+    ind_venda_dia_ecommerce: number | null
+    dif_venda_dia_ecommerce: Decimal | null
+    venda_dia: Decimal | null
+    venda_dia_anterior: Decimal | null
+    ind_venda_dia: number | null
+    dif_venda_dia: Decimal | null
+    venda_mes_atacado: Decimal | null
+    venda_mes_anterior_atacado: Decimal | null
+    ind_venda_mes_atacado: number | null
+    dif_venda_mes_atacado: Decimal | null
+    venda_mes_varejo: Decimal | null
+    venda_mes_anterior_varejo: Decimal | null
+    ind_venda_mes_varejo: number | null
+    dif_venda_mes_varejo: Decimal | null
+    venda_mes_ecommerce: Decimal | null
+    venda_mes_anterior_ecommerce: Decimal | null
+    ind_venda_mes_ecommerce: number | null
+    dif_venda_mes_ecommerce: Decimal | null
+    venda_mes: Decimal | null
+    venda_mes_anterior: Decimal | null
+    ind_venda_mes: number | null
+    dif_venda_mes: Decimal | null
+    quant_pcs_mes_atacado: number | null
+    quant_pcs_mes_anterior_atacado: number | null
+    ind_quant_pcs_mes_atacado: number | null
+    dif_quant_pcs_mes_atacado: number | null
+    quant_pcs_mes_varejo: number | null
+    quant_pcs_mes_anterior_varejo: number | null
+    ind_quant_pcs_mes_varejo: number | null
+    dif_quant_pcs_mes_varejo: number | null
+    quant_pcs_mes_ecommerce: number | null
+    quant_pcs_mes_anterior_ecommerce: number | null
+    ind_quant_pcs_mes_ecommerce: number | null
+    dif_quant_pcs_mes_ecommerce: number | null
+    quant_pcs_mes: number | null
+    quant_pcs_mes_anterior: number | null
+    ind_quant_pcs_mes: number | null
+    dif_quant_pcs_mes: number | null
+    pm_atacado: Decimal | null
+    pm_varejo: Decimal | null
+    pm_ecommerce: Decimal | null
+    meta: Decimal | null
+    ultima_atualizacao: string | null
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWCountAggregateOutputType = {
+    key: number
+    loja: number
+    descricao: number
+    descricao_completa: number
+    segmento: number
+    media_pcs_ano: number
+    media_venda_ano: number
+    media_venda_ano_varejo: number
+    media_venda_ano_atacado: number
+    media_venda_ano_site: number
+    venda_dia_loja: number
+    venda_dia_anterior_loja: number
+    venda_mes_loja: number
+    venda_mes_anterior_loja: number
+    venda_dia_atacado: number
+    venda_dia_anterior_atacado: number
+    ind_venda_dia_atacado: number
+    dif_venda_dia_atacado: number
+    venda_dia_varejo: number
+    venda_dia_anterior_varejo: number
+    ind_venda_dia_varejo: number
+    dif_venda_dia_varejo: number
+    venda_dia_ecommerce: number
+    ind_venda_dia_ecommerce: number
+    dif_venda_dia_ecommerce: number
+    venda_dia: number
+    venda_dia_anterior: number
+    ind_venda_dia: number
+    dif_venda_dia: number
+    venda_mes_atacado: number
+    venda_mes_anterior_atacado: number
+    ind_venda_mes_atacado: number
+    dif_venda_mes_atacado: number
+    venda_mes_varejo: number
+    venda_mes_anterior_varejo: number
+    ind_venda_mes_varejo: number
+    dif_venda_mes_varejo: number
+    venda_mes_ecommerce: number
+    venda_mes_anterior_ecommerce: number
+    ind_venda_mes_ecommerce: number
+    dif_venda_mes_ecommerce: number
+    venda_mes: number
+    venda_mes_anterior: number
+    ind_venda_mes: number
+    dif_venda_mes: number
+    quant_pcs_mes_atacado: number
+    quant_pcs_mes_anterior_atacado: number
+    ind_quant_pcs_mes_atacado: number
+    dif_quant_pcs_mes_atacado: number
+    quant_pcs_mes_varejo: number
+    quant_pcs_mes_anterior_varejo: number
+    ind_quant_pcs_mes_varejo: number
+    dif_quant_pcs_mes_varejo: number
+    quant_pcs_mes_ecommerce: number
+    quant_pcs_mes_anterior_ecommerce: number
+    ind_quant_pcs_mes_ecommerce: number
+    dif_quant_pcs_mes_ecommerce: number
+    quant_pcs_mes: number
+    quant_pcs_mes_anterior: number
+    ind_quant_pcs_mes: number
+    dif_quant_pcs_mes: number
+    pm_atacado: number
+    pm_varejo: number
+    pm_ecommerce: number
+    meta: number
+    ultima_atualizacao: number
+    _all: number
+  }
+
+
+  export type VW_APP_VENDAS_LOJAS_NEWAvgAggregateInputType = {
+    key?: true
+    loja?: true
+    media_pcs_ano?: true
+    media_venda_ano?: true
+    media_venda_ano_varejo?: true
+    media_venda_ano_atacado?: true
+    media_venda_ano_site?: true
+    venda_dia_loja?: true
+    venda_dia_anterior_loja?: true
+    venda_mes_loja?: true
+    venda_mes_anterior_loja?: true
+    venda_dia_atacado?: true
+    venda_dia_anterior_atacado?: true
+    ind_venda_dia_atacado?: true
+    dif_venda_dia_atacado?: true
+    venda_dia_varejo?: true
+    venda_dia_anterior_varejo?: true
+    ind_venda_dia_varejo?: true
+    dif_venda_dia_varejo?: true
+    venda_dia_ecommerce?: true
+    ind_venda_dia_ecommerce?: true
+    dif_venda_dia_ecommerce?: true
+    venda_dia?: true
+    venda_dia_anterior?: true
+    ind_venda_dia?: true
+    dif_venda_dia?: true
+    venda_mes_atacado?: true
+    venda_mes_anterior_atacado?: true
+    ind_venda_mes_atacado?: true
+    dif_venda_mes_atacado?: true
+    venda_mes_varejo?: true
+    venda_mes_anterior_varejo?: true
+    ind_venda_mes_varejo?: true
+    dif_venda_mes_varejo?: true
+    venda_mes_ecommerce?: true
+    venda_mes_anterior_ecommerce?: true
+    ind_venda_mes_ecommerce?: true
+    dif_venda_mes_ecommerce?: true
+    venda_mes?: true
+    venda_mes_anterior?: true
+    ind_venda_mes?: true
+    dif_venda_mes?: true
+    quant_pcs_mes_atacado?: true
+    quant_pcs_mes_anterior_atacado?: true
+    ind_quant_pcs_mes_atacado?: true
+    dif_quant_pcs_mes_atacado?: true
+    quant_pcs_mes_varejo?: true
+    quant_pcs_mes_anterior_varejo?: true
+    ind_quant_pcs_mes_varejo?: true
+    dif_quant_pcs_mes_varejo?: true
+    quant_pcs_mes_ecommerce?: true
+    quant_pcs_mes_anterior_ecommerce?: true
+    ind_quant_pcs_mes_ecommerce?: true
+    dif_quant_pcs_mes_ecommerce?: true
+    quant_pcs_mes?: true
+    quant_pcs_mes_anterior?: true
+    ind_quant_pcs_mes?: true
+    dif_quant_pcs_mes?: true
+    pm_atacado?: true
+    pm_varejo?: true
+    pm_ecommerce?: true
+    meta?: true
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWSumAggregateInputType = {
+    key?: true
+    loja?: true
+    media_pcs_ano?: true
+    media_venda_ano?: true
+    media_venda_ano_varejo?: true
+    media_venda_ano_atacado?: true
+    media_venda_ano_site?: true
+    venda_dia_loja?: true
+    venda_dia_anterior_loja?: true
+    venda_mes_loja?: true
+    venda_mes_anterior_loja?: true
+    venda_dia_atacado?: true
+    venda_dia_anterior_atacado?: true
+    ind_venda_dia_atacado?: true
+    dif_venda_dia_atacado?: true
+    venda_dia_varejo?: true
+    venda_dia_anterior_varejo?: true
+    ind_venda_dia_varejo?: true
+    dif_venda_dia_varejo?: true
+    venda_dia_ecommerce?: true
+    ind_venda_dia_ecommerce?: true
+    dif_venda_dia_ecommerce?: true
+    venda_dia?: true
+    venda_dia_anterior?: true
+    ind_venda_dia?: true
+    dif_venda_dia?: true
+    venda_mes_atacado?: true
+    venda_mes_anterior_atacado?: true
+    ind_venda_mes_atacado?: true
+    dif_venda_mes_atacado?: true
+    venda_mes_varejo?: true
+    venda_mes_anterior_varejo?: true
+    ind_venda_mes_varejo?: true
+    dif_venda_mes_varejo?: true
+    venda_mes_ecommerce?: true
+    venda_mes_anterior_ecommerce?: true
+    ind_venda_mes_ecommerce?: true
+    dif_venda_mes_ecommerce?: true
+    venda_mes?: true
+    venda_mes_anterior?: true
+    ind_venda_mes?: true
+    dif_venda_mes?: true
+    quant_pcs_mes_atacado?: true
+    quant_pcs_mes_anterior_atacado?: true
+    ind_quant_pcs_mes_atacado?: true
+    dif_quant_pcs_mes_atacado?: true
+    quant_pcs_mes_varejo?: true
+    quant_pcs_mes_anterior_varejo?: true
+    ind_quant_pcs_mes_varejo?: true
+    dif_quant_pcs_mes_varejo?: true
+    quant_pcs_mes_ecommerce?: true
+    quant_pcs_mes_anterior_ecommerce?: true
+    ind_quant_pcs_mes_ecommerce?: true
+    dif_quant_pcs_mes_ecommerce?: true
+    quant_pcs_mes?: true
+    quant_pcs_mes_anterior?: true
+    ind_quant_pcs_mes?: true
+    dif_quant_pcs_mes?: true
+    pm_atacado?: true
+    pm_varejo?: true
+    pm_ecommerce?: true
+    meta?: true
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWMinAggregateInputType = {
+    key?: true
+    loja?: true
+    descricao?: true
+    descricao_completa?: true
+    segmento?: true
+    media_pcs_ano?: true
+    media_venda_ano?: true
+    media_venda_ano_varejo?: true
+    media_venda_ano_atacado?: true
+    media_venda_ano_site?: true
+    venda_dia_loja?: true
+    venda_dia_anterior_loja?: true
+    venda_mes_loja?: true
+    venda_mes_anterior_loja?: true
+    venda_dia_atacado?: true
+    venda_dia_anterior_atacado?: true
+    ind_venda_dia_atacado?: true
+    dif_venda_dia_atacado?: true
+    venda_dia_varejo?: true
+    venda_dia_anterior_varejo?: true
+    ind_venda_dia_varejo?: true
+    dif_venda_dia_varejo?: true
+    venda_dia_ecommerce?: true
+    ind_venda_dia_ecommerce?: true
+    dif_venda_dia_ecommerce?: true
+    venda_dia?: true
+    venda_dia_anterior?: true
+    ind_venda_dia?: true
+    dif_venda_dia?: true
+    venda_mes_atacado?: true
+    venda_mes_anterior_atacado?: true
+    ind_venda_mes_atacado?: true
+    dif_venda_mes_atacado?: true
+    venda_mes_varejo?: true
+    venda_mes_anterior_varejo?: true
+    ind_venda_mes_varejo?: true
+    dif_venda_mes_varejo?: true
+    venda_mes_ecommerce?: true
+    venda_mes_anterior_ecommerce?: true
+    ind_venda_mes_ecommerce?: true
+    dif_venda_mes_ecommerce?: true
+    venda_mes?: true
+    venda_mes_anterior?: true
+    ind_venda_mes?: true
+    dif_venda_mes?: true
+    quant_pcs_mes_atacado?: true
+    quant_pcs_mes_anterior_atacado?: true
+    ind_quant_pcs_mes_atacado?: true
+    dif_quant_pcs_mes_atacado?: true
+    quant_pcs_mes_varejo?: true
+    quant_pcs_mes_anterior_varejo?: true
+    ind_quant_pcs_mes_varejo?: true
+    dif_quant_pcs_mes_varejo?: true
+    quant_pcs_mes_ecommerce?: true
+    quant_pcs_mes_anterior_ecommerce?: true
+    ind_quant_pcs_mes_ecommerce?: true
+    dif_quant_pcs_mes_ecommerce?: true
+    quant_pcs_mes?: true
+    quant_pcs_mes_anterior?: true
+    ind_quant_pcs_mes?: true
+    dif_quant_pcs_mes?: true
+    pm_atacado?: true
+    pm_varejo?: true
+    pm_ecommerce?: true
+    meta?: true
+    ultima_atualizacao?: true
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWMaxAggregateInputType = {
+    key?: true
+    loja?: true
+    descricao?: true
+    descricao_completa?: true
+    segmento?: true
+    media_pcs_ano?: true
+    media_venda_ano?: true
+    media_venda_ano_varejo?: true
+    media_venda_ano_atacado?: true
+    media_venda_ano_site?: true
+    venda_dia_loja?: true
+    venda_dia_anterior_loja?: true
+    venda_mes_loja?: true
+    venda_mes_anterior_loja?: true
+    venda_dia_atacado?: true
+    venda_dia_anterior_atacado?: true
+    ind_venda_dia_atacado?: true
+    dif_venda_dia_atacado?: true
+    venda_dia_varejo?: true
+    venda_dia_anterior_varejo?: true
+    ind_venda_dia_varejo?: true
+    dif_venda_dia_varejo?: true
+    venda_dia_ecommerce?: true
+    ind_venda_dia_ecommerce?: true
+    dif_venda_dia_ecommerce?: true
+    venda_dia?: true
+    venda_dia_anterior?: true
+    ind_venda_dia?: true
+    dif_venda_dia?: true
+    venda_mes_atacado?: true
+    venda_mes_anterior_atacado?: true
+    ind_venda_mes_atacado?: true
+    dif_venda_mes_atacado?: true
+    venda_mes_varejo?: true
+    venda_mes_anterior_varejo?: true
+    ind_venda_mes_varejo?: true
+    dif_venda_mes_varejo?: true
+    venda_mes_ecommerce?: true
+    venda_mes_anterior_ecommerce?: true
+    ind_venda_mes_ecommerce?: true
+    dif_venda_mes_ecommerce?: true
+    venda_mes?: true
+    venda_mes_anterior?: true
+    ind_venda_mes?: true
+    dif_venda_mes?: true
+    quant_pcs_mes_atacado?: true
+    quant_pcs_mes_anterior_atacado?: true
+    ind_quant_pcs_mes_atacado?: true
+    dif_quant_pcs_mes_atacado?: true
+    quant_pcs_mes_varejo?: true
+    quant_pcs_mes_anterior_varejo?: true
+    ind_quant_pcs_mes_varejo?: true
+    dif_quant_pcs_mes_varejo?: true
+    quant_pcs_mes_ecommerce?: true
+    quant_pcs_mes_anterior_ecommerce?: true
+    ind_quant_pcs_mes_ecommerce?: true
+    dif_quant_pcs_mes_ecommerce?: true
+    quant_pcs_mes?: true
+    quant_pcs_mes_anterior?: true
+    ind_quant_pcs_mes?: true
+    dif_quant_pcs_mes?: true
+    pm_atacado?: true
+    pm_varejo?: true
+    pm_ecommerce?: true
+    meta?: true
+    ultima_atualizacao?: true
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWCountAggregateInputType = {
+    key?: true
+    loja?: true
+    descricao?: true
+    descricao_completa?: true
+    segmento?: true
+    media_pcs_ano?: true
+    media_venda_ano?: true
+    media_venda_ano_varejo?: true
+    media_venda_ano_atacado?: true
+    media_venda_ano_site?: true
+    venda_dia_loja?: true
+    venda_dia_anterior_loja?: true
+    venda_mes_loja?: true
+    venda_mes_anterior_loja?: true
+    venda_dia_atacado?: true
+    venda_dia_anterior_atacado?: true
+    ind_venda_dia_atacado?: true
+    dif_venda_dia_atacado?: true
+    venda_dia_varejo?: true
+    venda_dia_anterior_varejo?: true
+    ind_venda_dia_varejo?: true
+    dif_venda_dia_varejo?: true
+    venda_dia_ecommerce?: true
+    ind_venda_dia_ecommerce?: true
+    dif_venda_dia_ecommerce?: true
+    venda_dia?: true
+    venda_dia_anterior?: true
+    ind_venda_dia?: true
+    dif_venda_dia?: true
+    venda_mes_atacado?: true
+    venda_mes_anterior_atacado?: true
+    ind_venda_mes_atacado?: true
+    dif_venda_mes_atacado?: true
+    venda_mes_varejo?: true
+    venda_mes_anterior_varejo?: true
+    ind_venda_mes_varejo?: true
+    dif_venda_mes_varejo?: true
+    venda_mes_ecommerce?: true
+    venda_mes_anterior_ecommerce?: true
+    ind_venda_mes_ecommerce?: true
+    dif_venda_mes_ecommerce?: true
+    venda_mes?: true
+    venda_mes_anterior?: true
+    ind_venda_mes?: true
+    dif_venda_mes?: true
+    quant_pcs_mes_atacado?: true
+    quant_pcs_mes_anterior_atacado?: true
+    ind_quant_pcs_mes_atacado?: true
+    dif_quant_pcs_mes_atacado?: true
+    quant_pcs_mes_varejo?: true
+    quant_pcs_mes_anterior_varejo?: true
+    ind_quant_pcs_mes_varejo?: true
+    dif_quant_pcs_mes_varejo?: true
+    quant_pcs_mes_ecommerce?: true
+    quant_pcs_mes_anterior_ecommerce?: true
+    ind_quant_pcs_mes_ecommerce?: true
+    dif_quant_pcs_mes_ecommerce?: true
+    quant_pcs_mes?: true
+    quant_pcs_mes_anterior?: true
+    ind_quant_pcs_mes?: true
+    dif_quant_pcs_mes?: true
+    pm_atacado?: true
+    pm_varejo?: true
+    pm_ecommerce?: true
+    meta?: true
+    ultima_atualizacao?: true
+    _all?: true
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_VENDAS_LOJAS_NEW to aggregate.
+     */
+    where?: VW_APP_VENDAS_LOJAS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_LOJAS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_LOJAS_NEWOrderByWithRelationInput | VW_APP_VENDAS_LOJAS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_VENDAS_LOJAS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_LOJAS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_VENDAS_LOJAS_NEWS
+    **/
+    _count?: true | VW_APP_VENDAS_LOJAS_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_VENDAS_LOJAS_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_VENDAS_LOJAS_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_VENDAS_LOJAS_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_VENDAS_LOJAS_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_VENDAS_LOJAS_NEWAggregateType<T extends VW_APP_VENDAS_LOJAS_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_VENDAS_LOJAS_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_VENDAS_LOJAS_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_VENDAS_LOJAS_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_VENDAS_LOJAS_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_VENDAS_LOJAS_NEWWhereInput
+    orderBy?: VW_APP_VENDAS_LOJAS_NEWOrderByWithAggregationInput | VW_APP_VENDAS_LOJAS_NEWOrderByWithAggregationInput[]
+    by: VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum[] | VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum
+    having?: VW_APP_VENDAS_LOJAS_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_VENDAS_LOJAS_NEWCountAggregateInputType | true
+    _avg?: VW_APP_VENDAS_LOJAS_NEWAvgAggregateInputType
+    _sum?: VW_APP_VENDAS_LOJAS_NEWSumAggregateInputType
+    _min?: VW_APP_VENDAS_LOJAS_NEWMinAggregateInputType
+    _max?: VW_APP_VENDAS_LOJAS_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWGroupByOutputType = {
+    key: number
+    loja: number
+    descricao: string
+    descricao_completa: string
+    segmento: string
+    media_pcs_ano: number
+    media_venda_ano: Decimal
+    media_venda_ano_varejo: Decimal
+    media_venda_ano_atacado: Decimal
+    media_venda_ano_site: Decimal
+    venda_dia_loja: Decimal
+    venda_dia_anterior_loja: Decimal
+    venda_mes_loja: Decimal
+    venda_mes_anterior_loja: Decimal
+    venda_dia_atacado: Decimal
+    venda_dia_anterior_atacado: Decimal
+    ind_venda_dia_atacado: number
+    dif_venda_dia_atacado: Decimal
+    venda_dia_varejo: Decimal
+    venda_dia_anterior_varejo: Decimal
+    ind_venda_dia_varejo: number
+    dif_venda_dia_varejo: Decimal
+    venda_dia_ecommerce: Decimal
+    ind_venda_dia_ecommerce: number
+    dif_venda_dia_ecommerce: Decimal
+    venda_dia: Decimal
+    venda_dia_anterior: Decimal
+    ind_venda_dia: number
+    dif_venda_dia: Decimal
+    venda_mes_atacado: Decimal
+    venda_mes_anterior_atacado: Decimal
+    ind_venda_mes_atacado: number
+    dif_venda_mes_atacado: Decimal
+    venda_mes_varejo: Decimal
+    venda_mes_anterior_varejo: Decimal
+    ind_venda_mes_varejo: number
+    dif_venda_mes_varejo: Decimal
+    venda_mes_ecommerce: Decimal
+    venda_mes_anterior_ecommerce: Decimal
+    ind_venda_mes_ecommerce: number
+    dif_venda_mes_ecommerce: Decimal
+    venda_mes: Decimal
+    venda_mes_anterior: Decimal
+    ind_venda_mes: number
+    dif_venda_mes: Decimal
+    quant_pcs_mes_atacado: number
+    quant_pcs_mes_anterior_atacado: number
+    ind_quant_pcs_mes_atacado: number
+    dif_quant_pcs_mes_atacado: number
+    quant_pcs_mes_varejo: number
+    quant_pcs_mes_anterior_varejo: number
+    ind_quant_pcs_mes_varejo: number
+    dif_quant_pcs_mes_varejo: number
+    quant_pcs_mes_ecommerce: number
+    quant_pcs_mes_anterior_ecommerce: number
+    ind_quant_pcs_mes_ecommerce: number
+    dif_quant_pcs_mes_ecommerce: number
+    quant_pcs_mes: number
+    quant_pcs_mes_anterior: number
+    ind_quant_pcs_mes: number
+    dif_quant_pcs_mes: number
+    pm_atacado: Decimal
+    pm_varejo: Decimal
+    pm_ecommerce: Decimal
+    meta: Decimal
+    ultima_atualizacao: string
+    _count: VW_APP_VENDAS_LOJAS_NEWCountAggregateOutputType | null
+    _avg: VW_APP_VENDAS_LOJAS_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_VENDAS_LOJAS_NEWSumAggregateOutputType | null
+    _min: VW_APP_VENDAS_LOJAS_NEWMinAggregateOutputType | null
+    _max: VW_APP_VENDAS_LOJAS_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_VENDAS_LOJAS_NEWGroupByPayload<T extends VW_APP_VENDAS_LOJAS_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_VENDAS_LOJAS_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_VENDAS_LOJAS_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_VENDAS_LOJAS_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_VENDAS_LOJAS_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    loja?: boolean
+    descricao?: boolean
+    descricao_completa?: boolean
+    segmento?: boolean
+    media_pcs_ano?: boolean
+    media_venda_ano?: boolean
+    media_venda_ano_varejo?: boolean
+    media_venda_ano_atacado?: boolean
+    media_venda_ano_site?: boolean
+    venda_dia_loja?: boolean
+    venda_dia_anterior_loja?: boolean
+    venda_mes_loja?: boolean
+    venda_mes_anterior_loja?: boolean
+    venda_dia_atacado?: boolean
+    venda_dia_anterior_atacado?: boolean
+    ind_venda_dia_atacado?: boolean
+    dif_venda_dia_atacado?: boolean
+    venda_dia_varejo?: boolean
+    venda_dia_anterior_varejo?: boolean
+    ind_venda_dia_varejo?: boolean
+    dif_venda_dia_varejo?: boolean
+    venda_dia_ecommerce?: boolean
+    ind_venda_dia_ecommerce?: boolean
+    dif_venda_dia_ecommerce?: boolean
+    venda_dia?: boolean
+    venda_dia_anterior?: boolean
+    ind_venda_dia?: boolean
+    dif_venda_dia?: boolean
+    venda_mes_atacado?: boolean
+    venda_mes_anterior_atacado?: boolean
+    ind_venda_mes_atacado?: boolean
+    dif_venda_mes_atacado?: boolean
+    venda_mes_varejo?: boolean
+    venda_mes_anterior_varejo?: boolean
+    ind_venda_mes_varejo?: boolean
+    dif_venda_mes_varejo?: boolean
+    venda_mes_ecommerce?: boolean
+    venda_mes_anterior_ecommerce?: boolean
+    ind_venda_mes_ecommerce?: boolean
+    dif_venda_mes_ecommerce?: boolean
+    venda_mes?: boolean
+    venda_mes_anterior?: boolean
+    ind_venda_mes?: boolean
+    dif_venda_mes?: boolean
+    quant_pcs_mes_atacado?: boolean
+    quant_pcs_mes_anterior_atacado?: boolean
+    ind_quant_pcs_mes_atacado?: boolean
+    dif_quant_pcs_mes_atacado?: boolean
+    quant_pcs_mes_varejo?: boolean
+    quant_pcs_mes_anterior_varejo?: boolean
+    ind_quant_pcs_mes_varejo?: boolean
+    dif_quant_pcs_mes_varejo?: boolean
+    quant_pcs_mes_ecommerce?: boolean
+    quant_pcs_mes_anterior_ecommerce?: boolean
+    ind_quant_pcs_mes_ecommerce?: boolean
+    dif_quant_pcs_mes_ecommerce?: boolean
+    quant_pcs_mes?: boolean
+    quant_pcs_mes_anterior?: boolean
+    ind_quant_pcs_mes?: boolean
+    dif_quant_pcs_mes?: boolean
+    pm_atacado?: boolean
+    pm_varejo?: boolean
+    pm_ecommerce?: boolean
+    meta?: boolean
+    ultima_atualizacao?: boolean
+  }, ExtArgs["result"]["vW_APP_VENDAS_LOJAS_NEW"]>
+
+  export type VW_APP_VENDAS_LOJAS_NEWSelectScalar = {
+    key?: boolean
+    loja?: boolean
+    descricao?: boolean
+    descricao_completa?: boolean
+    segmento?: boolean
+    media_pcs_ano?: boolean
+    media_venda_ano?: boolean
+    media_venda_ano_varejo?: boolean
+    media_venda_ano_atacado?: boolean
+    media_venda_ano_site?: boolean
+    venda_dia_loja?: boolean
+    venda_dia_anterior_loja?: boolean
+    venda_mes_loja?: boolean
+    venda_mes_anterior_loja?: boolean
+    venda_dia_atacado?: boolean
+    venda_dia_anterior_atacado?: boolean
+    ind_venda_dia_atacado?: boolean
+    dif_venda_dia_atacado?: boolean
+    venda_dia_varejo?: boolean
+    venda_dia_anterior_varejo?: boolean
+    ind_venda_dia_varejo?: boolean
+    dif_venda_dia_varejo?: boolean
+    venda_dia_ecommerce?: boolean
+    ind_venda_dia_ecommerce?: boolean
+    dif_venda_dia_ecommerce?: boolean
+    venda_dia?: boolean
+    venda_dia_anterior?: boolean
+    ind_venda_dia?: boolean
+    dif_venda_dia?: boolean
+    venda_mes_atacado?: boolean
+    venda_mes_anterior_atacado?: boolean
+    ind_venda_mes_atacado?: boolean
+    dif_venda_mes_atacado?: boolean
+    venda_mes_varejo?: boolean
+    venda_mes_anterior_varejo?: boolean
+    ind_venda_mes_varejo?: boolean
+    dif_venda_mes_varejo?: boolean
+    venda_mes_ecommerce?: boolean
+    venda_mes_anterior_ecommerce?: boolean
+    ind_venda_mes_ecommerce?: boolean
+    dif_venda_mes_ecommerce?: boolean
+    venda_mes?: boolean
+    venda_mes_anterior?: boolean
+    ind_venda_mes?: boolean
+    dif_venda_mes?: boolean
+    quant_pcs_mes_atacado?: boolean
+    quant_pcs_mes_anterior_atacado?: boolean
+    ind_quant_pcs_mes_atacado?: boolean
+    dif_quant_pcs_mes_atacado?: boolean
+    quant_pcs_mes_varejo?: boolean
+    quant_pcs_mes_anterior_varejo?: boolean
+    ind_quant_pcs_mes_varejo?: boolean
+    dif_quant_pcs_mes_varejo?: boolean
+    quant_pcs_mes_ecommerce?: boolean
+    quant_pcs_mes_anterior_ecommerce?: boolean
+    ind_quant_pcs_mes_ecommerce?: boolean
+    dif_quant_pcs_mes_ecommerce?: boolean
+    quant_pcs_mes?: boolean
+    quant_pcs_mes_anterior?: boolean
+    ind_quant_pcs_mes?: boolean
+    dif_quant_pcs_mes?: boolean
+    pm_atacado?: boolean
+    pm_varejo?: boolean
+    pm_ecommerce?: boolean
+    meta?: boolean
+    ultima_atualizacao?: boolean
+  }
+
+
+
+  export type $VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_VENDAS_LOJAS_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      loja: number
+      descricao: string
+      descricao_completa: string
+      segmento: string
+      media_pcs_ano: number
+      media_venda_ano: Prisma.Decimal
+      media_venda_ano_varejo: Prisma.Decimal
+      media_venda_ano_atacado: Prisma.Decimal
+      media_venda_ano_site: Prisma.Decimal
+      venda_dia_loja: Prisma.Decimal
+      venda_dia_anterior_loja: Prisma.Decimal
+      venda_mes_loja: Prisma.Decimal
+      venda_mes_anterior_loja: Prisma.Decimal
+      venda_dia_atacado: Prisma.Decimal
+      venda_dia_anterior_atacado: Prisma.Decimal
+      ind_venda_dia_atacado: number
+      dif_venda_dia_atacado: Prisma.Decimal
+      venda_dia_varejo: Prisma.Decimal
+      venda_dia_anterior_varejo: Prisma.Decimal
+      ind_venda_dia_varejo: number
+      dif_venda_dia_varejo: Prisma.Decimal
+      venda_dia_ecommerce: Prisma.Decimal
+      ind_venda_dia_ecommerce: number
+      dif_venda_dia_ecommerce: Prisma.Decimal
+      venda_dia: Prisma.Decimal
+      venda_dia_anterior: Prisma.Decimal
+      ind_venda_dia: number
+      dif_venda_dia: Prisma.Decimal
+      venda_mes_atacado: Prisma.Decimal
+      venda_mes_anterior_atacado: Prisma.Decimal
+      ind_venda_mes_atacado: number
+      dif_venda_mes_atacado: Prisma.Decimal
+      venda_mes_varejo: Prisma.Decimal
+      venda_mes_anterior_varejo: Prisma.Decimal
+      ind_venda_mes_varejo: number
+      dif_venda_mes_varejo: Prisma.Decimal
+      venda_mes_ecommerce: Prisma.Decimal
+      venda_mes_anterior_ecommerce: Prisma.Decimal
+      ind_venda_mes_ecommerce: number
+      dif_venda_mes_ecommerce: Prisma.Decimal
+      venda_mes: Prisma.Decimal
+      venda_mes_anterior: Prisma.Decimal
+      ind_venda_mes: number
+      dif_venda_mes: Prisma.Decimal
+      quant_pcs_mes_atacado: number
+      quant_pcs_mes_anterior_atacado: number
+      ind_quant_pcs_mes_atacado: number
+      dif_quant_pcs_mes_atacado: number
+      quant_pcs_mes_varejo: number
+      quant_pcs_mes_anterior_varejo: number
+      ind_quant_pcs_mes_varejo: number
+      dif_quant_pcs_mes_varejo: number
+      quant_pcs_mes_ecommerce: number
+      quant_pcs_mes_anterior_ecommerce: number
+      ind_quant_pcs_mes_ecommerce: number
+      dif_quant_pcs_mes_ecommerce: number
+      quant_pcs_mes: number
+      quant_pcs_mes_anterior: number
+      ind_quant_pcs_mes: number
+      dif_quant_pcs_mes: number
+      pm_atacado: Prisma.Decimal
+      pm_varejo: Prisma.Decimal
+      pm_ecommerce: Prisma.Decimal
+      meta: Prisma.Decimal
+      ultima_atualizacao: string
+    }, ExtArgs["result"]["vW_APP_VENDAS_LOJAS_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_VENDAS_LOJAS_NEWGetPayload<S extends boolean | null | undefined | VW_APP_VENDAS_LOJAS_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload, S>
+
+  type VW_APP_VENDAS_LOJAS_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_VENDAS_LOJAS_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_VENDAS_LOJAS_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_VENDAS_LOJAS_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_VENDAS_LOJAS_NEW'], meta: { name: 'VW_APP_VENDAS_LOJAS_NEW' } }
+    /**
+     * Find zero or one VW_APP_VENDAS_LOJAS_NEW that matches the filter.
+     * @param {VW_APP_VENDAS_LOJAS_NEWFindUniqueArgs} args - Arguments to find a VW_APP_VENDAS_LOJAS_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_LOJAS_NEW
+     * const vW_APP_VENDAS_LOJAS_NEW = await prisma.vW_APP_VENDAS_LOJAS_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_VENDAS_LOJAS_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_VENDAS_LOJAS_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_VENDAS_LOJAS_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_VENDAS_LOJAS_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_LOJAS_NEW
+     * const vW_APP_VENDAS_LOJAS_NEW = await prisma.vW_APP_VENDAS_LOJAS_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_VENDAS_LOJAS_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_VENDAS_LOJAS_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_LOJAS_NEWFindFirstArgs} args - Arguments to find a VW_APP_VENDAS_LOJAS_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_LOJAS_NEW
+     * const vW_APP_VENDAS_LOJAS_NEW = await prisma.vW_APP_VENDAS_LOJAS_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_VENDAS_LOJAS_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_VENDAS_LOJAS_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_LOJAS_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_VENDAS_LOJAS_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_LOJAS_NEW
+     * const vW_APP_VENDAS_LOJAS_NEW = await prisma.vW_APP_VENDAS_LOJAS_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_VENDAS_LOJAS_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_VENDAS_LOJAS_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_LOJAS_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_VENDAS_LOJAS_NEWS
+     * const vW_APP_VENDAS_LOJAS_NEWS = await prisma.vW_APP_VENDAS_LOJAS_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_VENDAS_LOJAS_NEWS
+     * const vW_APP_VENDAS_LOJAS_NEWS = await prisma.vW_APP_VENDAS_LOJAS_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_VENDAS_LOJAS_NEWWithKeyOnly = await prisma.vW_APP_VENDAS_LOJAS_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_VENDAS_LOJAS_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_VENDAS_LOJAS_NEW.
+     * @param {VW_APP_VENDAS_LOJAS_NEWCreateArgs} args - Arguments to create a VW_APP_VENDAS_LOJAS_NEW.
+     * @example
+     * // Create one VW_APP_VENDAS_LOJAS_NEW
+     * const VW_APP_VENDAS_LOJAS_NEW = await prisma.vW_APP_VENDAS_LOJAS_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_VENDAS_LOJAS_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_VENDAS_LOJAS_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_VENDAS_LOJAS_NEWS.
+     * @param {VW_APP_VENDAS_LOJAS_NEWCreateManyArgs} args - Arguments to create many VW_APP_VENDAS_LOJAS_NEWS.
+     * @example
+     * // Create many VW_APP_VENDAS_LOJAS_NEWS
+     * const vW_APP_VENDAS_LOJAS_NEW = await prisma.vW_APP_VENDAS_LOJAS_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_VENDAS_LOJAS_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_VENDAS_LOJAS_NEW.
+     * @param {VW_APP_VENDAS_LOJAS_NEWDeleteArgs} args - Arguments to delete one VW_APP_VENDAS_LOJAS_NEW.
+     * @example
+     * // Delete one VW_APP_VENDAS_LOJAS_NEW
+     * const VW_APP_VENDAS_LOJAS_NEW = await prisma.vW_APP_VENDAS_LOJAS_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_VENDAS_LOJAS_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_VENDAS_LOJAS_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_VENDAS_LOJAS_NEW.
+     * @param {VW_APP_VENDAS_LOJAS_NEWUpdateArgs} args - Arguments to update one VW_APP_VENDAS_LOJAS_NEW.
+     * @example
+     * // Update one VW_APP_VENDAS_LOJAS_NEW
+     * const vW_APP_VENDAS_LOJAS_NEW = await prisma.vW_APP_VENDAS_LOJAS_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_VENDAS_LOJAS_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_VENDAS_LOJAS_NEWS.
+     * @param {VW_APP_VENDAS_LOJAS_NEWDeleteManyArgs} args - Arguments to filter VW_APP_VENDAS_LOJAS_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_VENDAS_LOJAS_NEWS
+     * const { count } = await prisma.vW_APP_VENDAS_LOJAS_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_VENDAS_LOJAS_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_VENDAS_LOJAS_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_LOJAS_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_VENDAS_LOJAS_NEWS
+     * const vW_APP_VENDAS_LOJAS_NEW = await prisma.vW_APP_VENDAS_LOJAS_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_VENDAS_LOJAS_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_VENDAS_LOJAS_NEW.
+     * @param {VW_APP_VENDAS_LOJAS_NEWUpsertArgs} args - Arguments to update or create a VW_APP_VENDAS_LOJAS_NEW.
+     * @example
+     * // Update or create a VW_APP_VENDAS_LOJAS_NEW
+     * const vW_APP_VENDAS_LOJAS_NEW = await prisma.vW_APP_VENDAS_LOJAS_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_VENDAS_LOJAS_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_VENDAS_LOJAS_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_VENDAS_LOJAS_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_LOJAS_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_LOJAS_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_VENDAS_LOJAS_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_LOJAS_NEWCountArgs} args - Arguments to filter VW_APP_VENDAS_LOJAS_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_VENDAS_LOJAS_NEWS
+     * const count = await prisma.vW_APP_VENDAS_LOJAS_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_VENDAS_LOJAS_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_VENDAS_LOJAS_NEWCountArgs>(
+      args?: Subset<T, VW_APP_VENDAS_LOJAS_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_VENDAS_LOJAS_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_VENDAS_LOJAS_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_LOJAS_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_VENDAS_LOJAS_NEWAggregateArgs>(args: Subset<T, VW_APP_VENDAS_LOJAS_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_VENDAS_LOJAS_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_VENDAS_LOJAS_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_LOJAS_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_VENDAS_LOJAS_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_VENDAS_LOJAS_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_VENDAS_LOJAS_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_VENDAS_LOJAS_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_VENDAS_LOJAS_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_VENDAS_LOJAS_NEW model
+   */
+  readonly fields: VW_APP_VENDAS_LOJAS_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_VENDAS_LOJAS_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_VENDAS_LOJAS_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_VENDAS_LOJAS_NEW model
+   */ 
+  interface VW_APP_VENDAS_LOJAS_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly loja: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly descricao: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'String'>
+    readonly descricao_completa: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'String'>
+    readonly segmento: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'String'>
+    readonly media_pcs_ano: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly media_venda_ano: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly media_venda_ano_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly media_venda_ano_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly media_venda_ano_site: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_dia_loja: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_dia_anterior_loja: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_mes_loja: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_mes_anterior_loja: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_dia_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_dia_anterior_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly ind_venda_dia_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_venda_dia_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_dia_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_dia_anterior_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly ind_venda_dia_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_venda_dia_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_dia_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly ind_venda_dia_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_venda_dia_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_dia: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_dia_anterior: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly ind_venda_dia: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_venda_dia: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_mes_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_mes_anterior_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly ind_venda_mes_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_venda_mes_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_mes_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_mes_anterior_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly ind_venda_mes_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_venda_mes_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_mes_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_mes_anterior_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly ind_venda_mes_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_venda_mes_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_mes: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_mes_anterior: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly ind_venda_mes: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_venda_mes: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly quant_pcs_mes_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly quant_pcs_mes_anterior_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly ind_quant_pcs_mes_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_quant_pcs_mes_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly quant_pcs_mes_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly quant_pcs_mes_anterior_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly ind_quant_pcs_mes_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_quant_pcs_mes_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly quant_pcs_mes_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly quant_pcs_mes_anterior_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly ind_quant_pcs_mes_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_quant_pcs_mes_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly quant_pcs_mes: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly quant_pcs_mes_anterior: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly ind_quant_pcs_mes: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly dif_quant_pcs_mes: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
+    readonly pm_atacado: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly pm_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly pm_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly meta: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly ultima_atualizacao: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW findUnique
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_LOJAS_NEW
+     */
+    select?: VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_LOJAS_NEW to fetch.
+     */
+    where: VW_APP_VENDAS_LOJAS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW findUniqueOrThrow
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_LOJAS_NEW
+     */
+    select?: VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_LOJAS_NEW to fetch.
+     */
+    where: VW_APP_VENDAS_LOJAS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW findFirst
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_LOJAS_NEW
+     */
+    select?: VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_LOJAS_NEW to fetch.
+     */
+    where?: VW_APP_VENDAS_LOJAS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_LOJAS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_LOJAS_NEWOrderByWithRelationInput | VW_APP_VENDAS_LOJAS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    cursor?: VW_APP_VENDAS_LOJAS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_LOJAS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    distinct?: VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum | VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW findFirstOrThrow
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_LOJAS_NEW
+     */
+    select?: VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_LOJAS_NEW to fetch.
+     */
+    where?: VW_APP_VENDAS_LOJAS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_LOJAS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_LOJAS_NEWOrderByWithRelationInput | VW_APP_VENDAS_LOJAS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    cursor?: VW_APP_VENDAS_LOJAS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_LOJAS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    distinct?: VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum | VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW findMany
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_LOJAS_NEW
+     */
+    select?: VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_LOJAS_NEWS to fetch.
+     */
+    where?: VW_APP_VENDAS_LOJAS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_LOJAS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_LOJAS_NEWOrderByWithRelationInput | VW_APP_VENDAS_LOJAS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    cursor?: VW_APP_VENDAS_LOJAS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_LOJAS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum | VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW create
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_LOJAS_NEW
+     */
+    select?: VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_VENDAS_LOJAS_NEW.
+     */
+    data: XOR<VW_APP_VENDAS_LOJAS_NEWCreateInput, VW_APP_VENDAS_LOJAS_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW createMany
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    data: VW_APP_VENDAS_LOJAS_NEWCreateManyInput | VW_APP_VENDAS_LOJAS_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW update
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_LOJAS_NEW
+     */
+    select?: VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_VENDAS_LOJAS_NEW.
+     */
+    data: XOR<VW_APP_VENDAS_LOJAS_NEWUpdateInput, VW_APP_VENDAS_LOJAS_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_VENDAS_LOJAS_NEW to update.
+     */
+    where: VW_APP_VENDAS_LOJAS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW updateMany
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_VENDAS_LOJAS_NEWS.
+     */
+    data: XOR<VW_APP_VENDAS_LOJAS_NEWUpdateManyMutationInput, VW_APP_VENDAS_LOJAS_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_VENDAS_LOJAS_NEWS to update
+     */
+    where?: VW_APP_VENDAS_LOJAS_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW upsert
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_LOJAS_NEW
+     */
+    select?: VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_VENDAS_LOJAS_NEW to update in case it exists.
+     */
+    where: VW_APP_VENDAS_LOJAS_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_VENDAS_LOJAS_NEW found by the `where` argument doesn't exist, create a new VW_APP_VENDAS_LOJAS_NEW with this data.
+     */
+    create: XOR<VW_APP_VENDAS_LOJAS_NEWCreateInput, VW_APP_VENDAS_LOJAS_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_VENDAS_LOJAS_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_VENDAS_LOJAS_NEWUpdateInput, VW_APP_VENDAS_LOJAS_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW delete
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_LOJAS_NEW
+     */
+    select?: VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_VENDAS_LOJAS_NEW to delete.
+     */
+    where: VW_APP_VENDAS_LOJAS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW deleteMany
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_VENDAS_LOJAS_NEWS to delete
+     */
+    where?: VW_APP_VENDAS_LOJAS_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_VENDAS_LOJAS_NEW without action
+   */
+  export type VW_APP_VENDAS_LOJAS_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_LOJAS_NEW
+     */
+    select?: VW_APP_VENDAS_LOJAS_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
+   * Model VW_APP_VENDAS_CUPONS_NEW
+   */
+
+  export type AggregateVW_APP_VENDAS_CUPONS_NEW = {
+    _count: VW_APP_VENDAS_CUPONS_NEWCountAggregateOutputType | null
+    _avg: VW_APP_VENDAS_CUPONS_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_VENDAS_CUPONS_NEWSumAggregateOutputType | null
+    _min: VW_APP_VENDAS_CUPONS_NEWMinAggregateOutputType | null
+    _max: VW_APP_VENDAS_CUPONS_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWAvgAggregateOutputType = {
+    key: number | null
+    loja: number | null
+    total_venda: Decimal | null
+    total_cupom: Decimal | null
+    perc: number | null
+    total_venda_anterior: Decimal | null
+    total_cupom_anterior: Decimal | null
+    perc_anterior: number | null
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWSumAggregateOutputType = {
+    key: number | null
+    loja: number | null
+    total_venda: Decimal | null
+    total_cupom: Decimal | null
+    perc: number | null
+    total_venda_anterior: Decimal | null
+    total_cupom_anterior: Decimal | null
+    perc_anterior: number | null
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWMinAggregateOutputType = {
+    key: number | null
+    loja: number | null
+    nome_fantasia: string | null
+    total_venda: Decimal | null
+    total_venda_format: string | null
+    total_cupom: Decimal | null
+    total_cupom_format: string | null
+    perc: number | null
+    total_venda_anterior: Decimal | null
+    total_venda_anterior_format: string | null
+    total_cupom_anterior: Decimal | null
+    total_cupom_anterior_format: string | null
+    perc_anterior: number | null
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWMaxAggregateOutputType = {
+    key: number | null
+    loja: number | null
+    nome_fantasia: string | null
+    total_venda: Decimal | null
+    total_venda_format: string | null
+    total_cupom: Decimal | null
+    total_cupom_format: string | null
+    perc: number | null
+    total_venda_anterior: Decimal | null
+    total_venda_anterior_format: string | null
+    total_cupom_anterior: Decimal | null
+    total_cupom_anterior_format: string | null
+    perc_anterior: number | null
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWCountAggregateOutputType = {
+    key: number
+    loja: number
+    nome_fantasia: number
+    total_venda: number
+    total_venda_format: number
+    total_cupom: number
+    total_cupom_format: number
+    perc: number
+    total_venda_anterior: number
+    total_venda_anterior_format: number
+    total_cupom_anterior: number
+    total_cupom_anterior_format: number
+    perc_anterior: number
+    _all: number
+  }
+
+
+  export type VW_APP_VENDAS_CUPONS_NEWAvgAggregateInputType = {
+    key?: true
+    loja?: true
+    total_venda?: true
+    total_cupom?: true
+    perc?: true
+    total_venda_anterior?: true
+    total_cupom_anterior?: true
+    perc_anterior?: true
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWSumAggregateInputType = {
+    key?: true
+    loja?: true
+    total_venda?: true
+    total_cupom?: true
+    perc?: true
+    total_venda_anterior?: true
+    total_cupom_anterior?: true
+    perc_anterior?: true
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWMinAggregateInputType = {
+    key?: true
+    loja?: true
+    nome_fantasia?: true
+    total_venda?: true
+    total_venda_format?: true
+    total_cupom?: true
+    total_cupom_format?: true
+    perc?: true
+    total_venda_anterior?: true
+    total_venda_anterior_format?: true
+    total_cupom_anterior?: true
+    total_cupom_anterior_format?: true
+    perc_anterior?: true
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWMaxAggregateInputType = {
+    key?: true
+    loja?: true
+    nome_fantasia?: true
+    total_venda?: true
+    total_venda_format?: true
+    total_cupom?: true
+    total_cupom_format?: true
+    perc?: true
+    total_venda_anterior?: true
+    total_venda_anterior_format?: true
+    total_cupom_anterior?: true
+    total_cupom_anterior_format?: true
+    perc_anterior?: true
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWCountAggregateInputType = {
+    key?: true
+    loja?: true
+    nome_fantasia?: true
+    total_venda?: true
+    total_venda_format?: true
+    total_cupom?: true
+    total_cupom_format?: true
+    perc?: true
+    total_venda_anterior?: true
+    total_venda_anterior_format?: true
+    total_cupom_anterior?: true
+    total_cupom_anterior_format?: true
+    perc_anterior?: true
+    _all?: true
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_VENDAS_CUPONS_NEW to aggregate.
+     */
+    where?: VW_APP_VENDAS_CUPONS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_CUPONS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_CUPONS_NEWOrderByWithRelationInput | VW_APP_VENDAS_CUPONS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_VENDAS_CUPONS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_CUPONS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_VENDAS_CUPONS_NEWS
+    **/
+    _count?: true | VW_APP_VENDAS_CUPONS_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_VENDAS_CUPONS_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_VENDAS_CUPONS_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_VENDAS_CUPONS_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_VENDAS_CUPONS_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_VENDAS_CUPONS_NEWAggregateType<T extends VW_APP_VENDAS_CUPONS_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_VENDAS_CUPONS_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_VENDAS_CUPONS_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_VENDAS_CUPONS_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_VENDAS_CUPONS_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_VENDAS_CUPONS_NEWWhereInput
+    orderBy?: VW_APP_VENDAS_CUPONS_NEWOrderByWithAggregationInput | VW_APP_VENDAS_CUPONS_NEWOrderByWithAggregationInput[]
+    by: VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum[] | VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum
+    having?: VW_APP_VENDAS_CUPONS_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_VENDAS_CUPONS_NEWCountAggregateInputType | true
+    _avg?: VW_APP_VENDAS_CUPONS_NEWAvgAggregateInputType
+    _sum?: VW_APP_VENDAS_CUPONS_NEWSumAggregateInputType
+    _min?: VW_APP_VENDAS_CUPONS_NEWMinAggregateInputType
+    _max?: VW_APP_VENDAS_CUPONS_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWGroupByOutputType = {
+    key: number
+    loja: number
+    nome_fantasia: string
+    total_venda: Decimal
+    total_venda_format: string
+    total_cupom: Decimal
+    total_cupom_format: string
+    perc: number
+    total_venda_anterior: Decimal
+    total_venda_anterior_format: string
+    total_cupom_anterior: Decimal
+    total_cupom_anterior_format: string
+    perc_anterior: number
+    _count: VW_APP_VENDAS_CUPONS_NEWCountAggregateOutputType | null
+    _avg: VW_APP_VENDAS_CUPONS_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_VENDAS_CUPONS_NEWSumAggregateOutputType | null
+    _min: VW_APP_VENDAS_CUPONS_NEWMinAggregateOutputType | null
+    _max: VW_APP_VENDAS_CUPONS_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_VENDAS_CUPONS_NEWGroupByPayload<T extends VW_APP_VENDAS_CUPONS_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_VENDAS_CUPONS_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_VENDAS_CUPONS_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_VENDAS_CUPONS_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_VENDAS_CUPONS_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    loja?: boolean
+    nome_fantasia?: boolean
+    total_venda?: boolean
+    total_venda_format?: boolean
+    total_cupom?: boolean
+    total_cupom_format?: boolean
+    perc?: boolean
+    total_venda_anterior?: boolean
+    total_venda_anterior_format?: boolean
+    total_cupom_anterior?: boolean
+    total_cupom_anterior_format?: boolean
+    perc_anterior?: boolean
+  }, ExtArgs["result"]["vW_APP_VENDAS_CUPONS_NEW"]>
+
+  export type VW_APP_VENDAS_CUPONS_NEWSelectScalar = {
+    key?: boolean
+    loja?: boolean
+    nome_fantasia?: boolean
+    total_venda?: boolean
+    total_venda_format?: boolean
+    total_cupom?: boolean
+    total_cupom_format?: boolean
+    perc?: boolean
+    total_venda_anterior?: boolean
+    total_venda_anterior_format?: boolean
+    total_cupom_anterior?: boolean
+    total_cupom_anterior_format?: boolean
+    perc_anterior?: boolean
+  }
+
+
+
+  export type $VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_VENDAS_CUPONS_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      loja: number
+      nome_fantasia: string
+      total_venda: Prisma.Decimal
+      total_venda_format: string
+      total_cupom: Prisma.Decimal
+      total_cupom_format: string
+      perc: number
+      total_venda_anterior: Prisma.Decimal
+      total_venda_anterior_format: string
+      total_cupom_anterior: Prisma.Decimal
+      total_cupom_anterior_format: string
+      perc_anterior: number
+    }, ExtArgs["result"]["vW_APP_VENDAS_CUPONS_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_VENDAS_CUPONS_NEWGetPayload<S extends boolean | null | undefined | VW_APP_VENDAS_CUPONS_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload, S>
+
+  type VW_APP_VENDAS_CUPONS_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_VENDAS_CUPONS_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_VENDAS_CUPONS_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_VENDAS_CUPONS_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_VENDAS_CUPONS_NEW'], meta: { name: 'VW_APP_VENDAS_CUPONS_NEW' } }
+    /**
+     * Find zero or one VW_APP_VENDAS_CUPONS_NEW that matches the filter.
+     * @param {VW_APP_VENDAS_CUPONS_NEWFindUniqueArgs} args - Arguments to find a VW_APP_VENDAS_CUPONS_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_CUPONS_NEW
+     * const vW_APP_VENDAS_CUPONS_NEW = await prisma.vW_APP_VENDAS_CUPONS_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_VENDAS_CUPONS_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_CUPONS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_VENDAS_CUPONS_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_VENDAS_CUPONS_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_VENDAS_CUPONS_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_CUPONS_NEW
+     * const vW_APP_VENDAS_CUPONS_NEW = await prisma.vW_APP_VENDAS_CUPONS_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_VENDAS_CUPONS_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_CUPONS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_VENDAS_CUPONS_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_CUPONS_NEWFindFirstArgs} args - Arguments to find a VW_APP_VENDAS_CUPONS_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_CUPONS_NEW
+     * const vW_APP_VENDAS_CUPONS_NEW = await prisma.vW_APP_VENDAS_CUPONS_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_VENDAS_CUPONS_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_CUPONS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_VENDAS_CUPONS_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_CUPONS_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_VENDAS_CUPONS_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_CUPONS_NEW
+     * const vW_APP_VENDAS_CUPONS_NEW = await prisma.vW_APP_VENDAS_CUPONS_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_VENDAS_CUPONS_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_CUPONS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_VENDAS_CUPONS_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_CUPONS_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_VENDAS_CUPONS_NEWS
+     * const vW_APP_VENDAS_CUPONS_NEWS = await prisma.vW_APP_VENDAS_CUPONS_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_VENDAS_CUPONS_NEWS
+     * const vW_APP_VENDAS_CUPONS_NEWS = await prisma.vW_APP_VENDAS_CUPONS_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_VENDAS_CUPONS_NEWWithKeyOnly = await prisma.vW_APP_VENDAS_CUPONS_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_VENDAS_CUPONS_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_VENDAS_CUPONS_NEW.
+     * @param {VW_APP_VENDAS_CUPONS_NEWCreateArgs} args - Arguments to create a VW_APP_VENDAS_CUPONS_NEW.
+     * @example
+     * // Create one VW_APP_VENDAS_CUPONS_NEW
+     * const VW_APP_VENDAS_CUPONS_NEW = await prisma.vW_APP_VENDAS_CUPONS_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_VENDAS_CUPONS_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_VENDAS_CUPONS_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_CUPONS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_VENDAS_CUPONS_NEWS.
+     * @param {VW_APP_VENDAS_CUPONS_NEWCreateManyArgs} args - Arguments to create many VW_APP_VENDAS_CUPONS_NEWS.
+     * @example
+     * // Create many VW_APP_VENDAS_CUPONS_NEWS
+     * const vW_APP_VENDAS_CUPONS_NEW = await prisma.vW_APP_VENDAS_CUPONS_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_VENDAS_CUPONS_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_VENDAS_CUPONS_NEW.
+     * @param {VW_APP_VENDAS_CUPONS_NEWDeleteArgs} args - Arguments to delete one VW_APP_VENDAS_CUPONS_NEW.
+     * @example
+     * // Delete one VW_APP_VENDAS_CUPONS_NEW
+     * const VW_APP_VENDAS_CUPONS_NEW = await prisma.vW_APP_VENDAS_CUPONS_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_VENDAS_CUPONS_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_VENDAS_CUPONS_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_CUPONS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_VENDAS_CUPONS_NEW.
+     * @param {VW_APP_VENDAS_CUPONS_NEWUpdateArgs} args - Arguments to update one VW_APP_VENDAS_CUPONS_NEW.
+     * @example
+     * // Update one VW_APP_VENDAS_CUPONS_NEW
+     * const vW_APP_VENDAS_CUPONS_NEW = await prisma.vW_APP_VENDAS_CUPONS_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_VENDAS_CUPONS_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_CUPONS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_VENDAS_CUPONS_NEWS.
+     * @param {VW_APP_VENDAS_CUPONS_NEWDeleteManyArgs} args - Arguments to filter VW_APP_VENDAS_CUPONS_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_VENDAS_CUPONS_NEWS
+     * const { count } = await prisma.vW_APP_VENDAS_CUPONS_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_VENDAS_CUPONS_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_VENDAS_CUPONS_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_CUPONS_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_VENDAS_CUPONS_NEWS
+     * const vW_APP_VENDAS_CUPONS_NEW = await prisma.vW_APP_VENDAS_CUPONS_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_VENDAS_CUPONS_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_VENDAS_CUPONS_NEW.
+     * @param {VW_APP_VENDAS_CUPONS_NEWUpsertArgs} args - Arguments to update or create a VW_APP_VENDAS_CUPONS_NEW.
+     * @example
+     * // Update or create a VW_APP_VENDAS_CUPONS_NEW
+     * const vW_APP_VENDAS_CUPONS_NEW = await prisma.vW_APP_VENDAS_CUPONS_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_VENDAS_CUPONS_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_VENDAS_CUPONS_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_VENDAS_CUPONS_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_CUPONS_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_CUPONS_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_VENDAS_CUPONS_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_CUPONS_NEWCountArgs} args - Arguments to filter VW_APP_VENDAS_CUPONS_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_VENDAS_CUPONS_NEWS
+     * const count = await prisma.vW_APP_VENDAS_CUPONS_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_VENDAS_CUPONS_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_VENDAS_CUPONS_NEWCountArgs>(
+      args?: Subset<T, VW_APP_VENDAS_CUPONS_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_VENDAS_CUPONS_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_VENDAS_CUPONS_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_CUPONS_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_VENDAS_CUPONS_NEWAggregateArgs>(args: Subset<T, VW_APP_VENDAS_CUPONS_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_VENDAS_CUPONS_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_VENDAS_CUPONS_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_CUPONS_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_VENDAS_CUPONS_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_VENDAS_CUPONS_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_VENDAS_CUPONS_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_VENDAS_CUPONS_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_VENDAS_CUPONS_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_VENDAS_CUPONS_NEW model
+   */
+  readonly fields: VW_APP_VENDAS_CUPONS_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_VENDAS_CUPONS_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_VENDAS_CUPONS_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_VENDAS_CUPONS_NEW model
+   */ 
+  interface VW_APP_VENDAS_CUPONS_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'Int'>
+    readonly loja: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'Int'>
+    readonly nome_fantasia: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'String'>
+    readonly total_venda: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'Decimal'>
+    readonly total_venda_format: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'String'>
+    readonly total_cupom: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'Decimal'>
+    readonly total_cupom_format: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'String'>
+    readonly perc: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'Int'>
+    readonly total_venda_anterior: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'Decimal'>
+    readonly total_venda_anterior_format: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'String'>
+    readonly total_cupom_anterior: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'Decimal'>
+    readonly total_cupom_anterior_format: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'String'>
+    readonly perc_anterior: FieldRef<"VW_APP_VENDAS_CUPONS_NEW", 'Int'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW findUnique
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_CUPONS_NEW
+     */
+    select?: VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_CUPONS_NEW to fetch.
+     */
+    where: VW_APP_VENDAS_CUPONS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW findUniqueOrThrow
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_CUPONS_NEW
+     */
+    select?: VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_CUPONS_NEW to fetch.
+     */
+    where: VW_APP_VENDAS_CUPONS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW findFirst
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_CUPONS_NEW
+     */
+    select?: VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_CUPONS_NEW to fetch.
+     */
+    where?: VW_APP_VENDAS_CUPONS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_CUPONS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_CUPONS_NEWOrderByWithRelationInput | VW_APP_VENDAS_CUPONS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    cursor?: VW_APP_VENDAS_CUPONS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_CUPONS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    distinct?: VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum | VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW findFirstOrThrow
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_CUPONS_NEW
+     */
+    select?: VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_CUPONS_NEW to fetch.
+     */
+    where?: VW_APP_VENDAS_CUPONS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_CUPONS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_CUPONS_NEWOrderByWithRelationInput | VW_APP_VENDAS_CUPONS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    cursor?: VW_APP_VENDAS_CUPONS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_CUPONS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    distinct?: VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum | VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW findMany
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_CUPONS_NEW
+     */
+    select?: VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_CUPONS_NEWS to fetch.
+     */
+    where?: VW_APP_VENDAS_CUPONS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_CUPONS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_CUPONS_NEWOrderByWithRelationInput | VW_APP_VENDAS_CUPONS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    cursor?: VW_APP_VENDAS_CUPONS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_CUPONS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum | VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW create
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_CUPONS_NEW
+     */
+    select?: VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_VENDAS_CUPONS_NEW.
+     */
+    data: XOR<VW_APP_VENDAS_CUPONS_NEWCreateInput, VW_APP_VENDAS_CUPONS_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW createMany
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    data: VW_APP_VENDAS_CUPONS_NEWCreateManyInput | VW_APP_VENDAS_CUPONS_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW update
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_CUPONS_NEW
+     */
+    select?: VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_VENDAS_CUPONS_NEW.
+     */
+    data: XOR<VW_APP_VENDAS_CUPONS_NEWUpdateInput, VW_APP_VENDAS_CUPONS_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_VENDAS_CUPONS_NEW to update.
+     */
+    where: VW_APP_VENDAS_CUPONS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW updateMany
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_VENDAS_CUPONS_NEWS.
+     */
+    data: XOR<VW_APP_VENDAS_CUPONS_NEWUpdateManyMutationInput, VW_APP_VENDAS_CUPONS_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_VENDAS_CUPONS_NEWS to update
+     */
+    where?: VW_APP_VENDAS_CUPONS_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW upsert
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_CUPONS_NEW
+     */
+    select?: VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_VENDAS_CUPONS_NEW to update in case it exists.
+     */
+    where: VW_APP_VENDAS_CUPONS_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_VENDAS_CUPONS_NEW found by the `where` argument doesn't exist, create a new VW_APP_VENDAS_CUPONS_NEW with this data.
+     */
+    create: XOR<VW_APP_VENDAS_CUPONS_NEWCreateInput, VW_APP_VENDAS_CUPONS_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_VENDAS_CUPONS_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_VENDAS_CUPONS_NEWUpdateInput, VW_APP_VENDAS_CUPONS_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW delete
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_CUPONS_NEW
+     */
+    select?: VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_VENDAS_CUPONS_NEW to delete.
+     */
+    where: VW_APP_VENDAS_CUPONS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW deleteMany
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_VENDAS_CUPONS_NEWS to delete
+     */
+    where?: VW_APP_VENDAS_CUPONS_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_VENDAS_CUPONS_NEW without action
+   */
+  export type VW_APP_VENDAS_CUPONS_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_CUPONS_NEW
+     */
+    select?: VW_APP_VENDAS_CUPONS_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -7207,6 +10182,97 @@ export namespace Prisma {
   };
 
   export type AUTORIZACOES_WEB_BARRAMENTOS_DEVScalarFieldEnum = (typeof AUTORIZACOES_WEB_BARRAMENTOS_DEVScalarFieldEnum)[keyof typeof AUTORIZACOES_WEB_BARRAMENTOS_DEVScalarFieldEnum]
+
+
+  export const VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum: {
+    key: 'key',
+    loja: 'loja',
+    descricao: 'descricao',
+    descricao_completa: 'descricao_completa',
+    segmento: 'segmento',
+    media_pcs_ano: 'media_pcs_ano',
+    media_venda_ano: 'media_venda_ano',
+    media_venda_ano_varejo: 'media_venda_ano_varejo',
+    media_venda_ano_atacado: 'media_venda_ano_atacado',
+    media_venda_ano_site: 'media_venda_ano_site',
+    venda_dia_loja: 'venda_dia_loja',
+    venda_dia_anterior_loja: 'venda_dia_anterior_loja',
+    venda_mes_loja: 'venda_mes_loja',
+    venda_mes_anterior_loja: 'venda_mes_anterior_loja',
+    venda_dia_atacado: 'venda_dia_atacado',
+    venda_dia_anterior_atacado: 'venda_dia_anterior_atacado',
+    ind_venda_dia_atacado: 'ind_venda_dia_atacado',
+    dif_venda_dia_atacado: 'dif_venda_dia_atacado',
+    venda_dia_varejo: 'venda_dia_varejo',
+    venda_dia_anterior_varejo: 'venda_dia_anterior_varejo',
+    ind_venda_dia_varejo: 'ind_venda_dia_varejo',
+    dif_venda_dia_varejo: 'dif_venda_dia_varejo',
+    venda_dia_ecommerce: 'venda_dia_ecommerce',
+    ind_venda_dia_ecommerce: 'ind_venda_dia_ecommerce',
+    dif_venda_dia_ecommerce: 'dif_venda_dia_ecommerce',
+    venda_dia: 'venda_dia',
+    venda_dia_anterior: 'venda_dia_anterior',
+    ind_venda_dia: 'ind_venda_dia',
+    dif_venda_dia: 'dif_venda_dia',
+    venda_mes_atacado: 'venda_mes_atacado',
+    venda_mes_anterior_atacado: 'venda_mes_anterior_atacado',
+    ind_venda_mes_atacado: 'ind_venda_mes_atacado',
+    dif_venda_mes_atacado: 'dif_venda_mes_atacado',
+    venda_mes_varejo: 'venda_mes_varejo',
+    venda_mes_anterior_varejo: 'venda_mes_anterior_varejo',
+    ind_venda_mes_varejo: 'ind_venda_mes_varejo',
+    dif_venda_mes_varejo: 'dif_venda_mes_varejo',
+    venda_mes_ecommerce: 'venda_mes_ecommerce',
+    venda_mes_anterior_ecommerce: 'venda_mes_anterior_ecommerce',
+    ind_venda_mes_ecommerce: 'ind_venda_mes_ecommerce',
+    dif_venda_mes_ecommerce: 'dif_venda_mes_ecommerce',
+    venda_mes: 'venda_mes',
+    venda_mes_anterior: 'venda_mes_anterior',
+    ind_venda_mes: 'ind_venda_mes',
+    dif_venda_mes: 'dif_venda_mes',
+    quant_pcs_mes_atacado: 'quant_pcs_mes_atacado',
+    quant_pcs_mes_anterior_atacado: 'quant_pcs_mes_anterior_atacado',
+    ind_quant_pcs_mes_atacado: 'ind_quant_pcs_mes_atacado',
+    dif_quant_pcs_mes_atacado: 'dif_quant_pcs_mes_atacado',
+    quant_pcs_mes_varejo: 'quant_pcs_mes_varejo',
+    quant_pcs_mes_anterior_varejo: 'quant_pcs_mes_anterior_varejo',
+    ind_quant_pcs_mes_varejo: 'ind_quant_pcs_mes_varejo',
+    dif_quant_pcs_mes_varejo: 'dif_quant_pcs_mes_varejo',
+    quant_pcs_mes_ecommerce: 'quant_pcs_mes_ecommerce',
+    quant_pcs_mes_anterior_ecommerce: 'quant_pcs_mes_anterior_ecommerce',
+    ind_quant_pcs_mes_ecommerce: 'ind_quant_pcs_mes_ecommerce',
+    dif_quant_pcs_mes_ecommerce: 'dif_quant_pcs_mes_ecommerce',
+    quant_pcs_mes: 'quant_pcs_mes',
+    quant_pcs_mes_anterior: 'quant_pcs_mes_anterior',
+    ind_quant_pcs_mes: 'ind_quant_pcs_mes',
+    dif_quant_pcs_mes: 'dif_quant_pcs_mes',
+    pm_atacado: 'pm_atacado',
+    pm_varejo: 'pm_varejo',
+    pm_ecommerce: 'pm_ecommerce',
+    meta: 'meta',
+    ultima_atualizacao: 'ultima_atualizacao'
+  };
+
+  export type VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum = (typeof VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum)[keyof typeof VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum]
+
+
+  export const VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum: {
+    key: 'key',
+    loja: 'loja',
+    nome_fantasia: 'nome_fantasia',
+    total_venda: 'total_venda',
+    total_venda_format: 'total_venda_format',
+    total_cupom: 'total_cupom',
+    total_cupom_format: 'total_cupom_format',
+    perc: 'perc',
+    total_venda_anterior: 'total_venda_anterior',
+    total_venda_anterior_format: 'total_venda_anterior_format',
+    total_cupom_anterior: 'total_cupom_anterior',
+    total_cupom_anterior_format: 'total_cupom_anterior_format',
+    perc_anterior: 'perc_anterior'
+  };
+
+  export type VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum = (typeof VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum)[keyof typeof VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -7755,6 +10821,459 @@ export namespace Prisma {
     mensagem?: StringNullableWithAggregatesFilter<"AUTORIZACOES_WEB_BARRAMENTOS_DEV"> | string | null
     data_hora_mensagem?: DateTimeNullableWithAggregatesFilter<"AUTORIZACOES_WEB_BARRAMENTOS_DEV"> | Date | string | null
     usuario?: IntWithAggregatesFilter<"AUTORIZACOES_WEB_BARRAMENTOS_DEV"> | number
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWWhereInput = {
+    AND?: VW_APP_VENDAS_LOJAS_NEWWhereInput | VW_APP_VENDAS_LOJAS_NEWWhereInput[]
+    OR?: VW_APP_VENDAS_LOJAS_NEWWhereInput[]
+    NOT?: VW_APP_VENDAS_LOJAS_NEWWhereInput | VW_APP_VENDAS_LOJAS_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    loja?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    descricao?: StringFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+    descricao_completa?: StringFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+    segmento?: StringFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+    media_pcs_ano?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    media_venda_ano?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    media_venda_ano_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    media_venda_ano_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    media_venda_ano_site?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_loja?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_loja?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_loja?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_loja?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    quant_pcs_mes_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    pm_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    pm_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    pm_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    meta?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    descricao?: SortOrder
+    descricao_completa?: SortOrder
+    segmento?: SortOrder
+    media_pcs_ano?: SortOrder
+    media_venda_ano?: SortOrder
+    media_venda_ano_varejo?: SortOrder
+    media_venda_ano_atacado?: SortOrder
+    media_venda_ano_site?: SortOrder
+    venda_dia_loja?: SortOrder
+    venda_dia_anterior_loja?: SortOrder
+    venda_mes_loja?: SortOrder
+    venda_mes_anterior_loja?: SortOrder
+    venda_dia_atacado?: SortOrder
+    venda_dia_anterior_atacado?: SortOrder
+    ind_venda_dia_atacado?: SortOrder
+    dif_venda_dia_atacado?: SortOrder
+    venda_dia_varejo?: SortOrder
+    venda_dia_anterior_varejo?: SortOrder
+    ind_venda_dia_varejo?: SortOrder
+    dif_venda_dia_varejo?: SortOrder
+    venda_dia_ecommerce?: SortOrder
+    ind_venda_dia_ecommerce?: SortOrder
+    dif_venda_dia_ecommerce?: SortOrder
+    venda_dia?: SortOrder
+    venda_dia_anterior?: SortOrder
+    ind_venda_dia?: SortOrder
+    dif_venda_dia?: SortOrder
+    venda_mes_atacado?: SortOrder
+    venda_mes_anterior_atacado?: SortOrder
+    ind_venda_mes_atacado?: SortOrder
+    dif_venda_mes_atacado?: SortOrder
+    venda_mes_varejo?: SortOrder
+    venda_mes_anterior_varejo?: SortOrder
+    ind_venda_mes_varejo?: SortOrder
+    dif_venda_mes_varejo?: SortOrder
+    venda_mes_ecommerce?: SortOrder
+    venda_mes_anterior_ecommerce?: SortOrder
+    ind_venda_mes_ecommerce?: SortOrder
+    dif_venda_mes_ecommerce?: SortOrder
+    venda_mes?: SortOrder
+    venda_mes_anterior?: SortOrder
+    ind_venda_mes?: SortOrder
+    dif_venda_mes?: SortOrder
+    quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_anterior_atacado?: SortOrder
+    ind_quant_pcs_mes_atacado?: SortOrder
+    dif_quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_anterior_varejo?: SortOrder
+    ind_quant_pcs_mes_varejo?: SortOrder
+    dif_quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes_anterior_ecommerce?: SortOrder
+    ind_quant_pcs_mes_ecommerce?: SortOrder
+    dif_quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes?: SortOrder
+    quant_pcs_mes_anterior?: SortOrder
+    ind_quant_pcs_mes?: SortOrder
+    dif_quant_pcs_mes?: SortOrder
+    pm_atacado?: SortOrder
+    pm_varejo?: SortOrder
+    pm_ecommerce?: SortOrder
+    meta?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_VENDAS_LOJAS_NEWWhereInput | VW_APP_VENDAS_LOJAS_NEWWhereInput[]
+    OR?: VW_APP_VENDAS_LOJAS_NEWWhereInput[]
+    NOT?: VW_APP_VENDAS_LOJAS_NEWWhereInput | VW_APP_VENDAS_LOJAS_NEWWhereInput[]
+    loja?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    descricao?: StringFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+    descricao_completa?: StringFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+    segmento?: StringFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+    media_pcs_ano?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    media_venda_ano?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    media_venda_ano_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    media_venda_ano_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    media_venda_ano_site?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_loja?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_loja?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_loja?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_loja?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    quant_pcs_mes_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes_atacado?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    pm_atacado?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    pm_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    pm_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    meta?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+  }, "key">
+
+  export type VW_APP_VENDAS_LOJAS_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    descricao?: SortOrder
+    descricao_completa?: SortOrder
+    segmento?: SortOrder
+    media_pcs_ano?: SortOrder
+    media_venda_ano?: SortOrder
+    media_venda_ano_varejo?: SortOrder
+    media_venda_ano_atacado?: SortOrder
+    media_venda_ano_site?: SortOrder
+    venda_dia_loja?: SortOrder
+    venda_dia_anterior_loja?: SortOrder
+    venda_mes_loja?: SortOrder
+    venda_mes_anterior_loja?: SortOrder
+    venda_dia_atacado?: SortOrder
+    venda_dia_anterior_atacado?: SortOrder
+    ind_venda_dia_atacado?: SortOrder
+    dif_venda_dia_atacado?: SortOrder
+    venda_dia_varejo?: SortOrder
+    venda_dia_anterior_varejo?: SortOrder
+    ind_venda_dia_varejo?: SortOrder
+    dif_venda_dia_varejo?: SortOrder
+    venda_dia_ecommerce?: SortOrder
+    ind_venda_dia_ecommerce?: SortOrder
+    dif_venda_dia_ecommerce?: SortOrder
+    venda_dia?: SortOrder
+    venda_dia_anterior?: SortOrder
+    ind_venda_dia?: SortOrder
+    dif_venda_dia?: SortOrder
+    venda_mes_atacado?: SortOrder
+    venda_mes_anterior_atacado?: SortOrder
+    ind_venda_mes_atacado?: SortOrder
+    dif_venda_mes_atacado?: SortOrder
+    venda_mes_varejo?: SortOrder
+    venda_mes_anterior_varejo?: SortOrder
+    ind_venda_mes_varejo?: SortOrder
+    dif_venda_mes_varejo?: SortOrder
+    venda_mes_ecommerce?: SortOrder
+    venda_mes_anterior_ecommerce?: SortOrder
+    ind_venda_mes_ecommerce?: SortOrder
+    dif_venda_mes_ecommerce?: SortOrder
+    venda_mes?: SortOrder
+    venda_mes_anterior?: SortOrder
+    ind_venda_mes?: SortOrder
+    dif_venda_mes?: SortOrder
+    quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_anterior_atacado?: SortOrder
+    ind_quant_pcs_mes_atacado?: SortOrder
+    dif_quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_anterior_varejo?: SortOrder
+    ind_quant_pcs_mes_varejo?: SortOrder
+    dif_quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes_anterior_ecommerce?: SortOrder
+    ind_quant_pcs_mes_ecommerce?: SortOrder
+    dif_quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes?: SortOrder
+    quant_pcs_mes_anterior?: SortOrder
+    ind_quant_pcs_mes?: SortOrder
+    dif_quant_pcs_mes?: SortOrder
+    pm_atacado?: SortOrder
+    pm_varejo?: SortOrder
+    pm_ecommerce?: SortOrder
+    meta?: SortOrder
+    ultima_atualizacao?: SortOrder
+    _count?: VW_APP_VENDAS_LOJAS_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_VENDAS_LOJAS_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_VENDAS_LOJAS_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_VENDAS_LOJAS_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_VENDAS_LOJAS_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_VENDAS_LOJAS_NEWScalarWhereWithAggregatesInput | VW_APP_VENDAS_LOJAS_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_VENDAS_LOJAS_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_VENDAS_LOJAS_NEWScalarWhereWithAggregatesInput | VW_APP_VENDAS_LOJAS_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    loja?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    descricao?: StringWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+    descricao_completa?: StringWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+    segmento?: StringWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+    media_pcs_ano?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    media_venda_ano?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    media_venda_ano_varejo?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    media_venda_ano_atacado?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    media_venda_ano_site?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_loja?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_loja?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_loja?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_loja?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_atacado?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_atacado?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_atacado?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia_atacado?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_varejo?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_varejo?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_varejo?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia_varejo?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_ecommerce?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_ecommerce?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia_ecommerce?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_dia?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_dia?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_atacado?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_atacado?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_atacado?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes_atacado?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_varejo?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_varejo?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_varejo?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes_varejo?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_ecommerce?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_ecommerce?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_ecommerce?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes_ecommerce?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_mes?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_venda_mes?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    quant_pcs_mes_atacado?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior_atacado?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes_atacado?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes_atacado?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_varejo?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior_varejo?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes_varejo?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes_varejo?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_ecommerce?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior_ecommerce?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes_ecommerce?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes_ecommerce?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    quant_pcs_mes_anterior?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    ind_quant_pcs_mes?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    dif_quant_pcs_mes?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
+    pm_atacado?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    pm_varejo?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    pm_ecommerce?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    meta?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | string
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWWhereInput = {
+    AND?: VW_APP_VENDAS_CUPONS_NEWWhereInput | VW_APP_VENDAS_CUPONS_NEWWhereInput[]
+    OR?: VW_APP_VENDAS_CUPONS_NEWWhereInput[]
+    NOT?: VW_APP_VENDAS_CUPONS_NEWWhereInput | VW_APP_VENDAS_CUPONS_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+    loja?: IntFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+    nome_fantasia?: StringFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    total_venda?: DecimalFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_venda_format?: StringFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    total_cupom?: DecimalFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_cupom_format?: StringFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    perc?: IntFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+    total_venda_anterior?: DecimalFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_venda_anterior_format?: StringFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    total_cupom_anterior?: DecimalFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_cupom_anterior_format?: StringFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    perc_anterior?: IntFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    nome_fantasia?: SortOrder
+    total_venda?: SortOrder
+    total_venda_format?: SortOrder
+    total_cupom?: SortOrder
+    total_cupom_format?: SortOrder
+    perc?: SortOrder
+    total_venda_anterior?: SortOrder
+    total_venda_anterior_format?: SortOrder
+    total_cupom_anterior?: SortOrder
+    total_cupom_anterior_format?: SortOrder
+    perc_anterior?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_VENDAS_CUPONS_NEWWhereInput | VW_APP_VENDAS_CUPONS_NEWWhereInput[]
+    OR?: VW_APP_VENDAS_CUPONS_NEWWhereInput[]
+    NOT?: VW_APP_VENDAS_CUPONS_NEWWhereInput | VW_APP_VENDAS_CUPONS_NEWWhereInput[]
+    loja?: IntFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+    nome_fantasia?: StringFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    total_venda?: DecimalFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_venda_format?: StringFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    total_cupom?: DecimalFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_cupom_format?: StringFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    perc?: IntFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+    total_venda_anterior?: DecimalFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_venda_anterior_format?: StringFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    total_cupom_anterior?: DecimalFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_cupom_anterior_format?: StringFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    perc_anterior?: IntFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+  }, "key">
+
+  export type VW_APP_VENDAS_CUPONS_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    nome_fantasia?: SortOrder
+    total_venda?: SortOrder
+    total_venda_format?: SortOrder
+    total_cupom?: SortOrder
+    total_cupom_format?: SortOrder
+    perc?: SortOrder
+    total_venda_anterior?: SortOrder
+    total_venda_anterior_format?: SortOrder
+    total_cupom_anterior?: SortOrder
+    total_cupom_anterior_format?: SortOrder
+    perc_anterior?: SortOrder
+    _count?: VW_APP_VENDAS_CUPONS_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_VENDAS_CUPONS_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_VENDAS_CUPONS_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_VENDAS_CUPONS_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_VENDAS_CUPONS_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_VENDAS_CUPONS_NEWScalarWhereWithAggregatesInput | VW_APP_VENDAS_CUPONS_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_VENDAS_CUPONS_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_VENDAS_CUPONS_NEWScalarWhereWithAggregatesInput | VW_APP_VENDAS_CUPONS_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+    loja?: IntWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+    nome_fantasia?: StringWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    total_venda?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_venda_format?: StringWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    total_cupom?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_cupom_format?: StringWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    perc?: IntWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+    total_venda_anterior?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_venda_anterior_format?: StringWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    total_cupom_anterior?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
+    total_cupom_anterior_format?: StringWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
+    perc_anterior?: IntWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
   }
 
   export type VW_AUTORIZACOES_WEB_DEVCreateInput = {
@@ -8320,6 +11839,601 @@ export namespace Prisma {
     usuario?: IntFieldUpdateOperationsInput | number
   }
 
+  export type VW_APP_VENDAS_LOJAS_NEWCreateInput = {
+    key: number
+    loja: number
+    descricao: string
+    descricao_completa: string
+    segmento: string
+    media_pcs_ano: number
+    media_venda_ano: Decimal | DecimalJsLike | number | string
+    media_venda_ano_varejo: Decimal | DecimalJsLike | number | string
+    media_venda_ano_atacado: Decimal | DecimalJsLike | number | string
+    media_venda_ano_site: Decimal | DecimalJsLike | number | string
+    venda_dia_loja: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_loja: Decimal | DecimalJsLike | number | string
+    venda_mes_loja: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_loja: Decimal | DecimalJsLike | number | string
+    venda_dia_atacado: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_atacado: Decimal | DecimalJsLike | number | string
+    ind_venda_dia_atacado: number
+    dif_venda_dia_atacado: Decimal | DecimalJsLike | number | string
+    venda_dia_varejo: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_varejo: Decimal | DecimalJsLike | number | string
+    ind_venda_dia_varejo: number
+    dif_venda_dia_varejo: Decimal | DecimalJsLike | number | string
+    venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
+    ind_venda_dia_ecommerce: number
+    dif_venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_dia: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_dia: number
+    dif_venda_dia: Decimal | DecimalJsLike | number | string
+    venda_mes_atacado: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_atacado: Decimal | DecimalJsLike | number | string
+    ind_venda_mes_atacado: number
+    dif_venda_mes_atacado: Decimal | DecimalJsLike | number | string
+    venda_mes_varejo: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_varejo: Decimal | DecimalJsLike | number | string
+    ind_venda_mes_varejo: number
+    dif_venda_mes_varejo: Decimal | DecimalJsLike | number | string
+    venda_mes_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_ecommerce: Decimal | DecimalJsLike | number | string
+    ind_venda_mes_ecommerce: number
+    dif_venda_mes_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_mes: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_mes: number
+    dif_venda_mes: Decimal | DecimalJsLike | number | string
+    quant_pcs_mes_atacado: number
+    quant_pcs_mes_anterior_atacado: number
+    ind_quant_pcs_mes_atacado: number
+    dif_quant_pcs_mes_atacado: number
+    quant_pcs_mes_varejo: number
+    quant_pcs_mes_anterior_varejo: number
+    ind_quant_pcs_mes_varejo: number
+    dif_quant_pcs_mes_varejo: number
+    quant_pcs_mes_ecommerce: number
+    quant_pcs_mes_anterior_ecommerce: number
+    ind_quant_pcs_mes_ecommerce: number
+    dif_quant_pcs_mes_ecommerce: number
+    quant_pcs_mes: number
+    quant_pcs_mes_anterior: number
+    ind_quant_pcs_mes: number
+    dif_quant_pcs_mes: number
+    pm_atacado: Decimal | DecimalJsLike | number | string
+    pm_varejo: Decimal | DecimalJsLike | number | string
+    pm_ecommerce: Decimal | DecimalJsLike | number | string
+    meta: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWUncheckedCreateInput = {
+    key: number
+    loja: number
+    descricao: string
+    descricao_completa: string
+    segmento: string
+    media_pcs_ano: number
+    media_venda_ano: Decimal | DecimalJsLike | number | string
+    media_venda_ano_varejo: Decimal | DecimalJsLike | number | string
+    media_venda_ano_atacado: Decimal | DecimalJsLike | number | string
+    media_venda_ano_site: Decimal | DecimalJsLike | number | string
+    venda_dia_loja: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_loja: Decimal | DecimalJsLike | number | string
+    venda_mes_loja: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_loja: Decimal | DecimalJsLike | number | string
+    venda_dia_atacado: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_atacado: Decimal | DecimalJsLike | number | string
+    ind_venda_dia_atacado: number
+    dif_venda_dia_atacado: Decimal | DecimalJsLike | number | string
+    venda_dia_varejo: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_varejo: Decimal | DecimalJsLike | number | string
+    ind_venda_dia_varejo: number
+    dif_venda_dia_varejo: Decimal | DecimalJsLike | number | string
+    venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
+    ind_venda_dia_ecommerce: number
+    dif_venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_dia: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_dia: number
+    dif_venda_dia: Decimal | DecimalJsLike | number | string
+    venda_mes_atacado: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_atacado: Decimal | DecimalJsLike | number | string
+    ind_venda_mes_atacado: number
+    dif_venda_mes_atacado: Decimal | DecimalJsLike | number | string
+    venda_mes_varejo: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_varejo: Decimal | DecimalJsLike | number | string
+    ind_venda_mes_varejo: number
+    dif_venda_mes_varejo: Decimal | DecimalJsLike | number | string
+    venda_mes_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_ecommerce: Decimal | DecimalJsLike | number | string
+    ind_venda_mes_ecommerce: number
+    dif_venda_mes_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_mes: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_mes: number
+    dif_venda_mes: Decimal | DecimalJsLike | number | string
+    quant_pcs_mes_atacado: number
+    quant_pcs_mes_anterior_atacado: number
+    ind_quant_pcs_mes_atacado: number
+    dif_quant_pcs_mes_atacado: number
+    quant_pcs_mes_varejo: number
+    quant_pcs_mes_anterior_varejo: number
+    ind_quant_pcs_mes_varejo: number
+    dif_quant_pcs_mes_varejo: number
+    quant_pcs_mes_ecommerce: number
+    quant_pcs_mes_anterior_ecommerce: number
+    ind_quant_pcs_mes_ecommerce: number
+    dif_quant_pcs_mes_ecommerce: number
+    quant_pcs_mes: number
+    quant_pcs_mes_anterior: number
+    ind_quant_pcs_mes: number
+    dif_quant_pcs_mes: number
+    pm_atacado: Decimal | DecimalJsLike | number | string
+    pm_varejo: Decimal | DecimalJsLike | number | string
+    pm_ecommerce: Decimal | DecimalJsLike | number | string
+    meta: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    loja?: IntFieldUpdateOperationsInput | number
+    descricao?: StringFieldUpdateOperationsInput | string
+    descricao_completa?: StringFieldUpdateOperationsInput | string
+    segmento?: StringFieldUpdateOperationsInput | string
+    media_pcs_ano?: IntFieldUpdateOperationsInput | number
+    media_venda_ano?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_site?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_atacado?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_varejo?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_atacado?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_varejo?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_atacado?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_varejo?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_ecommerce?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    pm_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    meta?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    loja?: IntFieldUpdateOperationsInput | number
+    descricao?: StringFieldUpdateOperationsInput | string
+    descricao_completa?: StringFieldUpdateOperationsInput | string
+    segmento?: StringFieldUpdateOperationsInput | string
+    media_pcs_ano?: IntFieldUpdateOperationsInput | number
+    media_venda_ano?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_site?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_atacado?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_varejo?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_atacado?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_varejo?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_atacado?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_varejo?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_ecommerce?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    pm_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    meta?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWCreateManyInput = {
+    key: number
+    loja: number
+    descricao: string
+    descricao_completa: string
+    segmento: string
+    media_pcs_ano: number
+    media_venda_ano: Decimal | DecimalJsLike | number | string
+    media_venda_ano_varejo: Decimal | DecimalJsLike | number | string
+    media_venda_ano_atacado: Decimal | DecimalJsLike | number | string
+    media_venda_ano_site: Decimal | DecimalJsLike | number | string
+    venda_dia_loja: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_loja: Decimal | DecimalJsLike | number | string
+    venda_mes_loja: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_loja: Decimal | DecimalJsLike | number | string
+    venda_dia_atacado: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_atacado: Decimal | DecimalJsLike | number | string
+    ind_venda_dia_atacado: number
+    dif_venda_dia_atacado: Decimal | DecimalJsLike | number | string
+    venda_dia_varejo: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_varejo: Decimal | DecimalJsLike | number | string
+    ind_venda_dia_varejo: number
+    dif_venda_dia_varejo: Decimal | DecimalJsLike | number | string
+    venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
+    ind_venda_dia_ecommerce: number
+    dif_venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_dia: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_dia: number
+    dif_venda_dia: Decimal | DecimalJsLike | number | string
+    venda_mes_atacado: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_atacado: Decimal | DecimalJsLike | number | string
+    ind_venda_mes_atacado: number
+    dif_venda_mes_atacado: Decimal | DecimalJsLike | number | string
+    venda_mes_varejo: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_varejo: Decimal | DecimalJsLike | number | string
+    ind_venda_mes_varejo: number
+    dif_venda_mes_varejo: Decimal | DecimalJsLike | number | string
+    venda_mes_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_ecommerce: Decimal | DecimalJsLike | number | string
+    ind_venda_mes_ecommerce: number
+    dif_venda_mes_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_mes: Decimal | DecimalJsLike | number | string
+    venda_mes_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_mes: number
+    dif_venda_mes: Decimal | DecimalJsLike | number | string
+    quant_pcs_mes_atacado: number
+    quant_pcs_mes_anterior_atacado: number
+    ind_quant_pcs_mes_atacado: number
+    dif_quant_pcs_mes_atacado: number
+    quant_pcs_mes_varejo: number
+    quant_pcs_mes_anterior_varejo: number
+    ind_quant_pcs_mes_varejo: number
+    dif_quant_pcs_mes_varejo: number
+    quant_pcs_mes_ecommerce: number
+    quant_pcs_mes_anterior_ecommerce: number
+    ind_quant_pcs_mes_ecommerce: number
+    dif_quant_pcs_mes_ecommerce: number
+    quant_pcs_mes: number
+    quant_pcs_mes_anterior: number
+    ind_quant_pcs_mes: number
+    dif_quant_pcs_mes: number
+    pm_atacado: Decimal | DecimalJsLike | number | string
+    pm_varejo: Decimal | DecimalJsLike | number | string
+    pm_ecommerce: Decimal | DecimalJsLike | number | string
+    meta: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    loja?: IntFieldUpdateOperationsInput | number
+    descricao?: StringFieldUpdateOperationsInput | string
+    descricao_completa?: StringFieldUpdateOperationsInput | string
+    segmento?: StringFieldUpdateOperationsInput | string
+    media_pcs_ano?: IntFieldUpdateOperationsInput | number
+    media_venda_ano?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_site?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_atacado?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_varejo?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_atacado?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_varejo?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_atacado?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_varejo?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_ecommerce?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    pm_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    meta?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    loja?: IntFieldUpdateOperationsInput | number
+    descricao?: StringFieldUpdateOperationsInput | string
+    descricao_completa?: StringFieldUpdateOperationsInput | string
+    segmento?: StringFieldUpdateOperationsInput | string
+    media_pcs_ano?: IntFieldUpdateOperationsInput | number
+    media_venda_ano?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    media_venda_ano_site?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_loja?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_atacado?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_varejo?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_dia?: IntFieldUpdateOperationsInput | number
+    dif_venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_atacado?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_varejo?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_mes_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_mes?: IntFieldUpdateOperationsInput | number
+    dif_venda_mes?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_atacado?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_atacado?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_varejo?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_varejo?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior_ecommerce?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes_ecommerce?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    quant_pcs_mes_anterior?: IntFieldUpdateOperationsInput | number
+    ind_quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    dif_quant_pcs_mes?: IntFieldUpdateOperationsInput | number
+    pm_atacado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    meta?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWCreateInput = {
+    key: number
+    loja: number
+    nome_fantasia: string
+    total_venda: Decimal | DecimalJsLike | number | string
+    total_venda_format: string
+    total_cupom: Decimal | DecimalJsLike | number | string
+    total_cupom_format: string
+    perc: number
+    total_venda_anterior: Decimal | DecimalJsLike | number | string
+    total_venda_anterior_format: string
+    total_cupom_anterior: Decimal | DecimalJsLike | number | string
+    total_cupom_anterior_format: string
+    perc_anterior: number
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWUncheckedCreateInput = {
+    key: number
+    loja: number
+    nome_fantasia: string
+    total_venda: Decimal | DecimalJsLike | number | string
+    total_venda_format: string
+    total_cupom: Decimal | DecimalJsLike | number | string
+    total_cupom_format: string
+    perc: number
+    total_venda_anterior: Decimal | DecimalJsLike | number | string
+    total_venda_anterior_format: string
+    total_cupom_anterior: Decimal | DecimalJsLike | number | string
+    total_cupom_anterior_format: string
+    perc_anterior: number
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    loja?: IntFieldUpdateOperationsInput | number
+    nome_fantasia?: StringFieldUpdateOperationsInput | string
+    total_venda?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_venda_format?: StringFieldUpdateOperationsInput | string
+    total_cupom?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_cupom_format?: StringFieldUpdateOperationsInput | string
+    perc?: IntFieldUpdateOperationsInput | number
+    total_venda_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_venda_anterior_format?: StringFieldUpdateOperationsInput | string
+    total_cupom_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_cupom_anterior_format?: StringFieldUpdateOperationsInput | string
+    perc_anterior?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    loja?: IntFieldUpdateOperationsInput | number
+    nome_fantasia?: StringFieldUpdateOperationsInput | string
+    total_venda?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_venda_format?: StringFieldUpdateOperationsInput | string
+    total_cupom?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_cupom_format?: StringFieldUpdateOperationsInput | string
+    perc?: IntFieldUpdateOperationsInput | number
+    total_venda_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_venda_anterior_format?: StringFieldUpdateOperationsInput | string
+    total_cupom_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_cupom_anterior_format?: StringFieldUpdateOperationsInput | string
+    perc_anterior?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWCreateManyInput = {
+    key: number
+    loja: number
+    nome_fantasia: string
+    total_venda: Decimal | DecimalJsLike | number | string
+    total_venda_format: string
+    total_cupom: Decimal | DecimalJsLike | number | string
+    total_cupom_format: string
+    perc: number
+    total_venda_anterior: Decimal | DecimalJsLike | number | string
+    total_venda_anterior_format: string
+    total_cupom_anterior: Decimal | DecimalJsLike | number | string
+    total_cupom_anterior_format: string
+    perc_anterior: number
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    loja?: IntFieldUpdateOperationsInput | number
+    nome_fantasia?: StringFieldUpdateOperationsInput | string
+    total_venda?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_venda_format?: StringFieldUpdateOperationsInput | string
+    total_cupom?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_cupom_format?: StringFieldUpdateOperationsInput | string
+    perc?: IntFieldUpdateOperationsInput | number
+    total_venda_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_venda_anterior_format?: StringFieldUpdateOperationsInput | string
+    total_cupom_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_cupom_anterior_format?: StringFieldUpdateOperationsInput | string
+    perc_anterior?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    loja?: IntFieldUpdateOperationsInput | number
+    nome_fantasia?: StringFieldUpdateOperationsInput | string
+    total_venda?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_venda_format?: StringFieldUpdateOperationsInput | string
+    total_cupom?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_cupom_format?: StringFieldUpdateOperationsInput | string
+    perc?: IntFieldUpdateOperationsInput | number
+    total_venda_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_venda_anterior_format?: StringFieldUpdateOperationsInput | string
+    total_cupom_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_cupom_anterior_format?: StringFieldUpdateOperationsInput | string
+    perc_anterior?: IntFieldUpdateOperationsInput | number
+  }
+
   export type IntFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
     in?: number[]
@@ -8836,6 +12950,413 @@ export namespace Prisma {
     _max?: NestedStringNullableFilter<$PrismaModel>
   }
 
+  export type VW_APP_VENDAS_LOJAS_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    descricao?: SortOrder
+    descricao_completa?: SortOrder
+    segmento?: SortOrder
+    media_pcs_ano?: SortOrder
+    media_venda_ano?: SortOrder
+    media_venda_ano_varejo?: SortOrder
+    media_venda_ano_atacado?: SortOrder
+    media_venda_ano_site?: SortOrder
+    venda_dia_loja?: SortOrder
+    venda_dia_anterior_loja?: SortOrder
+    venda_mes_loja?: SortOrder
+    venda_mes_anterior_loja?: SortOrder
+    venda_dia_atacado?: SortOrder
+    venda_dia_anterior_atacado?: SortOrder
+    ind_venda_dia_atacado?: SortOrder
+    dif_venda_dia_atacado?: SortOrder
+    venda_dia_varejo?: SortOrder
+    venda_dia_anterior_varejo?: SortOrder
+    ind_venda_dia_varejo?: SortOrder
+    dif_venda_dia_varejo?: SortOrder
+    venda_dia_ecommerce?: SortOrder
+    ind_venda_dia_ecommerce?: SortOrder
+    dif_venda_dia_ecommerce?: SortOrder
+    venda_dia?: SortOrder
+    venda_dia_anterior?: SortOrder
+    ind_venda_dia?: SortOrder
+    dif_venda_dia?: SortOrder
+    venda_mes_atacado?: SortOrder
+    venda_mes_anterior_atacado?: SortOrder
+    ind_venda_mes_atacado?: SortOrder
+    dif_venda_mes_atacado?: SortOrder
+    venda_mes_varejo?: SortOrder
+    venda_mes_anterior_varejo?: SortOrder
+    ind_venda_mes_varejo?: SortOrder
+    dif_venda_mes_varejo?: SortOrder
+    venda_mes_ecommerce?: SortOrder
+    venda_mes_anterior_ecommerce?: SortOrder
+    ind_venda_mes_ecommerce?: SortOrder
+    dif_venda_mes_ecommerce?: SortOrder
+    venda_mes?: SortOrder
+    venda_mes_anterior?: SortOrder
+    ind_venda_mes?: SortOrder
+    dif_venda_mes?: SortOrder
+    quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_anterior_atacado?: SortOrder
+    ind_quant_pcs_mes_atacado?: SortOrder
+    dif_quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_anterior_varejo?: SortOrder
+    ind_quant_pcs_mes_varejo?: SortOrder
+    dif_quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes_anterior_ecommerce?: SortOrder
+    ind_quant_pcs_mes_ecommerce?: SortOrder
+    dif_quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes?: SortOrder
+    quant_pcs_mes_anterior?: SortOrder
+    ind_quant_pcs_mes?: SortOrder
+    dif_quant_pcs_mes?: SortOrder
+    pm_atacado?: SortOrder
+    pm_varejo?: SortOrder
+    pm_ecommerce?: SortOrder
+    meta?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    media_pcs_ano?: SortOrder
+    media_venda_ano?: SortOrder
+    media_venda_ano_varejo?: SortOrder
+    media_venda_ano_atacado?: SortOrder
+    media_venda_ano_site?: SortOrder
+    venda_dia_loja?: SortOrder
+    venda_dia_anterior_loja?: SortOrder
+    venda_mes_loja?: SortOrder
+    venda_mes_anterior_loja?: SortOrder
+    venda_dia_atacado?: SortOrder
+    venda_dia_anterior_atacado?: SortOrder
+    ind_venda_dia_atacado?: SortOrder
+    dif_venda_dia_atacado?: SortOrder
+    venda_dia_varejo?: SortOrder
+    venda_dia_anterior_varejo?: SortOrder
+    ind_venda_dia_varejo?: SortOrder
+    dif_venda_dia_varejo?: SortOrder
+    venda_dia_ecommerce?: SortOrder
+    ind_venda_dia_ecommerce?: SortOrder
+    dif_venda_dia_ecommerce?: SortOrder
+    venda_dia?: SortOrder
+    venda_dia_anterior?: SortOrder
+    ind_venda_dia?: SortOrder
+    dif_venda_dia?: SortOrder
+    venda_mes_atacado?: SortOrder
+    venda_mes_anterior_atacado?: SortOrder
+    ind_venda_mes_atacado?: SortOrder
+    dif_venda_mes_atacado?: SortOrder
+    venda_mes_varejo?: SortOrder
+    venda_mes_anterior_varejo?: SortOrder
+    ind_venda_mes_varejo?: SortOrder
+    dif_venda_mes_varejo?: SortOrder
+    venda_mes_ecommerce?: SortOrder
+    venda_mes_anterior_ecommerce?: SortOrder
+    ind_venda_mes_ecommerce?: SortOrder
+    dif_venda_mes_ecommerce?: SortOrder
+    venda_mes?: SortOrder
+    venda_mes_anterior?: SortOrder
+    ind_venda_mes?: SortOrder
+    dif_venda_mes?: SortOrder
+    quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_anterior_atacado?: SortOrder
+    ind_quant_pcs_mes_atacado?: SortOrder
+    dif_quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_anterior_varejo?: SortOrder
+    ind_quant_pcs_mes_varejo?: SortOrder
+    dif_quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes_anterior_ecommerce?: SortOrder
+    ind_quant_pcs_mes_ecommerce?: SortOrder
+    dif_quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes?: SortOrder
+    quant_pcs_mes_anterior?: SortOrder
+    ind_quant_pcs_mes?: SortOrder
+    dif_quant_pcs_mes?: SortOrder
+    pm_atacado?: SortOrder
+    pm_varejo?: SortOrder
+    pm_ecommerce?: SortOrder
+    meta?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    descricao?: SortOrder
+    descricao_completa?: SortOrder
+    segmento?: SortOrder
+    media_pcs_ano?: SortOrder
+    media_venda_ano?: SortOrder
+    media_venda_ano_varejo?: SortOrder
+    media_venda_ano_atacado?: SortOrder
+    media_venda_ano_site?: SortOrder
+    venda_dia_loja?: SortOrder
+    venda_dia_anterior_loja?: SortOrder
+    venda_mes_loja?: SortOrder
+    venda_mes_anterior_loja?: SortOrder
+    venda_dia_atacado?: SortOrder
+    venda_dia_anterior_atacado?: SortOrder
+    ind_venda_dia_atacado?: SortOrder
+    dif_venda_dia_atacado?: SortOrder
+    venda_dia_varejo?: SortOrder
+    venda_dia_anterior_varejo?: SortOrder
+    ind_venda_dia_varejo?: SortOrder
+    dif_venda_dia_varejo?: SortOrder
+    venda_dia_ecommerce?: SortOrder
+    ind_venda_dia_ecommerce?: SortOrder
+    dif_venda_dia_ecommerce?: SortOrder
+    venda_dia?: SortOrder
+    venda_dia_anterior?: SortOrder
+    ind_venda_dia?: SortOrder
+    dif_venda_dia?: SortOrder
+    venda_mes_atacado?: SortOrder
+    venda_mes_anterior_atacado?: SortOrder
+    ind_venda_mes_atacado?: SortOrder
+    dif_venda_mes_atacado?: SortOrder
+    venda_mes_varejo?: SortOrder
+    venda_mes_anterior_varejo?: SortOrder
+    ind_venda_mes_varejo?: SortOrder
+    dif_venda_mes_varejo?: SortOrder
+    venda_mes_ecommerce?: SortOrder
+    venda_mes_anterior_ecommerce?: SortOrder
+    ind_venda_mes_ecommerce?: SortOrder
+    dif_venda_mes_ecommerce?: SortOrder
+    venda_mes?: SortOrder
+    venda_mes_anterior?: SortOrder
+    ind_venda_mes?: SortOrder
+    dif_venda_mes?: SortOrder
+    quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_anterior_atacado?: SortOrder
+    ind_quant_pcs_mes_atacado?: SortOrder
+    dif_quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_anterior_varejo?: SortOrder
+    ind_quant_pcs_mes_varejo?: SortOrder
+    dif_quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes_anterior_ecommerce?: SortOrder
+    ind_quant_pcs_mes_ecommerce?: SortOrder
+    dif_quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes?: SortOrder
+    quant_pcs_mes_anterior?: SortOrder
+    ind_quant_pcs_mes?: SortOrder
+    dif_quant_pcs_mes?: SortOrder
+    pm_atacado?: SortOrder
+    pm_varejo?: SortOrder
+    pm_ecommerce?: SortOrder
+    meta?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    descricao?: SortOrder
+    descricao_completa?: SortOrder
+    segmento?: SortOrder
+    media_pcs_ano?: SortOrder
+    media_venda_ano?: SortOrder
+    media_venda_ano_varejo?: SortOrder
+    media_venda_ano_atacado?: SortOrder
+    media_venda_ano_site?: SortOrder
+    venda_dia_loja?: SortOrder
+    venda_dia_anterior_loja?: SortOrder
+    venda_mes_loja?: SortOrder
+    venda_mes_anterior_loja?: SortOrder
+    venda_dia_atacado?: SortOrder
+    venda_dia_anterior_atacado?: SortOrder
+    ind_venda_dia_atacado?: SortOrder
+    dif_venda_dia_atacado?: SortOrder
+    venda_dia_varejo?: SortOrder
+    venda_dia_anterior_varejo?: SortOrder
+    ind_venda_dia_varejo?: SortOrder
+    dif_venda_dia_varejo?: SortOrder
+    venda_dia_ecommerce?: SortOrder
+    ind_venda_dia_ecommerce?: SortOrder
+    dif_venda_dia_ecommerce?: SortOrder
+    venda_dia?: SortOrder
+    venda_dia_anterior?: SortOrder
+    ind_venda_dia?: SortOrder
+    dif_venda_dia?: SortOrder
+    venda_mes_atacado?: SortOrder
+    venda_mes_anterior_atacado?: SortOrder
+    ind_venda_mes_atacado?: SortOrder
+    dif_venda_mes_atacado?: SortOrder
+    venda_mes_varejo?: SortOrder
+    venda_mes_anterior_varejo?: SortOrder
+    ind_venda_mes_varejo?: SortOrder
+    dif_venda_mes_varejo?: SortOrder
+    venda_mes_ecommerce?: SortOrder
+    venda_mes_anterior_ecommerce?: SortOrder
+    ind_venda_mes_ecommerce?: SortOrder
+    dif_venda_mes_ecommerce?: SortOrder
+    venda_mes?: SortOrder
+    venda_mes_anterior?: SortOrder
+    ind_venda_mes?: SortOrder
+    dif_venda_mes?: SortOrder
+    quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_anterior_atacado?: SortOrder
+    ind_quant_pcs_mes_atacado?: SortOrder
+    dif_quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_anterior_varejo?: SortOrder
+    ind_quant_pcs_mes_varejo?: SortOrder
+    dif_quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes_anterior_ecommerce?: SortOrder
+    ind_quant_pcs_mes_ecommerce?: SortOrder
+    dif_quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes?: SortOrder
+    quant_pcs_mes_anterior?: SortOrder
+    ind_quant_pcs_mes?: SortOrder
+    dif_quant_pcs_mes?: SortOrder
+    pm_atacado?: SortOrder
+    pm_varejo?: SortOrder
+    pm_ecommerce?: SortOrder
+    meta?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_LOJAS_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    media_pcs_ano?: SortOrder
+    media_venda_ano?: SortOrder
+    media_venda_ano_varejo?: SortOrder
+    media_venda_ano_atacado?: SortOrder
+    media_venda_ano_site?: SortOrder
+    venda_dia_loja?: SortOrder
+    venda_dia_anterior_loja?: SortOrder
+    venda_mes_loja?: SortOrder
+    venda_mes_anterior_loja?: SortOrder
+    venda_dia_atacado?: SortOrder
+    venda_dia_anterior_atacado?: SortOrder
+    ind_venda_dia_atacado?: SortOrder
+    dif_venda_dia_atacado?: SortOrder
+    venda_dia_varejo?: SortOrder
+    venda_dia_anterior_varejo?: SortOrder
+    ind_venda_dia_varejo?: SortOrder
+    dif_venda_dia_varejo?: SortOrder
+    venda_dia_ecommerce?: SortOrder
+    ind_venda_dia_ecommerce?: SortOrder
+    dif_venda_dia_ecommerce?: SortOrder
+    venda_dia?: SortOrder
+    venda_dia_anterior?: SortOrder
+    ind_venda_dia?: SortOrder
+    dif_venda_dia?: SortOrder
+    venda_mes_atacado?: SortOrder
+    venda_mes_anterior_atacado?: SortOrder
+    ind_venda_mes_atacado?: SortOrder
+    dif_venda_mes_atacado?: SortOrder
+    venda_mes_varejo?: SortOrder
+    venda_mes_anterior_varejo?: SortOrder
+    ind_venda_mes_varejo?: SortOrder
+    dif_venda_mes_varejo?: SortOrder
+    venda_mes_ecommerce?: SortOrder
+    venda_mes_anterior_ecommerce?: SortOrder
+    ind_venda_mes_ecommerce?: SortOrder
+    dif_venda_mes_ecommerce?: SortOrder
+    venda_mes?: SortOrder
+    venda_mes_anterior?: SortOrder
+    ind_venda_mes?: SortOrder
+    dif_venda_mes?: SortOrder
+    quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_anterior_atacado?: SortOrder
+    ind_quant_pcs_mes_atacado?: SortOrder
+    dif_quant_pcs_mes_atacado?: SortOrder
+    quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_anterior_varejo?: SortOrder
+    ind_quant_pcs_mes_varejo?: SortOrder
+    dif_quant_pcs_mes_varejo?: SortOrder
+    quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes_anterior_ecommerce?: SortOrder
+    ind_quant_pcs_mes_ecommerce?: SortOrder
+    dif_quant_pcs_mes_ecommerce?: SortOrder
+    quant_pcs_mes?: SortOrder
+    quant_pcs_mes_anterior?: SortOrder
+    ind_quant_pcs_mes?: SortOrder
+    dif_quant_pcs_mes?: SortOrder
+    pm_atacado?: SortOrder
+    pm_varejo?: SortOrder
+    pm_ecommerce?: SortOrder
+    meta?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    nome_fantasia?: SortOrder
+    total_venda?: SortOrder
+    total_venda_format?: SortOrder
+    total_cupom?: SortOrder
+    total_cupom_format?: SortOrder
+    perc?: SortOrder
+    total_venda_anterior?: SortOrder
+    total_venda_anterior_format?: SortOrder
+    total_cupom_anterior?: SortOrder
+    total_cupom_anterior_format?: SortOrder
+    perc_anterior?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    total_venda?: SortOrder
+    total_cupom?: SortOrder
+    perc?: SortOrder
+    total_venda_anterior?: SortOrder
+    total_cupom_anterior?: SortOrder
+    perc_anterior?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    nome_fantasia?: SortOrder
+    total_venda?: SortOrder
+    total_venda_format?: SortOrder
+    total_cupom?: SortOrder
+    total_cupom_format?: SortOrder
+    perc?: SortOrder
+    total_venda_anterior?: SortOrder
+    total_venda_anterior_format?: SortOrder
+    total_cupom_anterior?: SortOrder
+    total_cupom_anterior_format?: SortOrder
+    perc_anterior?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    nome_fantasia?: SortOrder
+    total_venda?: SortOrder
+    total_venda_format?: SortOrder
+    total_cupom?: SortOrder
+    total_cupom_format?: SortOrder
+    perc?: SortOrder
+    total_venda_anterior?: SortOrder
+    total_venda_anterior_format?: SortOrder
+    total_cupom_anterior?: SortOrder
+    total_cupom_anterior_format?: SortOrder
+    perc_anterior?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_CUPONS_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    loja?: SortOrder
+    total_venda?: SortOrder
+    total_cupom?: SortOrder
+    perc?: SortOrder
+    total_venda_anterior?: SortOrder
+    total_cupom_anterior?: SortOrder
+    perc_anterior?: SortOrder
+  }
+
   export type IntFieldUpdateOperationsInput = {
     set?: number
     increment?: number
@@ -9085,6 +13606,14 @@ export namespace Prisma {
      * @deprecated Use AUTORIZACOES_WEB_BARRAMENTOS_DEVDefaultArgs instead
      */
     export type AUTORIZACOES_WEB_BARRAMENTOS_DEVArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = AUTORIZACOES_WEB_BARRAMENTOS_DEVDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_VENDAS_LOJAS_NEWDefaultArgs instead
+     */
+    export type VW_APP_VENDAS_LOJAS_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_VENDAS_LOJAS_NEWDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_VENDAS_CUPONS_NEWDefaultArgs instead
+     */
+    export type VW_APP_VENDAS_CUPONS_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_VENDAS_CUPONS_NEWDefaultArgs<ExtArgs>
 
   /**
    * Batch Payload for updateMany & deleteMany & createMany

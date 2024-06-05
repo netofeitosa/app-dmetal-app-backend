@@ -1,6 +1,7 @@
 const express = require("express");
 const usersControllers = require("./controllers/usersControllers");
 const aprovacoesController = require("./controllers/aprovacoesControllers");
+const reportsControllers = require("./controllers/reportsControllers");
 
 const router = express.Router();
 
@@ -21,5 +22,8 @@ router.get("/despesas", aprovacoesController.getDespesas);
 router.get("/descontos", aprovacoesController.getDescontos);
 router.get("/cancelamentos", aprovacoesController.getCancelamentos);
 router.get("/saidas", aprovacoesController.getSaidas);
+
+router.get("/vendaslojas", reportsControllers.getVendasLojas);
+router.get("/vendascupons", reportsControllers.getVendasCupom);
 
 module.exports = router;
