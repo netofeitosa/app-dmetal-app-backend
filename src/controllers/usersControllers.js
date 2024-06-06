@@ -54,15 +54,15 @@ const deleteUser = async (req, res) => {
 
 const login = async (req, res) => {
   const { user, password } = req.body;
-  const result = await usersModel.findUserUsuario(user);
+  const [result] = await usersModel.findUserUsuario(user);
 
-  // if (!result) {
-  //   return res.status(401).json({ error: "Usuário ou senha inválidos" });
-  // }
-  // const isValidPassword = await bcrypt.compare(password, result.senha);
-  // if (!isValidPassword) {
-  //   return res.status(401).json({ error: "Usuário ou senha inválidos" });
-  // }
+  if (!result) {
+    return res.status(401).json({ error: "Usuário ou senha inválidos" });
+  }
+  const isValidPassword = await bcrypt.compare(password, result.senha);
+  if (!isValidPassword) {
+    return res.status(401).json({ error: "Usuário ou senha inválidos" });
+  }
   return res.status(201).json(result);
 };
 
@@ -70,7 +70,7 @@ const validadeToken = async (req, res) => {
   const { authToken, validateToken } = req.body;
   const timeInMs = Date.now();
 
-  const result = await usersModel.findUserToken(authToken);
+  const [result] = await usersModel.findUserToken(authToken);
   if (!result) {
     return res.status(401).json({ error: "Token invalido" });
   }
