@@ -1,3 +1,5 @@
+const _ = require("lodash");
+
 const {
   PrismaClient: PrismaClientMySQL,
 } = require("../../prisma/generated/mysql");
@@ -9,7 +11,25 @@ const bcrypt = require("bcrypt");
 const saltRounds = 10;
 
 const getAll = async () => {
-  return await prismaMySQL.users.findMany();
+  const dados = await prismaMySQL.vw_users.findMany();
+
+  const groupedUsers = _.groupBy(dados, "id");
+
+  const result = _.map(groupedUsers, (userGroup) => {
+    const user = userGroup[0];
+    return {
+      id: user.id,
+      login: user.login,
+      usuario: user.usuario,
+      nome: user.nome,
+      image_url: user.image_url,
+      senha: user.senha,
+      token: user.token,
+      roles: userGroup.map((u) => u.role),
+    };
+  });
+
+  return result;
 };
 
 const createUser = async (login, usuario, nome, senha, image_url) => {
@@ -35,21 +55,75 @@ const deleteUser = async (login) => {
 };
 
 const findUserUsuario = async (user) => {
-  return await prismaMySQL.users.findFirst({
+  const dados = await prismaMySQL.vw_users.findMany({
     where: { usuario: user },
   });
+
+  const groupedUsers = _.groupBy(dados, "id");
+
+  const result = _.map(groupedUsers, (userGroup) => {
+    const user = userGroup[0];
+    return {
+      id: user.id,
+      login: user.login,
+      usuario: user.usuario,
+      nome: user.nome,
+      image_url: user.image_url,
+      senha: user.senha,
+      token: user.token,
+      roles: userGroup.map((u) => u.role),
+    };
+  });
+
+  return result;
 };
 
 const findUserLogin = async (login) => {
-  return await prismaMySQL.users.findFirst({
+  const dados = await prismaMySQL.vw_users.findMany({
     where: { login: login },
   });
+
+  const groupedUsers = _.groupBy(dados, "id");
+
+  const result = _.map(groupedUsers, (userGroup) => {
+    const user = userGroup[0];
+    return {
+      id: user.id,
+      login: user.login,
+      usuario: user.usuario,
+      nome: user.nome,
+      image_url: user.image_url,
+      senha: user.senha,
+      token: user.token,
+      roles: userGroup.map((u) => u.role),
+    };
+  });
+
+  return result;
 };
 
 const findUserToken = async (authToken) => {
-  return await prismaMySQL.users.findFirst({
+  const dados = await prismaMySQL.vw_users.findMany({
     where: { token: authToken },
   });
+
+  const groupedUsers = _.groupBy(dados, "id");
+
+  const result = _.map(groupedUsers, (userGroup) => {
+    const user = userGroup[0];
+    return {
+      id: user.id,
+      login: user.login,
+      usuario: user.usuario,
+      nome: user.nome,
+      image_url: user.image_url,
+      senha: user.senha,
+      token: user.token,
+      roles: userGroup.map((u) => u.role),
+    };
+  });
+
+  return result;
 };
 
 module.exports = {

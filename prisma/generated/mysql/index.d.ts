@@ -18,6 +18,11 @@ export type PrismaPromise<T> = $Public.PrismaPromise<T>
  * 
  */
 export type users = $Result.DefaultSelection<Prisma.$usersPayload>
+/**
+ * Model vw_users
+ * 
+ */
+export type vw_users = $Result.DefaultSelection<Prisma.$vw_usersPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -150,6 +155,16 @@ export class PrismaClient<
     * ```
     */
   get users(): Prisma.usersDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vw_users`: Exposes CRUD operations for the **vw_users** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Vw_users
+    * const vw_users = await prisma.vw_users.findMany()
+    * ```
+    */
+  get vw_users(): Prisma.vw_usersDelegate<ExtArgs>;
 }
 
 export namespace Prisma {
@@ -627,7 +642,8 @@ export namespace Prisma {
 
 
   export const ModelName: {
-    users: 'users'
+    users: 'users',
+    vw_users: 'vw_users'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -644,7 +660,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     meta: {
-      modelProps: 'users'
+      modelProps: 'users' | 'vw_users'
       txIsolationLevel: Prisma.TransactionIsolationLevel
     },
     model: {
@@ -711,6 +727,72 @@ export namespace Prisma {
           count: {
             args: Prisma.usersCountArgs<ExtArgs>,
             result: $Utils.Optional<UsersCountAggregateOutputType> | number
+          }
+        }
+      }
+      vw_users: {
+        payload: Prisma.$vw_usersPayload<ExtArgs>
+        fields: Prisma.vw_usersFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.vw_usersFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$vw_usersPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.vw_usersFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$vw_usersPayload>
+          }
+          findFirst: {
+            args: Prisma.vw_usersFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$vw_usersPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.vw_usersFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$vw_usersPayload>
+          }
+          findMany: {
+            args: Prisma.vw_usersFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$vw_usersPayload>[]
+          }
+          create: {
+            args: Prisma.vw_usersCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$vw_usersPayload>
+          }
+          createMany: {
+            args: Prisma.vw_usersCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.vw_usersDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$vw_usersPayload>
+          }
+          update: {
+            args: Prisma.vw_usersUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$vw_usersPayload>
+          }
+          deleteMany: {
+            args: Prisma.vw_usersDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.vw_usersUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.vw_usersUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$vw_usersPayload>
+          }
+          aggregate: {
+            args: Prisma.Vw_usersAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVw_users>
+          }
+          groupBy: {
+            args: Prisma.vw_usersGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<Vw_usersGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.vw_usersCountArgs<ExtArgs>,
+            result: $Utils.Optional<Vw_usersCountAggregateOutputType> | number
           }
         }
       }
@@ -1792,6 +1874,934 @@ export namespace Prisma {
 
 
   /**
+   * Model vw_users
+   */
+
+  export type AggregateVw_users = {
+    _count: Vw_usersCountAggregateOutputType | null
+    _avg: Vw_usersAvgAggregateOutputType | null
+    _sum: Vw_usersSumAggregateOutputType | null
+    _min: Vw_usersMinAggregateOutputType | null
+    _max: Vw_usersMaxAggregateOutputType | null
+  }
+
+  export type Vw_usersAvgAggregateOutputType = {
+    id: number | null
+    login: number | null
+  }
+
+  export type Vw_usersSumAggregateOutputType = {
+    id: number | null
+    login: number | null
+  }
+
+  export type Vw_usersMinAggregateOutputType = {
+    id: number | null
+    login: number | null
+    usuario: string | null
+    nome: string | null
+    image_url: string | null
+    senha: string | null
+    token: string | null
+    role: string | null
+  }
+
+  export type Vw_usersMaxAggregateOutputType = {
+    id: number | null
+    login: number | null
+    usuario: string | null
+    nome: string | null
+    image_url: string | null
+    senha: string | null
+    token: string | null
+    role: string | null
+  }
+
+  export type Vw_usersCountAggregateOutputType = {
+    id: number
+    login: number
+    usuario: number
+    nome: number
+    image_url: number
+    senha: number
+    token: number
+    role: number
+    _all: number
+  }
+
+
+  export type Vw_usersAvgAggregateInputType = {
+    id?: true
+    login?: true
+  }
+
+  export type Vw_usersSumAggregateInputType = {
+    id?: true
+    login?: true
+  }
+
+  export type Vw_usersMinAggregateInputType = {
+    id?: true
+    login?: true
+    usuario?: true
+    nome?: true
+    image_url?: true
+    senha?: true
+    token?: true
+    role?: true
+  }
+
+  export type Vw_usersMaxAggregateInputType = {
+    id?: true
+    login?: true
+    usuario?: true
+    nome?: true
+    image_url?: true
+    senha?: true
+    token?: true
+    role?: true
+  }
+
+  export type Vw_usersCountAggregateInputType = {
+    id?: true
+    login?: true
+    usuario?: true
+    nome?: true
+    image_url?: true
+    senha?: true
+    token?: true
+    role?: true
+    _all?: true
+  }
+
+  export type Vw_usersAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which vw_users to aggregate.
+     */
+    where?: vw_usersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of vw_users to fetch.
+     */
+    orderBy?: vw_usersOrderByWithRelationInput | vw_usersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: vw_usersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` vw_users from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` vw_users.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned vw_users
+    **/
+    _count?: true | Vw_usersCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: Vw_usersAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: Vw_usersSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Vw_usersMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Vw_usersMaxAggregateInputType
+  }
+
+  export type GetVw_usersAggregateType<T extends Vw_usersAggregateArgs> = {
+        [P in keyof T & keyof AggregateVw_users]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVw_users[P]>
+      : GetScalarType<T[P], AggregateVw_users[P]>
+  }
+
+
+
+
+  export type vw_usersGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: vw_usersWhereInput
+    orderBy?: vw_usersOrderByWithAggregationInput | vw_usersOrderByWithAggregationInput[]
+    by: Vw_usersScalarFieldEnum[] | Vw_usersScalarFieldEnum
+    having?: vw_usersScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Vw_usersCountAggregateInputType | true
+    _avg?: Vw_usersAvgAggregateInputType
+    _sum?: Vw_usersSumAggregateInputType
+    _min?: Vw_usersMinAggregateInputType
+    _max?: Vw_usersMaxAggregateInputType
+  }
+
+  export type Vw_usersGroupByOutputType = {
+    id: number
+    login: number
+    usuario: string
+    nome: string
+    image_url: string | null
+    senha: string
+    token: string
+    role: string | null
+    _count: Vw_usersCountAggregateOutputType | null
+    _avg: Vw_usersAvgAggregateOutputType | null
+    _sum: Vw_usersSumAggregateOutputType | null
+    _min: Vw_usersMinAggregateOutputType | null
+    _max: Vw_usersMaxAggregateOutputType | null
+  }
+
+  type GetVw_usersGroupByPayload<T extends vw_usersGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Vw_usersGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Vw_usersGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Vw_usersGroupByOutputType[P]>
+            : GetScalarType<T[P], Vw_usersGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type vw_usersSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    login?: boolean
+    usuario?: boolean
+    nome?: boolean
+    image_url?: boolean
+    senha?: boolean
+    token?: boolean
+    role?: boolean
+  }, ExtArgs["result"]["vw_users"]>
+
+  export type vw_usersSelectScalar = {
+    id?: boolean
+    login?: boolean
+    usuario?: boolean
+    nome?: boolean
+    image_url?: boolean
+    senha?: boolean
+    token?: boolean
+    role?: boolean
+  }
+
+
+
+  export type $vw_usersPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "vw_users"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      id: number
+      login: number
+      usuario: string
+      nome: string
+      image_url: string | null
+      senha: string
+      token: string
+      role: string | null
+    }, ExtArgs["result"]["vw_users"]>
+    composites: {}
+  }
+
+
+  type vw_usersGetPayload<S extends boolean | null | undefined | vw_usersDefaultArgs> = $Result.GetResult<Prisma.$vw_usersPayload, S>
+
+  type vw_usersCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<vw_usersFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: Vw_usersCountAggregateInputType | true
+    }
+
+  export interface vw_usersDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['vw_users'], meta: { name: 'vw_users' } }
+    /**
+     * Find zero or one Vw_users that matches the filter.
+     * @param {vw_usersFindUniqueArgs} args - Arguments to find a Vw_users
+     * @example
+     * // Get one Vw_users
+     * const vw_users = await prisma.vw_users.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends vw_usersFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, vw_usersFindUniqueArgs<ExtArgs>>
+    ): Prisma__vw_usersClient<$Result.GetResult<Prisma.$vw_usersPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one Vw_users that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {vw_usersFindUniqueOrThrowArgs} args - Arguments to find a Vw_users
+     * @example
+     * // Get one Vw_users
+     * const vw_users = await prisma.vw_users.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends vw_usersFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, vw_usersFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__vw_usersClient<$Result.GetResult<Prisma.$vw_usersPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first Vw_users that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {vw_usersFindFirstArgs} args - Arguments to find a Vw_users
+     * @example
+     * // Get one Vw_users
+     * const vw_users = await prisma.vw_users.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends vw_usersFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, vw_usersFindFirstArgs<ExtArgs>>
+    ): Prisma__vw_usersClient<$Result.GetResult<Prisma.$vw_usersPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first Vw_users that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {vw_usersFindFirstOrThrowArgs} args - Arguments to find a Vw_users
+     * @example
+     * // Get one Vw_users
+     * const vw_users = await prisma.vw_users.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends vw_usersFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, vw_usersFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__vw_usersClient<$Result.GetResult<Prisma.$vw_usersPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more Vw_users that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {vw_usersFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Vw_users
+     * const vw_users = await prisma.vw_users.findMany()
+     * 
+     * // Get first 10 Vw_users
+     * const vw_users = await prisma.vw_users.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const vw_usersWithIdOnly = await prisma.vw_users.findMany({ select: { id: true } })
+     * 
+    **/
+    findMany<T extends vw_usersFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, vw_usersFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$vw_usersPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a Vw_users.
+     * @param {vw_usersCreateArgs} args - Arguments to create a Vw_users.
+     * @example
+     * // Create one Vw_users
+     * const Vw_users = await prisma.vw_users.create({
+     *   data: {
+     *     // ... data to create a Vw_users
+     *   }
+     * })
+     * 
+    **/
+    create<T extends vw_usersCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, vw_usersCreateArgs<ExtArgs>>
+    ): Prisma__vw_usersClient<$Result.GetResult<Prisma.$vw_usersPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many Vw_users.
+     * @param {vw_usersCreateManyArgs} args - Arguments to create many Vw_users.
+     * @example
+     * // Create many Vw_users
+     * const vw_users = await prisma.vw_users.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends vw_usersCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, vw_usersCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a Vw_users.
+     * @param {vw_usersDeleteArgs} args - Arguments to delete one Vw_users.
+     * @example
+     * // Delete one Vw_users
+     * const Vw_users = await prisma.vw_users.delete({
+     *   where: {
+     *     // ... filter to delete one Vw_users
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends vw_usersDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, vw_usersDeleteArgs<ExtArgs>>
+    ): Prisma__vw_usersClient<$Result.GetResult<Prisma.$vw_usersPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one Vw_users.
+     * @param {vw_usersUpdateArgs} args - Arguments to update one Vw_users.
+     * @example
+     * // Update one Vw_users
+     * const vw_users = await prisma.vw_users.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends vw_usersUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, vw_usersUpdateArgs<ExtArgs>>
+    ): Prisma__vw_usersClient<$Result.GetResult<Prisma.$vw_usersPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more Vw_users.
+     * @param {vw_usersDeleteManyArgs} args - Arguments to filter Vw_users to delete.
+     * @example
+     * // Delete a few Vw_users
+     * const { count } = await prisma.vw_users.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends vw_usersDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, vw_usersDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Vw_users.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {vw_usersUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Vw_users
+     * const vw_users = await prisma.vw_users.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends vw_usersUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, vw_usersUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one Vw_users.
+     * @param {vw_usersUpsertArgs} args - Arguments to update or create a Vw_users.
+     * @example
+     * // Update or create a Vw_users
+     * const vw_users = await prisma.vw_users.upsert({
+     *   create: {
+     *     // ... data to create a Vw_users
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Vw_users we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends vw_usersUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, vw_usersUpsertArgs<ExtArgs>>
+    ): Prisma__vw_usersClient<$Result.GetResult<Prisma.$vw_usersPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of Vw_users.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {vw_usersCountArgs} args - Arguments to filter Vw_users to count.
+     * @example
+     * // Count the number of Vw_users
+     * const count = await prisma.vw_users.count({
+     *   where: {
+     *     // ... the filter for the Vw_users we want to count
+     *   }
+     * })
+    **/
+    count<T extends vw_usersCountArgs>(
+      args?: Subset<T, vw_usersCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Vw_usersCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Vw_users.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Vw_usersAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Vw_usersAggregateArgs>(args: Subset<T, Vw_usersAggregateArgs>): Prisma.PrismaPromise<GetVw_usersAggregateType<T>>
+
+    /**
+     * Group by Vw_users.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {vw_usersGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends vw_usersGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: vw_usersGroupByArgs['orderBy'] }
+        : { orderBy?: vw_usersGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, vw_usersGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVw_usersGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the vw_users model
+   */
+  readonly fields: vw_usersFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for vw_users.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__vw_usersClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the vw_users model
+   */ 
+  interface vw_usersFieldRefs {
+    readonly id: FieldRef<"vw_users", 'Int'>
+    readonly login: FieldRef<"vw_users", 'Int'>
+    readonly usuario: FieldRef<"vw_users", 'String'>
+    readonly nome: FieldRef<"vw_users", 'String'>
+    readonly image_url: FieldRef<"vw_users", 'String'>
+    readonly senha: FieldRef<"vw_users", 'String'>
+    readonly token: FieldRef<"vw_users", 'String'>
+    readonly role: FieldRef<"vw_users", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * vw_users findUnique
+   */
+  export type vw_usersFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the vw_users
+     */
+    select?: vw_usersSelect<ExtArgs> | null
+    /**
+     * Filter, which vw_users to fetch.
+     */
+    where: vw_usersWhereUniqueInput
+  }
+
+  /**
+   * vw_users findUniqueOrThrow
+   */
+  export type vw_usersFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the vw_users
+     */
+    select?: vw_usersSelect<ExtArgs> | null
+    /**
+     * Filter, which vw_users to fetch.
+     */
+    where: vw_usersWhereUniqueInput
+  }
+
+  /**
+   * vw_users findFirst
+   */
+  export type vw_usersFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the vw_users
+     */
+    select?: vw_usersSelect<ExtArgs> | null
+    /**
+     * Filter, which vw_users to fetch.
+     */
+    where?: vw_usersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of vw_users to fetch.
+     */
+    orderBy?: vw_usersOrderByWithRelationInput | vw_usersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for vw_users.
+     */
+    cursor?: vw_usersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` vw_users from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` vw_users.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of vw_users.
+     */
+    distinct?: Vw_usersScalarFieldEnum | Vw_usersScalarFieldEnum[]
+  }
+
+  /**
+   * vw_users findFirstOrThrow
+   */
+  export type vw_usersFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the vw_users
+     */
+    select?: vw_usersSelect<ExtArgs> | null
+    /**
+     * Filter, which vw_users to fetch.
+     */
+    where?: vw_usersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of vw_users to fetch.
+     */
+    orderBy?: vw_usersOrderByWithRelationInput | vw_usersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for vw_users.
+     */
+    cursor?: vw_usersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` vw_users from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` vw_users.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of vw_users.
+     */
+    distinct?: Vw_usersScalarFieldEnum | Vw_usersScalarFieldEnum[]
+  }
+
+  /**
+   * vw_users findMany
+   */
+  export type vw_usersFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the vw_users
+     */
+    select?: vw_usersSelect<ExtArgs> | null
+    /**
+     * Filter, which vw_users to fetch.
+     */
+    where?: vw_usersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of vw_users to fetch.
+     */
+    orderBy?: vw_usersOrderByWithRelationInput | vw_usersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing vw_users.
+     */
+    cursor?: vw_usersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` vw_users from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` vw_users.
+     */
+    skip?: number
+    distinct?: Vw_usersScalarFieldEnum | Vw_usersScalarFieldEnum[]
+  }
+
+  /**
+   * vw_users create
+   */
+  export type vw_usersCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the vw_users
+     */
+    select?: vw_usersSelect<ExtArgs> | null
+    /**
+     * The data needed to create a vw_users.
+     */
+    data: XOR<vw_usersCreateInput, vw_usersUncheckedCreateInput>
+  }
+
+  /**
+   * vw_users createMany
+   */
+  export type vw_usersCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many vw_users.
+     */
+    data: vw_usersCreateManyInput | vw_usersCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * vw_users update
+   */
+  export type vw_usersUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the vw_users
+     */
+    select?: vw_usersSelect<ExtArgs> | null
+    /**
+     * The data needed to update a vw_users.
+     */
+    data: XOR<vw_usersUpdateInput, vw_usersUncheckedUpdateInput>
+    /**
+     * Choose, which vw_users to update.
+     */
+    where: vw_usersWhereUniqueInput
+  }
+
+  /**
+   * vw_users updateMany
+   */
+  export type vw_usersUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update vw_users.
+     */
+    data: XOR<vw_usersUpdateManyMutationInput, vw_usersUncheckedUpdateManyInput>
+    /**
+     * Filter which vw_users to update
+     */
+    where?: vw_usersWhereInput
+  }
+
+  /**
+   * vw_users upsert
+   */
+  export type vw_usersUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the vw_users
+     */
+    select?: vw_usersSelect<ExtArgs> | null
+    /**
+     * The filter to search for the vw_users to update in case it exists.
+     */
+    where: vw_usersWhereUniqueInput
+    /**
+     * In case the vw_users found by the `where` argument doesn't exist, create a new vw_users with this data.
+     */
+    create: XOR<vw_usersCreateInput, vw_usersUncheckedCreateInput>
+    /**
+     * In case the vw_users was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<vw_usersUpdateInput, vw_usersUncheckedUpdateInput>
+  }
+
+  /**
+   * vw_users delete
+   */
+  export type vw_usersDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the vw_users
+     */
+    select?: vw_usersSelect<ExtArgs> | null
+    /**
+     * Filter which vw_users to delete.
+     */
+    where: vw_usersWhereUniqueInput
+  }
+
+  /**
+   * vw_users deleteMany
+   */
+  export type vw_usersDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which vw_users to delete
+     */
+    where?: vw_usersWhereInput
+  }
+
+  /**
+   * vw_users without action
+   */
+  export type vw_usersDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the vw_users
+     */
+    select?: vw_usersSelect<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -1816,6 +2826,20 @@ export namespace Prisma {
   };
 
   export type UsersScalarFieldEnum = (typeof UsersScalarFieldEnum)[keyof typeof UsersScalarFieldEnum]
+
+
+  export const Vw_usersScalarFieldEnum: {
+    id: 'id',
+    login: 'login',
+    usuario: 'usuario',
+    nome: 'nome',
+    image_url: 'image_url',
+    senha: 'senha',
+    token: 'token',
+    role: 'role'
+  };
+
+  export type Vw_usersScalarFieldEnum = (typeof Vw_usersScalarFieldEnum)[keyof typeof Vw_usersScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -1927,6 +2951,75 @@ export namespace Prisma {
     token?: StringWithAggregatesFilter<"users"> | string
   }
 
+  export type vw_usersWhereInput = {
+    AND?: vw_usersWhereInput | vw_usersWhereInput[]
+    OR?: vw_usersWhereInput[]
+    NOT?: vw_usersWhereInput | vw_usersWhereInput[]
+    id?: IntFilter<"vw_users"> | number
+    login?: IntFilter<"vw_users"> | number
+    usuario?: StringFilter<"vw_users"> | string
+    nome?: StringFilter<"vw_users"> | string
+    image_url?: StringNullableFilter<"vw_users"> | string | null
+    senha?: StringFilter<"vw_users"> | string
+    token?: StringFilter<"vw_users"> | string
+    role?: StringNullableFilter<"vw_users"> | string | null
+  }
+
+  export type vw_usersOrderByWithRelationInput = {
+    id?: SortOrder
+    login?: SortOrder
+    usuario?: SortOrder
+    nome?: SortOrder
+    image_url?: SortOrderInput | SortOrder
+    senha?: SortOrder
+    token?: SortOrder
+    role?: SortOrderInput | SortOrder
+  }
+
+  export type vw_usersWhereUniqueInput = Prisma.AtLeast<{
+    id?: number
+    AND?: vw_usersWhereInput | vw_usersWhereInput[]
+    OR?: vw_usersWhereInput[]
+    NOT?: vw_usersWhereInput | vw_usersWhereInput[]
+    login?: IntFilter<"vw_users"> | number
+    usuario?: StringFilter<"vw_users"> | string
+    nome?: StringFilter<"vw_users"> | string
+    image_url?: StringNullableFilter<"vw_users"> | string | null
+    senha?: StringFilter<"vw_users"> | string
+    token?: StringFilter<"vw_users"> | string
+    role?: StringNullableFilter<"vw_users"> | string | null
+  }, "id">
+
+  export type vw_usersOrderByWithAggregationInput = {
+    id?: SortOrder
+    login?: SortOrder
+    usuario?: SortOrder
+    nome?: SortOrder
+    image_url?: SortOrderInput | SortOrder
+    senha?: SortOrder
+    token?: SortOrder
+    role?: SortOrderInput | SortOrder
+    _count?: vw_usersCountOrderByAggregateInput
+    _avg?: vw_usersAvgOrderByAggregateInput
+    _max?: vw_usersMaxOrderByAggregateInput
+    _min?: vw_usersMinOrderByAggregateInput
+    _sum?: vw_usersSumOrderByAggregateInput
+  }
+
+  export type vw_usersScalarWhereWithAggregatesInput = {
+    AND?: vw_usersScalarWhereWithAggregatesInput | vw_usersScalarWhereWithAggregatesInput[]
+    OR?: vw_usersScalarWhereWithAggregatesInput[]
+    NOT?: vw_usersScalarWhereWithAggregatesInput | vw_usersScalarWhereWithAggregatesInput[]
+    id?: IntWithAggregatesFilter<"vw_users"> | number
+    login?: IntWithAggregatesFilter<"vw_users"> | number
+    usuario?: StringWithAggregatesFilter<"vw_users"> | string
+    nome?: StringWithAggregatesFilter<"vw_users"> | string
+    image_url?: StringNullableWithAggregatesFilter<"vw_users"> | string | null
+    senha?: StringWithAggregatesFilter<"vw_users"> | string
+    token?: StringWithAggregatesFilter<"vw_users"> | string
+    role?: StringNullableWithAggregatesFilter<"vw_users"> | string | null
+  }
+
   export type usersCreateInput = {
     login: number
     usuario: string
@@ -1992,6 +3085,83 @@ export namespace Prisma {
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
     senha?: StringFieldUpdateOperationsInput | string
     token?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type vw_usersCreateInput = {
+    id: number
+    login: number
+    usuario: string
+    nome: string
+    image_url?: string | null
+    senha: string
+    token: string
+    role?: string | null
+  }
+
+  export type vw_usersUncheckedCreateInput = {
+    id: number
+    login: number
+    usuario: string
+    nome: string
+    image_url?: string | null
+    senha: string
+    token: string
+    role?: string | null
+  }
+
+  export type vw_usersUpdateInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    login?: IntFieldUpdateOperationsInput | number
+    usuario?: StringFieldUpdateOperationsInput | string
+    nome?: StringFieldUpdateOperationsInput | string
+    image_url?: NullableStringFieldUpdateOperationsInput | string | null
+    senha?: StringFieldUpdateOperationsInput | string
+    token?: StringFieldUpdateOperationsInput | string
+    role?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type vw_usersUncheckedUpdateInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    login?: IntFieldUpdateOperationsInput | number
+    usuario?: StringFieldUpdateOperationsInput | string
+    nome?: StringFieldUpdateOperationsInput | string
+    image_url?: NullableStringFieldUpdateOperationsInput | string | null
+    senha?: StringFieldUpdateOperationsInput | string
+    token?: StringFieldUpdateOperationsInput | string
+    role?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type vw_usersCreateManyInput = {
+    id: number
+    login: number
+    usuario: string
+    nome: string
+    image_url?: string | null
+    senha: string
+    token: string
+    role?: string | null
+  }
+
+  export type vw_usersUpdateManyMutationInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    login?: IntFieldUpdateOperationsInput | number
+    usuario?: StringFieldUpdateOperationsInput | string
+    nome?: StringFieldUpdateOperationsInput | string
+    image_url?: NullableStringFieldUpdateOperationsInput | string | null
+    senha?: StringFieldUpdateOperationsInput | string
+    token?: StringFieldUpdateOperationsInput | string
+    role?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type vw_usersUncheckedUpdateManyInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    login?: IntFieldUpdateOperationsInput | number
+    usuario?: StringFieldUpdateOperationsInput | string
+    nome?: StringFieldUpdateOperationsInput | string
+    image_url?: NullableStringFieldUpdateOperationsInput | string | null
+    senha?: StringFieldUpdateOperationsInput | string
+    token?: StringFieldUpdateOperationsInput | string
+    role?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type IntFilter<$PrismaModel = never> = {
@@ -2126,6 +3296,49 @@ export namespace Prisma {
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedStringNullableFilter<$PrismaModel>
     _max?: NestedStringNullableFilter<$PrismaModel>
+  }
+
+  export type vw_usersCountOrderByAggregateInput = {
+    id?: SortOrder
+    login?: SortOrder
+    usuario?: SortOrder
+    nome?: SortOrder
+    image_url?: SortOrder
+    senha?: SortOrder
+    token?: SortOrder
+    role?: SortOrder
+  }
+
+  export type vw_usersAvgOrderByAggregateInput = {
+    id?: SortOrder
+    login?: SortOrder
+  }
+
+  export type vw_usersMaxOrderByAggregateInput = {
+    id?: SortOrder
+    login?: SortOrder
+    usuario?: SortOrder
+    nome?: SortOrder
+    image_url?: SortOrder
+    senha?: SortOrder
+    token?: SortOrder
+    role?: SortOrder
+  }
+
+  export type vw_usersMinOrderByAggregateInput = {
+    id?: SortOrder
+    login?: SortOrder
+    usuario?: SortOrder
+    nome?: SortOrder
+    image_url?: SortOrder
+    senha?: SortOrder
+    token?: SortOrder
+    role?: SortOrder
+  }
+
+  export type vw_usersSumOrderByAggregateInput = {
+    id?: SortOrder
+    login?: SortOrder
   }
 
   export type IntFieldUpdateOperationsInput = {
@@ -2264,6 +3477,10 @@ export namespace Prisma {
      * @deprecated Use usersDefaultArgs instead
      */
     export type usersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = usersDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use vw_usersDefaultArgs instead
+     */
+    export type vw_usersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = vw_usersDefaultArgs<ExtArgs>
 
   /**
    * Batch Payload for updateMany & deleteMany & createMany

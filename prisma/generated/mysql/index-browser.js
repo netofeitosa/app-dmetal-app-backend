@@ -129,6 +129,17 @@ exports.Prisma.UsersScalarFieldEnum = {
   token: 'token'
 };
 
+exports.Prisma.Vw_usersScalarFieldEnum = {
+  id: 'id',
+  login: 'login',
+  usuario: 'usuario',
+  nome: 'nome',
+  image_url: 'image_url',
+  senha: 'senha',
+  token: 'token',
+  role: 'role'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -141,7 +152,8 @@ exports.Prisma.NullsOrder = {
 
 
 exports.Prisma.ModelName = {
-  users: 'users'
+  users: 'users',
+  vw_users: 'vw_users'
 };
 
 /**

@@ -20,3 +20,14 @@ model users {
   senha     String
   token     String  @default("")
 }
+
+model vw_users {
+  id        Int     @id
+  login     Int
+  usuario   String
+  nome      String
+  image_url String?
+  senha     String
+  token     String
+  role      String?
+}
