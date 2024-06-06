@@ -1,8 +1,8 @@
 // mysql-schema.prisma
 
 generator client {
-  provider = "prisma-client-js"
-  output   = "./generated/mysql"
+  provider      = "prisma-client-js"
+  output        = "./generated/mysql"
   binaryTargets = ["native", "rhel-openssl-3.0.x"]
 }
 
@@ -12,7 +12,8 @@ datasource db {
 }
 
 model users {
-  login     Int     @id
+  id        Int     @id @default(autoincrement())
+  login     Int     @unique
   usuario   String  @unique
   nome      String
   image_url String?

@@ -12,7 +12,8 @@ datasource db {
 }
 
 model users {
-  login     Int     @id
+  id        Int     @id @default(autoincrement())
+  login     Int     @unique
   usuario   String  @unique
   nome      String
   image_url String?

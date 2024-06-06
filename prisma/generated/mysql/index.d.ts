@@ -887,14 +887,17 @@ export namespace Prisma {
   }
 
   export type UsersAvgAggregateOutputType = {
+    id: number | null
     login: number | null
   }
 
   export type UsersSumAggregateOutputType = {
+    id: number | null
     login: number | null
   }
 
   export type UsersMinAggregateOutputType = {
+    id: number | null
     login: number | null
     usuario: string | null
     nome: string | null
@@ -904,6 +907,7 @@ export namespace Prisma {
   }
 
   export type UsersMaxAggregateOutputType = {
+    id: number | null
     login: number | null
     usuario: string | null
     nome: string | null
@@ -913,6 +917,7 @@ export namespace Prisma {
   }
 
   export type UsersCountAggregateOutputType = {
+    id: number
     login: number
     usuario: number
     nome: number
@@ -924,14 +929,17 @@ export namespace Prisma {
 
 
   export type UsersAvgAggregateInputType = {
+    id?: true
     login?: true
   }
 
   export type UsersSumAggregateInputType = {
+    id?: true
     login?: true
   }
 
   export type UsersMinAggregateInputType = {
+    id?: true
     login?: true
     usuario?: true
     nome?: true
@@ -941,6 +949,7 @@ export namespace Prisma {
   }
 
   export type UsersMaxAggregateInputType = {
+    id?: true
     login?: true
     usuario?: true
     nome?: true
@@ -950,6 +959,7 @@ export namespace Prisma {
   }
 
   export type UsersCountAggregateInputType = {
+    id?: true
     login?: true
     usuario?: true
     nome?: true
@@ -1046,6 +1056,7 @@ export namespace Prisma {
   }
 
   export type UsersGroupByOutputType = {
+    id: number
     login: number
     usuario: string
     nome: string
@@ -1074,6 +1085,7 @@ export namespace Prisma {
 
 
   export type usersSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
     login?: boolean
     usuario?: boolean
     nome?: boolean
@@ -1083,6 +1095,7 @@ export namespace Prisma {
   }, ExtArgs["result"]["users"]>
 
   export type usersSelectScalar = {
+    id?: boolean
     login?: boolean
     usuario?: boolean
     nome?: boolean
@@ -1097,6 +1110,7 @@ export namespace Prisma {
     name: "users"
     objects: {}
     scalars: $Extensions.GetPayloadResult<{
+      id: number
       login: number
       usuario: string
       nome: string
@@ -1195,8 +1209,8 @@ export namespace Prisma {
      * // Get first 10 Users
      * const users = await prisma.users.findMany({ take: 10 })
      * 
-     * // Only select the `login`
-     * const usersWithLoginOnly = await prisma.users.findMany({ select: { login: true } })
+     * // Only select the `id`
+     * const usersWithIdOnly = await prisma.users.findMany({ select: { id: true } })
      * 
     **/
     findMany<T extends usersFindManyArgs<ExtArgs>>(
@@ -1497,6 +1511,7 @@ export namespace Prisma {
    * Fields of the users model
    */ 
   interface usersFieldRefs {
+    readonly id: FieldRef<"users", 'Int'>
     readonly login: FieldRef<"users", 'Int'>
     readonly usuario: FieldRef<"users", 'String'>
     readonly nome: FieldRef<"users", 'String'>
@@ -1791,6 +1806,7 @@ export namespace Prisma {
 
 
   export const UsersScalarFieldEnum: {
+    id: 'id',
     login: 'login',
     usuario: 'usuario',
     nome: 'nome',
@@ -1851,6 +1867,7 @@ export namespace Prisma {
     AND?: usersWhereInput | usersWhereInput[]
     OR?: usersWhereInput[]
     NOT?: usersWhereInput | usersWhereInput[]
+    id?: IntFilter<"users"> | number
     login?: IntFilter<"users"> | number
     usuario?: StringFilter<"users"> | string
     nome?: StringFilter<"users"> | string
@@ -1860,6 +1877,7 @@ export namespace Prisma {
   }
 
   export type usersOrderByWithRelationInput = {
+    id?: SortOrder
     login?: SortOrder
     usuario?: SortOrder
     nome?: SortOrder
@@ -1869,6 +1887,7 @@ export namespace Prisma {
   }
 
   export type usersWhereUniqueInput = Prisma.AtLeast<{
+    id?: number
     login?: number
     usuario?: string
     AND?: usersWhereInput | usersWhereInput[]
@@ -1878,9 +1897,10 @@ export namespace Prisma {
     image_url?: StringNullableFilter<"users"> | string | null
     senha?: StringFilter<"users"> | string
     token?: StringFilter<"users"> | string
-  }, "login" | "usuario">
+  }, "id" | "login" | "usuario">
 
   export type usersOrderByWithAggregationInput = {
+    id?: SortOrder
     login?: SortOrder
     usuario?: SortOrder
     nome?: SortOrder
@@ -1898,6 +1918,7 @@ export namespace Prisma {
     AND?: usersScalarWhereWithAggregatesInput | usersScalarWhereWithAggregatesInput[]
     OR?: usersScalarWhereWithAggregatesInput[]
     NOT?: usersScalarWhereWithAggregatesInput | usersScalarWhereWithAggregatesInput[]
+    id?: IntWithAggregatesFilter<"users"> | number
     login?: IntWithAggregatesFilter<"users"> | number
     usuario?: StringWithAggregatesFilter<"users"> | string
     nome?: StringWithAggregatesFilter<"users"> | string
@@ -1916,6 +1937,7 @@ export namespace Prisma {
   }
 
   export type usersUncheckedCreateInput = {
+    id?: number
     login: number
     usuario: string
     nome: string
@@ -1934,6 +1956,7 @@ export namespace Prisma {
   }
 
   export type usersUncheckedUpdateInput = {
+    id?: IntFieldUpdateOperationsInput | number
     login?: IntFieldUpdateOperationsInput | number
     usuario?: StringFieldUpdateOperationsInput | string
     nome?: StringFieldUpdateOperationsInput | string
@@ -1943,6 +1966,7 @@ export namespace Prisma {
   }
 
   export type usersCreateManyInput = {
+    id?: number
     login: number
     usuario: string
     nome: string
@@ -1961,6 +1985,7 @@ export namespace Prisma {
   }
 
   export type usersUncheckedUpdateManyInput = {
+    id?: IntFieldUpdateOperationsInput | number
     login?: IntFieldUpdateOperationsInput | number
     usuario?: StringFieldUpdateOperationsInput | string
     nome?: StringFieldUpdateOperationsInput | string
@@ -2014,6 +2039,7 @@ export namespace Prisma {
   }
 
   export type usersCountOrderByAggregateInput = {
+    id?: SortOrder
     login?: SortOrder
     usuario?: SortOrder
     nome?: SortOrder
@@ -2023,10 +2049,12 @@ export namespace Prisma {
   }
 
   export type usersAvgOrderByAggregateInput = {
+    id?: SortOrder
     login?: SortOrder
   }
 
   export type usersMaxOrderByAggregateInput = {
+    id?: SortOrder
     login?: SortOrder
     usuario?: SortOrder
     nome?: SortOrder
@@ -2036,6 +2064,7 @@ export namespace Prisma {
   }
 
   export type usersMinOrderByAggregateInput = {
+    id?: SortOrder
     login?: SortOrder
     usuario?: SortOrder
     nome?: SortOrder
@@ -2045,6 +2074,7 @@ export namespace Prisma {
   }
 
   export type usersSumOrderByAggregateInput = {
+    id?: SortOrder
     login?: SortOrder
   }
 
