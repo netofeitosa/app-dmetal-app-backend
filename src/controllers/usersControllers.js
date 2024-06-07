@@ -1,7 +1,7 @@
 const bcrypt = require("bcrypt");
 const usersModel = require("../models/usersModel");
 
-const getAll = async (req, res) => {
+const getAll = async (_req, res) => {
   const users = await usersModel.getAll();
   if (!users) {
     return res.status(500).json({ error: "Erro ao localizar usuarios" });
@@ -12,14 +12,15 @@ const getAll = async (req, res) => {
 const createUser = async (req, res) => {
   const { login, usuario, nome, senha, image_url } = req.body;
 
-  const existingUser = await usersModel.findUserUsuario(usuario);
+  const [existingUser] = await usersModel.findUserUsuario(usuario);
+
   if (existingUser) {
     return res
       .status(400)
       .json({ error: "Usuario ja tem cadastro no sistema" });
   }
 
-  const existingLogin = await usersModel.findUserLogin(login);
+  const [existingLogin] = await usersModel.findUserLogin(login);
   if (existingLogin) {
     return res.status(400).json({ error: "Login ja tem cadastro no sistema" });
   }
@@ -41,7 +42,7 @@ const createUser = async (req, res) => {
 const deleteUser = async (req, res) => {
   const login = parseInt(req.params.login);
 
-  const existingLogin = await usersModel.findUserLogin(login);
+  const [existingLogin] = await usersModel.findUserLogin(login);
   if (!existingLogin) {
     return res.status(400).json({ error: "Usuario nao existe no sistema" });
   }
