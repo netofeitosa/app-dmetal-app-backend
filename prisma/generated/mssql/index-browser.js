@@ -225,6 +225,7 @@ exports.Prisma.VW_APP_VENDAS_LOJAS_NEWScalarFieldEnum = {
   ind_venda_dia_varejo: 'ind_venda_dia_varejo',
   dif_venda_dia_varejo: 'dif_venda_dia_varejo',
   venda_dia_ecommerce: 'venda_dia_ecommerce',
+  venda_dia_anterior_ecommerce: 'venda_dia_anterior_ecommerce',
   ind_venda_dia_ecommerce: 'ind_venda_dia_ecommerce',
   dif_venda_dia_ecommerce: 'dif_venda_dia_ecommerce',
   venda_dia: 'venda_dia',

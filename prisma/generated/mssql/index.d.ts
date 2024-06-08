@@ -7292,6 +7292,7 @@ export namespace Prisma {
     ind_venda_dia_varejo: number | null
     dif_venda_dia_varejo: Decimal | null
     venda_dia_ecommerce: Decimal | null
+    venda_dia_anterior_ecommerce: Decimal | null
     ind_venda_dia_ecommerce: number | null
     dif_venda_dia_ecommerce: Decimal | null
     venda_dia: Decimal | null
@@ -7357,6 +7358,7 @@ export namespace Prisma {
     ind_venda_dia_varejo: number | null
     dif_venda_dia_varejo: Decimal | null
     venda_dia_ecommerce: Decimal | null
+    venda_dia_anterior_ecommerce: Decimal | null
     ind_venda_dia_ecommerce: number | null
     dif_venda_dia_ecommerce: Decimal | null
     venda_dia: Decimal | null
@@ -7425,6 +7427,7 @@ export namespace Prisma {
     ind_venda_dia_varejo: number | null
     dif_venda_dia_varejo: Decimal | null
     venda_dia_ecommerce: Decimal | null
+    venda_dia_anterior_ecommerce: Decimal | null
     ind_venda_dia_ecommerce: number | null
     dif_venda_dia_ecommerce: Decimal | null
     venda_dia: Decimal | null
@@ -7494,6 +7497,7 @@ export namespace Prisma {
     ind_venda_dia_varejo: number | null
     dif_venda_dia_varejo: Decimal | null
     venda_dia_ecommerce: Decimal | null
+    venda_dia_anterior_ecommerce: Decimal | null
     ind_venda_dia_ecommerce: number | null
     dif_venda_dia_ecommerce: Decimal | null
     venda_dia: Decimal | null
@@ -7563,6 +7567,7 @@ export namespace Prisma {
     ind_venda_dia_varejo: number
     dif_venda_dia_varejo: number
     venda_dia_ecommerce: number
+    venda_dia_anterior_ecommerce: number
     ind_venda_dia_ecommerce: number
     dif_venda_dia_ecommerce: number
     venda_dia: number
@@ -7631,6 +7636,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: true
     dif_venda_dia_varejo?: true
     venda_dia_ecommerce?: true
+    venda_dia_anterior_ecommerce?: true
     ind_venda_dia_ecommerce?: true
     dif_venda_dia_ecommerce?: true
     venda_dia?: true
@@ -7696,6 +7702,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: true
     dif_venda_dia_varejo?: true
     venda_dia_ecommerce?: true
+    venda_dia_anterior_ecommerce?: true
     ind_venda_dia_ecommerce?: true
     dif_venda_dia_ecommerce?: true
     venda_dia?: true
@@ -7764,6 +7771,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: true
     dif_venda_dia_varejo?: true
     venda_dia_ecommerce?: true
+    venda_dia_anterior_ecommerce?: true
     ind_venda_dia_ecommerce?: true
     dif_venda_dia_ecommerce?: true
     venda_dia?: true
@@ -7833,6 +7841,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: true
     dif_venda_dia_varejo?: true
     venda_dia_ecommerce?: true
+    venda_dia_anterior_ecommerce?: true
     ind_venda_dia_ecommerce?: true
     dif_venda_dia_ecommerce?: true
     venda_dia?: true
@@ -7902,6 +7911,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: true
     dif_venda_dia_varejo?: true
     venda_dia_ecommerce?: true
+    venda_dia_anterior_ecommerce?: true
     ind_venda_dia_ecommerce?: true
     dif_venda_dia_ecommerce?: true
     venda_dia?: true
@@ -8058,6 +8068,7 @@ export namespace Prisma {
     ind_venda_dia_varejo: number
     dif_venda_dia_varejo: Decimal
     venda_dia_ecommerce: Decimal
+    venda_dia_anterior_ecommerce: Decimal
     ind_venda_dia_ecommerce: number
     dif_venda_dia_ecommerce: Decimal
     venda_dia: Decimal
@@ -8146,6 +8157,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: boolean
     dif_venda_dia_varejo?: boolean
     venda_dia_ecommerce?: boolean
+    venda_dia_anterior_ecommerce?: boolean
     ind_venda_dia_ecommerce?: boolean
     dif_venda_dia_ecommerce?: boolean
     venda_dia?: boolean
@@ -8215,6 +8227,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: boolean
     dif_venda_dia_varejo?: boolean
     venda_dia_ecommerce?: boolean
+    venda_dia_anterior_ecommerce?: boolean
     ind_venda_dia_ecommerce?: boolean
     dif_venda_dia_ecommerce?: boolean
     venda_dia?: boolean
@@ -8289,6 +8302,7 @@ export namespace Prisma {
       ind_venda_dia_varejo: number
       dif_venda_dia_varejo: Prisma.Decimal
       venda_dia_ecommerce: Prisma.Decimal
+      venda_dia_anterior_ecommerce: Prisma.Decimal
       ind_venda_dia_ecommerce: number
       dif_venda_dia_ecommerce: Prisma.Decimal
       venda_dia: Prisma.Decimal
@@ -8749,6 +8763,7 @@ export namespace Prisma {
     readonly ind_venda_dia_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
     readonly dif_venda_dia_varejo: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
     readonly venda_dia_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
+    readonly venda_dia_anterior_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
     readonly ind_venda_dia_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Int'>
     readonly dif_venda_dia_ecommerce: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
     readonly venda_dia: FieldRef<"VW_APP_VENDAS_LOJAS_NEW", 'Decimal'>
@@ -10208,6 +10223,7 @@ export namespace Prisma {
     ind_venda_dia_varejo: 'ind_venda_dia_varejo',
     dif_venda_dia_varejo: 'dif_venda_dia_varejo',
     venda_dia_ecommerce: 'venda_dia_ecommerce',
+    venda_dia_anterior_ecommerce: 'venda_dia_anterior_ecommerce',
     ind_venda_dia_ecommerce: 'ind_venda_dia_ecommerce',
     dif_venda_dia_ecommerce: 'dif_venda_dia_ecommerce',
     venda_dia: 'venda_dia',
@@ -10850,6 +10866,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
     dif_venda_dia_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
     venda_dia_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
     ind_venda_dia_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
     dif_venda_dia_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
     venda_dia?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
@@ -10919,6 +10936,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: SortOrder
     dif_venda_dia_varejo?: SortOrder
     venda_dia_ecommerce?: SortOrder
+    venda_dia_anterior_ecommerce?: SortOrder
     ind_venda_dia_ecommerce?: SortOrder
     dif_venda_dia_ecommerce?: SortOrder
     venda_dia?: SortOrder
@@ -10991,6 +11009,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
     dif_venda_dia_varejo?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
     venda_dia_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
     ind_venda_dia_ecommerce?: IntFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
     dif_venda_dia_ecommerce?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
     venda_dia?: DecimalFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
@@ -11060,6 +11079,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: SortOrder
     dif_venda_dia_varejo?: SortOrder
     venda_dia_ecommerce?: SortOrder
+    venda_dia_anterior_ecommerce?: SortOrder
     ind_venda_dia_ecommerce?: SortOrder
     dif_venda_dia_ecommerce?: SortOrder
     venda_dia?: SortOrder
@@ -11137,6 +11157,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
     dif_venda_dia_varejo?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
     venda_dia_ecommerce?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_ecommerce?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
     ind_venda_dia_ecommerce?: IntWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | number
     dif_venda_dia_ecommerce?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
     venda_dia?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_LOJAS_NEW"> | Decimal | DecimalJsLike | number | string
@@ -11863,6 +11884,7 @@ export namespace Prisma {
     ind_venda_dia_varejo: number
     dif_venda_dia_varejo: Decimal | DecimalJsLike | number | string
     venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_ecommerce: Decimal | DecimalJsLike | number | string
     ind_venda_dia_ecommerce: number
     dif_venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
     venda_dia: Decimal | DecimalJsLike | number | string
@@ -11932,6 +11954,7 @@ export namespace Prisma {
     ind_venda_dia_varejo: number
     dif_venda_dia_varejo: Decimal | DecimalJsLike | number | string
     venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_ecommerce: Decimal | DecimalJsLike | number | string
     ind_venda_dia_ecommerce: number
     dif_venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
     venda_dia: Decimal | DecimalJsLike | number | string
@@ -12001,6 +12024,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: IntFieldUpdateOperationsInput | number
     dif_venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     ind_venda_dia_ecommerce?: IntFieldUpdateOperationsInput | number
     dif_venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -12070,6 +12094,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: IntFieldUpdateOperationsInput | number
     dif_venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     ind_venda_dia_ecommerce?: IntFieldUpdateOperationsInput | number
     dif_venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -12139,6 +12164,7 @@ export namespace Prisma {
     ind_venda_dia_varejo: number
     dif_venda_dia_varejo: Decimal | DecimalJsLike | number | string
     venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_ecommerce: Decimal | DecimalJsLike | number | string
     ind_venda_dia_ecommerce: number
     dif_venda_dia_ecommerce: Decimal | DecimalJsLike | number | string
     venda_dia: Decimal | DecimalJsLike | number | string
@@ -12208,6 +12234,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: IntFieldUpdateOperationsInput | number
     dif_venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     ind_venda_dia_ecommerce?: IntFieldUpdateOperationsInput | number
     dif_venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -12277,6 +12304,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: IntFieldUpdateOperationsInput | number
     dif_venda_dia_varejo?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_dia_anterior_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     ind_venda_dia_ecommerce?: IntFieldUpdateOperationsInput | number
     dif_venda_dia_ecommerce?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
     venda_dia?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
@@ -12974,6 +13002,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: SortOrder
     dif_venda_dia_varejo?: SortOrder
     venda_dia_ecommerce?: SortOrder
+    venda_dia_anterior_ecommerce?: SortOrder
     ind_venda_dia_ecommerce?: SortOrder
     dif_venda_dia_ecommerce?: SortOrder
     venda_dia?: SortOrder
@@ -13040,6 +13069,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: SortOrder
     dif_venda_dia_varejo?: SortOrder
     venda_dia_ecommerce?: SortOrder
+    venda_dia_anterior_ecommerce?: SortOrder
     ind_venda_dia_ecommerce?: SortOrder
     dif_venda_dia_ecommerce?: SortOrder
     venda_dia?: SortOrder
@@ -13108,6 +13138,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: SortOrder
     dif_venda_dia_varejo?: SortOrder
     venda_dia_ecommerce?: SortOrder
+    venda_dia_anterior_ecommerce?: SortOrder
     ind_venda_dia_ecommerce?: SortOrder
     dif_venda_dia_ecommerce?: SortOrder
     venda_dia?: SortOrder
@@ -13177,6 +13208,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: SortOrder
     dif_venda_dia_varejo?: SortOrder
     venda_dia_ecommerce?: SortOrder
+    venda_dia_anterior_ecommerce?: SortOrder
     ind_venda_dia_ecommerce?: SortOrder
     dif_venda_dia_ecommerce?: SortOrder
     venda_dia?: SortOrder
@@ -13243,6 +13275,7 @@ export namespace Prisma {
     ind_venda_dia_varejo?: SortOrder
     dif_venda_dia_varejo?: SortOrder
     venda_dia_ecommerce?: SortOrder
+    venda_dia_anterior_ecommerce?: SortOrder
     ind_venda_dia_ecommerce?: SortOrder
     dif_venda_dia_ecommerce?: SortOrder
     venda_dia?: SortOrder

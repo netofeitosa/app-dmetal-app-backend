@@ -116,6 +116,7 @@ model VW_APP_VENDAS_LOJAS_NEW {
   ind_venda_dia_varejo             Int
   dif_venda_dia_varejo             Decimal
   venda_dia_ecommerce              Decimal
+  venda_dia_anterior_ecommerce     Decimal
   ind_venda_dia_ecommerce          Int
   dif_venda_dia_ecommerce          Decimal
   venda_dia                        Decimal
