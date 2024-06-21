@@ -134,7 +134,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Projects\\dev-app-dmetal-backend\\prisma\\generated\\mysql",
+      "value": "C:\\Projects\\app-dmetal-app-backend\\prisma\\generated\\mysql",
       "fromEnvVar": null
     },
     "config": {

@@ -53,6 +53,11 @@ export type VW_APP_VENDAS_LOJAS_NEW = $Result.DefaultSelection<Prisma.$VW_APP_VE
  * 
  */
 export type VW_APP_VENDAS_CUPONS_NEW = $Result.DefaultSelection<Prisma.$VW_APP_VENDAS_CUPONS_NEWPayload>
+/**
+ * Model VW_APP_VENDAS_MES_NEW
+ * 
+ */
+export type VW_APP_VENDAS_MES_NEW = $Result.DefaultSelection<Prisma.$VW_APP_VENDAS_MES_NEWPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -255,6 +260,16 @@ export class PrismaClient<
     * ```
     */
   get vW_APP_VENDAS_CUPONS_NEW(): Prisma.VW_APP_VENDAS_CUPONS_NEWDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_VENDAS_MES_NEW`: Exposes CRUD operations for the **VW_APP_VENDAS_MES_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_VENDAS_MES_NEWS
+    * const vW_APP_VENDAS_MES_NEWS = await prisma.vW_APP_VENDAS_MES_NEW.findMany()
+    * ```
+    */
+  get vW_APP_VENDAS_MES_NEW(): Prisma.VW_APP_VENDAS_MES_NEWDelegate<ExtArgs>;
 }
 
 export namespace Prisma {
@@ -739,7 +754,8 @@ export namespace Prisma {
     VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV: 'VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV',
     AUTORIZACOES_WEB_BARRAMENTOS_DEV: 'AUTORIZACOES_WEB_BARRAMENTOS_DEV',
     VW_APP_VENDAS_LOJAS_NEW: 'VW_APP_VENDAS_LOJAS_NEW',
-    VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW'
+    VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW',
+    VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -756,7 +772,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     meta: {
-      modelProps: 'vW_AUTORIZACOES_WEB_DEV' | 'vW_AUTORIZACOES_DESPESAS_COFRE_DEV' | 'vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV' | 'vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV' | 'vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV' | 'aUTORIZACOES_WEB_BARRAMENTOS_DEV' | 'vW_APP_VENDAS_LOJAS_NEW' | 'vW_APP_VENDAS_CUPONS_NEW'
+      modelProps: 'vW_AUTORIZACOES_WEB_DEV' | 'vW_AUTORIZACOES_DESPESAS_COFRE_DEV' | 'vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV' | 'vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV' | 'vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV' | 'aUTORIZACOES_WEB_BARRAMENTOS_DEV' | 'vW_APP_VENDAS_LOJAS_NEW' | 'vW_APP_VENDAS_CUPONS_NEW' | 'vW_APP_VENDAS_MES_NEW'
       txIsolationLevel: Prisma.TransactionIsolationLevel
     },
     model: {
@@ -1285,6 +1301,72 @@ export namespace Prisma {
           count: {
             args: Prisma.VW_APP_VENDAS_CUPONS_NEWCountArgs<ExtArgs>,
             result: $Utils.Optional<VW_APP_VENDAS_CUPONS_NEWCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_VENDAS_MES_NEW: {
+        payload: Prisma.$VW_APP_VENDAS_MES_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_VENDAS_MES_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_VENDAS_MES_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_VENDAS_MES_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_VENDAS_MES_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_VENDAS_MES_NEWCountAggregateOutputType> | number
           }
         }
       }
@@ -10086,6 +10168,1031 @@ export namespace Prisma {
 
 
   /**
+   * Model VW_APP_VENDAS_MES_NEW
+   */
+
+  export type AggregateVW_APP_VENDAS_MES_NEW = {
+    _count: VW_APP_VENDAS_MES_NEWCountAggregateOutputType | null
+    _avg: VW_APP_VENDAS_MES_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_VENDAS_MES_NEWSumAggregateOutputType | null
+    _min: VW_APP_VENDAS_MES_NEWMinAggregateOutputType | null
+    _max: VW_APP_VENDAS_MES_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_VENDAS_MES_NEWAvgAggregateOutputType = {
+    key: number | null
+    empresa: number | null
+    t2024: Decimal | null
+    pm2024: Decimal | null
+    t2023: Decimal | null
+    pm2023: Decimal | null
+    t2022: Decimal | null
+    pm2022: Decimal | null
+    t2021: Decimal | null
+    pm2021: Decimal | null
+  }
+
+  export type VW_APP_VENDAS_MES_NEWSumAggregateOutputType = {
+    key: number | null
+    empresa: number | null
+    t2024: Decimal | null
+    pm2024: Decimal | null
+    t2023: Decimal | null
+    pm2023: Decimal | null
+    t2022: Decimal | null
+    pm2022: Decimal | null
+    t2021: Decimal | null
+    pm2021: Decimal | null
+  }
+
+  export type VW_APP_VENDAS_MES_NEWMinAggregateOutputType = {
+    key: number | null
+    empresa: number | null
+    nome_fantasia: string | null
+    mes: string | null
+    mes_atual: string | null
+    t2024: Decimal | null
+    pm2024: Decimal | null
+    t2023: Decimal | null
+    pm2023: Decimal | null
+    t2022: Decimal | null
+    pm2022: Decimal | null
+    t2021: Decimal | null
+    pm2021: Decimal | null
+    ultima_atualizacao: string | null
+  }
+
+  export type VW_APP_VENDAS_MES_NEWMaxAggregateOutputType = {
+    key: number | null
+    empresa: number | null
+    nome_fantasia: string | null
+    mes: string | null
+    mes_atual: string | null
+    t2024: Decimal | null
+    pm2024: Decimal | null
+    t2023: Decimal | null
+    pm2023: Decimal | null
+    t2022: Decimal | null
+    pm2022: Decimal | null
+    t2021: Decimal | null
+    pm2021: Decimal | null
+    ultima_atualizacao: string | null
+  }
+
+  export type VW_APP_VENDAS_MES_NEWCountAggregateOutputType = {
+    key: number
+    empresa: number
+    nome_fantasia: number
+    mes: number
+    mes_atual: number
+    t2024: number
+    pm2024: number
+    t2023: number
+    pm2023: number
+    t2022: number
+    pm2022: number
+    t2021: number
+    pm2021: number
+    ultima_atualizacao: number
+    _all: number
+  }
+
+
+  export type VW_APP_VENDAS_MES_NEWAvgAggregateInputType = {
+    key?: true
+    empresa?: true
+    t2024?: true
+    pm2024?: true
+    t2023?: true
+    pm2023?: true
+    t2022?: true
+    pm2022?: true
+    t2021?: true
+    pm2021?: true
+  }
+
+  export type VW_APP_VENDAS_MES_NEWSumAggregateInputType = {
+    key?: true
+    empresa?: true
+    t2024?: true
+    pm2024?: true
+    t2023?: true
+    pm2023?: true
+    t2022?: true
+    pm2022?: true
+    t2021?: true
+    pm2021?: true
+  }
+
+  export type VW_APP_VENDAS_MES_NEWMinAggregateInputType = {
+    key?: true
+    empresa?: true
+    nome_fantasia?: true
+    mes?: true
+    mes_atual?: true
+    t2024?: true
+    pm2024?: true
+    t2023?: true
+    pm2023?: true
+    t2022?: true
+    pm2022?: true
+    t2021?: true
+    pm2021?: true
+    ultima_atualizacao?: true
+  }
+
+  export type VW_APP_VENDAS_MES_NEWMaxAggregateInputType = {
+    key?: true
+    empresa?: true
+    nome_fantasia?: true
+    mes?: true
+    mes_atual?: true
+    t2024?: true
+    pm2024?: true
+    t2023?: true
+    pm2023?: true
+    t2022?: true
+    pm2022?: true
+    t2021?: true
+    pm2021?: true
+    ultima_atualizacao?: true
+  }
+
+  export type VW_APP_VENDAS_MES_NEWCountAggregateInputType = {
+    key?: true
+    empresa?: true
+    nome_fantasia?: true
+    mes?: true
+    mes_atual?: true
+    t2024?: true
+    pm2024?: true
+    t2023?: true
+    pm2023?: true
+    t2022?: true
+    pm2022?: true
+    t2021?: true
+    pm2021?: true
+    ultima_atualizacao?: true
+    _all?: true
+  }
+
+  export type VW_APP_VENDAS_MES_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_VENDAS_MES_NEW to aggregate.
+     */
+    where?: VW_APP_VENDAS_MES_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_MES_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_MES_NEWOrderByWithRelationInput | VW_APP_VENDAS_MES_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_VENDAS_MES_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_MES_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_MES_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_VENDAS_MES_NEWS
+    **/
+    _count?: true | VW_APP_VENDAS_MES_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_VENDAS_MES_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_VENDAS_MES_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_VENDAS_MES_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_VENDAS_MES_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_VENDAS_MES_NEWAggregateType<T extends VW_APP_VENDAS_MES_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_VENDAS_MES_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_VENDAS_MES_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_VENDAS_MES_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_VENDAS_MES_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_VENDAS_MES_NEWWhereInput
+    orderBy?: VW_APP_VENDAS_MES_NEWOrderByWithAggregationInput | VW_APP_VENDAS_MES_NEWOrderByWithAggregationInput[]
+    by: VW_APP_VENDAS_MES_NEWScalarFieldEnum[] | VW_APP_VENDAS_MES_NEWScalarFieldEnum
+    having?: VW_APP_VENDAS_MES_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_VENDAS_MES_NEWCountAggregateInputType | true
+    _avg?: VW_APP_VENDAS_MES_NEWAvgAggregateInputType
+    _sum?: VW_APP_VENDAS_MES_NEWSumAggregateInputType
+    _min?: VW_APP_VENDAS_MES_NEWMinAggregateInputType
+    _max?: VW_APP_VENDAS_MES_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_VENDAS_MES_NEWGroupByOutputType = {
+    key: number
+    empresa: number
+    nome_fantasia: string
+    mes: string
+    mes_atual: string
+    t2024: Decimal
+    pm2024: Decimal
+    t2023: Decimal
+    pm2023: Decimal
+    t2022: Decimal
+    pm2022: Decimal
+    t2021: Decimal
+    pm2021: Decimal
+    ultima_atualizacao: string
+    _count: VW_APP_VENDAS_MES_NEWCountAggregateOutputType | null
+    _avg: VW_APP_VENDAS_MES_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_VENDAS_MES_NEWSumAggregateOutputType | null
+    _min: VW_APP_VENDAS_MES_NEWMinAggregateOutputType | null
+    _max: VW_APP_VENDAS_MES_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_VENDAS_MES_NEWGroupByPayload<T extends VW_APP_VENDAS_MES_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_VENDAS_MES_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_VENDAS_MES_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_VENDAS_MES_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_VENDAS_MES_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_VENDAS_MES_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    empresa?: boolean
+    nome_fantasia?: boolean
+    mes?: boolean
+    mes_atual?: boolean
+    t2024?: boolean
+    pm2024?: boolean
+    t2023?: boolean
+    pm2023?: boolean
+    t2022?: boolean
+    pm2022?: boolean
+    t2021?: boolean
+    pm2021?: boolean
+    ultima_atualizacao?: boolean
+  }, ExtArgs["result"]["vW_APP_VENDAS_MES_NEW"]>
+
+  export type VW_APP_VENDAS_MES_NEWSelectScalar = {
+    key?: boolean
+    empresa?: boolean
+    nome_fantasia?: boolean
+    mes?: boolean
+    mes_atual?: boolean
+    t2024?: boolean
+    pm2024?: boolean
+    t2023?: boolean
+    pm2023?: boolean
+    t2022?: boolean
+    pm2022?: boolean
+    t2021?: boolean
+    pm2021?: boolean
+    ultima_atualizacao?: boolean
+  }
+
+
+
+  export type $VW_APP_VENDAS_MES_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_VENDAS_MES_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      empresa: number
+      nome_fantasia: string
+      mes: string
+      mes_atual: string
+      t2024: Prisma.Decimal
+      pm2024: Prisma.Decimal
+      t2023: Prisma.Decimal
+      pm2023: Prisma.Decimal
+      t2022: Prisma.Decimal
+      pm2022: Prisma.Decimal
+      t2021: Prisma.Decimal
+      pm2021: Prisma.Decimal
+      ultima_atualizacao: string
+    }, ExtArgs["result"]["vW_APP_VENDAS_MES_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_VENDAS_MES_NEWGetPayload<S extends boolean | null | undefined | VW_APP_VENDAS_MES_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload, S>
+
+  type VW_APP_VENDAS_MES_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_VENDAS_MES_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_VENDAS_MES_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_VENDAS_MES_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_VENDAS_MES_NEW'], meta: { name: 'VW_APP_VENDAS_MES_NEW' } }
+    /**
+     * Find zero or one VW_APP_VENDAS_MES_NEW that matches the filter.
+     * @param {VW_APP_VENDAS_MES_NEWFindUniqueArgs} args - Arguments to find a VW_APP_VENDAS_MES_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_MES_NEW
+     * const vW_APP_VENDAS_MES_NEW = await prisma.vW_APP_VENDAS_MES_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_VENDAS_MES_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_MES_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_MES_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_VENDAS_MES_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_VENDAS_MES_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_VENDAS_MES_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_MES_NEW
+     * const vW_APP_VENDAS_MES_NEW = await prisma.vW_APP_VENDAS_MES_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_VENDAS_MES_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_MES_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_MES_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_VENDAS_MES_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_MES_NEWFindFirstArgs} args - Arguments to find a VW_APP_VENDAS_MES_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_MES_NEW
+     * const vW_APP_VENDAS_MES_NEW = await prisma.vW_APP_VENDAS_MES_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_VENDAS_MES_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_MES_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_MES_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_VENDAS_MES_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_MES_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_VENDAS_MES_NEW
+     * @example
+     * // Get one VW_APP_VENDAS_MES_NEW
+     * const vW_APP_VENDAS_MES_NEW = await prisma.vW_APP_VENDAS_MES_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_VENDAS_MES_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_MES_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_MES_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_VENDAS_MES_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_MES_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_VENDAS_MES_NEWS
+     * const vW_APP_VENDAS_MES_NEWS = await prisma.vW_APP_VENDAS_MES_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_VENDAS_MES_NEWS
+     * const vW_APP_VENDAS_MES_NEWS = await prisma.vW_APP_VENDAS_MES_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_VENDAS_MES_NEWWithKeyOnly = await prisma.vW_APP_VENDAS_MES_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_VENDAS_MES_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_MES_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_VENDAS_MES_NEW.
+     * @param {VW_APP_VENDAS_MES_NEWCreateArgs} args - Arguments to create a VW_APP_VENDAS_MES_NEW.
+     * @example
+     * // Create one VW_APP_VENDAS_MES_NEW
+     * const VW_APP_VENDAS_MES_NEW = await prisma.vW_APP_VENDAS_MES_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_VENDAS_MES_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_VENDAS_MES_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_MES_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_MES_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_VENDAS_MES_NEWS.
+     * @param {VW_APP_VENDAS_MES_NEWCreateManyArgs} args - Arguments to create many VW_APP_VENDAS_MES_NEWS.
+     * @example
+     * // Create many VW_APP_VENDAS_MES_NEWS
+     * const vW_APP_VENDAS_MES_NEW = await prisma.vW_APP_VENDAS_MES_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_VENDAS_MES_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_MES_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_VENDAS_MES_NEW.
+     * @param {VW_APP_VENDAS_MES_NEWDeleteArgs} args - Arguments to delete one VW_APP_VENDAS_MES_NEW.
+     * @example
+     * // Delete one VW_APP_VENDAS_MES_NEW
+     * const VW_APP_VENDAS_MES_NEW = await prisma.vW_APP_VENDAS_MES_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_VENDAS_MES_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_VENDAS_MES_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_MES_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_MES_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_VENDAS_MES_NEW.
+     * @param {VW_APP_VENDAS_MES_NEWUpdateArgs} args - Arguments to update one VW_APP_VENDAS_MES_NEW.
+     * @example
+     * // Update one VW_APP_VENDAS_MES_NEW
+     * const vW_APP_VENDAS_MES_NEW = await prisma.vW_APP_VENDAS_MES_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_VENDAS_MES_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_MES_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_MES_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_VENDAS_MES_NEWS.
+     * @param {VW_APP_VENDAS_MES_NEWDeleteManyArgs} args - Arguments to filter VW_APP_VENDAS_MES_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_VENDAS_MES_NEWS
+     * const { count } = await prisma.vW_APP_VENDAS_MES_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_VENDAS_MES_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_VENDAS_MES_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_VENDAS_MES_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_MES_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_VENDAS_MES_NEWS
+     * const vW_APP_VENDAS_MES_NEW = await prisma.vW_APP_VENDAS_MES_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_VENDAS_MES_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_MES_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_VENDAS_MES_NEW.
+     * @param {VW_APP_VENDAS_MES_NEWUpsertArgs} args - Arguments to update or create a VW_APP_VENDAS_MES_NEW.
+     * @example
+     * // Update or create a VW_APP_VENDAS_MES_NEW
+     * const vW_APP_VENDAS_MES_NEW = await prisma.vW_APP_VENDAS_MES_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_VENDAS_MES_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_VENDAS_MES_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_VENDAS_MES_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_VENDAS_MES_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_VENDAS_MES_NEWClient<$Result.GetResult<Prisma.$VW_APP_VENDAS_MES_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_VENDAS_MES_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_MES_NEWCountArgs} args - Arguments to filter VW_APP_VENDAS_MES_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_VENDAS_MES_NEWS
+     * const count = await prisma.vW_APP_VENDAS_MES_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_VENDAS_MES_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_VENDAS_MES_NEWCountArgs>(
+      args?: Subset<T, VW_APP_VENDAS_MES_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_VENDAS_MES_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_VENDAS_MES_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_MES_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_VENDAS_MES_NEWAggregateArgs>(args: Subset<T, VW_APP_VENDAS_MES_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_VENDAS_MES_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_VENDAS_MES_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_VENDAS_MES_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_VENDAS_MES_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_VENDAS_MES_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_VENDAS_MES_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_VENDAS_MES_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_VENDAS_MES_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_VENDAS_MES_NEW model
+   */
+  readonly fields: VW_APP_VENDAS_MES_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_VENDAS_MES_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_VENDAS_MES_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_VENDAS_MES_NEW model
+   */ 
+  interface VW_APP_VENDAS_MES_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_VENDAS_MES_NEW", 'Int'>
+    readonly empresa: FieldRef<"VW_APP_VENDAS_MES_NEW", 'Int'>
+    readonly nome_fantasia: FieldRef<"VW_APP_VENDAS_MES_NEW", 'String'>
+    readonly mes: FieldRef<"VW_APP_VENDAS_MES_NEW", 'String'>
+    readonly mes_atual: FieldRef<"VW_APP_VENDAS_MES_NEW", 'String'>
+    readonly t2024: FieldRef<"VW_APP_VENDAS_MES_NEW", 'Decimal'>
+    readonly pm2024: FieldRef<"VW_APP_VENDAS_MES_NEW", 'Decimal'>
+    readonly t2023: FieldRef<"VW_APP_VENDAS_MES_NEW", 'Decimal'>
+    readonly pm2023: FieldRef<"VW_APP_VENDAS_MES_NEW", 'Decimal'>
+    readonly t2022: FieldRef<"VW_APP_VENDAS_MES_NEW", 'Decimal'>
+    readonly pm2022: FieldRef<"VW_APP_VENDAS_MES_NEW", 'Decimal'>
+    readonly t2021: FieldRef<"VW_APP_VENDAS_MES_NEW", 'Decimal'>
+    readonly pm2021: FieldRef<"VW_APP_VENDAS_MES_NEW", 'Decimal'>
+    readonly ultima_atualizacao: FieldRef<"VW_APP_VENDAS_MES_NEW", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_VENDAS_MES_NEW findUnique
+   */
+  export type VW_APP_VENDAS_MES_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_MES_NEW
+     */
+    select?: VW_APP_VENDAS_MES_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_MES_NEW to fetch.
+     */
+    where: VW_APP_VENDAS_MES_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW findUniqueOrThrow
+   */
+  export type VW_APP_VENDAS_MES_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_MES_NEW
+     */
+    select?: VW_APP_VENDAS_MES_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_MES_NEW to fetch.
+     */
+    where: VW_APP_VENDAS_MES_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW findFirst
+   */
+  export type VW_APP_VENDAS_MES_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_MES_NEW
+     */
+    select?: VW_APP_VENDAS_MES_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_MES_NEW to fetch.
+     */
+    where?: VW_APP_VENDAS_MES_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_MES_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_MES_NEWOrderByWithRelationInput | VW_APP_VENDAS_MES_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_VENDAS_MES_NEWS.
+     */
+    cursor?: VW_APP_VENDAS_MES_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_MES_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_MES_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_VENDAS_MES_NEWS.
+     */
+    distinct?: VW_APP_VENDAS_MES_NEWScalarFieldEnum | VW_APP_VENDAS_MES_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW findFirstOrThrow
+   */
+  export type VW_APP_VENDAS_MES_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_MES_NEW
+     */
+    select?: VW_APP_VENDAS_MES_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_MES_NEW to fetch.
+     */
+    where?: VW_APP_VENDAS_MES_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_MES_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_MES_NEWOrderByWithRelationInput | VW_APP_VENDAS_MES_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_VENDAS_MES_NEWS.
+     */
+    cursor?: VW_APP_VENDAS_MES_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_MES_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_MES_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_VENDAS_MES_NEWS.
+     */
+    distinct?: VW_APP_VENDAS_MES_NEWScalarFieldEnum | VW_APP_VENDAS_MES_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW findMany
+   */
+  export type VW_APP_VENDAS_MES_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_MES_NEW
+     */
+    select?: VW_APP_VENDAS_MES_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_VENDAS_MES_NEWS to fetch.
+     */
+    where?: VW_APP_VENDAS_MES_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_VENDAS_MES_NEWS to fetch.
+     */
+    orderBy?: VW_APP_VENDAS_MES_NEWOrderByWithRelationInput | VW_APP_VENDAS_MES_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_VENDAS_MES_NEWS.
+     */
+    cursor?: VW_APP_VENDAS_MES_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_VENDAS_MES_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_VENDAS_MES_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_VENDAS_MES_NEWScalarFieldEnum | VW_APP_VENDAS_MES_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW create
+   */
+  export type VW_APP_VENDAS_MES_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_MES_NEW
+     */
+    select?: VW_APP_VENDAS_MES_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_VENDAS_MES_NEW.
+     */
+    data: XOR<VW_APP_VENDAS_MES_NEWCreateInput, VW_APP_VENDAS_MES_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW createMany
+   */
+  export type VW_APP_VENDAS_MES_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_VENDAS_MES_NEWS.
+     */
+    data: VW_APP_VENDAS_MES_NEWCreateManyInput | VW_APP_VENDAS_MES_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW update
+   */
+  export type VW_APP_VENDAS_MES_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_MES_NEW
+     */
+    select?: VW_APP_VENDAS_MES_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_VENDAS_MES_NEW.
+     */
+    data: XOR<VW_APP_VENDAS_MES_NEWUpdateInput, VW_APP_VENDAS_MES_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_VENDAS_MES_NEW to update.
+     */
+    where: VW_APP_VENDAS_MES_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW updateMany
+   */
+  export type VW_APP_VENDAS_MES_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_VENDAS_MES_NEWS.
+     */
+    data: XOR<VW_APP_VENDAS_MES_NEWUpdateManyMutationInput, VW_APP_VENDAS_MES_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_VENDAS_MES_NEWS to update
+     */
+    where?: VW_APP_VENDAS_MES_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW upsert
+   */
+  export type VW_APP_VENDAS_MES_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_MES_NEW
+     */
+    select?: VW_APP_VENDAS_MES_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_VENDAS_MES_NEW to update in case it exists.
+     */
+    where: VW_APP_VENDAS_MES_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_VENDAS_MES_NEW found by the `where` argument doesn't exist, create a new VW_APP_VENDAS_MES_NEW with this data.
+     */
+    create: XOR<VW_APP_VENDAS_MES_NEWCreateInput, VW_APP_VENDAS_MES_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_VENDAS_MES_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_VENDAS_MES_NEWUpdateInput, VW_APP_VENDAS_MES_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW delete
+   */
+  export type VW_APP_VENDAS_MES_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_MES_NEW
+     */
+    select?: VW_APP_VENDAS_MES_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_VENDAS_MES_NEW to delete.
+     */
+    where: VW_APP_VENDAS_MES_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW deleteMany
+   */
+  export type VW_APP_VENDAS_MES_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_VENDAS_MES_NEWS to delete
+     */
+    where?: VW_APP_VENDAS_MES_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_VENDAS_MES_NEW without action
+   */
+  export type VW_APP_VENDAS_MES_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_VENDAS_MES_NEW
+     */
+    select?: VW_APP_VENDAS_MES_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -10289,6 +11396,26 @@ export namespace Prisma {
   };
 
   export type VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum = (typeof VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum)[keyof typeof VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum]
+
+
+  export const VW_APP_VENDAS_MES_NEWScalarFieldEnum: {
+    key: 'key',
+    empresa: 'empresa',
+    nome_fantasia: 'nome_fantasia',
+    mes: 'mes',
+    mes_atual: 'mes_atual',
+    t2024: 't2024',
+    pm2024: 'pm2024',
+    t2023: 't2023',
+    pm2023: 'pm2023',
+    t2022: 't2022',
+    pm2022: 'pm2022',
+    t2021: 't2021',
+    pm2021: 'pm2021',
+    ultima_atualizacao: 'ultima_atualizacao'
+  };
+
+  export type VW_APP_VENDAS_MES_NEWScalarFieldEnum = (typeof VW_APP_VENDAS_MES_NEWScalarFieldEnum)[keyof typeof VW_APP_VENDAS_MES_NEWScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -11295,6 +12422,105 @@ export namespace Prisma {
     total_cupom_anterior?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | Decimal | DecimalJsLike | number | string
     total_cupom_anterior_format?: StringWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | string
     perc_anterior?: IntWithAggregatesFilter<"VW_APP_VENDAS_CUPONS_NEW"> | number
+  }
+
+  export type VW_APP_VENDAS_MES_NEWWhereInput = {
+    AND?: VW_APP_VENDAS_MES_NEWWhereInput | VW_APP_VENDAS_MES_NEWWhereInput[]
+    OR?: VW_APP_VENDAS_MES_NEWWhereInput[]
+    NOT?: VW_APP_VENDAS_MES_NEWWhereInput | VW_APP_VENDAS_MES_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_VENDAS_MES_NEW"> | number
+    empresa?: IntFilter<"VW_APP_VENDAS_MES_NEW"> | number
+    nome_fantasia?: StringFilter<"VW_APP_VENDAS_MES_NEW"> | string
+    mes?: StringFilter<"VW_APP_VENDAS_MES_NEW"> | string
+    mes_atual?: StringFilter<"VW_APP_VENDAS_MES_NEW"> | string
+    t2024?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2024?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    t2023?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2023?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    t2022?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2022?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    t2021?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2021?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFilter<"VW_APP_VENDAS_MES_NEW"> | string
+  }
+
+  export type VW_APP_VENDAS_MES_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    nome_fantasia?: SortOrder
+    mes?: SortOrder
+    mes_atual?: SortOrder
+    t2024?: SortOrder
+    pm2024?: SortOrder
+    t2023?: SortOrder
+    pm2023?: SortOrder
+    t2022?: SortOrder
+    pm2022?: SortOrder
+    t2021?: SortOrder
+    pm2021?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_MES_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_VENDAS_MES_NEWWhereInput | VW_APP_VENDAS_MES_NEWWhereInput[]
+    OR?: VW_APP_VENDAS_MES_NEWWhereInput[]
+    NOT?: VW_APP_VENDAS_MES_NEWWhereInput | VW_APP_VENDAS_MES_NEWWhereInput[]
+    empresa?: IntFilter<"VW_APP_VENDAS_MES_NEW"> | number
+    nome_fantasia?: StringFilter<"VW_APP_VENDAS_MES_NEW"> | string
+    mes?: StringFilter<"VW_APP_VENDAS_MES_NEW"> | string
+    mes_atual?: StringFilter<"VW_APP_VENDAS_MES_NEW"> | string
+    t2024?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2024?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    t2023?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2023?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    t2022?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2022?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    t2021?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2021?: DecimalFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFilter<"VW_APP_VENDAS_MES_NEW"> | string
+  }, "key">
+
+  export type VW_APP_VENDAS_MES_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    nome_fantasia?: SortOrder
+    mes?: SortOrder
+    mes_atual?: SortOrder
+    t2024?: SortOrder
+    pm2024?: SortOrder
+    t2023?: SortOrder
+    pm2023?: SortOrder
+    t2022?: SortOrder
+    pm2022?: SortOrder
+    t2021?: SortOrder
+    pm2021?: SortOrder
+    ultima_atualizacao?: SortOrder
+    _count?: VW_APP_VENDAS_MES_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_VENDAS_MES_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_VENDAS_MES_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_VENDAS_MES_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_VENDAS_MES_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_VENDAS_MES_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_VENDAS_MES_NEWScalarWhereWithAggregatesInput | VW_APP_VENDAS_MES_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_VENDAS_MES_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_VENDAS_MES_NEWScalarWhereWithAggregatesInput | VW_APP_VENDAS_MES_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | number
+    empresa?: IntWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | number
+    nome_fantasia?: StringWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | string
+    mes?: StringWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | string
+    mes_atual?: StringWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | string
+    t2024?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2024?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    t2023?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2023?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    t2022?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2022?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    t2021?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    pm2021?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | string
   }
 
   export type VW_AUTORIZACOES_WEB_DEVCreateInput = {
@@ -12462,6 +13688,125 @@ export namespace Prisma {
     perc_anterior?: IntFieldUpdateOperationsInput | number
   }
 
+  export type VW_APP_VENDAS_MES_NEWCreateInput = {
+    key: number
+    empresa: number
+    nome_fantasia: string
+    mes: string
+    mes_atual: string
+    t2024: Decimal | DecimalJsLike | number | string
+    pm2024: Decimal | DecimalJsLike | number | string
+    t2023: Decimal | DecimalJsLike | number | string
+    pm2023: Decimal | DecimalJsLike | number | string
+    t2022: Decimal | DecimalJsLike | number | string
+    pm2022: Decimal | DecimalJsLike | number | string
+    t2021: Decimal | DecimalJsLike | number | string
+    pm2021: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_VENDAS_MES_NEWUncheckedCreateInput = {
+    key: number
+    empresa: number
+    nome_fantasia: string
+    mes: string
+    mes_atual: string
+    t2024: Decimal | DecimalJsLike | number | string
+    pm2024: Decimal | DecimalJsLike | number | string
+    t2023: Decimal | DecimalJsLike | number | string
+    pm2023: Decimal | DecimalJsLike | number | string
+    t2022: Decimal | DecimalJsLike | number | string
+    pm2022: Decimal | DecimalJsLike | number | string
+    t2021: Decimal | DecimalJsLike | number | string
+    pm2021: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_VENDAS_MES_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    empresa?: IntFieldUpdateOperationsInput | number
+    nome_fantasia?: StringFieldUpdateOperationsInput | string
+    mes?: StringFieldUpdateOperationsInput | string
+    mes_atual?: StringFieldUpdateOperationsInput | string
+    t2024?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2024?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2023?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2023?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2022?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2022?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2021?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2021?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_VENDAS_MES_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    empresa?: IntFieldUpdateOperationsInput | number
+    nome_fantasia?: StringFieldUpdateOperationsInput | string
+    mes?: StringFieldUpdateOperationsInput | string
+    mes_atual?: StringFieldUpdateOperationsInput | string
+    t2024?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2024?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2023?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2023?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2022?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2022?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2021?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2021?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_VENDAS_MES_NEWCreateManyInput = {
+    key: number
+    empresa: number
+    nome_fantasia: string
+    mes: string
+    mes_atual: string
+    t2024: Decimal | DecimalJsLike | number | string
+    pm2024: Decimal | DecimalJsLike | number | string
+    t2023: Decimal | DecimalJsLike | number | string
+    pm2023: Decimal | DecimalJsLike | number | string
+    t2022: Decimal | DecimalJsLike | number | string
+    pm2022: Decimal | DecimalJsLike | number | string
+    t2021: Decimal | DecimalJsLike | number | string
+    pm2021: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_VENDAS_MES_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    empresa?: IntFieldUpdateOperationsInput | number
+    nome_fantasia?: StringFieldUpdateOperationsInput | string
+    mes?: StringFieldUpdateOperationsInput | string
+    mes_atual?: StringFieldUpdateOperationsInput | string
+    t2024?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2024?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2023?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2023?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2022?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2022?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2021?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2021?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_VENDAS_MES_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    empresa?: IntFieldUpdateOperationsInput | number
+    nome_fantasia?: StringFieldUpdateOperationsInput | string
+    mes?: StringFieldUpdateOperationsInput | string
+    mes_atual?: StringFieldUpdateOperationsInput | string
+    t2024?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2024?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2023?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2023?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2022?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2022?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    t2021?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pm2021?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
   export type IntFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
     in?: number[]
@@ -13390,6 +14735,83 @@ export namespace Prisma {
     perc_anterior?: SortOrder
   }
 
+  export type VW_APP_VENDAS_MES_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    nome_fantasia?: SortOrder
+    mes?: SortOrder
+    mes_atual?: SortOrder
+    t2024?: SortOrder
+    pm2024?: SortOrder
+    t2023?: SortOrder
+    pm2023?: SortOrder
+    t2022?: SortOrder
+    pm2022?: SortOrder
+    t2021?: SortOrder
+    pm2021?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_MES_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    t2024?: SortOrder
+    pm2024?: SortOrder
+    t2023?: SortOrder
+    pm2023?: SortOrder
+    t2022?: SortOrder
+    pm2022?: SortOrder
+    t2021?: SortOrder
+    pm2021?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_MES_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    nome_fantasia?: SortOrder
+    mes?: SortOrder
+    mes_atual?: SortOrder
+    t2024?: SortOrder
+    pm2024?: SortOrder
+    t2023?: SortOrder
+    pm2023?: SortOrder
+    t2022?: SortOrder
+    pm2022?: SortOrder
+    t2021?: SortOrder
+    pm2021?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_MES_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    nome_fantasia?: SortOrder
+    mes?: SortOrder
+    mes_atual?: SortOrder
+    t2024?: SortOrder
+    pm2024?: SortOrder
+    t2023?: SortOrder
+    pm2023?: SortOrder
+    t2022?: SortOrder
+    pm2022?: SortOrder
+    t2021?: SortOrder
+    pm2021?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_VENDAS_MES_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    t2024?: SortOrder
+    pm2024?: SortOrder
+    t2023?: SortOrder
+    pm2023?: SortOrder
+    t2022?: SortOrder
+    pm2022?: SortOrder
+    t2021?: SortOrder
+    pm2021?: SortOrder
+  }
+
   export type IntFieldUpdateOperationsInput = {
     set?: number
     increment?: number
@@ -13647,6 +15069,10 @@ export namespace Prisma {
      * @deprecated Use VW_APP_VENDAS_CUPONS_NEWDefaultArgs instead
      */
     export type VW_APP_VENDAS_CUPONS_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_VENDAS_CUPONS_NEWDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_VENDAS_MES_NEWDefaultArgs instead
+     */
+    export type VW_APP_VENDAS_MES_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_VENDAS_MES_NEWDefaultArgs<ExtArgs>
 
   /**
    * Batch Payload for updateMany & deleteMany & createMany

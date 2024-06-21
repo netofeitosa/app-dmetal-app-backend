@@ -177,3 +177,20 @@ model VW_APP_VENDAS_CUPONS_NEW {
   total_cupom_anterior_format String
   perc_anterior               Int
 }
+
+model VW_APP_VENDAS_MES_NEW {
+  key                Int     @id
+  empresa            Int
+  nome_fantasia      String
+  mes                String
+  mes_atual          String
+  t2024              Decimal
+  pm2024             Decimal
+  t2023              Decimal
+  pm2023             Decimal
+  t2022              Decimal
+  pm2022             Decimal
+  t2021              Decimal
+  pm2021             Decimal
+  ultima_atualizacao String
+}

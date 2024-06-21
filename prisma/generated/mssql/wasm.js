@@ -287,6 +287,23 @@ exports.Prisma.VW_APP_VENDAS_CUPONS_NEWScalarFieldEnum = {
   perc_anterior: 'perc_anterior'
 };
 
+exports.Prisma.VW_APP_VENDAS_MES_NEWScalarFieldEnum = {
+  key: 'key',
+  empresa: 'empresa',
+  nome_fantasia: 'nome_fantasia',
+  mes: 'mes',
+  mes_atual: 'mes_atual',
+  t2024: 't2024',
+  pm2024: 'pm2024',
+  t2023: 't2023',
+  pm2023: 'pm2023',
+  t2022: 't2022',
+  pm2022: 'pm2022',
+  t2021: 't2021',
+  pm2021: 'pm2021',
+  ultima_atualizacao: 'ultima_atualizacao'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -306,7 +323,8 @@ exports.Prisma.ModelName = {
   VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV: 'VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV',
   AUTORIZACOES_WEB_BARRAMENTOS_DEV: 'AUTORIZACOES_WEB_BARRAMENTOS_DEV',
   VW_APP_VENDAS_LOJAS_NEW: 'VW_APP_VENDAS_LOJAS_NEW',
-  VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW'
+  VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW',
+  VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW'
 };
 
 /**

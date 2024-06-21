@@ -182,7 +182,58 @@ const getVendasCupom = async (_req, res) => {
   return res.status(200).json([resultData]);
 };
 
+const getVendasMes = async (_req, res) => {
+  // Função para somar valores de um array de objetos
+  const sumValues = (arr, prop) =>
+    arr.reduce((acc, obj) => acc + parseFloat(obj[prop]), 0);
+
+  const sumValuesWithCondition = (arr, prop, condition) =>
+    sumValues(arr.filter(condition), prop);
+
+  const sumValuesWithCondition2 = (arr, prop, condition2) =>
+    sumValues(arr.filter(condition2), prop);
+
+  const result = await reportsModel.getVendasMes();
+
+  const condition = (obj) => obj.mes === "GERAL";
+  const condition2 = (obj) => obj.mes_atual === "S";
+
+  const total_2021 = sumValuesWithCondition(result, "t2021", condition);
+  const total_2022 = sumValuesWithCondition(result, "t2022", condition);
+  const total_2023 = sumValuesWithCondition(result, "t2023", condition);
+  const total_2024 = sumValuesWithCondition(result, "t2024", condition);
+
+  const total_2021_mes = sumValuesWithCondition2(result, "t2021", condition2);
+  const total_2022_mes = sumValuesWithCondition2(result, "t2022", condition2);
+  const total_2023_mes = sumValuesWithCondition2(result, "t2023", condition2);
+  const total_2024_mes = sumValuesWithCondition2(result, "t2024", condition2);
+
+  const resultData = {
+    total_venda_2021: total_2021.toString(),
+    total_venda_2021_mes: total_2021_mes.toString(),
+    total_venda_2022: total_2022.toString(),
+    total_venda_2022_mes: total_2022_mes.toString(),
+    total_venda_2023: total_2023.toString(),
+    total_venda_2023_mes: total_2023_mes.toString(),
+    total_venda_2024: total_2024.toString(),
+    total_venda_2024_mes: total_2024_mes.toString(),
+    lojas: result.map((loja) => ({
+      key: loja.key.toString(),
+      loja: loja.empresa.toString(),
+      nome_fantasia: loja.nome_fantasia,
+      mes: loja.mes,
+      t2024: loja.t2024,
+      t2023: loja.t2023,
+      t2022: loja.t2022,
+      T2021: loja.t2021,
+    })),
+  };
+
+  return res.status(200).json([resultData]);
+};
+
 module.exports = {
   getVendasLojas,
   getVendasCupom,
+  getVendasMes,
 };
