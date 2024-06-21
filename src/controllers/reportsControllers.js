@@ -261,6 +261,7 @@ const getEstoqueLojas = async (_req, res) => {
   // Agrupar coleções por empresa
   const empresas = result.reduce((acc, loja) => {
     const {
+      key,
       empresa,
       descricao,
       cod_colecao,
@@ -276,6 +277,7 @@ const getEstoqueLojas = async (_req, res) => {
     } = loja;
     if (!acc[empresa]) {
       acc[empresa] = {
+        key: key,
         empresa: empresa.toString(),
         descricao: descricao.toString(),
         dmetal: 0,
