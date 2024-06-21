@@ -16,8 +16,13 @@ const getVendasMes = async () => {
   return await prismaMSSQL.vW_APP_VENDAS_MES_NEW.findMany();
 };
 
+const getEstoqueLojas = async () => {
+  return await prismaMSSQL.vW_APP_ESTOQUE_LOJAS_NEW.findMany();
+};
+
 module.exports = {
   getVendasLojas,
   getVendasCupom,
   getVendasMes,
+  getEstoqueLojas,
 };

@@ -194,3 +194,21 @@ model VW_APP_VENDAS_MES_NEW {
   pm2021             Decimal
   ultima_atualizacao String
 }
+
+model VW_APP_ESTOQUE_LOJAS_NEW {
+  key         Int    @id
+  empresa     Int
+  descricao   String
+  cod_marca   Int
+  marca       String
+  cod_colecao Int
+  colecao     String
+  dmetal      Int
+  chica       Int
+  chiquinha   Int
+  morah       Int
+  jeans       Int
+  malha       Int
+  plano       Int
+  total       Int
+}

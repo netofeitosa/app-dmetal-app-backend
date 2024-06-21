@@ -26,5 +26,6 @@ router.get("/saidas", aprovacoesController.getSaidas);
 router.get("/vendaslojas", reportsControllers.getVendasLojas);
 router.get("/vendascupons", reportsControllers.getVendasCupom);
 router.get("/vendasmes", reportsControllers.getVendasMes);
+router.get("/estoquelojas", reportsControllers.getEstoqueLojas);
 
 module.exports = router;

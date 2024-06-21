@@ -58,6 +58,11 @@ export type VW_APP_VENDAS_CUPONS_NEW = $Result.DefaultSelection<Prisma.$VW_APP_V
  * 
  */
 export type VW_APP_VENDAS_MES_NEW = $Result.DefaultSelection<Prisma.$VW_APP_VENDAS_MES_NEWPayload>
+/**
+ * Model VW_APP_ESTOQUE_LOJAS_NEW
+ * 
+ */
+export type VW_APP_ESTOQUE_LOJAS_NEW = $Result.DefaultSelection<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -270,6 +275,16 @@ export class PrismaClient<
     * ```
     */
   get vW_APP_VENDAS_MES_NEW(): Prisma.VW_APP_VENDAS_MES_NEWDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_ESTOQUE_LOJAS_NEW`: Exposes CRUD operations for the **VW_APP_ESTOQUE_LOJAS_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_ESTOQUE_LOJAS_NEWS
+    * const vW_APP_ESTOQUE_LOJAS_NEWS = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.findMany()
+    * ```
+    */
+  get vW_APP_ESTOQUE_LOJAS_NEW(): Prisma.VW_APP_ESTOQUE_LOJAS_NEWDelegate<ExtArgs>;
 }
 
 export namespace Prisma {
@@ -755,7 +770,8 @@ export namespace Prisma {
     AUTORIZACOES_WEB_BARRAMENTOS_DEV: 'AUTORIZACOES_WEB_BARRAMENTOS_DEV',
     VW_APP_VENDAS_LOJAS_NEW: 'VW_APP_VENDAS_LOJAS_NEW',
     VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW',
-    VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW'
+    VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW',
+    VW_APP_ESTOQUE_LOJAS_NEW: 'VW_APP_ESTOQUE_LOJAS_NEW'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -772,7 +788,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     meta: {
-      modelProps: 'vW_AUTORIZACOES_WEB_DEV' | 'vW_AUTORIZACOES_DESPESAS_COFRE_DEV' | 'vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV' | 'vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV' | 'vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV' | 'aUTORIZACOES_WEB_BARRAMENTOS_DEV' | 'vW_APP_VENDAS_LOJAS_NEW' | 'vW_APP_VENDAS_CUPONS_NEW' | 'vW_APP_VENDAS_MES_NEW'
+      modelProps: 'vW_AUTORIZACOES_WEB_DEV' | 'vW_AUTORIZACOES_DESPESAS_COFRE_DEV' | 'vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV' | 'vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV' | 'vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV' | 'aUTORIZACOES_WEB_BARRAMENTOS_DEV' | 'vW_APP_VENDAS_LOJAS_NEW' | 'vW_APP_VENDAS_CUPONS_NEW' | 'vW_APP_VENDAS_MES_NEW' | 'vW_APP_ESTOQUE_LOJAS_NEW'
       txIsolationLevel: Prisma.TransactionIsolationLevel
     },
     model: {
@@ -1367,6 +1383,72 @@ export namespace Prisma {
           count: {
             args: Prisma.VW_APP_VENDAS_MES_NEWCountArgs<ExtArgs>,
             result: $Utils.Optional<VW_APP_VENDAS_MES_NEWCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_ESTOQUE_LOJAS_NEW: {
+        payload: Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_ESTOQUE_LOJAS_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_ESTOQUE_LOJAS_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_ESTOQUE_LOJAS_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_ESTOQUE_LOJAS_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_ESTOQUE_LOJAS_NEWCountAggregateOutputType> | number
           }
         }
       }
@@ -11193,6 +11275,1050 @@ export namespace Prisma {
 
 
   /**
+   * Model VW_APP_ESTOQUE_LOJAS_NEW
+   */
+
+  export type AggregateVW_APP_ESTOQUE_LOJAS_NEW = {
+    _count: VW_APP_ESTOQUE_LOJAS_NEWCountAggregateOutputType | null
+    _avg: VW_APP_ESTOQUE_LOJAS_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_ESTOQUE_LOJAS_NEWSumAggregateOutputType | null
+    _min: VW_APP_ESTOQUE_LOJAS_NEWMinAggregateOutputType | null
+    _max: VW_APP_ESTOQUE_LOJAS_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWAvgAggregateOutputType = {
+    key: number | null
+    empresa: number | null
+    cod_marca: number | null
+    cod_colecao: number | null
+    dmetal: number | null
+    chica: number | null
+    chiquinha: number | null
+    morah: number | null
+    jeans: number | null
+    malha: number | null
+    plano: number | null
+    total: number | null
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWSumAggregateOutputType = {
+    key: number | null
+    empresa: number | null
+    cod_marca: number | null
+    cod_colecao: number | null
+    dmetal: number | null
+    chica: number | null
+    chiquinha: number | null
+    morah: number | null
+    jeans: number | null
+    malha: number | null
+    plano: number | null
+    total: number | null
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWMinAggregateOutputType = {
+    key: number | null
+    empresa: number | null
+    descricao: string | null
+    cod_marca: number | null
+    marca: string | null
+    cod_colecao: number | null
+    colecao: string | null
+    dmetal: number | null
+    chica: number | null
+    chiquinha: number | null
+    morah: number | null
+    jeans: number | null
+    malha: number | null
+    plano: number | null
+    total: number | null
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWMaxAggregateOutputType = {
+    key: number | null
+    empresa: number | null
+    descricao: string | null
+    cod_marca: number | null
+    marca: string | null
+    cod_colecao: number | null
+    colecao: string | null
+    dmetal: number | null
+    chica: number | null
+    chiquinha: number | null
+    morah: number | null
+    jeans: number | null
+    malha: number | null
+    plano: number | null
+    total: number | null
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWCountAggregateOutputType = {
+    key: number
+    empresa: number
+    descricao: number
+    cod_marca: number
+    marca: number
+    cod_colecao: number
+    colecao: number
+    dmetal: number
+    chica: number
+    chiquinha: number
+    morah: number
+    jeans: number
+    malha: number
+    plano: number
+    total: number
+    _all: number
+  }
+
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWAvgAggregateInputType = {
+    key?: true
+    empresa?: true
+    cod_marca?: true
+    cod_colecao?: true
+    dmetal?: true
+    chica?: true
+    chiquinha?: true
+    morah?: true
+    jeans?: true
+    malha?: true
+    plano?: true
+    total?: true
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWSumAggregateInputType = {
+    key?: true
+    empresa?: true
+    cod_marca?: true
+    cod_colecao?: true
+    dmetal?: true
+    chica?: true
+    chiquinha?: true
+    morah?: true
+    jeans?: true
+    malha?: true
+    plano?: true
+    total?: true
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWMinAggregateInputType = {
+    key?: true
+    empresa?: true
+    descricao?: true
+    cod_marca?: true
+    marca?: true
+    cod_colecao?: true
+    colecao?: true
+    dmetal?: true
+    chica?: true
+    chiquinha?: true
+    morah?: true
+    jeans?: true
+    malha?: true
+    plano?: true
+    total?: true
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWMaxAggregateInputType = {
+    key?: true
+    empresa?: true
+    descricao?: true
+    cod_marca?: true
+    marca?: true
+    cod_colecao?: true
+    colecao?: true
+    dmetal?: true
+    chica?: true
+    chiquinha?: true
+    morah?: true
+    jeans?: true
+    malha?: true
+    plano?: true
+    total?: true
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWCountAggregateInputType = {
+    key?: true
+    empresa?: true
+    descricao?: true
+    cod_marca?: true
+    marca?: true
+    cod_colecao?: true
+    colecao?: true
+    dmetal?: true
+    chica?: true
+    chiquinha?: true
+    morah?: true
+    jeans?: true
+    malha?: true
+    plano?: true
+    total?: true
+    _all?: true
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_ESTOQUE_LOJAS_NEW to aggregate.
+     */
+    where?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_ESTOQUE_LOJAS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_ESTOQUE_LOJAS_NEWOrderByWithRelationInput | VW_APP_ESTOQUE_LOJAS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_ESTOQUE_LOJAS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_ESTOQUE_LOJAS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_ESTOQUE_LOJAS_NEWS
+    **/
+    _count?: true | VW_APP_ESTOQUE_LOJAS_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_ESTOQUE_LOJAS_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_ESTOQUE_LOJAS_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_ESTOQUE_LOJAS_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_ESTOQUE_LOJAS_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_ESTOQUE_LOJAS_NEWAggregateType<T extends VW_APP_ESTOQUE_LOJAS_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_ESTOQUE_LOJAS_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_ESTOQUE_LOJAS_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_ESTOQUE_LOJAS_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput
+    orderBy?: VW_APP_ESTOQUE_LOJAS_NEWOrderByWithAggregationInput | VW_APP_ESTOQUE_LOJAS_NEWOrderByWithAggregationInput[]
+    by: VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum[] | VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum
+    having?: VW_APP_ESTOQUE_LOJAS_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_ESTOQUE_LOJAS_NEWCountAggregateInputType | true
+    _avg?: VW_APP_ESTOQUE_LOJAS_NEWAvgAggregateInputType
+    _sum?: VW_APP_ESTOQUE_LOJAS_NEWSumAggregateInputType
+    _min?: VW_APP_ESTOQUE_LOJAS_NEWMinAggregateInputType
+    _max?: VW_APP_ESTOQUE_LOJAS_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWGroupByOutputType = {
+    key: number
+    empresa: number
+    descricao: string
+    cod_marca: number
+    marca: string
+    cod_colecao: number
+    colecao: string
+    dmetal: number
+    chica: number
+    chiquinha: number
+    morah: number
+    jeans: number
+    malha: number
+    plano: number
+    total: number
+    _count: VW_APP_ESTOQUE_LOJAS_NEWCountAggregateOutputType | null
+    _avg: VW_APP_ESTOQUE_LOJAS_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_ESTOQUE_LOJAS_NEWSumAggregateOutputType | null
+    _min: VW_APP_ESTOQUE_LOJAS_NEWMinAggregateOutputType | null
+    _max: VW_APP_ESTOQUE_LOJAS_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_ESTOQUE_LOJAS_NEWGroupByPayload<T extends VW_APP_ESTOQUE_LOJAS_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_ESTOQUE_LOJAS_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_ESTOQUE_LOJAS_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_ESTOQUE_LOJAS_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_ESTOQUE_LOJAS_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    empresa?: boolean
+    descricao?: boolean
+    cod_marca?: boolean
+    marca?: boolean
+    cod_colecao?: boolean
+    colecao?: boolean
+    dmetal?: boolean
+    chica?: boolean
+    chiquinha?: boolean
+    morah?: boolean
+    jeans?: boolean
+    malha?: boolean
+    plano?: boolean
+    total?: boolean
+  }, ExtArgs["result"]["vW_APP_ESTOQUE_LOJAS_NEW"]>
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWSelectScalar = {
+    key?: boolean
+    empresa?: boolean
+    descricao?: boolean
+    cod_marca?: boolean
+    marca?: boolean
+    cod_colecao?: boolean
+    colecao?: boolean
+    dmetal?: boolean
+    chica?: boolean
+    chiquinha?: boolean
+    morah?: boolean
+    jeans?: boolean
+    malha?: boolean
+    plano?: boolean
+    total?: boolean
+  }
+
+
+
+  export type $VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_ESTOQUE_LOJAS_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      empresa: number
+      descricao: string
+      cod_marca: number
+      marca: string
+      cod_colecao: number
+      colecao: string
+      dmetal: number
+      chica: number
+      chiquinha: number
+      morah: number
+      jeans: number
+      malha: number
+      plano: number
+      total: number
+    }, ExtArgs["result"]["vW_APP_ESTOQUE_LOJAS_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_ESTOQUE_LOJAS_NEWGetPayload<S extends boolean | null | undefined | VW_APP_ESTOQUE_LOJAS_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload, S>
+
+  type VW_APP_ESTOQUE_LOJAS_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_ESTOQUE_LOJAS_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_ESTOQUE_LOJAS_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_ESTOQUE_LOJAS_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_ESTOQUE_LOJAS_NEW'], meta: { name: 'VW_APP_ESTOQUE_LOJAS_NEW' } }
+    /**
+     * Find zero or one VW_APP_ESTOQUE_LOJAS_NEW that matches the filter.
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWFindUniqueArgs} args - Arguments to find a VW_APP_ESTOQUE_LOJAS_NEW
+     * @example
+     * // Get one VW_APP_ESTOQUE_LOJAS_NEW
+     * const vW_APP_ESTOQUE_LOJAS_NEW = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_ESTOQUE_LOJAS_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_ESTOQUE_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_ESTOQUE_LOJAS_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_ESTOQUE_LOJAS_NEW
+     * @example
+     * // Get one VW_APP_ESTOQUE_LOJAS_NEW
+     * const vW_APP_ESTOQUE_LOJAS_NEW = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_ESTOQUE_LOJAS_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_ESTOQUE_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_ESTOQUE_LOJAS_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWFindFirstArgs} args - Arguments to find a VW_APP_ESTOQUE_LOJAS_NEW
+     * @example
+     * // Get one VW_APP_ESTOQUE_LOJAS_NEW
+     * const vW_APP_ESTOQUE_LOJAS_NEW = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_ESTOQUE_LOJAS_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_ESTOQUE_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_ESTOQUE_LOJAS_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_ESTOQUE_LOJAS_NEW
+     * @example
+     * // Get one VW_APP_ESTOQUE_LOJAS_NEW
+     * const vW_APP_ESTOQUE_LOJAS_NEW = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_ESTOQUE_LOJAS_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_ESTOQUE_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_ESTOQUE_LOJAS_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_ESTOQUE_LOJAS_NEWS
+     * const vW_APP_ESTOQUE_LOJAS_NEWS = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_ESTOQUE_LOJAS_NEWS
+     * const vW_APP_ESTOQUE_LOJAS_NEWS = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_ESTOQUE_LOJAS_NEWWithKeyOnly = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_ESTOQUE_LOJAS_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_ESTOQUE_LOJAS_NEW.
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWCreateArgs} args - Arguments to create a VW_APP_ESTOQUE_LOJAS_NEW.
+     * @example
+     * // Create one VW_APP_ESTOQUE_LOJAS_NEW
+     * const VW_APP_ESTOQUE_LOJAS_NEW = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_ESTOQUE_LOJAS_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_ESTOQUE_LOJAS_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_ESTOQUE_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_ESTOQUE_LOJAS_NEWS.
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWCreateManyArgs} args - Arguments to create many VW_APP_ESTOQUE_LOJAS_NEWS.
+     * @example
+     * // Create many VW_APP_ESTOQUE_LOJAS_NEWS
+     * const vW_APP_ESTOQUE_LOJAS_NEW = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_ESTOQUE_LOJAS_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_ESTOQUE_LOJAS_NEW.
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWDeleteArgs} args - Arguments to delete one VW_APP_ESTOQUE_LOJAS_NEW.
+     * @example
+     * // Delete one VW_APP_ESTOQUE_LOJAS_NEW
+     * const VW_APP_ESTOQUE_LOJAS_NEW = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_ESTOQUE_LOJAS_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_ESTOQUE_LOJAS_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_ESTOQUE_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_ESTOQUE_LOJAS_NEW.
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWUpdateArgs} args - Arguments to update one VW_APP_ESTOQUE_LOJAS_NEW.
+     * @example
+     * // Update one VW_APP_ESTOQUE_LOJAS_NEW
+     * const vW_APP_ESTOQUE_LOJAS_NEW = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_ESTOQUE_LOJAS_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_ESTOQUE_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_ESTOQUE_LOJAS_NEWS.
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWDeleteManyArgs} args - Arguments to filter VW_APP_ESTOQUE_LOJAS_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_ESTOQUE_LOJAS_NEWS
+     * const { count } = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_ESTOQUE_LOJAS_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_ESTOQUE_LOJAS_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_ESTOQUE_LOJAS_NEWS
+     * const vW_APP_ESTOQUE_LOJAS_NEW = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_ESTOQUE_LOJAS_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_ESTOQUE_LOJAS_NEW.
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWUpsertArgs} args - Arguments to update or create a VW_APP_ESTOQUE_LOJAS_NEW.
+     * @example
+     * // Update or create a VW_APP_ESTOQUE_LOJAS_NEW
+     * const vW_APP_ESTOQUE_LOJAS_NEW = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_ESTOQUE_LOJAS_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_ESTOQUE_LOJAS_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_ESTOQUE_LOJAS_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_ESTOQUE_LOJAS_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_ESTOQUE_LOJAS_NEWClient<$Result.GetResult<Prisma.$VW_APP_ESTOQUE_LOJAS_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_ESTOQUE_LOJAS_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWCountArgs} args - Arguments to filter VW_APP_ESTOQUE_LOJAS_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_ESTOQUE_LOJAS_NEWS
+     * const count = await prisma.vW_APP_ESTOQUE_LOJAS_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_ESTOQUE_LOJAS_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_ESTOQUE_LOJAS_NEWCountArgs>(
+      args?: Subset<T, VW_APP_ESTOQUE_LOJAS_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_ESTOQUE_LOJAS_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_ESTOQUE_LOJAS_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_ESTOQUE_LOJAS_NEWAggregateArgs>(args: Subset<T, VW_APP_ESTOQUE_LOJAS_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_ESTOQUE_LOJAS_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_ESTOQUE_LOJAS_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_ESTOQUE_LOJAS_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_ESTOQUE_LOJAS_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_ESTOQUE_LOJAS_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_ESTOQUE_LOJAS_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_ESTOQUE_LOJAS_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_ESTOQUE_LOJAS_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_ESTOQUE_LOJAS_NEW model
+   */
+  readonly fields: VW_APP_ESTOQUE_LOJAS_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_ESTOQUE_LOJAS_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_ESTOQUE_LOJAS_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_ESTOQUE_LOJAS_NEW model
+   */ 
+  interface VW_APP_ESTOQUE_LOJAS_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly empresa: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly descricao: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'String'>
+    readonly cod_marca: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly marca: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'String'>
+    readonly cod_colecao: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly colecao: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'String'>
+    readonly dmetal: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly chica: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly chiquinha: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly morah: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly jeans: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly malha: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly plano: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+    readonly total: FieldRef<"VW_APP_ESTOQUE_LOJAS_NEW", 'Int'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW findUnique
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_ESTOQUE_LOJAS_NEW
+     */
+    select?: VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_ESTOQUE_LOJAS_NEW to fetch.
+     */
+    where: VW_APP_ESTOQUE_LOJAS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW findUniqueOrThrow
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_ESTOQUE_LOJAS_NEW
+     */
+    select?: VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_ESTOQUE_LOJAS_NEW to fetch.
+     */
+    where: VW_APP_ESTOQUE_LOJAS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW findFirst
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_ESTOQUE_LOJAS_NEW
+     */
+    select?: VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_ESTOQUE_LOJAS_NEW to fetch.
+     */
+    where?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_ESTOQUE_LOJAS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_ESTOQUE_LOJAS_NEWOrderByWithRelationInput | VW_APP_ESTOQUE_LOJAS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    cursor?: VW_APP_ESTOQUE_LOJAS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_ESTOQUE_LOJAS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    distinct?: VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum | VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW findFirstOrThrow
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_ESTOQUE_LOJAS_NEW
+     */
+    select?: VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_ESTOQUE_LOJAS_NEW to fetch.
+     */
+    where?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_ESTOQUE_LOJAS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_ESTOQUE_LOJAS_NEWOrderByWithRelationInput | VW_APP_ESTOQUE_LOJAS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    cursor?: VW_APP_ESTOQUE_LOJAS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_ESTOQUE_LOJAS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    distinct?: VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum | VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW findMany
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_ESTOQUE_LOJAS_NEW
+     */
+    select?: VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_ESTOQUE_LOJAS_NEWS to fetch.
+     */
+    where?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_ESTOQUE_LOJAS_NEWS to fetch.
+     */
+    orderBy?: VW_APP_ESTOQUE_LOJAS_NEWOrderByWithRelationInput | VW_APP_ESTOQUE_LOJAS_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    cursor?: VW_APP_ESTOQUE_LOJAS_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_ESTOQUE_LOJAS_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum | VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW create
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_ESTOQUE_LOJAS_NEW
+     */
+    select?: VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_ESTOQUE_LOJAS_NEW.
+     */
+    data: XOR<VW_APP_ESTOQUE_LOJAS_NEWCreateInput, VW_APP_ESTOQUE_LOJAS_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW createMany
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    data: VW_APP_ESTOQUE_LOJAS_NEWCreateManyInput | VW_APP_ESTOQUE_LOJAS_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW update
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_ESTOQUE_LOJAS_NEW
+     */
+    select?: VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_ESTOQUE_LOJAS_NEW.
+     */
+    data: XOR<VW_APP_ESTOQUE_LOJAS_NEWUpdateInput, VW_APP_ESTOQUE_LOJAS_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_ESTOQUE_LOJAS_NEW to update.
+     */
+    where: VW_APP_ESTOQUE_LOJAS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW updateMany
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_ESTOQUE_LOJAS_NEWS.
+     */
+    data: XOR<VW_APP_ESTOQUE_LOJAS_NEWUpdateManyMutationInput, VW_APP_ESTOQUE_LOJAS_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_ESTOQUE_LOJAS_NEWS to update
+     */
+    where?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW upsert
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_ESTOQUE_LOJAS_NEW
+     */
+    select?: VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_ESTOQUE_LOJAS_NEW to update in case it exists.
+     */
+    where: VW_APP_ESTOQUE_LOJAS_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_ESTOQUE_LOJAS_NEW found by the `where` argument doesn't exist, create a new VW_APP_ESTOQUE_LOJAS_NEW with this data.
+     */
+    create: XOR<VW_APP_ESTOQUE_LOJAS_NEWCreateInput, VW_APP_ESTOQUE_LOJAS_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_ESTOQUE_LOJAS_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_ESTOQUE_LOJAS_NEWUpdateInput, VW_APP_ESTOQUE_LOJAS_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW delete
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_ESTOQUE_LOJAS_NEW
+     */
+    select?: VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_ESTOQUE_LOJAS_NEW to delete.
+     */
+    where: VW_APP_ESTOQUE_LOJAS_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW deleteMany
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_ESTOQUE_LOJAS_NEWS to delete
+     */
+    where?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_ESTOQUE_LOJAS_NEW without action
+   */
+  export type VW_APP_ESTOQUE_LOJAS_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_ESTOQUE_LOJAS_NEW
+     */
+    select?: VW_APP_ESTOQUE_LOJAS_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -11416,6 +12542,27 @@ export namespace Prisma {
   };
 
   export type VW_APP_VENDAS_MES_NEWScalarFieldEnum = (typeof VW_APP_VENDAS_MES_NEWScalarFieldEnum)[keyof typeof VW_APP_VENDAS_MES_NEWScalarFieldEnum]
+
+
+  export const VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum: {
+    key: 'key',
+    empresa: 'empresa',
+    descricao: 'descricao',
+    cod_marca: 'cod_marca',
+    marca: 'marca',
+    cod_colecao: 'cod_colecao',
+    colecao: 'colecao',
+    dmetal: 'dmetal',
+    chica: 'chica',
+    chiquinha: 'chiquinha',
+    morah: 'morah',
+    jeans: 'jeans',
+    malha: 'malha',
+    plano: 'plano',
+    total: 'total'
+  };
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum = (typeof VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum)[keyof typeof VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -12521,6 +13668,110 @@ export namespace Prisma {
     t2021?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
     pm2021?: DecimalWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | Decimal | DecimalJsLike | number | string
     ultima_atualizacao?: StringWithAggregatesFilter<"VW_APP_VENDAS_MES_NEW"> | string
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWWhereInput = {
+    AND?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput | VW_APP_ESTOQUE_LOJAS_NEWWhereInput[]
+    OR?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput[]
+    NOT?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput | VW_APP_ESTOQUE_LOJAS_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    empresa?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    descricao?: StringFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | string
+    cod_marca?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    marca?: StringFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | string
+    cod_colecao?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    colecao?: StringFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | string
+    dmetal?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    chica?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    chiquinha?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    morah?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    jeans?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    malha?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    plano?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    total?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    descricao?: SortOrder
+    cod_marca?: SortOrder
+    marca?: SortOrder
+    cod_colecao?: SortOrder
+    colecao?: SortOrder
+    dmetal?: SortOrder
+    chica?: SortOrder
+    chiquinha?: SortOrder
+    morah?: SortOrder
+    jeans?: SortOrder
+    malha?: SortOrder
+    plano?: SortOrder
+    total?: SortOrder
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput | VW_APP_ESTOQUE_LOJAS_NEWWhereInput[]
+    OR?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput[]
+    NOT?: VW_APP_ESTOQUE_LOJAS_NEWWhereInput | VW_APP_ESTOQUE_LOJAS_NEWWhereInput[]
+    empresa?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    descricao?: StringFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | string
+    cod_marca?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    marca?: StringFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | string
+    cod_colecao?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    colecao?: StringFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | string
+    dmetal?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    chica?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    chiquinha?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    morah?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    jeans?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    malha?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    plano?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    total?: IntFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+  }, "key">
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    descricao?: SortOrder
+    cod_marca?: SortOrder
+    marca?: SortOrder
+    cod_colecao?: SortOrder
+    colecao?: SortOrder
+    dmetal?: SortOrder
+    chica?: SortOrder
+    chiquinha?: SortOrder
+    morah?: SortOrder
+    jeans?: SortOrder
+    malha?: SortOrder
+    plano?: SortOrder
+    total?: SortOrder
+    _count?: VW_APP_ESTOQUE_LOJAS_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_ESTOQUE_LOJAS_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_ESTOQUE_LOJAS_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_ESTOQUE_LOJAS_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_ESTOQUE_LOJAS_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_ESTOQUE_LOJAS_NEWScalarWhereWithAggregatesInput | VW_APP_ESTOQUE_LOJAS_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_ESTOQUE_LOJAS_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_ESTOQUE_LOJAS_NEWScalarWhereWithAggregatesInput | VW_APP_ESTOQUE_LOJAS_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    empresa?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    descricao?: StringWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | string
+    cod_marca?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    marca?: StringWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | string
+    cod_colecao?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    colecao?: StringWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | string
+    dmetal?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    chica?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    chiquinha?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    morah?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    jeans?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    malha?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    plano?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
+    total?: IntWithAggregatesFilter<"VW_APP_ESTOQUE_LOJAS_NEW"> | number
   }
 
   export type VW_AUTORIZACOES_WEB_DEVCreateInput = {
@@ -13807,6 +15058,132 @@ export namespace Prisma {
     ultima_atualizacao?: StringFieldUpdateOperationsInput | string
   }
 
+  export type VW_APP_ESTOQUE_LOJAS_NEWCreateInput = {
+    key: number
+    empresa: number
+    descricao: string
+    cod_marca: number
+    marca: string
+    cod_colecao: number
+    colecao: string
+    dmetal: number
+    chica: number
+    chiquinha: number
+    morah: number
+    jeans: number
+    malha: number
+    plano: number
+    total: number
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWUncheckedCreateInput = {
+    key: number
+    empresa: number
+    descricao: string
+    cod_marca: number
+    marca: string
+    cod_colecao: number
+    colecao: string
+    dmetal: number
+    chica: number
+    chiquinha: number
+    morah: number
+    jeans: number
+    malha: number
+    plano: number
+    total: number
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    empresa?: IntFieldUpdateOperationsInput | number
+    descricao?: StringFieldUpdateOperationsInput | string
+    cod_marca?: IntFieldUpdateOperationsInput | number
+    marca?: StringFieldUpdateOperationsInput | string
+    cod_colecao?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    dmetal?: IntFieldUpdateOperationsInput | number
+    chica?: IntFieldUpdateOperationsInput | number
+    chiquinha?: IntFieldUpdateOperationsInput | number
+    morah?: IntFieldUpdateOperationsInput | number
+    jeans?: IntFieldUpdateOperationsInput | number
+    malha?: IntFieldUpdateOperationsInput | number
+    plano?: IntFieldUpdateOperationsInput | number
+    total?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    empresa?: IntFieldUpdateOperationsInput | number
+    descricao?: StringFieldUpdateOperationsInput | string
+    cod_marca?: IntFieldUpdateOperationsInput | number
+    marca?: StringFieldUpdateOperationsInput | string
+    cod_colecao?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    dmetal?: IntFieldUpdateOperationsInput | number
+    chica?: IntFieldUpdateOperationsInput | number
+    chiquinha?: IntFieldUpdateOperationsInput | number
+    morah?: IntFieldUpdateOperationsInput | number
+    jeans?: IntFieldUpdateOperationsInput | number
+    malha?: IntFieldUpdateOperationsInput | number
+    plano?: IntFieldUpdateOperationsInput | number
+    total?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWCreateManyInput = {
+    key: number
+    empresa: number
+    descricao: string
+    cod_marca: number
+    marca: string
+    cod_colecao: number
+    colecao: string
+    dmetal: number
+    chica: number
+    chiquinha: number
+    morah: number
+    jeans: number
+    malha: number
+    plano: number
+    total: number
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    empresa?: IntFieldUpdateOperationsInput | number
+    descricao?: StringFieldUpdateOperationsInput | string
+    cod_marca?: IntFieldUpdateOperationsInput | number
+    marca?: StringFieldUpdateOperationsInput | string
+    cod_colecao?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    dmetal?: IntFieldUpdateOperationsInput | number
+    chica?: IntFieldUpdateOperationsInput | number
+    chiquinha?: IntFieldUpdateOperationsInput | number
+    morah?: IntFieldUpdateOperationsInput | number
+    jeans?: IntFieldUpdateOperationsInput | number
+    malha?: IntFieldUpdateOperationsInput | number
+    plano?: IntFieldUpdateOperationsInput | number
+    total?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    empresa?: IntFieldUpdateOperationsInput | number
+    descricao?: StringFieldUpdateOperationsInput | string
+    cod_marca?: IntFieldUpdateOperationsInput | number
+    marca?: StringFieldUpdateOperationsInput | string
+    cod_colecao?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    dmetal?: IntFieldUpdateOperationsInput | number
+    chica?: IntFieldUpdateOperationsInput | number
+    chiquinha?: IntFieldUpdateOperationsInput | number
+    morah?: IntFieldUpdateOperationsInput | number
+    jeans?: IntFieldUpdateOperationsInput | number
+    malha?: IntFieldUpdateOperationsInput | number
+    plano?: IntFieldUpdateOperationsInput | number
+    total?: IntFieldUpdateOperationsInput | number
+  }
+
   export type IntFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
     in?: number[]
@@ -14812,6 +16189,90 @@ export namespace Prisma {
     pm2021?: SortOrder
   }
 
+  export type VW_APP_ESTOQUE_LOJAS_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    descricao?: SortOrder
+    cod_marca?: SortOrder
+    marca?: SortOrder
+    cod_colecao?: SortOrder
+    colecao?: SortOrder
+    dmetal?: SortOrder
+    chica?: SortOrder
+    chiquinha?: SortOrder
+    morah?: SortOrder
+    jeans?: SortOrder
+    malha?: SortOrder
+    plano?: SortOrder
+    total?: SortOrder
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    cod_marca?: SortOrder
+    cod_colecao?: SortOrder
+    dmetal?: SortOrder
+    chica?: SortOrder
+    chiquinha?: SortOrder
+    morah?: SortOrder
+    jeans?: SortOrder
+    malha?: SortOrder
+    plano?: SortOrder
+    total?: SortOrder
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    descricao?: SortOrder
+    cod_marca?: SortOrder
+    marca?: SortOrder
+    cod_colecao?: SortOrder
+    colecao?: SortOrder
+    dmetal?: SortOrder
+    chica?: SortOrder
+    chiquinha?: SortOrder
+    morah?: SortOrder
+    jeans?: SortOrder
+    malha?: SortOrder
+    plano?: SortOrder
+    total?: SortOrder
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    descricao?: SortOrder
+    cod_marca?: SortOrder
+    marca?: SortOrder
+    cod_colecao?: SortOrder
+    colecao?: SortOrder
+    dmetal?: SortOrder
+    chica?: SortOrder
+    chiquinha?: SortOrder
+    morah?: SortOrder
+    jeans?: SortOrder
+    malha?: SortOrder
+    plano?: SortOrder
+    total?: SortOrder
+  }
+
+  export type VW_APP_ESTOQUE_LOJAS_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    empresa?: SortOrder
+    cod_marca?: SortOrder
+    cod_colecao?: SortOrder
+    dmetal?: SortOrder
+    chica?: SortOrder
+    chiquinha?: SortOrder
+    morah?: SortOrder
+    jeans?: SortOrder
+    malha?: SortOrder
+    plano?: SortOrder
+    total?: SortOrder
+  }
+
   export type IntFieldUpdateOperationsInput = {
     set?: number
     increment?: number
@@ -15073,6 +16534,10 @@ export namespace Prisma {
      * @deprecated Use VW_APP_VENDAS_MES_NEWDefaultArgs instead
      */
     export type VW_APP_VENDAS_MES_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_VENDAS_MES_NEWDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_ESTOQUE_LOJAS_NEWDefaultArgs instead
+     */
+    export type VW_APP_ESTOQUE_LOJAS_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_ESTOQUE_LOJAS_NEWDefaultArgs<ExtArgs>
 
   /**
    * Batch Payload for updateMany & deleteMany & createMany

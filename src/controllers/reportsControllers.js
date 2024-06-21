@@ -232,8 +232,97 @@ const getVendasMes = async (_req, res) => {
   return res.status(200).json([resultData]);
 };
 
+const getEstoqueLojas = async (_req, res) => {
+  // Função para somar valores de um array de objetos
+  const sumValues = (arr, prop) =>
+    arr.reduce((acc, obj) => acc + parseFloat(obj[prop]), 0);
+
+  const sumValuesMarca = (arr, prop, conditions) => {
+    return sumValues(
+      arr.filter((obj) => conditions.includes(obj.cod_marca)),
+      prop
+    );
+  };
+
+  const result = await reportsModel.getEstoqueLojas();
+
+  const chica = [2, 3];
+  const dmetal = [1];
+  const morah = [10];
+
+  const total_dmetal = sumValuesMarca(result, "total", dmetal);
+  const total_chica = sumValuesMarca(result, "total", chica);
+  const total_morah = sumValuesMarca(result, "total", morah);
+  const total_marca = total_dmetal + total_chica + total_morah;
+  const total_jeans = sumValues(result, "jeans");
+  const total_malha = sumValues(result, "malha");
+  const total_plano = sumValues(result, "plano");
+
+  // Agrupar coleções por empresa
+  const empresas = result.reduce((acc, loja) => {
+    const {
+      empresa,
+      descricao,
+      cod_colecao,
+      colecao,
+      dmetal,
+      chica,
+      chiquinha,
+      morah,
+      jeans,
+      malha,
+      plano,
+      total,
+    } = loja;
+    if (!acc[empresa]) {
+      acc[empresa] = {
+        empresa: empresa.toString(),
+        descricao: descricao.toString(),
+        dmetal: 0,
+        chica: 0,
+        morah: 0,
+        jeans: 0,
+        malha: 0,
+        plano: 0,
+        total: 0,
+        colecoes: [],
+      };
+    }
+    acc[empresa].colecoes.push({
+      cod_colecao: cod_colecao,
+      colecao: colecao,
+      jeans: jeans,
+      malha: malha,
+      plano: plano,
+      total: total,
+    });
+    acc[empresa].dmetal += dmetal;
+    acc[empresa].chica += chica + chiquinha;
+    acc[empresa].morah += morah;
+    acc[empresa].jeans += jeans;
+    acc[empresa].malha += malha;
+    acc[empresa].plano += plano;
+    acc[empresa].total += total;
+    return acc;
+  }, {});
+
+  const resultData = {
+    total_dmetal: total_dmetal,
+    total_chica: total_chica,
+    total_morah: total_morah,
+    total_marca: total_marca,
+    total_jeans: total_jeans,
+    total_malha: total_malha,
+    total_plano: total_plano,
+    lojas: Object.values(empresas),
+  };
+
+  return res.status(200).json([resultData]);
+};
+
 module.exports = {
   getVendasLojas,
   getVendasCupom,
   getVendasMes,
+  getEstoqueLojas,
 };

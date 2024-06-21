@@ -304,6 +304,24 @@ exports.Prisma.VW_APP_VENDAS_MES_NEWScalarFieldEnum = {
   ultima_atualizacao: 'ultima_atualizacao'
 };
 
+exports.Prisma.VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum = {
+  key: 'key',
+  empresa: 'empresa',
+  descricao: 'descricao',
+  cod_marca: 'cod_marca',
+  marca: 'marca',
+  cod_colecao: 'cod_colecao',
+  colecao: 'colecao',
+  dmetal: 'dmetal',
+  chica: 'chica',
+  chiquinha: 'chiquinha',
+  morah: 'morah',
+  jeans: 'jeans',
+  malha: 'malha',
+  plano: 'plano',
+  total: 'total'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -324,7 +342,8 @@ exports.Prisma.ModelName = {
   AUTORIZACOES_WEB_BARRAMENTOS_DEV: 'AUTORIZACOES_WEB_BARRAMENTOS_DEV',
   VW_APP_VENDAS_LOJAS_NEW: 'VW_APP_VENDAS_LOJAS_NEW',
   VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW',
-  VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW'
+  VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW',
+  VW_APP_ESTOQUE_LOJAS_NEW: 'VW_APP_ESTOQUE_LOJAS_NEW'
 };
 
 /**
