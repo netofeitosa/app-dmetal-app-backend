@@ -341,6 +341,18 @@ exports.Prisma.VW_APP_CONTROLE_FACCOES_NEWScalarFieldEnum = {
   data_op_antiga: 'data_op_antiga'
 };
 
+exports.Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum = {
+  key: 'key',
+  mes: 'mes',
+  data: 'data',
+  total_processado: 'total_processado',
+  total_pecas_processado: 'total_pecas_processado',
+  total_nao_processado: 'total_nao_processado',
+  total_pecas_nao_processado: 'total_pecas_nao_processado',
+  total_solicitado: 'total_solicitado',
+  total_pecas: 'total_pecas'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -363,7 +375,8 @@ exports.Prisma.ModelName = {
   VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW',
   VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW',
   VW_APP_ESTOQUE_LOJAS_NEW: 'VW_APP_ESTOQUE_LOJAS_NEW',
-  VW_APP_CONTROLE_FACCOES_NEW: 'VW_APP_CONTROLE_FACCOES_NEW'
+  VW_APP_CONTROLE_FACCOES_NEW: 'VW_APP_CONTROLE_FACCOES_NEW',
+  VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW: 'VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW'
 };
 
 /**

@@ -393,10 +393,40 @@ const getControleFaccoes = async (_req, res) => {
   return res.status(200).json([resultData]);
 };
 
+const getSolicitacaoFaturamento = async (_req, res) => {
+  const result = await reportsModel.getSolicitacaoFaturamento();
+  const [result2] = result;
+
+  // Função para somar valores de um array de objetos
+  const sumValues = (arr, prop) =>
+    arr.reduce((acc, obj) => acc + parseFloat(obj[prop]), 0);
+
+  const total_solicitado = sumValues(result, "total_solicitado");
+  const total_processado = sumValues(result, "total_processado");
+  const total_nao_processado = sumValues(result, "total_nao_processado");
+
+  const resultData = {
+    mes: !result2?.mes ? null : result2.mes,
+    total_solicitado: total_solicitado,
+    total_processado: total_processado,
+    total_nao_processado: total_nao_processado,
+    movimentos: result.map((movimento) => ({
+      key: movimento.key,
+      movimento: movimento.data,
+      total_solicitado: movimento.total_solicitado,
+      total_processado: movimento.total_processado,
+      total_nao_processado: movimento.total_nao_processado,
+    })),
+  };
+
+  return res.status(200).json([resultData]);
+};
+
 module.exports = {
   getVendasLojas,
   getVendasCupom,
   getVendasMes,
   getEstoqueLojas,
   getControleFaccoes,
+  getSolicitacaoFaturamento,
 };

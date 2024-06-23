@@ -231,3 +231,15 @@ model VW_APP_CONTROLE_FACCOES_NEW {
   qtde_op                    Int
   data_op_antiga             String?
 }
+
+model VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW {
+  key                        Int     @id
+  mes                        String?
+  data                       String
+  total_processado           Decimal
+  total_pecas_processado     Int
+  total_nao_processado       Decimal
+  total_pecas_nao_processado Int
+  total_solicitado           Decimal
+  total_pecas                Int
+}

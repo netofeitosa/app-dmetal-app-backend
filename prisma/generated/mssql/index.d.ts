@@ -68,6 +68,11 @@ export type VW_APP_ESTOQUE_LOJAS_NEW = $Result.DefaultSelection<Prisma.$VW_APP_E
  * 
  */
 export type VW_APP_CONTROLE_FACCOES_NEW = $Result.DefaultSelection<Prisma.$VW_APP_CONTROLE_FACCOES_NEWPayload>
+/**
+ * Model VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+ * 
+ */
+export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = $Result.DefaultSelection<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -300,6 +305,16 @@ export class PrismaClient<
     * ```
     */
   get vW_APP_CONTROLE_FACCOES_NEW(): Prisma.VW_APP_CONTROLE_FACCOES_NEWDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW`: Exposes CRUD operations for the **VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS
+    * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.findMany()
+    * ```
+    */
+  get vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW(): Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDelegate<ExtArgs>;
 }
 
 export namespace Prisma {
@@ -787,7 +802,8 @@ export namespace Prisma {
     VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW',
     VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW',
     VW_APP_ESTOQUE_LOJAS_NEW: 'VW_APP_ESTOQUE_LOJAS_NEW',
-    VW_APP_CONTROLE_FACCOES_NEW: 'VW_APP_CONTROLE_FACCOES_NEW'
+    VW_APP_CONTROLE_FACCOES_NEW: 'VW_APP_CONTROLE_FACCOES_NEW',
+    VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW: 'VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -804,7 +820,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     meta: {
-      modelProps: 'vW_AUTORIZACOES_WEB_DEV' | 'vW_AUTORIZACOES_DESPESAS_COFRE_DEV' | 'vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV' | 'vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV' | 'vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV' | 'aUTORIZACOES_WEB_BARRAMENTOS_DEV' | 'vW_APP_VENDAS_LOJAS_NEW' | 'vW_APP_VENDAS_CUPONS_NEW' | 'vW_APP_VENDAS_MES_NEW' | 'vW_APP_ESTOQUE_LOJAS_NEW' | 'vW_APP_CONTROLE_FACCOES_NEW'
+      modelProps: 'vW_AUTORIZACOES_WEB_DEV' | 'vW_AUTORIZACOES_DESPESAS_COFRE_DEV' | 'vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV' | 'vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV' | 'vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV' | 'aUTORIZACOES_WEB_BARRAMENTOS_DEV' | 'vW_APP_VENDAS_LOJAS_NEW' | 'vW_APP_VENDAS_CUPONS_NEW' | 'vW_APP_VENDAS_MES_NEW' | 'vW_APP_ESTOQUE_LOJAS_NEW' | 'vW_APP_CONTROLE_FACCOES_NEW' | 'vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW'
       txIsolationLevel: Prisma.TransactionIsolationLevel
     },
     model: {
@@ -1531,6 +1547,72 @@ export namespace Prisma {
           count: {
             args: Prisma.VW_APP_CONTROLE_FACCOES_NEWCountArgs<ExtArgs>,
             result: $Utils.Optional<VW_APP_CONTROLE_FACCOES_NEWCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW: {
+        payload: Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_REP_SOLICITACAO_FATURAMENTO_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountAggregateOutputType> | number
           }
         }
       }
@@ -13460,6 +13542,964 @@ export namespace Prisma {
 
 
   /**
+   * Model VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+   */
+
+  export type AggregateVW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = {
+    _count: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSumAggregateOutputType | null
+    _min: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMinAggregateOutputType | null
+    _max: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAvgAggregateOutputType = {
+    key: number | null
+    total_processado: Decimal | null
+    total_pecas_processado: number | null
+    total_nao_processado: Decimal | null
+    total_pecas_nao_processado: number | null
+    total_solicitado: Decimal | null
+    total_pecas: number | null
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSumAggregateOutputType = {
+    key: number | null
+    total_processado: Decimal | null
+    total_pecas_processado: number | null
+    total_nao_processado: Decimal | null
+    total_pecas_nao_processado: number | null
+    total_solicitado: Decimal | null
+    total_pecas: number | null
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMinAggregateOutputType = {
+    key: number | null
+    mes: string | null
+    data: string | null
+    total_processado: Decimal | null
+    total_pecas_processado: number | null
+    total_nao_processado: Decimal | null
+    total_pecas_nao_processado: number | null
+    total_solicitado: Decimal | null
+    total_pecas: number | null
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMaxAggregateOutputType = {
+    key: number | null
+    mes: string | null
+    data: string | null
+    total_processado: Decimal | null
+    total_pecas_processado: number | null
+    total_nao_processado: Decimal | null
+    total_pecas_nao_processado: number | null
+    total_solicitado: Decimal | null
+    total_pecas: number | null
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountAggregateOutputType = {
+    key: number
+    mes: number
+    data: number
+    total_processado: number
+    total_pecas_processado: number
+    total_nao_processado: number
+    total_pecas_nao_processado: number
+    total_solicitado: number
+    total_pecas: number
+    _all: number
+  }
+
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAvgAggregateInputType = {
+    key?: true
+    total_processado?: true
+    total_pecas_processado?: true
+    total_nao_processado?: true
+    total_pecas_nao_processado?: true
+    total_solicitado?: true
+    total_pecas?: true
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSumAggregateInputType = {
+    key?: true
+    total_processado?: true
+    total_pecas_processado?: true
+    total_nao_processado?: true
+    total_pecas_nao_processado?: true
+    total_solicitado?: true
+    total_pecas?: true
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMinAggregateInputType = {
+    key?: true
+    mes?: true
+    data?: true
+    total_processado?: true
+    total_pecas_processado?: true
+    total_nao_processado?: true
+    total_pecas_nao_processado?: true
+    total_solicitado?: true
+    total_pecas?: true
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMaxAggregateInputType = {
+    key?: true
+    mes?: true
+    data?: true
+    total_processado?: true
+    total_pecas_processado?: true
+    total_nao_processado?: true
+    total_pecas_nao_processado?: true
+    total_solicitado?: true
+    total_pecas?: true
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountAggregateInputType = {
+    key?: true
+    mes?: true
+    data?: true
+    total_processado?: true
+    total_pecas_processado?: true
+    total_nao_processado?: true
+    total_pecas_nao_processado?: true
+    total_solicitado?: true
+    total_pecas?: true
+    _all?: true
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW to aggregate.
+     */
+    where?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithRelationInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS
+    **/
+    _count?: true | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAggregateType<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_REP_SOLICITACAO_FATURAMENTO_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_REP_SOLICITACAO_FATURAMENTO_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_REP_SOLICITACAO_FATURAMENTO_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput
+    orderBy?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithAggregationInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithAggregationInput[]
+    by: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum[] | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum
+    having?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountAggregateInputType | true
+    _avg?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAvgAggregateInputType
+    _sum?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSumAggregateInputType
+    _min?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMinAggregateInputType
+    _max?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByOutputType = {
+    key: number
+    mes: string | null
+    data: string
+    total_processado: Decimal
+    total_pecas_processado: number
+    total_nao_processado: Decimal
+    total_pecas_nao_processado: number
+    total_solicitado: Decimal
+    total_pecas: number
+    _count: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSumAggregateOutputType | null
+    _min: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMinAggregateOutputType | null
+    _max: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByPayload<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    mes?: boolean
+    data?: boolean
+    total_processado?: boolean
+    total_pecas_processado?: boolean
+    total_nao_processado?: boolean
+    total_pecas_nao_processado?: boolean
+    total_solicitado?: boolean
+    total_pecas?: boolean
+  }, ExtArgs["result"]["vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"]>
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelectScalar = {
+    key?: boolean
+    mes?: boolean
+    data?: boolean
+    total_processado?: boolean
+    total_pecas_processado?: boolean
+    total_nao_processado?: boolean
+    total_pecas_nao_processado?: boolean
+    total_solicitado?: boolean
+    total_pecas?: boolean
+  }
+
+
+
+  export type $VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      mes: string | null
+      data: string
+      total_processado: Prisma.Decimal
+      total_pecas_processado: number
+      total_nao_processado: Prisma.Decimal
+      total_pecas_nao_processado: number
+      total_solicitado: Prisma.Decimal
+      total_pecas: number
+    }, ExtArgs["result"]["vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGetPayload<S extends boolean | null | undefined | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload, S>
+
+  type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW'], meta: { name: 'VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW' } }
+    /**
+     * Find zero or one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW that matches the filter.
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindUniqueArgs} args - Arguments to find a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * @example
+     * // Get one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * @example
+     * // Get one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindFirstArgs} args - Arguments to find a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * @example
+     * // Get one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * @example
+     * // Get one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWithKeyOnly = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateArgs} args - Arguments to create a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     * @example
+     * // Create one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * const VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateManyArgs} args - Arguments to create many VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     * @example
+     * // Create many VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDeleteArgs} args - Arguments to delete one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     * @example
+     * // Delete one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * const VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateArgs} args - Arguments to update one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     * @example
+     * // Update one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDeleteManyArgs} args - Arguments to filter VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS
+     * const { count } = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpsertArgs} args - Arguments to update or create a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     * @example
+     * // Update or create a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     * const vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountArgs} args - Arguments to filter VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS
+     * const count = await prisma.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountArgs>(
+      args?: Subset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAggregateArgs>(args: Subset<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_REP_SOLICITACAO_FATURAMENTO_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW model
+   */
+  readonly fields: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW model
+   */ 
+  interface VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW", 'Int'>
+    readonly mes: FieldRef<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW", 'String'>
+    readonly data: FieldRef<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW", 'String'>
+    readonly total_processado: FieldRef<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW", 'Decimal'>
+    readonly total_pecas_processado: FieldRef<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW", 'Int'>
+    readonly total_nao_processado: FieldRef<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW", 'Decimal'>
+    readonly total_pecas_nao_processado: FieldRef<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW", 'Int'>
+    readonly total_solicitado: FieldRef<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW", 'Decimal'>
+    readonly total_pecas: FieldRef<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW", 'Int'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW findUnique
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     */
+    select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW to fetch.
+     */
+    where: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW findUniqueOrThrow
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     */
+    select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW to fetch.
+     */
+    where: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW findFirst
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     */
+    select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW to fetch.
+     */
+    where?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithRelationInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    cursor?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    distinct?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW findFirstOrThrow
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     */
+    select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW to fetch.
+     */
+    where?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithRelationInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    cursor?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    distinct?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW findMany
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     */
+    select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS to fetch.
+     */
+    where?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithRelationInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    cursor?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW create
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     */
+    select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     */
+    data: XOR<VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateInput, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW createMany
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    data: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateManyInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW update
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     */
+    select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.
+     */
+    data: XOR<VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateInput, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW to update.
+     */
+    where: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW updateMany
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS.
+     */
+    data: XOR<VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateManyMutationInput, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS to update
+     */
+    where?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW upsert
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     */
+    select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW to update in case it exists.
+     */
+    where: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW found by the `where` argument doesn't exist, create a new VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW with this data.
+     */
+    create: XOR<VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateInput, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateInput, VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW delete
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     */
+    select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW to delete.
+     */
+    where: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW deleteMany
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWS to delete
+     */
+    where?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW without action
+   */
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW
+     */
+    select?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -13726,6 +14766,21 @@ export namespace Prisma {
   };
 
   export type VW_APP_CONTROLE_FACCOES_NEWScalarFieldEnum = (typeof VW_APP_CONTROLE_FACCOES_NEWScalarFieldEnum)[keyof typeof VW_APP_CONTROLE_FACCOES_NEWScalarFieldEnum]
+
+
+  export const VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum: {
+    key: 'key',
+    mes: 'mes',
+    data: 'data',
+    total_processado: 'total_processado',
+    total_pecas_processado: 'total_pecas_processado',
+    total_nao_processado: 'total_nao_processado',
+    total_pecas_nao_processado: 'total_pecas_nao_processado',
+    total_solicitado: 'total_solicitado',
+    total_pecas: 'total_pecas'
+  };
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum = (typeof VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum)[keyof typeof VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -15044,6 +16099,80 @@ export namespace Prisma {
     retorno_mes_anterior_inter?: IntWithAggregatesFilter<"VW_APP_CONTROLE_FACCOES_NEW"> | number
     qtde_op?: IntWithAggregatesFilter<"VW_APP_CONTROLE_FACCOES_NEW"> | number
     data_op_antiga?: StringNullableWithAggregatesFilter<"VW_APP_CONTROLE_FACCOES_NEW"> | string | null
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput = {
+    AND?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput[]
+    OR?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput[]
+    NOT?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+    mes?: StringNullableFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | string | null
+    data?: StringFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | string
+    total_processado?: DecimalFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | Decimal | DecimalJsLike | number | string
+    total_pecas_processado?: IntFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+    total_nao_processado?: DecimalFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | Decimal | DecimalJsLike | number | string
+    total_pecas_nao_processado?: IntFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+    total_solicitado?: DecimalFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | Decimal | DecimalJsLike | number | string
+    total_pecas?: IntFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    mes?: SortOrderInput | SortOrder
+    data?: SortOrder
+    total_processado?: SortOrder
+    total_pecas_processado?: SortOrder
+    total_nao_processado?: SortOrder
+    total_pecas_nao_processado?: SortOrder
+    total_solicitado?: SortOrder
+    total_pecas?: SortOrder
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput[]
+    OR?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput[]
+    NOT?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWWhereInput[]
+    mes?: StringNullableFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | string | null
+    data?: StringFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | string
+    total_processado?: DecimalFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | Decimal | DecimalJsLike | number | string
+    total_pecas_processado?: IntFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+    total_nao_processado?: DecimalFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | Decimal | DecimalJsLike | number | string
+    total_pecas_nao_processado?: IntFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+    total_solicitado?: DecimalFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | Decimal | DecimalJsLike | number | string
+    total_pecas?: IntFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+  }, "key">
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    mes?: SortOrderInput | SortOrder
+    data?: SortOrder
+    total_processado?: SortOrder
+    total_pecas_processado?: SortOrder
+    total_nao_processado?: SortOrder
+    total_pecas_nao_processado?: SortOrder
+    total_solicitado?: SortOrder
+    total_pecas?: SortOrder
+    _count?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarWhereWithAggregatesInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarWhereWithAggregatesInput | VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+    mes?: StringNullableWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | string | null
+    data?: StringWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | string
+    total_processado?: DecimalWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | Decimal | DecimalJsLike | number | string
+    total_pecas_processado?: IntWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+    total_nao_processado?: DecimalWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | Decimal | DecimalJsLike | number | string
+    total_pecas_nao_processado?: IntWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+    total_solicitado?: DecimalWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | Decimal | DecimalJsLike | number | string
+    total_pecas?: IntWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
   }
 
   export type VW_AUTORIZACOES_WEB_DEVCreateInput = {
@@ -16589,6 +17718,90 @@ export namespace Prisma {
     data_op_antiga?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateInput = {
+    key: number
+    mes?: string | null
+    data: string
+    total_processado: Decimal | DecimalJsLike | number | string
+    total_pecas_processado: number
+    total_nao_processado: Decimal | DecimalJsLike | number | string
+    total_pecas_nao_processado: number
+    total_solicitado: Decimal | DecimalJsLike | number | string
+    total_pecas: number
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUncheckedCreateInput = {
+    key: number
+    mes?: string | null
+    data: string
+    total_processado: Decimal | DecimalJsLike | number | string
+    total_pecas_processado: number
+    total_nao_processado: Decimal | DecimalJsLike | number | string
+    total_pecas_nao_processado: number
+    total_solicitado: Decimal | DecimalJsLike | number | string
+    total_pecas: number
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    mes?: NullableStringFieldUpdateOperationsInput | string | null
+    data?: StringFieldUpdateOperationsInput | string
+    total_processado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas_processado?: IntFieldUpdateOperationsInput | number
+    total_nao_processado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas_nao_processado?: IntFieldUpdateOperationsInput | number
+    total_solicitado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    mes?: NullableStringFieldUpdateOperationsInput | string | null
+    data?: StringFieldUpdateOperationsInput | string
+    total_processado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas_processado?: IntFieldUpdateOperationsInput | number
+    total_nao_processado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas_nao_processado?: IntFieldUpdateOperationsInput | number
+    total_solicitado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCreateManyInput = {
+    key: number
+    mes?: string | null
+    data: string
+    total_processado: Decimal | DecimalJsLike | number | string
+    total_pecas_processado: number
+    total_nao_processado: Decimal | DecimalJsLike | number | string
+    total_pecas_nao_processado: number
+    total_solicitado: Decimal | DecimalJsLike | number | string
+    total_pecas: number
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    mes?: NullableStringFieldUpdateOperationsInput | string | null
+    data?: StringFieldUpdateOperationsInput | string
+    total_processado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas_processado?: IntFieldUpdateOperationsInput | number
+    total_nao_processado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas_nao_processado?: IntFieldUpdateOperationsInput | number
+    total_solicitado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    mes?: NullableStringFieldUpdateOperationsInput | string | null
+    data?: StringFieldUpdateOperationsInput | string
+    total_processado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas_processado?: IntFieldUpdateOperationsInput | number
+    total_nao_processado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas_nao_processado?: IntFieldUpdateOperationsInput | number
+    total_solicitado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    total_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
   export type IntFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
     in?: number[]
@@ -17767,6 +18980,62 @@ export namespace Prisma {
     qtde_op?: SortOrder
   }
 
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    mes?: SortOrder
+    data?: SortOrder
+    total_processado?: SortOrder
+    total_pecas_processado?: SortOrder
+    total_nao_processado?: SortOrder
+    total_pecas_nao_processado?: SortOrder
+    total_solicitado?: SortOrder
+    total_pecas?: SortOrder
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    total_processado?: SortOrder
+    total_pecas_processado?: SortOrder
+    total_nao_processado?: SortOrder
+    total_pecas_nao_processado?: SortOrder
+    total_solicitado?: SortOrder
+    total_pecas?: SortOrder
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    mes?: SortOrder
+    data?: SortOrder
+    total_processado?: SortOrder
+    total_pecas_processado?: SortOrder
+    total_nao_processado?: SortOrder
+    total_pecas_nao_processado?: SortOrder
+    total_solicitado?: SortOrder
+    total_pecas?: SortOrder
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    mes?: SortOrder
+    data?: SortOrder
+    total_processado?: SortOrder
+    total_pecas_processado?: SortOrder
+    total_nao_processado?: SortOrder
+    total_pecas_nao_processado?: SortOrder
+    total_solicitado?: SortOrder
+    total_pecas?: SortOrder
+  }
+
+  export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    total_processado?: SortOrder
+    total_pecas_processado?: SortOrder
+    total_nao_processado?: SortOrder
+    total_pecas_nao_processado?: SortOrder
+    total_solicitado?: SortOrder
+    total_pecas?: SortOrder
+  }
+
   export type IntFieldUpdateOperationsInput = {
     set?: number
     increment?: number
@@ -18036,6 +19305,10 @@ export namespace Prisma {
      * @deprecated Use VW_APP_CONTROLE_FACCOES_NEWDefaultArgs instead
      */
     export type VW_APP_CONTROLE_FACCOES_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_CONTROLE_FACCOES_NEWDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDefaultArgs instead
+     */
+    export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDefaultArgs<ExtArgs>
 
   /**
    * Batch Payload for updateMany & deleteMany & createMany
