@@ -212,3 +212,22 @@ model VW_APP_ESTOQUE_LOJAS_NEW {
   plano       Int
   total       Int
 }
+
+model VW_APP_CONTROLE_FACCOES_NEW {
+  key                        Int     @id
+  cod_colecao                Int
+  colecao                    String
+  entidade                   Int
+  supervisor                 String
+  qtde_faccoes               Int
+  qtde_pecas_enviadas        Int
+  retorno_dia                Int
+  retorno_dia_anterior       Int
+  retorno_dia_inter          Int
+  retorno_mes                Int
+  retorno_mes_inter          Int
+  retorno_mes_anterior       Int
+  retorno_mes_anterior_inter Int
+  qtde_op                    Int
+  data_op_antiga             String?
+}

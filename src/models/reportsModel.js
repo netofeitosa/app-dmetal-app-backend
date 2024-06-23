@@ -20,9 +20,14 @@ const getEstoqueLojas = async () => {
   return await prismaMSSQL.vW_APP_ESTOQUE_LOJAS_NEW.findMany();
 };
 
+const getControleFaccoes = async () => {
+  return await prismaMSSQL.vW_APP_CONTROLE_FACCOES_NEW.findMany();
+};
+
 module.exports = {
   getVendasLojas,
   getVendasCupom,
   getVendasMes,
   getEstoqueLojas,
+  getControleFaccoes,
 };

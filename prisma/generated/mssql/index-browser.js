@@ -322,6 +322,25 @@ exports.Prisma.VW_APP_ESTOQUE_LOJAS_NEWScalarFieldEnum = {
   total: 'total'
 };
 
+exports.Prisma.VW_APP_CONTROLE_FACCOES_NEWScalarFieldEnum = {
+  key: 'key',
+  cod_colecao: 'cod_colecao',
+  colecao: 'colecao',
+  entidade: 'entidade',
+  supervisor: 'supervisor',
+  qtde_faccoes: 'qtde_faccoes',
+  qtde_pecas_enviadas: 'qtde_pecas_enviadas',
+  retorno_dia: 'retorno_dia',
+  retorno_dia_anterior: 'retorno_dia_anterior',
+  retorno_dia_inter: 'retorno_dia_inter',
+  retorno_mes: 'retorno_mes',
+  retorno_mes_inter: 'retorno_mes_inter',
+  retorno_mes_anterior: 'retorno_mes_anterior',
+  retorno_mes_anterior_inter: 'retorno_mes_anterior_inter',
+  qtde_op: 'qtde_op',
+  data_op_antiga: 'data_op_antiga'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -343,7 +362,8 @@ exports.Prisma.ModelName = {
   VW_APP_VENDAS_LOJAS_NEW: 'VW_APP_VENDAS_LOJAS_NEW',
   VW_APP_VENDAS_CUPONS_NEW: 'VW_APP_VENDAS_CUPONS_NEW',
   VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW',
-  VW_APP_ESTOQUE_LOJAS_NEW: 'VW_APP_ESTOQUE_LOJAS_NEW'
+  VW_APP_ESTOQUE_LOJAS_NEW: 'VW_APP_ESTOQUE_LOJAS_NEW',
+  VW_APP_CONTROLE_FACCOES_NEW: 'VW_APP_CONTROLE_FACCOES_NEW'
 };
 
 /**

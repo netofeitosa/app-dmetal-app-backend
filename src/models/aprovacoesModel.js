@@ -5,27 +5,27 @@ const {
 const prismaMSSQL = new PrismaClientMSSQL();
 
 const getAprovacoes = async () => {
-  return await prismaMSSQL.VW_AUTORIZACOES_WEB_DEV.findMany();
+  return await prismaMSSQL.vW_AUTORIZACOES_WEB_DEV.findMany();
 };
 
 const getDespesas = async () => {
-  return await prismaMSSQL.VW_AUTORIZACOES_DESPESAS_COFRE_DEV.findMany();
+  return await prismaMSSQL.vW_AUTORIZACOES_DESPESAS_COFRE_DEV.findMany();
 };
 
 const getDescontos = async () => {
-  return await prismaMSSQL.VW_AUTORIZACOES_DESCONTOS_LOJAS_DEV.findMany();
+  return await prismaMSSQL.vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV.findMany();
 };
 
 const getCancelamentos = async () => {
-  return await prismaMSSQL.VW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV.findMany();
+  return await prismaMSSQL.vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV.findMany();
 };
 
 const getSaidas = async () => {
-  return await prismaMSSQL.VW_AUTORIZACOES_SAIDAS_AVULSAS_DEV.findMany();
+  return await prismaMSSQL.vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV.findMany();
 };
 
 const findAprovacoes = async (registro, cod_origem) => {
-  return await prismaMSSQL.AUTORIZACOES_WEB_BARRAMENTOS_DEV.findFirst({
+  return await prismaMSSQL.aUTORIZACOES_WEB_BARRAMENTOS_DEV.findFirst({
     where: { registro: registro, cod_origem: cod_origem },
   });
 };
@@ -37,7 +37,7 @@ const postAprovacoes = async (
   usuario,
   autorizado
 ) => {
-  return await prismaMSSQL.AUTORIZACOES_WEB_BARRAMENTOS_DEV.create({
+  return await prismaMSSQL.aUTORIZACOES_WEB_BARRAMENTOS_DEV.create({
     data: {
       registro: registro,
       cod_origem: cod_origem,

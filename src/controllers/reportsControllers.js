@@ -322,9 +322,81 @@ const getEstoqueLojas = async (_req, res) => {
   return res.status(200).json([resultData]);
 };
 
+const getControleFaccoes = async (_req, res) => {
+  const result = await reportsModel.getControleFaccoes();
+
+  // Função para somar valores de um array de objetos
+  const sumValues = (arr, prop) =>
+    arr.reduce((acc, obj) => acc + parseFloat(obj[prop]), 0);
+
+  const qtde_total_faccoes = sumValues(result, "qtde_faccoes");
+  const qtde_total_pecas = sumValues(result, "qtde_pecas_enviadas");
+  const retorno_mes_inter = sumValues(result, "retorno_mes_inter");
+  const retorno_mes_anterior_inter = sumValues(
+    result,
+    "retorno_mes_anterior_inter"
+  );
+  const retorno_dia = sumValues(result, "retorno_dia");
+  const retorno_dia_anterior = sumValues(result, "retorno_dia_anterior");
+  const retorno_mes = sumValues(result, "retorno_mes");
+  const retorno_mes_anterior = sumValues(result, "retorno_mes_anterior");
+
+  // Agrupar coleções por supervisor
+  const supervisores = result.reduce((acc, data) => {
+    const {
+      key,
+      entidade,
+      supervisor,
+      cod_colecao,
+      colecao,
+      qtde_faccoes,
+      qtde_op,
+      qtde_pecas_enviadas,
+    } = data;
+
+    if (!acc[entidade]) {
+      acc[entidade] = {
+        key: key,
+        entidade: entidade,
+        supervisor: supervisor,
+        qtde_faccoes: 0,
+        qtde_op: 0,
+        qtde_pecas_enviadas: 0,
+        colecoes: [],
+      };
+    }
+    acc[entidade].colecoes.push({
+      cod_colecao: cod_colecao,
+      colecao: colecao,
+      qtde_faccoes: qtde_faccoes,
+      qtde_op: qtde_op,
+      qtde_pecas_enviadas: qtde_pecas_enviadas,
+    });
+    acc[entidade].qtde_faccoes += qtde_faccoes;
+    acc[entidade].qtde_op += qtde_op;
+    acc[entidade].qtde_pecas_enviadas += qtde_pecas_enviadas;
+    return acc;
+  }, {});
+
+  const resultData = {
+    qtde_faccoes: qtde_total_faccoes,
+    qtde_pecas: qtde_total_pecas,
+    retorno_mes_inter: retorno_mes_inter,
+    retorno_mes_anterior_inter: retorno_mes_anterior_inter,
+    retorno_dia: retorno_dia,
+    retorno_dia_anterior: retorno_dia_anterior,
+    retorno_mes: retorno_mes,
+    retorno_mes_anterior: retorno_mes_anterior,
+    supervisores: Object.values(supervisores),
+  };
+
+  return res.status(200).json([resultData]);
+};
+
 module.exports = {
   getVendasLojas,
   getVendasCupom,
   getVendasMes,
   getEstoqueLojas,
+  getControleFaccoes,
 };
