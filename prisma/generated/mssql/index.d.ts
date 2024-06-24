@@ -73,6 +73,36 @@ export type VW_APP_CONTROLE_FACCOES_NEW = $Result.DefaultSelection<Prisma.$VW_AP
  * 
  */
 export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW = $Result.DefaultSelection<Prisma.$VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWPayload>
+/**
+ * Model VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+ * 
+ */
+export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = $Result.DefaultSelection<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload>
+/**
+ * Model VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+ * 
+ */
+export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = $Result.DefaultSelection<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload>
+/**
+ * Model VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+ * 
+ */
+export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEW = $Result.DefaultSelection<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload>
+/**
+ * Model VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+ * 
+ */
+export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = $Result.DefaultSelection<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload>
+/**
+ * Model VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+ * 
+ */
+export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = $Result.DefaultSelection<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload>
+/**
+ * Model VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+ * 
+ */
+export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = $Result.DefaultSelection<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -315,6 +345,66 @@ export class PrismaClient<
     * ```
     */
   get vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW(): Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW`: Exposes CRUD operations for the **VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS
+    * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.findMany()
+    * ```
+    */
+  get vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW(): Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW`: Exposes CRUD operations for the **VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS
+    * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.findMany()
+    * ```
+    */
+  get vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW(): Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW`: Exposes CRUD operations for the **VW_APP_REPRESENTANTES_CHICA_MAPA_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS
+    * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEWS = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.findMany()
+    * ```
+    */
+  get vW_APP_REPRESENTANTES_CHICA_MAPA_NEW(): Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW`: Exposes CRUD operations for the **VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS
+    * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.findMany()
+    * ```
+    */
+  get vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW(): Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW`: Exposes CRUD operations for the **VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS
+    * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.findMany()
+    * ```
+    */
+  get vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW(): Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDelegate<ExtArgs>;
+
+  /**
+   * `prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW`: Exposes CRUD operations for the **VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS
+    * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.findMany()
+    * ```
+    */
+  get vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW(): Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDelegate<ExtArgs>;
 }
 
 export namespace Prisma {
@@ -803,7 +893,13 @@ export namespace Prisma {
     VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW',
     VW_APP_ESTOQUE_LOJAS_NEW: 'VW_APP_ESTOQUE_LOJAS_NEW',
     VW_APP_CONTROLE_FACCOES_NEW: 'VW_APP_CONTROLE_FACCOES_NEW',
-    VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW: 'VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW'
+    VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW: 'VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW',
+    VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW: 'VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW',
+    VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW: 'VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW',
+    VW_APP_REPRESENTANTES_CHICA_MAPA_NEW: 'VW_APP_REPRESENTANTES_CHICA_MAPA_NEW',
+    VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW: 'VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW',
+    VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW: 'VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW',
+    VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW: 'VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -820,7 +916,7 @@ export namespace Prisma {
 
   export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     meta: {
-      modelProps: 'vW_AUTORIZACOES_WEB_DEV' | 'vW_AUTORIZACOES_DESPESAS_COFRE_DEV' | 'vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV' | 'vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV' | 'vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV' | 'aUTORIZACOES_WEB_BARRAMENTOS_DEV' | 'vW_APP_VENDAS_LOJAS_NEW' | 'vW_APP_VENDAS_CUPONS_NEW' | 'vW_APP_VENDAS_MES_NEW' | 'vW_APP_ESTOQUE_LOJAS_NEW' | 'vW_APP_CONTROLE_FACCOES_NEW' | 'vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW'
+      modelProps: 'vW_AUTORIZACOES_WEB_DEV' | 'vW_AUTORIZACOES_DESPESAS_COFRE_DEV' | 'vW_AUTORIZACOES_DESCONTOS_LOJAS_DEV' | 'vW_AUTORIZACOES_CANCELAMENTOS_PREVENDAS_DEV' | 'vW_AUTORIZACOES_SAIDAS_AVULSAS_DEV' | 'aUTORIZACOES_WEB_BARRAMENTOS_DEV' | 'vW_APP_VENDAS_LOJAS_NEW' | 'vW_APP_VENDAS_CUPONS_NEW' | 'vW_APP_VENDAS_MES_NEW' | 'vW_APP_ESTOQUE_LOJAS_NEW' | 'vW_APP_CONTROLE_FACCOES_NEW' | 'vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW' | 'vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW' | 'vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW' | 'vW_APP_REPRESENTANTES_CHICA_MAPA_NEW' | 'vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW' | 'vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW' | 'vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW'
       txIsolationLevel: Prisma.TransactionIsolationLevel
     },
     model: {
@@ -1613,6 +1709,402 @@ export namespace Prisma {
           count: {
             args: Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountArgs<ExtArgs>,
             result: $Utils.Optional<VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW: {
+        payload: Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW: {
+        payload: Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_REPRESENTANTES_CHICA_RESUMO_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_REPRESENTANTES_CHICA_MAPA_NEW: {
+        payload: Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_REPRESENTANTES_CHICA_MAPA_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW: {
+        payload: Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_REPRESENTANTES_DMETAL_MAPA_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW: {
+        payload: Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_REPRESENTANTES_CHICA_SEMANA_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountAggregateOutputType> | number
+          }
+        }
+      }
+      VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW: {
+        payload: Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs>
+        fields: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindUniqueArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindUniqueOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload>
+          }
+          findFirst: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindFirstArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindFirstOrThrowArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload>
+          }
+          findMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindManyArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload>[]
+          }
+          create: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload>
+          }
+          createMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          delete: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDeleteArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload>
+          }
+          update: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload>
+          }
+          deleteMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDeleteManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          updateMany: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateManyArgs<ExtArgs>,
+            result: Prisma.BatchPayload
+          }
+          upsert: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpsertArgs<ExtArgs>,
+            result: $Utils.PayloadToResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload>
+          }
+          aggregate: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAggregateArgs<ExtArgs>,
+            result: $Utils.Optional<AggregateVW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW>
+          }
+          groupBy: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountArgs<ExtArgs>,
+            result: $Utils.Optional<VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountAggregateOutputType> | number
           }
         }
       }
@@ -14500,6 +14992,6528 @@ export namespace Prisma {
 
 
   /**
+   * Model VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+   */
+
+  export type AggregateVW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = {
+    _count: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAvgAggregateOutputType = {
+    key: number | null
+    estoque: number | null
+    pedidos: number | null
+    ind_pedidos: number | null
+    dif_pedidos: number | null
+    pecas: number | null
+    pecas_anterior: number | null
+    ind_pecas: number | null
+    dif_pecas: number | null
+    valor: Decimal | null
+    valor_anterior: Decimal | null
+    ind_valor: number | null
+    dif_valor: Decimal | null
+    pedidos_faturado: number | null
+    pedidos_faturado_anterior: number | null
+    ind_pedidos_faturado: number | null
+    dif_pedidos_faturado: number | null
+    pecas_gerencial: number | null
+    pecas_gerencial_anterior: number | null
+    ind_pecas_gerencial: number | null
+    dif_pecas_gerencial: number | null
+    venda_gerencial: Decimal | null
+    venda_gerencial_anterior: Decimal | null
+    ind_venda_gerencial: number | null
+    dif_venda_gerencial: Decimal | null
+    pecas_faturado: Decimal | null
+    pecas_faturado_anterior: Decimal | null
+    ind_pecas_faturado: number | null
+    dif_pecas_faturado: Decimal | null
+    perc_pecas_faturado: Decimal | null
+    valor_faturado: Decimal | null
+    valor_faturado_anterior: Decimal | null
+    ind_valor_faturado: number | null
+    dif_valor_faturado: Decimal | null
+    perc_valor_faturado: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSumAggregateOutputType = {
+    key: number | null
+    estoque: number | null
+    pedidos: number | null
+    ind_pedidos: number | null
+    dif_pedidos: number | null
+    pecas: number | null
+    pecas_anterior: number | null
+    ind_pecas: number | null
+    dif_pecas: number | null
+    valor: Decimal | null
+    valor_anterior: Decimal | null
+    ind_valor: number | null
+    dif_valor: Decimal | null
+    pedidos_faturado: number | null
+    pedidos_faturado_anterior: number | null
+    ind_pedidos_faturado: number | null
+    dif_pedidos_faturado: number | null
+    pecas_gerencial: number | null
+    pecas_gerencial_anterior: number | null
+    ind_pecas_gerencial: number | null
+    dif_pecas_gerencial: number | null
+    venda_gerencial: Decimal | null
+    venda_gerencial_anterior: Decimal | null
+    ind_venda_gerencial: number | null
+    dif_venda_gerencial: Decimal | null
+    pecas_faturado: Decimal | null
+    pecas_faturado_anterior: Decimal | null
+    ind_pecas_faturado: number | null
+    dif_pecas_faturado: Decimal | null
+    perc_pecas_faturado: Decimal | null
+    valor_faturado: Decimal | null
+    valor_faturado_anterior: Decimal | null
+    ind_valor_faturado: number | null
+    dif_valor_faturado: Decimal | null
+    perc_valor_faturado: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMinAggregateOutputType = {
+    key: number | null
+    colecao: string | null
+    estoque: number | null
+    pedidos: number | null
+    ind_pedidos: number | null
+    dif_pedidos: number | null
+    pecas: number | null
+    pecas_anterior: number | null
+    ind_pecas: number | null
+    dif_pecas: number | null
+    valor: Decimal | null
+    valor_anterior: Decimal | null
+    ind_valor: number | null
+    dif_valor: Decimal | null
+    pedidos_faturado: number | null
+    pedidos_faturado_anterior: number | null
+    ind_pedidos_faturado: number | null
+    dif_pedidos_faturado: number | null
+    pecas_gerencial: number | null
+    pecas_gerencial_anterior: number | null
+    ind_pecas_gerencial: number | null
+    dif_pecas_gerencial: number | null
+    venda_gerencial: Decimal | null
+    venda_gerencial_anterior: Decimal | null
+    ind_venda_gerencial: number | null
+    dif_venda_gerencial: Decimal | null
+    pecas_faturado: Decimal | null
+    pecas_faturado_anterior: Decimal | null
+    ind_pecas_faturado: number | null
+    dif_pecas_faturado: Decimal | null
+    perc_pecas_faturado: Decimal | null
+    valor_faturado: Decimal | null
+    valor_faturado_anterior: Decimal | null
+    ind_valor_faturado: number | null
+    dif_valor_faturado: Decimal | null
+    perc_valor_faturado: Decimal | null
+    ultima_atualizacao: string | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMaxAggregateOutputType = {
+    key: number | null
+    colecao: string | null
+    estoque: number | null
+    pedidos: number | null
+    ind_pedidos: number | null
+    dif_pedidos: number | null
+    pecas: number | null
+    pecas_anterior: number | null
+    ind_pecas: number | null
+    dif_pecas: number | null
+    valor: Decimal | null
+    valor_anterior: Decimal | null
+    ind_valor: number | null
+    dif_valor: Decimal | null
+    pedidos_faturado: number | null
+    pedidos_faturado_anterior: number | null
+    ind_pedidos_faturado: number | null
+    dif_pedidos_faturado: number | null
+    pecas_gerencial: number | null
+    pecas_gerencial_anterior: number | null
+    ind_pecas_gerencial: number | null
+    dif_pecas_gerencial: number | null
+    venda_gerencial: Decimal | null
+    venda_gerencial_anterior: Decimal | null
+    ind_venda_gerencial: number | null
+    dif_venda_gerencial: Decimal | null
+    pecas_faturado: Decimal | null
+    pecas_faturado_anterior: Decimal | null
+    ind_pecas_faturado: number | null
+    dif_pecas_faturado: Decimal | null
+    perc_pecas_faturado: Decimal | null
+    valor_faturado: Decimal | null
+    valor_faturado_anterior: Decimal | null
+    ind_valor_faturado: number | null
+    dif_valor_faturado: Decimal | null
+    perc_valor_faturado: Decimal | null
+    ultima_atualizacao: string | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountAggregateOutputType = {
+    key: number
+    colecao: number
+    estoque: number
+    pedidos: number
+    ind_pedidos: number
+    dif_pedidos: number
+    pecas: number
+    pecas_anterior: number
+    ind_pecas: number
+    dif_pecas: number
+    valor: number
+    valor_anterior: number
+    ind_valor: number
+    dif_valor: number
+    pedidos_faturado: number
+    pedidos_faturado_anterior: number
+    ind_pedidos_faturado: number
+    dif_pedidos_faturado: number
+    pecas_gerencial: number
+    pecas_gerencial_anterior: number
+    ind_pecas_gerencial: number
+    dif_pecas_gerencial: number
+    venda_gerencial: number
+    venda_gerencial_anterior: number
+    ind_venda_gerencial: number
+    dif_venda_gerencial: number
+    pecas_faturado: number
+    pecas_faturado_anterior: number
+    ind_pecas_faturado: number
+    dif_pecas_faturado: number
+    perc_pecas_faturado: number
+    valor_faturado: number
+    valor_faturado_anterior: number
+    ind_valor_faturado: number
+    dif_valor_faturado: number
+    perc_valor_faturado: number
+    ultima_atualizacao: number
+    _all: number
+  }
+
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAvgAggregateInputType = {
+    key?: true
+    estoque?: true
+    pedidos?: true
+    ind_pedidos?: true
+    dif_pedidos?: true
+    pecas?: true
+    pecas_anterior?: true
+    ind_pecas?: true
+    dif_pecas?: true
+    valor?: true
+    valor_anterior?: true
+    ind_valor?: true
+    dif_valor?: true
+    pedidos_faturado?: true
+    pedidos_faturado_anterior?: true
+    ind_pedidos_faturado?: true
+    dif_pedidos_faturado?: true
+    pecas_gerencial?: true
+    pecas_gerencial_anterior?: true
+    ind_pecas_gerencial?: true
+    dif_pecas_gerencial?: true
+    venda_gerencial?: true
+    venda_gerencial_anterior?: true
+    ind_venda_gerencial?: true
+    dif_venda_gerencial?: true
+    pecas_faturado?: true
+    pecas_faturado_anterior?: true
+    ind_pecas_faturado?: true
+    dif_pecas_faturado?: true
+    perc_pecas_faturado?: true
+    valor_faturado?: true
+    valor_faturado_anterior?: true
+    ind_valor_faturado?: true
+    dif_valor_faturado?: true
+    perc_valor_faturado?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSumAggregateInputType = {
+    key?: true
+    estoque?: true
+    pedidos?: true
+    ind_pedidos?: true
+    dif_pedidos?: true
+    pecas?: true
+    pecas_anterior?: true
+    ind_pecas?: true
+    dif_pecas?: true
+    valor?: true
+    valor_anterior?: true
+    ind_valor?: true
+    dif_valor?: true
+    pedidos_faturado?: true
+    pedidos_faturado_anterior?: true
+    ind_pedidos_faturado?: true
+    dif_pedidos_faturado?: true
+    pecas_gerencial?: true
+    pecas_gerencial_anterior?: true
+    ind_pecas_gerencial?: true
+    dif_pecas_gerencial?: true
+    venda_gerencial?: true
+    venda_gerencial_anterior?: true
+    ind_venda_gerencial?: true
+    dif_venda_gerencial?: true
+    pecas_faturado?: true
+    pecas_faturado_anterior?: true
+    ind_pecas_faturado?: true
+    dif_pecas_faturado?: true
+    perc_pecas_faturado?: true
+    valor_faturado?: true
+    valor_faturado_anterior?: true
+    ind_valor_faturado?: true
+    dif_valor_faturado?: true
+    perc_valor_faturado?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMinAggregateInputType = {
+    key?: true
+    colecao?: true
+    estoque?: true
+    pedidos?: true
+    ind_pedidos?: true
+    dif_pedidos?: true
+    pecas?: true
+    pecas_anterior?: true
+    ind_pecas?: true
+    dif_pecas?: true
+    valor?: true
+    valor_anterior?: true
+    ind_valor?: true
+    dif_valor?: true
+    pedidos_faturado?: true
+    pedidos_faturado_anterior?: true
+    ind_pedidos_faturado?: true
+    dif_pedidos_faturado?: true
+    pecas_gerencial?: true
+    pecas_gerencial_anterior?: true
+    ind_pecas_gerencial?: true
+    dif_pecas_gerencial?: true
+    venda_gerencial?: true
+    venda_gerencial_anterior?: true
+    ind_venda_gerencial?: true
+    dif_venda_gerencial?: true
+    pecas_faturado?: true
+    pecas_faturado_anterior?: true
+    ind_pecas_faturado?: true
+    dif_pecas_faturado?: true
+    perc_pecas_faturado?: true
+    valor_faturado?: true
+    valor_faturado_anterior?: true
+    ind_valor_faturado?: true
+    dif_valor_faturado?: true
+    perc_valor_faturado?: true
+    ultima_atualizacao?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMaxAggregateInputType = {
+    key?: true
+    colecao?: true
+    estoque?: true
+    pedidos?: true
+    ind_pedidos?: true
+    dif_pedidos?: true
+    pecas?: true
+    pecas_anterior?: true
+    ind_pecas?: true
+    dif_pecas?: true
+    valor?: true
+    valor_anterior?: true
+    ind_valor?: true
+    dif_valor?: true
+    pedidos_faturado?: true
+    pedidos_faturado_anterior?: true
+    ind_pedidos_faturado?: true
+    dif_pedidos_faturado?: true
+    pecas_gerencial?: true
+    pecas_gerencial_anterior?: true
+    ind_pecas_gerencial?: true
+    dif_pecas_gerencial?: true
+    venda_gerencial?: true
+    venda_gerencial_anterior?: true
+    ind_venda_gerencial?: true
+    dif_venda_gerencial?: true
+    pecas_faturado?: true
+    pecas_faturado_anterior?: true
+    ind_pecas_faturado?: true
+    dif_pecas_faturado?: true
+    perc_pecas_faturado?: true
+    valor_faturado?: true
+    valor_faturado_anterior?: true
+    ind_valor_faturado?: true
+    dif_valor_faturado?: true
+    perc_valor_faturado?: true
+    ultima_atualizacao?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountAggregateInputType = {
+    key?: true
+    colecao?: true
+    estoque?: true
+    pedidos?: true
+    ind_pedidos?: true
+    dif_pedidos?: true
+    pecas?: true
+    pecas_anterior?: true
+    ind_pecas?: true
+    dif_pecas?: true
+    valor?: true
+    valor_anterior?: true
+    ind_valor?: true
+    dif_valor?: true
+    pedidos_faturado?: true
+    pedidos_faturado_anterior?: true
+    ind_pedidos_faturado?: true
+    dif_pedidos_faturado?: true
+    pecas_gerencial?: true
+    pecas_gerencial_anterior?: true
+    ind_pecas_gerencial?: true
+    dif_pecas_gerencial?: true
+    venda_gerencial?: true
+    venda_gerencial_anterior?: true
+    ind_venda_gerencial?: true
+    dif_venda_gerencial?: true
+    pecas_faturado?: true
+    pecas_faturado_anterior?: true
+    ind_pecas_faturado?: true
+    dif_pecas_faturado?: true
+    perc_pecas_faturado?: true
+    valor_faturado?: true
+    valor_faturado_anterior?: true
+    ind_valor_faturado?: true
+    dif_valor_faturado?: true
+    perc_valor_faturado?: true
+    ultima_atualizacao?: true
+    _all?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW to aggregate.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS
+    **/
+    _count?: true | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAggregateType<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithAggregationInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithAggregationInput[]
+    by: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum[] | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum
+    having?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountAggregateInputType | true
+    _avg?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAvgAggregateInputType
+    _sum?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSumAggregateInputType
+    _min?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMinAggregateInputType
+    _max?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByOutputType = {
+    key: number
+    colecao: string
+    estoque: number
+    pedidos: number
+    ind_pedidos: number
+    dif_pedidos: number
+    pecas: number
+    pecas_anterior: number
+    ind_pecas: number
+    dif_pecas: number
+    valor: Decimal
+    valor_anterior: Decimal
+    ind_valor: number
+    dif_valor: Decimal
+    pedidos_faturado: number
+    pedidos_faturado_anterior: number
+    ind_pedidos_faturado: number
+    dif_pedidos_faturado: number
+    pecas_gerencial: number
+    pecas_gerencial_anterior: number
+    ind_pecas_gerencial: number
+    dif_pecas_gerencial: number
+    venda_gerencial: Decimal
+    venda_gerencial_anterior: Decimal
+    ind_venda_gerencial: number
+    dif_venda_gerencial: Decimal
+    pecas_faturado: Decimal
+    pecas_faturado_anterior: Decimal
+    ind_pecas_faturado: number
+    dif_pecas_faturado: Decimal
+    perc_pecas_faturado: Decimal
+    valor_faturado: Decimal
+    valor_faturado_anterior: Decimal
+    ind_valor_faturado: number
+    dif_valor_faturado: Decimal
+    perc_valor_faturado: Decimal
+    ultima_atualizacao: string
+    _count: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByPayload<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    colecao?: boolean
+    estoque?: boolean
+    pedidos?: boolean
+    ind_pedidos?: boolean
+    dif_pedidos?: boolean
+    pecas?: boolean
+    pecas_anterior?: boolean
+    ind_pecas?: boolean
+    dif_pecas?: boolean
+    valor?: boolean
+    valor_anterior?: boolean
+    ind_valor?: boolean
+    dif_valor?: boolean
+    pedidos_faturado?: boolean
+    pedidos_faturado_anterior?: boolean
+    ind_pedidos_faturado?: boolean
+    dif_pedidos_faturado?: boolean
+    pecas_gerencial?: boolean
+    pecas_gerencial_anterior?: boolean
+    ind_pecas_gerencial?: boolean
+    dif_pecas_gerencial?: boolean
+    venda_gerencial?: boolean
+    venda_gerencial_anterior?: boolean
+    ind_venda_gerencial?: boolean
+    dif_venda_gerencial?: boolean
+    pecas_faturado?: boolean
+    pecas_faturado_anterior?: boolean
+    ind_pecas_faturado?: boolean
+    dif_pecas_faturado?: boolean
+    perc_pecas_faturado?: boolean
+    valor_faturado?: boolean
+    valor_faturado_anterior?: boolean
+    ind_valor_faturado?: boolean
+    dif_valor_faturado?: boolean
+    perc_valor_faturado?: boolean
+    ultima_atualizacao?: boolean
+  }, ExtArgs["result"]["vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"]>
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelectScalar = {
+    key?: boolean
+    colecao?: boolean
+    estoque?: boolean
+    pedidos?: boolean
+    ind_pedidos?: boolean
+    dif_pedidos?: boolean
+    pecas?: boolean
+    pecas_anterior?: boolean
+    ind_pecas?: boolean
+    dif_pecas?: boolean
+    valor?: boolean
+    valor_anterior?: boolean
+    ind_valor?: boolean
+    dif_valor?: boolean
+    pedidos_faturado?: boolean
+    pedidos_faturado_anterior?: boolean
+    ind_pedidos_faturado?: boolean
+    dif_pedidos_faturado?: boolean
+    pecas_gerencial?: boolean
+    pecas_gerencial_anterior?: boolean
+    ind_pecas_gerencial?: boolean
+    dif_pecas_gerencial?: boolean
+    venda_gerencial?: boolean
+    venda_gerencial_anterior?: boolean
+    ind_venda_gerencial?: boolean
+    dif_venda_gerencial?: boolean
+    pecas_faturado?: boolean
+    pecas_faturado_anterior?: boolean
+    ind_pecas_faturado?: boolean
+    dif_pecas_faturado?: boolean
+    perc_pecas_faturado?: boolean
+    valor_faturado?: boolean
+    valor_faturado_anterior?: boolean
+    ind_valor_faturado?: boolean
+    dif_valor_faturado?: boolean
+    perc_valor_faturado?: boolean
+    ultima_atualizacao?: boolean
+  }
+
+
+
+  export type $VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      colecao: string
+      estoque: number
+      pedidos: number
+      ind_pedidos: number
+      dif_pedidos: number
+      pecas: number
+      pecas_anterior: number
+      ind_pecas: number
+      dif_pecas: number
+      valor: Prisma.Decimal
+      valor_anterior: Prisma.Decimal
+      ind_valor: number
+      dif_valor: Prisma.Decimal
+      pedidos_faturado: number
+      pedidos_faturado_anterior: number
+      ind_pedidos_faturado: number
+      dif_pedidos_faturado: number
+      pecas_gerencial: number
+      pecas_gerencial_anterior: number
+      ind_pecas_gerencial: number
+      dif_pecas_gerencial: number
+      venda_gerencial: Prisma.Decimal
+      venda_gerencial_anterior: Prisma.Decimal
+      ind_venda_gerencial: number
+      dif_venda_gerencial: Prisma.Decimal
+      pecas_faturado: Prisma.Decimal
+      pecas_faturado_anterior: Prisma.Decimal
+      ind_pecas_faturado: number
+      dif_pecas_faturado: Prisma.Decimal
+      perc_pecas_faturado: Prisma.Decimal
+      valor_faturado: Prisma.Decimal
+      valor_faturado_anterior: Prisma.Decimal
+      ind_valor_faturado: number
+      dif_valor_faturado: Prisma.Decimal
+      perc_valor_faturado: Prisma.Decimal
+      ultima_atualizacao: string
+    }, ExtArgs["result"]["vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGetPayload<S extends boolean | null | undefined | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload, S>
+
+  type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW'], meta: { name: 'VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW' } }
+    /**
+     * Find zero or one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW that matches the filter.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindUniqueArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindFirstArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWithKeyOnly = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateArgs} args - Arguments to create a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     * @example
+     * // Create one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * const VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateManyArgs} args - Arguments to create many VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     * @example
+     * // Create many VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDeleteArgs} args - Arguments to delete one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     * @example
+     * // Delete one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * const VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateArgs} args - Arguments to update one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     * @example
+     * // Update one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDeleteManyArgs} args - Arguments to filter VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS
+     * const { count } = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpsertArgs} args - Arguments to update or create a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     * @example
+     * // Update or create a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountArgs} args - Arguments to filter VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS
+     * const count = await prisma.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountArgs>(
+      args?: Subset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAggregateArgs>(args: Subset<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW model
+   */
+  readonly fields: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW model
+   */ 
+  interface VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly colecao: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'String'>
+    readonly estoque: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly pedidos: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly ind_pedidos: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly dif_pedidos: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly pecas: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly pecas_anterior: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly ind_pecas: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly dif_pecas: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly valor: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly valor_anterior: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly ind_valor: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly dif_valor: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly pedidos_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly pedidos_faturado_anterior: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly ind_pedidos_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly dif_pedidos_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly pecas_gerencial: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly pecas_gerencial_anterior: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly ind_pecas_gerencial: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly dif_pecas_gerencial: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly venda_gerencial: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly venda_gerencial_anterior: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly ind_venda_gerencial: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly dif_venda_gerencial: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly pecas_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly pecas_faturado_anterior: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly ind_pecas_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly dif_pecas_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly perc_pecas_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly valor_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly valor_faturado_anterior: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly ind_valor_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Int'>
+    readonly dif_valor_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly perc_valor_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'Decimal'>
+    readonly ultima_atualizacao: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW findUnique
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW findUniqueOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW findFirst
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW findFirstOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW findMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW create
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateInput, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW createMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    data: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateManyInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW update
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateInput, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW to update.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW updateMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateManyMutationInput, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS to update
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW upsert
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW to update in case it exists.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW found by the `where` argument doesn't exist, create a new VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW with this data.
+     */
+    create: XOR<VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateInput, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateInput, VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW delete
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW to delete.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW deleteMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWS to delete
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW without action
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
+   * Model VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+   */
+
+  export type AggregateVW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = {
+    _count: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAvgAggregateOutputType = {
+    key: number | null
+    estoque: number | null
+    pedidos: number | null
+    ind_pedidos: number | null
+    dif_pedidos: number | null
+    pecas: number | null
+    pecas_anterior: number | null
+    ind_pecas: number | null
+    dif_pecas: number | null
+    valor: Decimal | null
+    valor_anterior: Decimal | null
+    ind_valor: number | null
+    dif_valor: Decimal | null
+    pedidos_faturado: number | null
+    pedidos_faturado_anterior: number | null
+    ind_pedidos_faturado: number | null
+    dif_pedidos_faturado: number | null
+    pecas_gerencial: number | null
+    pecas_gerencial_anterior: number | null
+    ind_pecas_gerencial: number | null
+    dif_pecas_gerencial: number | null
+    venda_gerencial: Decimal | null
+    venda_gerencial_anterior: Decimal | null
+    ind_venda_gerencial: number | null
+    dif_venda_gerencial: Decimal | null
+    pecas_faturado: Decimal | null
+    pecas_faturado_anterior: Decimal | null
+    ind_pecas_faturado: number | null
+    dif_pecas_faturado: Decimal | null
+    perc_pecas_faturado: Decimal | null
+    valor_faturado: Decimal | null
+    valor_faturado_anterior: Decimal | null
+    ind_valor_faturado: number | null
+    dif_valor_faturado: Decimal | null
+    perc_valor_faturado: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSumAggregateOutputType = {
+    key: number | null
+    estoque: number | null
+    pedidos: number | null
+    ind_pedidos: number | null
+    dif_pedidos: number | null
+    pecas: number | null
+    pecas_anterior: number | null
+    ind_pecas: number | null
+    dif_pecas: number | null
+    valor: Decimal | null
+    valor_anterior: Decimal | null
+    ind_valor: number | null
+    dif_valor: Decimal | null
+    pedidos_faturado: number | null
+    pedidos_faturado_anterior: number | null
+    ind_pedidos_faturado: number | null
+    dif_pedidos_faturado: number | null
+    pecas_gerencial: number | null
+    pecas_gerencial_anterior: number | null
+    ind_pecas_gerencial: number | null
+    dif_pecas_gerencial: number | null
+    venda_gerencial: Decimal | null
+    venda_gerencial_anterior: Decimal | null
+    ind_venda_gerencial: number | null
+    dif_venda_gerencial: Decimal | null
+    pecas_faturado: Decimal | null
+    pecas_faturado_anterior: Decimal | null
+    ind_pecas_faturado: number | null
+    dif_pecas_faturado: Decimal | null
+    perc_pecas_faturado: Decimal | null
+    valor_faturado: Decimal | null
+    valor_faturado_anterior: Decimal | null
+    ind_valor_faturado: number | null
+    dif_valor_faturado: Decimal | null
+    perc_valor_faturado: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMinAggregateOutputType = {
+    key: number | null
+    colecao: string | null
+    estoque: number | null
+    pedidos: number | null
+    ind_pedidos: number | null
+    dif_pedidos: number | null
+    pecas: number | null
+    pecas_anterior: number | null
+    ind_pecas: number | null
+    dif_pecas: number | null
+    valor: Decimal | null
+    valor_anterior: Decimal | null
+    ind_valor: number | null
+    dif_valor: Decimal | null
+    pedidos_faturado: number | null
+    pedidos_faturado_anterior: number | null
+    ind_pedidos_faturado: number | null
+    dif_pedidos_faturado: number | null
+    pecas_gerencial: number | null
+    pecas_gerencial_anterior: number | null
+    ind_pecas_gerencial: number | null
+    dif_pecas_gerencial: number | null
+    venda_gerencial: Decimal | null
+    venda_gerencial_anterior: Decimal | null
+    ind_venda_gerencial: number | null
+    dif_venda_gerencial: Decimal | null
+    pecas_faturado: Decimal | null
+    pecas_faturado_anterior: Decimal | null
+    ind_pecas_faturado: number | null
+    dif_pecas_faturado: Decimal | null
+    perc_pecas_faturado: Decimal | null
+    valor_faturado: Decimal | null
+    valor_faturado_anterior: Decimal | null
+    ind_valor_faturado: number | null
+    dif_valor_faturado: Decimal | null
+    perc_valor_faturado: Decimal | null
+    ultima_atualizacao: string | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMaxAggregateOutputType = {
+    key: number | null
+    colecao: string | null
+    estoque: number | null
+    pedidos: number | null
+    ind_pedidos: number | null
+    dif_pedidos: number | null
+    pecas: number | null
+    pecas_anterior: number | null
+    ind_pecas: number | null
+    dif_pecas: number | null
+    valor: Decimal | null
+    valor_anterior: Decimal | null
+    ind_valor: number | null
+    dif_valor: Decimal | null
+    pedidos_faturado: number | null
+    pedidos_faturado_anterior: number | null
+    ind_pedidos_faturado: number | null
+    dif_pedidos_faturado: number | null
+    pecas_gerencial: number | null
+    pecas_gerencial_anterior: number | null
+    ind_pecas_gerencial: number | null
+    dif_pecas_gerencial: number | null
+    venda_gerencial: Decimal | null
+    venda_gerencial_anterior: Decimal | null
+    ind_venda_gerencial: number | null
+    dif_venda_gerencial: Decimal | null
+    pecas_faturado: Decimal | null
+    pecas_faturado_anterior: Decimal | null
+    ind_pecas_faturado: number | null
+    dif_pecas_faturado: Decimal | null
+    perc_pecas_faturado: Decimal | null
+    valor_faturado: Decimal | null
+    valor_faturado_anterior: Decimal | null
+    ind_valor_faturado: number | null
+    dif_valor_faturado: Decimal | null
+    perc_valor_faturado: Decimal | null
+    ultima_atualizacao: string | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountAggregateOutputType = {
+    key: number
+    colecao: number
+    estoque: number
+    pedidos: number
+    ind_pedidos: number
+    dif_pedidos: number
+    pecas: number
+    pecas_anterior: number
+    ind_pecas: number
+    dif_pecas: number
+    valor: number
+    valor_anterior: number
+    ind_valor: number
+    dif_valor: number
+    pedidos_faturado: number
+    pedidos_faturado_anterior: number
+    ind_pedidos_faturado: number
+    dif_pedidos_faturado: number
+    pecas_gerencial: number
+    pecas_gerencial_anterior: number
+    ind_pecas_gerencial: number
+    dif_pecas_gerencial: number
+    venda_gerencial: number
+    venda_gerencial_anterior: number
+    ind_venda_gerencial: number
+    dif_venda_gerencial: number
+    pecas_faturado: number
+    pecas_faturado_anterior: number
+    ind_pecas_faturado: number
+    dif_pecas_faturado: number
+    perc_pecas_faturado: number
+    valor_faturado: number
+    valor_faturado_anterior: number
+    ind_valor_faturado: number
+    dif_valor_faturado: number
+    perc_valor_faturado: number
+    ultima_atualizacao: number
+    _all: number
+  }
+
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAvgAggregateInputType = {
+    key?: true
+    estoque?: true
+    pedidos?: true
+    ind_pedidos?: true
+    dif_pedidos?: true
+    pecas?: true
+    pecas_anterior?: true
+    ind_pecas?: true
+    dif_pecas?: true
+    valor?: true
+    valor_anterior?: true
+    ind_valor?: true
+    dif_valor?: true
+    pedidos_faturado?: true
+    pedidos_faturado_anterior?: true
+    ind_pedidos_faturado?: true
+    dif_pedidos_faturado?: true
+    pecas_gerencial?: true
+    pecas_gerencial_anterior?: true
+    ind_pecas_gerencial?: true
+    dif_pecas_gerencial?: true
+    venda_gerencial?: true
+    venda_gerencial_anterior?: true
+    ind_venda_gerencial?: true
+    dif_venda_gerencial?: true
+    pecas_faturado?: true
+    pecas_faturado_anterior?: true
+    ind_pecas_faturado?: true
+    dif_pecas_faturado?: true
+    perc_pecas_faturado?: true
+    valor_faturado?: true
+    valor_faturado_anterior?: true
+    ind_valor_faturado?: true
+    dif_valor_faturado?: true
+    perc_valor_faturado?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSumAggregateInputType = {
+    key?: true
+    estoque?: true
+    pedidos?: true
+    ind_pedidos?: true
+    dif_pedidos?: true
+    pecas?: true
+    pecas_anterior?: true
+    ind_pecas?: true
+    dif_pecas?: true
+    valor?: true
+    valor_anterior?: true
+    ind_valor?: true
+    dif_valor?: true
+    pedidos_faturado?: true
+    pedidos_faturado_anterior?: true
+    ind_pedidos_faturado?: true
+    dif_pedidos_faturado?: true
+    pecas_gerencial?: true
+    pecas_gerencial_anterior?: true
+    ind_pecas_gerencial?: true
+    dif_pecas_gerencial?: true
+    venda_gerencial?: true
+    venda_gerencial_anterior?: true
+    ind_venda_gerencial?: true
+    dif_venda_gerencial?: true
+    pecas_faturado?: true
+    pecas_faturado_anterior?: true
+    ind_pecas_faturado?: true
+    dif_pecas_faturado?: true
+    perc_pecas_faturado?: true
+    valor_faturado?: true
+    valor_faturado_anterior?: true
+    ind_valor_faturado?: true
+    dif_valor_faturado?: true
+    perc_valor_faturado?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMinAggregateInputType = {
+    key?: true
+    colecao?: true
+    estoque?: true
+    pedidos?: true
+    ind_pedidos?: true
+    dif_pedidos?: true
+    pecas?: true
+    pecas_anterior?: true
+    ind_pecas?: true
+    dif_pecas?: true
+    valor?: true
+    valor_anterior?: true
+    ind_valor?: true
+    dif_valor?: true
+    pedidos_faturado?: true
+    pedidos_faturado_anterior?: true
+    ind_pedidos_faturado?: true
+    dif_pedidos_faturado?: true
+    pecas_gerencial?: true
+    pecas_gerencial_anterior?: true
+    ind_pecas_gerencial?: true
+    dif_pecas_gerencial?: true
+    venda_gerencial?: true
+    venda_gerencial_anterior?: true
+    ind_venda_gerencial?: true
+    dif_venda_gerencial?: true
+    pecas_faturado?: true
+    pecas_faturado_anterior?: true
+    ind_pecas_faturado?: true
+    dif_pecas_faturado?: true
+    perc_pecas_faturado?: true
+    valor_faturado?: true
+    valor_faturado_anterior?: true
+    ind_valor_faturado?: true
+    dif_valor_faturado?: true
+    perc_valor_faturado?: true
+    ultima_atualizacao?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMaxAggregateInputType = {
+    key?: true
+    colecao?: true
+    estoque?: true
+    pedidos?: true
+    ind_pedidos?: true
+    dif_pedidos?: true
+    pecas?: true
+    pecas_anterior?: true
+    ind_pecas?: true
+    dif_pecas?: true
+    valor?: true
+    valor_anterior?: true
+    ind_valor?: true
+    dif_valor?: true
+    pedidos_faturado?: true
+    pedidos_faturado_anterior?: true
+    ind_pedidos_faturado?: true
+    dif_pedidos_faturado?: true
+    pecas_gerencial?: true
+    pecas_gerencial_anterior?: true
+    ind_pecas_gerencial?: true
+    dif_pecas_gerencial?: true
+    venda_gerencial?: true
+    venda_gerencial_anterior?: true
+    ind_venda_gerencial?: true
+    dif_venda_gerencial?: true
+    pecas_faturado?: true
+    pecas_faturado_anterior?: true
+    ind_pecas_faturado?: true
+    dif_pecas_faturado?: true
+    perc_pecas_faturado?: true
+    valor_faturado?: true
+    valor_faturado_anterior?: true
+    ind_valor_faturado?: true
+    dif_valor_faturado?: true
+    perc_valor_faturado?: true
+    ultima_atualizacao?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountAggregateInputType = {
+    key?: true
+    colecao?: true
+    estoque?: true
+    pedidos?: true
+    ind_pedidos?: true
+    dif_pedidos?: true
+    pecas?: true
+    pecas_anterior?: true
+    ind_pecas?: true
+    dif_pecas?: true
+    valor?: true
+    valor_anterior?: true
+    ind_valor?: true
+    dif_valor?: true
+    pedidos_faturado?: true
+    pedidos_faturado_anterior?: true
+    ind_pedidos_faturado?: true
+    dif_pedidos_faturado?: true
+    pecas_gerencial?: true
+    pecas_gerencial_anterior?: true
+    ind_pecas_gerencial?: true
+    dif_pecas_gerencial?: true
+    venda_gerencial?: true
+    venda_gerencial_anterior?: true
+    ind_venda_gerencial?: true
+    dif_venda_gerencial?: true
+    pecas_faturado?: true
+    pecas_faturado_anterior?: true
+    ind_pecas_faturado?: true
+    dif_pecas_faturado?: true
+    perc_pecas_faturado?: true
+    valor_faturado?: true
+    valor_faturado_anterior?: true
+    ind_valor_faturado?: true
+    dif_valor_faturado?: true
+    perc_valor_faturado?: true
+    ultima_atualizacao?: true
+    _all?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW to aggregate.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS
+    **/
+    _count?: true | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAggregateType<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_REPRESENTANTES_CHICA_RESUMO_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_CHICA_RESUMO_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_CHICA_RESUMO_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithAggregationInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithAggregationInput[]
+    by: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum[] | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum
+    having?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountAggregateInputType | true
+    _avg?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAvgAggregateInputType
+    _sum?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSumAggregateInputType
+    _min?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMinAggregateInputType
+    _max?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByOutputType = {
+    key: number
+    colecao: string
+    estoque: number
+    pedidos: number
+    ind_pedidos: number
+    dif_pedidos: number
+    pecas: number
+    pecas_anterior: number
+    ind_pecas: number
+    dif_pecas: number
+    valor: Decimal
+    valor_anterior: Decimal
+    ind_valor: number
+    dif_valor: Decimal
+    pedidos_faturado: number
+    pedidos_faturado_anterior: number
+    ind_pedidos_faturado: number
+    dif_pedidos_faturado: number
+    pecas_gerencial: number
+    pecas_gerencial_anterior: number
+    ind_pecas_gerencial: number
+    dif_pecas_gerencial: number
+    venda_gerencial: Decimal
+    venda_gerencial_anterior: Decimal
+    ind_venda_gerencial: number
+    dif_venda_gerencial: Decimal
+    pecas_faturado: Decimal
+    pecas_faturado_anterior: Decimal
+    ind_pecas_faturado: number
+    dif_pecas_faturado: Decimal
+    perc_pecas_faturado: Decimal
+    valor_faturado: Decimal
+    valor_faturado_anterior: Decimal
+    ind_valor_faturado: number
+    dif_valor_faturado: Decimal
+    perc_valor_faturado: Decimal
+    ultima_atualizacao: string
+    _count: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByPayload<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    colecao?: boolean
+    estoque?: boolean
+    pedidos?: boolean
+    ind_pedidos?: boolean
+    dif_pedidos?: boolean
+    pecas?: boolean
+    pecas_anterior?: boolean
+    ind_pecas?: boolean
+    dif_pecas?: boolean
+    valor?: boolean
+    valor_anterior?: boolean
+    ind_valor?: boolean
+    dif_valor?: boolean
+    pedidos_faturado?: boolean
+    pedidos_faturado_anterior?: boolean
+    ind_pedidos_faturado?: boolean
+    dif_pedidos_faturado?: boolean
+    pecas_gerencial?: boolean
+    pecas_gerencial_anterior?: boolean
+    ind_pecas_gerencial?: boolean
+    dif_pecas_gerencial?: boolean
+    venda_gerencial?: boolean
+    venda_gerencial_anterior?: boolean
+    ind_venda_gerencial?: boolean
+    dif_venda_gerencial?: boolean
+    pecas_faturado?: boolean
+    pecas_faturado_anterior?: boolean
+    ind_pecas_faturado?: boolean
+    dif_pecas_faturado?: boolean
+    perc_pecas_faturado?: boolean
+    valor_faturado?: boolean
+    valor_faturado_anterior?: boolean
+    ind_valor_faturado?: boolean
+    dif_valor_faturado?: boolean
+    perc_valor_faturado?: boolean
+    ultima_atualizacao?: boolean
+  }, ExtArgs["result"]["vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"]>
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelectScalar = {
+    key?: boolean
+    colecao?: boolean
+    estoque?: boolean
+    pedidos?: boolean
+    ind_pedidos?: boolean
+    dif_pedidos?: boolean
+    pecas?: boolean
+    pecas_anterior?: boolean
+    ind_pecas?: boolean
+    dif_pecas?: boolean
+    valor?: boolean
+    valor_anterior?: boolean
+    ind_valor?: boolean
+    dif_valor?: boolean
+    pedidos_faturado?: boolean
+    pedidos_faturado_anterior?: boolean
+    ind_pedidos_faturado?: boolean
+    dif_pedidos_faturado?: boolean
+    pecas_gerencial?: boolean
+    pecas_gerencial_anterior?: boolean
+    ind_pecas_gerencial?: boolean
+    dif_pecas_gerencial?: boolean
+    venda_gerencial?: boolean
+    venda_gerencial_anterior?: boolean
+    ind_venda_gerencial?: boolean
+    dif_venda_gerencial?: boolean
+    pecas_faturado?: boolean
+    pecas_faturado_anterior?: boolean
+    ind_pecas_faturado?: boolean
+    dif_pecas_faturado?: boolean
+    perc_pecas_faturado?: boolean
+    valor_faturado?: boolean
+    valor_faturado_anterior?: boolean
+    ind_valor_faturado?: boolean
+    dif_valor_faturado?: boolean
+    perc_valor_faturado?: boolean
+    ultima_atualizacao?: boolean
+  }
+
+
+
+  export type $VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      colecao: string
+      estoque: number
+      pedidos: number
+      ind_pedidos: number
+      dif_pedidos: number
+      pecas: number
+      pecas_anterior: number
+      ind_pecas: number
+      dif_pecas: number
+      valor: Prisma.Decimal
+      valor_anterior: Prisma.Decimal
+      ind_valor: number
+      dif_valor: Prisma.Decimal
+      pedidos_faturado: number
+      pedidos_faturado_anterior: number
+      ind_pedidos_faturado: number
+      dif_pedidos_faturado: number
+      pecas_gerencial: number
+      pecas_gerencial_anterior: number
+      ind_pecas_gerencial: number
+      dif_pecas_gerencial: number
+      venda_gerencial: Prisma.Decimal
+      venda_gerencial_anterior: Prisma.Decimal
+      ind_venda_gerencial: number
+      dif_venda_gerencial: Prisma.Decimal
+      pecas_faturado: Prisma.Decimal
+      pecas_faturado_anterior: Prisma.Decimal
+      ind_pecas_faturado: number
+      dif_pecas_faturado: Prisma.Decimal
+      perc_pecas_faturado: Prisma.Decimal
+      valor_faturado: Prisma.Decimal
+      valor_faturado_anterior: Prisma.Decimal
+      ind_valor_faturado: number
+      dif_valor_faturado: Prisma.Decimal
+      perc_valor_faturado: Prisma.Decimal
+      ultima_atualizacao: string
+    }, ExtArgs["result"]["vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGetPayload<S extends boolean | null | undefined | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload, S>
+
+  type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW'], meta: { name: 'VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW' } }
+    /**
+     * Find zero or one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW that matches the filter.
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindUniqueArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindFirstArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWithKeyOnly = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateArgs} args - Arguments to create a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     * @example
+     * // Create one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * const VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateManyArgs} args - Arguments to create many VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     * @example
+     * // Create many VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDeleteArgs} args - Arguments to delete one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     * @example
+     * // Delete one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * const VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateArgs} args - Arguments to update one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     * @example
+     * // Update one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDeleteManyArgs} args - Arguments to filter VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS
+     * const { count } = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpsertArgs} args - Arguments to update or create a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     * @example
+     * // Update or create a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountArgs} args - Arguments to filter VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS
+     * const count = await prisma.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountArgs>(
+      args?: Subset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAggregateArgs>(args: Subset<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_REPRESENTANTES_CHICA_RESUMO_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW model
+   */
+  readonly fields: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW model
+   */ 
+  interface VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly colecao: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'String'>
+    readonly estoque: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly pedidos: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly ind_pedidos: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly dif_pedidos: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly pecas: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly pecas_anterior: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly ind_pecas: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly dif_pecas: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly valor: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly valor_anterior: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly ind_valor: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly dif_valor: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly pedidos_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly pedidos_faturado_anterior: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly ind_pedidos_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly dif_pedidos_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly pecas_gerencial: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly pecas_gerencial_anterior: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly ind_pecas_gerencial: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly dif_pecas_gerencial: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly venda_gerencial: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly venda_gerencial_anterior: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly ind_venda_gerencial: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly dif_venda_gerencial: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly pecas_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly pecas_faturado_anterior: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly ind_pecas_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly dif_pecas_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly perc_pecas_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly valor_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly valor_faturado_anterior: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly ind_valor_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Int'>
+    readonly dif_valor_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly perc_valor_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'Decimal'>
+    readonly ultima_atualizacao: FieldRef<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW findUnique
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW findUniqueOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW findFirst
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW findFirstOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW findMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW create
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateInput, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW createMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    data: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateManyInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW update
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateInput, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW to update.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW updateMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateManyMutationInput, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS to update
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW upsert
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW to update in case it exists.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW found by the `where` argument doesn't exist, create a new VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW with this data.
+     */
+    create: XOR<VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateInput, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateInput, VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW delete
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW to delete.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW deleteMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWS to delete
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW without action
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
+   * Model VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+   */
+
+  export type AggregateVW_APP_REPRESENTANTES_CHICA_MAPA_NEW = {
+    _count: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAvgAggregateOutputType = {
+    key: number | null
+    qtde: number | null
+    qtde_pecas: number | null
+    valor: Decimal | null
+    qtde_faturado: number | null
+    pecas_faturado: number | null
+    valor_faturado: Decimal | null
+    qtde_venda_gerencial: number | null
+    valor_venda_gerencial: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSumAggregateOutputType = {
+    key: number | null
+    qtde: number | null
+    qtde_pecas: number | null
+    valor: Decimal | null
+    qtde_faturado: number | null
+    pecas_faturado: number | null
+    valor_faturado: Decimal | null
+    qtde_venda_gerencial: number | null
+    valor_venda_gerencial: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMinAggregateOutputType = {
+    key: number | null
+    nome: string | null
+    qtde: number | null
+    qtde_pecas: number | null
+    valor: Decimal | null
+    qtde_faturado: number | null
+    pecas_faturado: number | null
+    valor_faturado: Decimal | null
+    qtde_venda_gerencial: number | null
+    valor_venda_gerencial: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMaxAggregateOutputType = {
+    key: number | null
+    nome: string | null
+    qtde: number | null
+    qtde_pecas: number | null
+    valor: Decimal | null
+    qtde_faturado: number | null
+    pecas_faturado: number | null
+    valor_faturado: Decimal | null
+    qtde_venda_gerencial: number | null
+    valor_venda_gerencial: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountAggregateOutputType = {
+    key: number
+    nome: number
+    qtde: number
+    qtde_pecas: number
+    valor: number
+    qtde_faturado: number
+    pecas_faturado: number
+    valor_faturado: number
+    qtde_venda_gerencial: number
+    valor_venda_gerencial: number
+    _all: number
+  }
+
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAvgAggregateInputType = {
+    key?: true
+    qtde?: true
+    qtde_pecas?: true
+    valor?: true
+    qtde_faturado?: true
+    pecas_faturado?: true
+    valor_faturado?: true
+    qtde_venda_gerencial?: true
+    valor_venda_gerencial?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSumAggregateInputType = {
+    key?: true
+    qtde?: true
+    qtde_pecas?: true
+    valor?: true
+    qtde_faturado?: true
+    pecas_faturado?: true
+    valor_faturado?: true
+    qtde_venda_gerencial?: true
+    valor_venda_gerencial?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMinAggregateInputType = {
+    key?: true
+    nome?: true
+    qtde?: true
+    qtde_pecas?: true
+    valor?: true
+    qtde_faturado?: true
+    pecas_faturado?: true
+    valor_faturado?: true
+    qtde_venda_gerencial?: true
+    valor_venda_gerencial?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMaxAggregateInputType = {
+    key?: true
+    nome?: true
+    qtde?: true
+    qtde_pecas?: true
+    valor?: true
+    qtde_faturado?: true
+    pecas_faturado?: true
+    valor_faturado?: true
+    qtde_venda_gerencial?: true
+    valor_venda_gerencial?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountAggregateInputType = {
+    key?: true
+    nome?: true
+    qtde?: true
+    qtde_pecas?: true
+    valor?: true
+    qtde_faturado?: true
+    pecas_faturado?: true
+    valor_faturado?: true
+    qtde_venda_gerencial?: true
+    valor_venda_gerencial?: true
+    _all?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_MAPA_NEW to aggregate.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS
+    **/
+    _count?: true | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_REPRESENTANTES_CHICA_MAPA_NEWAggregateType<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_REPRESENTANTES_CHICA_MAPA_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_CHICA_MAPA_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_CHICA_MAPA_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithAggregationInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithAggregationInput[]
+    by: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum[] | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum
+    having?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountAggregateInputType | true
+    _avg?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAvgAggregateInputType
+    _sum?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSumAggregateInputType
+    _min?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMinAggregateInputType
+    _max?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByOutputType = {
+    key: number
+    nome: string
+    qtde: number
+    qtde_pecas: number
+    valor: Decimal
+    qtde_faturado: number
+    pecas_faturado: number
+    valor_faturado: Decimal
+    qtde_venda_gerencial: number
+    valor_venda_gerencial: Decimal
+    _count: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByPayload<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    nome?: boolean
+    qtde?: boolean
+    qtde_pecas?: boolean
+    valor?: boolean
+    qtde_faturado?: boolean
+    pecas_faturado?: boolean
+    valor_faturado?: boolean
+    qtde_venda_gerencial?: boolean
+    valor_venda_gerencial?: boolean
+  }, ExtArgs["result"]["vW_APP_REPRESENTANTES_CHICA_MAPA_NEW"]>
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelectScalar = {
+    key?: boolean
+    nome?: boolean
+    qtde?: boolean
+    qtde_pecas?: boolean
+    valor?: boolean
+    qtde_faturado?: boolean
+    pecas_faturado?: boolean
+    valor_faturado?: boolean
+    qtde_venda_gerencial?: boolean
+    valor_venda_gerencial?: boolean
+  }
+
+
+
+  export type $VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      nome: string
+      qtde: number
+      qtde_pecas: number
+      valor: Prisma.Decimal
+      qtde_faturado: number
+      pecas_faturado: number
+      valor_faturado: Prisma.Decimal
+      qtde_venda_gerencial: number
+      valor_venda_gerencial: Prisma.Decimal
+    }, ExtArgs["result"]["vW_APP_REPRESENTANTES_CHICA_MAPA_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGetPayload<S extends boolean | null | undefined | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload, S>
+
+  type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_REPRESENTANTES_CHICA_MAPA_NEW'], meta: { name: 'VW_APP_REPRESENTANTES_CHICA_MAPA_NEW' } }
+    /**
+     * Find zero or one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW that matches the filter.
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindUniqueArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_CHICA_MAPA_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindFirstArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_CHICA_MAPA_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEWS = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEWS = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEWWithKeyOnly = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateArgs} args - Arguments to create a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     * @example
+     * // Create one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * const VW_APP_REPRESENTANTES_CHICA_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateManyArgs} args - Arguments to create many VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     * @example
+     * // Create many VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDeleteArgs} args - Arguments to delete one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     * @example
+     * // Delete one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * const VW_APP_REPRESENTANTES_CHICA_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateArgs} args - Arguments to update one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     * @example
+     * // Update one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDeleteManyArgs} args - Arguments to filter VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS
+     * const { count } = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpsertArgs} args - Arguments to update or create a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     * @example
+     * // Update or create a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_MAPA_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountArgs} args - Arguments to filter VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS
+     * const count = await prisma.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountArgs>(
+      args?: Subset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAggregateArgs>(args: Subset<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_REPRESENTANTES_CHICA_MAPA_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_REPRESENTANTES_CHICA_MAPA_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW model
+   */
+  readonly fields: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_REPRESENTANTES_CHICA_MAPA_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW model
+   */ 
+  interface VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW", 'Int'>
+    readonly nome: FieldRef<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW", 'String'>
+    readonly qtde: FieldRef<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW", 'Int'>
+    readonly qtde_pecas: FieldRef<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW", 'Int'>
+    readonly valor: FieldRef<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW", 'Decimal'>
+    readonly qtde_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW", 'Int'>
+    readonly pecas_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW", 'Int'>
+    readonly valor_faturado: FieldRef<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW", 'Decimal'>
+    readonly qtde_venda_gerencial: FieldRef<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW", 'Int'>
+    readonly valor_venda_gerencial: FieldRef<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW", 'Decimal'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW findUnique
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_MAPA_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW findUniqueOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_MAPA_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW findFirst
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_MAPA_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW findFirstOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_MAPA_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW findMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW create
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateInput, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW createMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    data: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateManyInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW update
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_REPRESENTANTES_CHICA_MAPA_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateInput, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_REPRESENTANTES_CHICA_MAPA_NEW to update.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW updateMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateManyMutationInput, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS to update
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW upsert
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW to update in case it exists.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW found by the `where` argument doesn't exist, create a new VW_APP_REPRESENTANTES_CHICA_MAPA_NEW with this data.
+     */
+    create: XOR<VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateInput, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateInput, VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW delete
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_MAPA_NEW to delete.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW deleteMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_MAPA_NEWS to delete
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_MAPA_NEW without action
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
+   * Model VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+   */
+
+  export type AggregateVW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = {
+    _count: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAvgAggregateOutputType = {
+    key: number | null
+    qtde: number | null
+    qtde_pecas: number | null
+    valor: Decimal | null
+    qtde_faturado: number | null
+    pecas_faturado: number | null
+    valor_faturado: Decimal | null
+    qtde_venda_gerencial: number | null
+    valor_venda_gerencial: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSumAggregateOutputType = {
+    key: number | null
+    qtde: number | null
+    qtde_pecas: number | null
+    valor: Decimal | null
+    qtde_faturado: number | null
+    pecas_faturado: number | null
+    valor_faturado: Decimal | null
+    qtde_venda_gerencial: number | null
+    valor_venda_gerencial: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMinAggregateOutputType = {
+    key: number | null
+    nome: string | null
+    qtde: number | null
+    qtde_pecas: number | null
+    valor: Decimal | null
+    qtde_faturado: number | null
+    pecas_faturado: number | null
+    valor_faturado: Decimal | null
+    qtde_venda_gerencial: number | null
+    valor_venda_gerencial: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMaxAggregateOutputType = {
+    key: number | null
+    nome: string | null
+    qtde: number | null
+    qtde_pecas: number | null
+    valor: Decimal | null
+    qtde_faturado: number | null
+    pecas_faturado: number | null
+    valor_faturado: Decimal | null
+    qtde_venda_gerencial: number | null
+    valor_venda_gerencial: Decimal | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountAggregateOutputType = {
+    key: number
+    nome: number
+    qtde: number
+    qtde_pecas: number
+    valor: number
+    qtde_faturado: number
+    pecas_faturado: number
+    valor_faturado: number
+    qtde_venda_gerencial: number
+    valor_venda_gerencial: number
+    _all: number
+  }
+
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAvgAggregateInputType = {
+    key?: true
+    qtde?: true
+    qtde_pecas?: true
+    valor?: true
+    qtde_faturado?: true
+    pecas_faturado?: true
+    valor_faturado?: true
+    qtde_venda_gerencial?: true
+    valor_venda_gerencial?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSumAggregateInputType = {
+    key?: true
+    qtde?: true
+    qtde_pecas?: true
+    valor?: true
+    qtde_faturado?: true
+    pecas_faturado?: true
+    valor_faturado?: true
+    qtde_venda_gerencial?: true
+    valor_venda_gerencial?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMinAggregateInputType = {
+    key?: true
+    nome?: true
+    qtde?: true
+    qtde_pecas?: true
+    valor?: true
+    qtde_faturado?: true
+    pecas_faturado?: true
+    valor_faturado?: true
+    qtde_venda_gerencial?: true
+    valor_venda_gerencial?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMaxAggregateInputType = {
+    key?: true
+    nome?: true
+    qtde?: true
+    qtde_pecas?: true
+    valor?: true
+    qtde_faturado?: true
+    pecas_faturado?: true
+    valor_faturado?: true
+    qtde_venda_gerencial?: true
+    valor_venda_gerencial?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountAggregateInputType = {
+    key?: true
+    nome?: true
+    qtde?: true
+    qtde_pecas?: true
+    valor?: true
+    qtde_faturado?: true
+    pecas_faturado?: true
+    valor_faturado?: true
+    qtde_venda_gerencial?: true
+    valor_venda_gerencial?: true
+    _all?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW to aggregate.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS
+    **/
+    _count?: true | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAggregateType<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_REPRESENTANTES_DMETAL_MAPA_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_DMETAL_MAPA_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_DMETAL_MAPA_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithAggregationInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithAggregationInput[]
+    by: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum[] | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum
+    having?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountAggregateInputType | true
+    _avg?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAvgAggregateInputType
+    _sum?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSumAggregateInputType
+    _min?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMinAggregateInputType
+    _max?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByOutputType = {
+    key: number
+    nome: string
+    qtde: number
+    qtde_pecas: number
+    valor: Decimal
+    qtde_faturado: number
+    pecas_faturado: number
+    valor_faturado: Decimal
+    qtde_venda_gerencial: number
+    valor_venda_gerencial: Decimal
+    _count: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByPayload<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    nome?: boolean
+    qtde?: boolean
+    qtde_pecas?: boolean
+    valor?: boolean
+    qtde_faturado?: boolean
+    pecas_faturado?: boolean
+    valor_faturado?: boolean
+    qtde_venda_gerencial?: boolean
+    valor_venda_gerencial?: boolean
+  }, ExtArgs["result"]["vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"]>
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelectScalar = {
+    key?: boolean
+    nome?: boolean
+    qtde?: boolean
+    qtde_pecas?: boolean
+    valor?: boolean
+    qtde_faturado?: boolean
+    pecas_faturado?: boolean
+    valor_faturado?: boolean
+    qtde_venda_gerencial?: boolean
+    valor_venda_gerencial?: boolean
+  }
+
+
+
+  export type $VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      nome: string
+      qtde: number
+      qtde_pecas: number
+      valor: Prisma.Decimal
+      qtde_faturado: number
+      pecas_faturado: number
+      valor_faturado: Prisma.Decimal
+      qtde_venda_gerencial: number
+      valor_venda_gerencial: Prisma.Decimal
+    }, ExtArgs["result"]["vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGetPayload<S extends boolean | null | undefined | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload, S>
+
+  type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW'], meta: { name: 'VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW' } }
+    /**
+     * Find zero or one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW that matches the filter.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindUniqueArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindFirstArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWithKeyOnly = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateArgs} args - Arguments to create a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     * @example
+     * // Create one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * const VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateManyArgs} args - Arguments to create many VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     * @example
+     * // Create many VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDeleteArgs} args - Arguments to delete one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     * @example
+     * // Delete one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * const VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateArgs} args - Arguments to update one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     * @example
+     * // Update one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDeleteManyArgs} args - Arguments to filter VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS
+     * const { count } = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpsertArgs} args - Arguments to update or create a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     * @example
+     * // Update or create a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountArgs} args - Arguments to filter VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS
+     * const count = await prisma.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountArgs>(
+      args?: Subset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAggregateArgs>(args: Subset<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_REPRESENTANTES_DMETAL_MAPA_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW model
+   */
+  readonly fields: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW model
+   */ 
+  interface VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW", 'Int'>
+    readonly nome: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW", 'String'>
+    readonly qtde: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW", 'Int'>
+    readonly qtde_pecas: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW", 'Int'>
+    readonly valor: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW", 'Decimal'>
+    readonly qtde_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW", 'Int'>
+    readonly pecas_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW", 'Int'>
+    readonly valor_faturado: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW", 'Decimal'>
+    readonly qtde_venda_gerencial: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW", 'Int'>
+    readonly valor_venda_gerencial: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW", 'Decimal'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW findUnique
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW findUniqueOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW findFirst
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW findFirstOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW findMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW create
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateInput, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW createMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    data: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateManyInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW update
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateInput, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW to update.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW updateMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateManyMutationInput, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS to update
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW upsert
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW to update in case it exists.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW found by the `where` argument doesn't exist, create a new VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW with this data.
+     */
+    create: XOR<VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateInput, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateInput, VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW delete
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW to delete.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW deleteMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWS to delete
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW without action
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
+   * Model VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+   */
+
+  export type AggregateVW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = {
+    _count: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAvgAggregateOutputType = {
+    key: number | null
+    id: number | null
+    ordem: number | null
+    semana: number | null
+    qtde_pecas: number | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSumAggregateOutputType = {
+    key: number | null
+    id: number | null
+    ordem: number | null
+    semana: number | null
+    qtde_pecas: number | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMinAggregateOutputType = {
+    key: number | null
+    id: number | null
+    ordem: number | null
+    semana: number | null
+    qtde_pecas: number | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMaxAggregateOutputType = {
+    key: number | null
+    id: number | null
+    ordem: number | null
+    semana: number | null
+    qtde_pecas: number | null
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountAggregateOutputType = {
+    key: number
+    id: number
+    ordem: number
+    semana: number
+    qtde_pecas: number
+    _all: number
+  }
+
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAvgAggregateInputType = {
+    key?: true
+    id?: true
+    ordem?: true
+    semana?: true
+    qtde_pecas?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSumAggregateInputType = {
+    key?: true
+    id?: true
+    ordem?: true
+    semana?: true
+    qtde_pecas?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMinAggregateInputType = {
+    key?: true
+    id?: true
+    ordem?: true
+    semana?: true
+    qtde_pecas?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMaxAggregateInputType = {
+    key?: true
+    id?: true
+    ordem?: true
+    semana?: true
+    qtde_pecas?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountAggregateInputType = {
+    key?: true
+    id?: true
+    ordem?: true
+    semana?: true
+    qtde_pecas?: true
+    _all?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW to aggregate.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS
+    **/
+    _count?: true | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAggregateType<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_REPRESENTANTES_CHICA_SEMANA_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_CHICA_SEMANA_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_CHICA_SEMANA_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithAggregationInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithAggregationInput[]
+    by: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum[] | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum
+    having?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountAggregateInputType | true
+    _avg?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAvgAggregateInputType
+    _sum?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSumAggregateInputType
+    _min?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMinAggregateInputType
+    _max?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByOutputType = {
+    key: number
+    id: number
+    ordem: number
+    semana: number
+    qtde_pecas: number
+    _count: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByPayload<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    id?: boolean
+    ordem?: boolean
+    semana?: boolean
+    qtde_pecas?: boolean
+  }, ExtArgs["result"]["vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"]>
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelectScalar = {
+    key?: boolean
+    id?: boolean
+    ordem?: boolean
+    semana?: boolean
+    qtde_pecas?: boolean
+  }
+
+
+
+  export type $VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      id: number
+      ordem: number
+      semana: number
+      qtde_pecas: number
+    }, ExtArgs["result"]["vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGetPayload<S extends boolean | null | undefined | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload, S>
+
+  type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW'], meta: { name: 'VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW' } }
+    /**
+     * Find zero or one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW that matches the filter.
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindUniqueArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindFirstArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWithKeyOnly = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateArgs} args - Arguments to create a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     * @example
+     * // Create one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * const VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateManyArgs} args - Arguments to create many VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     * @example
+     * // Create many VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDeleteArgs} args - Arguments to delete one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     * @example
+     * // Delete one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * const VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateArgs} args - Arguments to update one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     * @example
+     * // Update one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDeleteManyArgs} args - Arguments to filter VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS
+     * const { count } = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpsertArgs} args - Arguments to update or create a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     * @example
+     * // Update or create a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountArgs} args - Arguments to filter VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS
+     * const count = await prisma.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountArgs>(
+      args?: Subset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAggregateArgs>(args: Subset<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_REPRESENTANTES_CHICA_SEMANA_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW model
+   */
+  readonly fields: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW model
+   */ 
+  interface VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW", 'Int'>
+    readonly id: FieldRef<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW", 'Int'>
+    readonly ordem: FieldRef<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW", 'Int'>
+    readonly semana: FieldRef<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW", 'Int'>
+    readonly qtde_pecas: FieldRef<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW", 'Int'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW findUnique
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW findUniqueOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW findFirst
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW findFirstOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW findMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW create
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateInput, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW createMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    data: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateManyInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW update
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateInput, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW to update.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW updateMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateManyMutationInput, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS to update
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW upsert
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW to update in case it exists.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW found by the `where` argument doesn't exist, create a new VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW with this data.
+     */
+    create: XOR<VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateInput, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateInput, VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW delete
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW to delete.
+     */
+    where: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW deleteMany
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWS to delete
+     */
+    where?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW without action
+   */
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
+   * Model VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+   */
+
+  export type AggregateVW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = {
+    _count: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMaxAggregateOutputType | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAvgAggregateOutputType = {
+    key: number | null
+    id: number | null
+    ordem: number | null
+    semana: number | null
+    qtde_pecas: number | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSumAggregateOutputType = {
+    key: number | null
+    id: number | null
+    ordem: number | null
+    semana: number | null
+    qtde_pecas: number | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMinAggregateOutputType = {
+    key: number | null
+    id: number | null
+    ordem: number | null
+    semana: number | null
+    qtde_pecas: number | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMaxAggregateOutputType = {
+    key: number | null
+    id: number | null
+    ordem: number | null
+    semana: number | null
+    qtde_pecas: number | null
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountAggregateOutputType = {
+    key: number
+    id: number
+    ordem: number
+    semana: number
+    qtde_pecas: number
+    _all: number
+  }
+
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAvgAggregateInputType = {
+    key?: true
+    id?: true
+    ordem?: true
+    semana?: true
+    qtde_pecas?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSumAggregateInputType = {
+    key?: true
+    id?: true
+    ordem?: true
+    semana?: true
+    qtde_pecas?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMinAggregateInputType = {
+    key?: true
+    id?: true
+    ordem?: true
+    semana?: true
+    qtde_pecas?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMaxAggregateInputType = {
+    key?: true
+    id?: true
+    ordem?: true
+    semana?: true
+    qtde_pecas?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountAggregateInputType = {
+    key?: true
+    id?: true
+    ordem?: true
+    semana?: true
+    qtde_pecas?: true
+    _all?: true
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW to aggregate.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS
+    **/
+    _count?: true | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMaxAggregateInputType
+  }
+
+  export type GetVW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAggregateType<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAggregateArgs> = {
+        [P in keyof T & keyof AggregateVW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW[P]>
+      : GetScalarType<T[P], AggregateVW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW[P]>
+  }
+
+
+
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithAggregationInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithAggregationInput[]
+    by: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum[] | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum
+    having?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountAggregateInputType | true
+    _avg?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAvgAggregateInputType
+    _sum?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSumAggregateInputType
+    _min?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMinAggregateInputType
+    _max?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMaxAggregateInputType
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByOutputType = {
+    key: number
+    id: number
+    ordem: number
+    semana: number
+    qtde_pecas: number
+    _count: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountAggregateOutputType | null
+    _avg: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAvgAggregateOutputType | null
+    _sum: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSumAggregateOutputType | null
+    _min: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMinAggregateOutputType | null
+    _max: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMaxAggregateOutputType | null
+  }
+
+  type GetVW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByPayload<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByOutputType[P]>
+            : GetScalarType<T[P], VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    key?: boolean
+    id?: boolean
+    ordem?: boolean
+    semana?: boolean
+    qtde_pecas?: boolean
+  }, ExtArgs["result"]["vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"]>
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelectScalar = {
+    key?: boolean
+    id?: boolean
+    ordem?: boolean
+    semana?: boolean
+    qtde_pecas?: boolean
+  }
+
+
+
+  export type $VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      key: number
+      id: number
+      ordem: number
+      semana: number
+      qtde_pecas: number
+    }, ExtArgs["result"]["vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"]>
+    composites: {}
+  }
+
+
+  type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGetPayload<S extends boolean | null | undefined | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDefaultArgs> = $Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload, S>
+
+  type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = 
+    Omit<VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindManyArgs, 'select' | 'include' | 'distinct'> & {
+      select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountAggregateInputType | true
+    }
+
+  export interface VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW'], meta: { name: 'VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW' } }
+    /**
+     * Find zero or one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW that matches the filter.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindUniqueArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUnique<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindUniqueArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindUniqueArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs>, T, 'findUnique'> | null, null, ExtArgs>
+
+    /**
+     * Find one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW that matches the filter or throw an error with `error.code='P2025'` 
+     * if no matches were found.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindUniqueOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findUniqueOrThrow<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindUniqueOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindUniqueOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs>, T, 'findUniqueOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindFirstArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirst<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindFirstArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindFirstArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs>, T, 'findFirst'> | null, null, ExtArgs>
+
+    /**
+     * Find the first VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindFirstOrThrowArgs} args - Arguments to find a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * @example
+     * // Get one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+    **/
+    findFirstOrThrow<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindFirstOrThrowArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindFirstOrThrowArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs>, T, 'findFirstOrThrow'>, never, ExtArgs>
+
+    /**
+     * Find zero or more VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.findMany()
+     * 
+     * // Get first 10 VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.findMany({ take: 10 })
+     * 
+     * // Only select the `key`
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWithKeyOnly = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.findMany({ select: { key: true } })
+     * 
+    **/
+    findMany<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs>, T, 'findMany'>>
+
+    /**
+     * Create a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateArgs} args - Arguments to create a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     * @example
+     * // Create one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * const VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.create({
+     *   data: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     *   }
+     * })
+     * 
+    **/
+    create<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs>, T, 'create'>, never, ExtArgs>
+
+    /**
+     * Create many VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateManyArgs} args - Arguments to create many VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     * @example
+     * // Create many VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+    **/
+    createMany<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDeleteArgs} args - Arguments to delete one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     * @example
+     * // Delete one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * const VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.delete({
+     *   where: {
+     *     // ... filter to delete one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     *   }
+     * })
+     * 
+    **/
+    delete<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDeleteArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDeleteArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs>, T, 'delete'>, never, ExtArgs>
+
+    /**
+     * Update one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateArgs} args - Arguments to update one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     * @example
+     * // Update one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    update<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs>, T, 'update'>, never, ExtArgs>
+
+    /**
+     * Delete zero or more VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDeleteManyArgs} args - Arguments to filter VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS to delete.
+     * @example
+     * // Delete a few VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS
+     * const { count } = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+    **/
+    deleteMany<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDeleteManyArgs<ExtArgs>>(
+      args?: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDeleteManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+    **/
+    updateMany<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateManyArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateManyArgs<ExtArgs>>
+    ): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpsertArgs} args - Arguments to update or create a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     * @example
+     * // Update or create a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     * const vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.upsert({
+     *   create: {
+     *     // ... data to create a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW we want to update
+     *   }
+     * })
+    **/
+    upsert<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpsertArgs<ExtArgs>>(
+      args: SelectSubset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpsertArgs<ExtArgs>>
+    ): Prisma__VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWClient<$Result.GetResult<Prisma.$VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWPayload<ExtArgs>, T, 'upsert'>, never, ExtArgs>
+
+    /**
+     * Count the number of VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountArgs} args - Arguments to filter VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS to count.
+     * @example
+     * // Count the number of VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS
+     * const count = await prisma.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.count({
+     *   where: {
+     *     // ... the filter for the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS we want to count
+     *   }
+     * })
+    **/
+    count<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountArgs>(
+      args?: Subset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAggregateArgs>(args: Subset<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAggregateArgs>): Prisma.PrismaPromise<GetVW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAggregateType<T>>
+
+    /**
+     * Group by VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByArgs['orderBy'] }
+        : { orderBy?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW model
+   */
+  readonly fields: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: 'PrismaPromise';
+
+
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>;
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>;
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>;
+  }
+
+
+
+  /**
+   * Fields of the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW model
+   */ 
+  interface VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFieldRefs {
+    readonly key: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW", 'Int'>
+    readonly id: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW", 'Int'>
+    readonly ordem: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW", 'Int'>
+    readonly semana: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW", 'Int'>
+    readonly qtde_pecas: FieldRef<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW", 'Int'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW findUnique
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW findUniqueOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW to fetch.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW findFirst
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW findFirstOrThrow
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    distinct?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW findMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter, which VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS to fetch.
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS to fetch.
+     */
+    orderBy?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithRelationInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    cursor?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    skip?: number
+    distinct?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW create
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to create a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateInput, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUncheckedCreateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW createMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    data: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateManyInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateManyInput[]
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW update
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * The data needed to update a VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateInput, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUncheckedUpdateInput>
+    /**
+     * Choose, which VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW to update.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW updateMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS.
+     */
+    data: XOR<VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateManyMutationInput, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUncheckedUpdateManyInput>
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS to update
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW upsert
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * The filter to search for the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW to update in case it exists.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereUniqueInput
+    /**
+     * In case the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW found by the `where` argument doesn't exist, create a new VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW with this data.
+     */
+    create: XOR<VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateInput, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUncheckedCreateInput>
+    /**
+     * In case the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateInput, VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUncheckedUpdateInput>
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW delete
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs> | null
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW to delete.
+     */
+    where: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereUniqueInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW deleteMany
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWS to delete
+     */
+    where?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput
+  }
+
+  /**
+   * VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW without action
+   */
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW
+     */
+    select?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSelect<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -14781,6 +21795,146 @@ export namespace Prisma {
   };
 
   export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum = (typeof VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum)[keyof typeof VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum]
+
+
+  export const VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum: {
+    key: 'key',
+    colecao: 'colecao',
+    estoque: 'estoque',
+    pedidos: 'pedidos',
+    ind_pedidos: 'ind_pedidos',
+    dif_pedidos: 'dif_pedidos',
+    pecas: 'pecas',
+    pecas_anterior: 'pecas_anterior',
+    ind_pecas: 'ind_pecas',
+    dif_pecas: 'dif_pecas',
+    valor: 'valor',
+    valor_anterior: 'valor_anterior',
+    ind_valor: 'ind_valor',
+    dif_valor: 'dif_valor',
+    pedidos_faturado: 'pedidos_faturado',
+    pedidos_faturado_anterior: 'pedidos_faturado_anterior',
+    ind_pedidos_faturado: 'ind_pedidos_faturado',
+    dif_pedidos_faturado: 'dif_pedidos_faturado',
+    pecas_gerencial: 'pecas_gerencial',
+    pecas_gerencial_anterior: 'pecas_gerencial_anterior',
+    ind_pecas_gerencial: 'ind_pecas_gerencial',
+    dif_pecas_gerencial: 'dif_pecas_gerencial',
+    venda_gerencial: 'venda_gerencial',
+    venda_gerencial_anterior: 'venda_gerencial_anterior',
+    ind_venda_gerencial: 'ind_venda_gerencial',
+    dif_venda_gerencial: 'dif_venda_gerencial',
+    pecas_faturado: 'pecas_faturado',
+    pecas_faturado_anterior: 'pecas_faturado_anterior',
+    ind_pecas_faturado: 'ind_pecas_faturado',
+    dif_pecas_faturado: 'dif_pecas_faturado',
+    perc_pecas_faturado: 'perc_pecas_faturado',
+    valor_faturado: 'valor_faturado',
+    valor_faturado_anterior: 'valor_faturado_anterior',
+    ind_valor_faturado: 'ind_valor_faturado',
+    dif_valor_faturado: 'dif_valor_faturado',
+    perc_valor_faturado: 'perc_valor_faturado',
+    ultima_atualizacao: 'ultima_atualizacao'
+  };
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum = (typeof VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum)[keyof typeof VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum]
+
+
+  export const VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum: {
+    key: 'key',
+    colecao: 'colecao',
+    estoque: 'estoque',
+    pedidos: 'pedidos',
+    ind_pedidos: 'ind_pedidos',
+    dif_pedidos: 'dif_pedidos',
+    pecas: 'pecas',
+    pecas_anterior: 'pecas_anterior',
+    ind_pecas: 'ind_pecas',
+    dif_pecas: 'dif_pecas',
+    valor: 'valor',
+    valor_anterior: 'valor_anterior',
+    ind_valor: 'ind_valor',
+    dif_valor: 'dif_valor',
+    pedidos_faturado: 'pedidos_faturado',
+    pedidos_faturado_anterior: 'pedidos_faturado_anterior',
+    ind_pedidos_faturado: 'ind_pedidos_faturado',
+    dif_pedidos_faturado: 'dif_pedidos_faturado',
+    pecas_gerencial: 'pecas_gerencial',
+    pecas_gerencial_anterior: 'pecas_gerencial_anterior',
+    ind_pecas_gerencial: 'ind_pecas_gerencial',
+    dif_pecas_gerencial: 'dif_pecas_gerencial',
+    venda_gerencial: 'venda_gerencial',
+    venda_gerencial_anterior: 'venda_gerencial_anterior',
+    ind_venda_gerencial: 'ind_venda_gerencial',
+    dif_venda_gerencial: 'dif_venda_gerencial',
+    pecas_faturado: 'pecas_faturado',
+    pecas_faturado_anterior: 'pecas_faturado_anterior',
+    ind_pecas_faturado: 'ind_pecas_faturado',
+    dif_pecas_faturado: 'dif_pecas_faturado',
+    perc_pecas_faturado: 'perc_pecas_faturado',
+    valor_faturado: 'valor_faturado',
+    valor_faturado_anterior: 'valor_faturado_anterior',
+    ind_valor_faturado: 'ind_valor_faturado',
+    dif_valor_faturado: 'dif_valor_faturado',
+    perc_valor_faturado: 'perc_valor_faturado',
+    ultima_atualizacao: 'ultima_atualizacao'
+  };
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum = (typeof VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum)[keyof typeof VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum]
+
+
+  export const VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum: {
+    key: 'key',
+    nome: 'nome',
+    qtde: 'qtde',
+    qtde_pecas: 'qtde_pecas',
+    valor: 'valor',
+    qtde_faturado: 'qtde_faturado',
+    pecas_faturado: 'pecas_faturado',
+    valor_faturado: 'valor_faturado',
+    qtde_venda_gerencial: 'qtde_venda_gerencial',
+    valor_venda_gerencial: 'valor_venda_gerencial'
+  };
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum = (typeof VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum)[keyof typeof VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum]
+
+
+  export const VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum: {
+    key: 'key',
+    nome: 'nome',
+    qtde: 'qtde',
+    qtde_pecas: 'qtde_pecas',
+    valor: 'valor',
+    qtde_faturado: 'qtde_faturado',
+    pecas_faturado: 'pecas_faturado',
+    valor_faturado: 'valor_faturado',
+    qtde_venda_gerencial: 'qtde_venda_gerencial',
+    valor_venda_gerencial: 'valor_venda_gerencial'
+  };
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum = (typeof VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum)[keyof typeof VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum]
+
+
+  export const VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum: {
+    key: 'key',
+    id: 'id',
+    ordem: 'ordem',
+    semana: 'semana',
+    qtde_pecas: 'qtde_pecas'
+  };
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum = (typeof VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum)[keyof typeof VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum]
+
+
+  export const VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum: {
+    key: 'key',
+    id: 'id',
+    ordem: 'ordem',
+    semana: 'semana',
+    qtde_pecas: 'qtde_pecas'
+  };
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum = (typeof VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum)[keyof typeof VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -16173,6 +23327,700 @@ export namespace Prisma {
     total_pecas_nao_processado?: IntWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
     total_solicitado?: DecimalWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | Decimal | DecimalJsLike | number | string
     total_pecas?: IntWithAggregatesFilter<"VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW"> | number
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput = {
+    AND?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    colecao?: StringFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | string
+    estoque?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pedidos?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pedidos?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pedidos?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas_anterior?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pecas?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pecas?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    valor?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_valor?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pedidos_faturado_anterior?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas_gerencial_anterior?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    colecao?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWWhereInput[]
+    colecao?: StringFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | string
+    estoque?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pedidos?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pedidos?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pedidos?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas_anterior?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pecas?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pecas?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    valor?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_valor?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pedidos_faturado_anterior?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas_gerencial_anterior?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | string
+  }, "key">
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    colecao?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+    ultima_atualizacao?: SortOrder
+    _count?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    colecao?: StringWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | string
+    estoque?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pedidos?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pedidos?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pedidos?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas_anterior?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pecas?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pecas?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    valor?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_valor?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pedidos_faturado_anterior?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pedidos_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pedidos_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas_gerencial?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    pecas_gerencial_anterior?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    ind_pecas_gerencial?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pecas_gerencial?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    venda_gerencial?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_venda_gerencial?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_pecas_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | number
+    dif_valor_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW"> | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput = {
+    AND?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    colecao?: StringFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | string
+    estoque?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pedidos?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pedidos?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pedidos?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas_anterior?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pecas?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pecas?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    valor?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_valor?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pedidos_faturado_anterior?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas_gerencial_anterior?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    colecao?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWWhereInput[]
+    colecao?: StringFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | string
+    estoque?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pedidos?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pedidos?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pedidos?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas_anterior?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pecas?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pecas?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    valor?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_valor?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pedidos_faturado_anterior?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pedidos_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas_gerencial_anterior?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pecas_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | string
+  }, "key">
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    colecao?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+    ultima_atualizacao?: SortOrder
+    _count?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    colecao?: StringWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | string
+    estoque?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pedidos?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pedidos?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pedidos?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas_anterior?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pecas?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pecas?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    valor?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_valor?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pedidos_faturado_anterior?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pedidos_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pedidos_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas_gerencial?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    pecas_gerencial_anterior?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    ind_pecas_gerencial?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pecas_gerencial?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    venda_gerencial?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_venda_gerencial?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_pecas_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | number
+    dif_valor_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW"> | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput = {
+    AND?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    nome?: StringFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | string
+    qtde?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    qtde_pecas?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    valor?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    pecas_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    valor_venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    nome?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWWhereInput[]
+    nome?: StringFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | string
+    qtde?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    qtde_pecas?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    valor?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    pecas_faturado?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    valor_venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+  }, "key">
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    nome?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+    _count?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    nome?: StringWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | string
+    qtde?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    qtde_pecas?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    valor?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    pecas_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    valor_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | number
+    valor_venda_gerencial?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput = {
+    AND?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    nome?: StringFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | string
+    qtde?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    qtde_pecas?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    valor?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    pecas_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    valor_venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    nome?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWWhereInput[]
+    nome?: StringFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | string
+    qtde?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    qtde_pecas?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    valor?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    pecas_faturado?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    valor_faturado?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    valor_venda_gerencial?: DecimalFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+  }, "key">
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    nome?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+    _count?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    nome?: StringWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | string
+    qtde?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    qtde_pecas?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    valor?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    pecas_faturado?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    valor_faturado?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | number
+    valor_venda_gerencial?: DecimalWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW"> | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput = {
+    AND?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    id?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    ordem?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    semana?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    qtde_pecas?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWWhereInput[]
+    id?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    ordem?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    semana?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    qtde_pecas?: IntFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+  }, "key">
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+    _count?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    id?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    ordem?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    semana?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+    qtde_pecas?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW"> | number
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput = {
+    AND?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput[]
+    key?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    id?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    ordem?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    semana?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    qtde_pecas?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithRelationInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereUniqueInput = Prisma.AtLeast<{
+    key?: number
+    AND?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput[]
+    OR?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput[]
+    NOT?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWWhereInput[]
+    id?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    ordem?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    semana?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    qtde_pecas?: IntFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+  }, "key">
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWOrderByWithAggregationInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+    _count?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountOrderByAggregateInput
+    _avg?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAvgOrderByAggregateInput
+    _max?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMaxOrderByAggregateInput
+    _min?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMinOrderByAggregateInput
+    _sum?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSumOrderByAggregateInput
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarWhereWithAggregatesInput = {
+    AND?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarWhereWithAggregatesInput[]
+    OR?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarWhereWithAggregatesInput[]
+    NOT?: VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarWhereWithAggregatesInput | VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarWhereWithAggregatesInput[]
+    key?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    id?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    ordem?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    semana?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
+    qtde_pecas?: IntWithAggregatesFilter<"VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW"> | number
   }
 
   export type VW_AUTORIZACOES_WEB_DEVCreateInput = {
@@ -17802,6 +25650,860 @@ export namespace Prisma {
     total_pecas?: IntFieldUpdateOperationsInput | number
   }
 
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateInput = {
+    key: number
+    colecao: string
+    estoque: number
+    pedidos: number
+    ind_pedidos: number
+    dif_pedidos: number
+    pecas: number
+    pecas_anterior: number
+    ind_pecas: number
+    dif_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    valor_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor: number
+    dif_valor: Decimal | DecimalJsLike | number | string
+    pedidos_faturado: number
+    pedidos_faturado_anterior: number
+    ind_pedidos_faturado: number
+    dif_pedidos_faturado: number
+    pecas_gerencial: number
+    pecas_gerencial_anterior: number
+    ind_pecas_gerencial: number
+    dif_pecas_gerencial: number
+    venda_gerencial: Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial: number
+    dif_venda_gerencial: Decimal | DecimalJsLike | number | string
+    pecas_faturado: Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado: number
+    dif_pecas_faturado: Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor_faturado: number
+    dif_valor_faturado: Decimal | DecimalJsLike | number | string
+    perc_valor_faturado: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUncheckedCreateInput = {
+    key: number
+    colecao: string
+    estoque: number
+    pedidos: number
+    ind_pedidos: number
+    dif_pedidos: number
+    pecas: number
+    pecas_anterior: number
+    ind_pecas: number
+    dif_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    valor_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor: number
+    dif_valor: Decimal | DecimalJsLike | number | string
+    pedidos_faturado: number
+    pedidos_faturado_anterior: number
+    ind_pedidos_faturado: number
+    dif_pedidos_faturado: number
+    pecas_gerencial: number
+    pecas_gerencial_anterior: number
+    ind_pecas_gerencial: number
+    dif_pecas_gerencial: number
+    venda_gerencial: Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial: number
+    dif_venda_gerencial: Decimal | DecimalJsLike | number | string
+    pecas_faturado: Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado: number
+    dif_pecas_faturado: Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor_faturado: number
+    dif_valor_faturado: Decimal | DecimalJsLike | number | string
+    perc_valor_faturado: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    estoque?: IntFieldUpdateOperationsInput | number
+    pedidos?: IntFieldUpdateOperationsInput | number
+    ind_pedidos?: IntFieldUpdateOperationsInput | number
+    dif_pedidos?: IntFieldUpdateOperationsInput | number
+    pecas?: IntFieldUpdateOperationsInput | number
+    pecas_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas?: IntFieldUpdateOperationsInput | number
+    dif_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFieldUpdateOperationsInput | number
+    dif_valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pedidos_faturado_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFieldUpdateOperationsInput | number
+    dif_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    estoque?: IntFieldUpdateOperationsInput | number
+    pedidos?: IntFieldUpdateOperationsInput | number
+    ind_pedidos?: IntFieldUpdateOperationsInput | number
+    dif_pedidos?: IntFieldUpdateOperationsInput | number
+    pecas?: IntFieldUpdateOperationsInput | number
+    pecas_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas?: IntFieldUpdateOperationsInput | number
+    dif_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFieldUpdateOperationsInput | number
+    dif_valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pedidos_faturado_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFieldUpdateOperationsInput | number
+    dif_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCreateManyInput = {
+    key: number
+    colecao: string
+    estoque: number
+    pedidos: number
+    ind_pedidos: number
+    dif_pedidos: number
+    pecas: number
+    pecas_anterior: number
+    ind_pecas: number
+    dif_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    valor_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor: number
+    dif_valor: Decimal | DecimalJsLike | number | string
+    pedidos_faturado: number
+    pedidos_faturado_anterior: number
+    ind_pedidos_faturado: number
+    dif_pedidos_faturado: number
+    pecas_gerencial: number
+    pecas_gerencial_anterior: number
+    ind_pecas_gerencial: number
+    dif_pecas_gerencial: number
+    venda_gerencial: Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial: number
+    dif_venda_gerencial: Decimal | DecimalJsLike | number | string
+    pecas_faturado: Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado: number
+    dif_pecas_faturado: Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor_faturado: number
+    dif_valor_faturado: Decimal | DecimalJsLike | number | string
+    perc_valor_faturado: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    estoque?: IntFieldUpdateOperationsInput | number
+    pedidos?: IntFieldUpdateOperationsInput | number
+    ind_pedidos?: IntFieldUpdateOperationsInput | number
+    dif_pedidos?: IntFieldUpdateOperationsInput | number
+    pecas?: IntFieldUpdateOperationsInput | number
+    pecas_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas?: IntFieldUpdateOperationsInput | number
+    dif_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFieldUpdateOperationsInput | number
+    dif_valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pedidos_faturado_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFieldUpdateOperationsInput | number
+    dif_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    estoque?: IntFieldUpdateOperationsInput | number
+    pedidos?: IntFieldUpdateOperationsInput | number
+    ind_pedidos?: IntFieldUpdateOperationsInput | number
+    dif_pedidos?: IntFieldUpdateOperationsInput | number
+    pecas?: IntFieldUpdateOperationsInput | number
+    pecas_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas?: IntFieldUpdateOperationsInput | number
+    dif_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFieldUpdateOperationsInput | number
+    dif_valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pedidos_faturado_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFieldUpdateOperationsInput | number
+    dif_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateInput = {
+    key: number
+    colecao: string
+    estoque: number
+    pedidos: number
+    ind_pedidos: number
+    dif_pedidos: number
+    pecas: number
+    pecas_anterior: number
+    ind_pecas: number
+    dif_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    valor_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor: number
+    dif_valor: Decimal | DecimalJsLike | number | string
+    pedidos_faturado: number
+    pedidos_faturado_anterior: number
+    ind_pedidos_faturado: number
+    dif_pedidos_faturado: number
+    pecas_gerencial: number
+    pecas_gerencial_anterior: number
+    ind_pecas_gerencial: number
+    dif_pecas_gerencial: number
+    venda_gerencial: Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial: number
+    dif_venda_gerencial: Decimal | DecimalJsLike | number | string
+    pecas_faturado: Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado: number
+    dif_pecas_faturado: Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor_faturado: number
+    dif_valor_faturado: Decimal | DecimalJsLike | number | string
+    perc_valor_faturado: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUncheckedCreateInput = {
+    key: number
+    colecao: string
+    estoque: number
+    pedidos: number
+    ind_pedidos: number
+    dif_pedidos: number
+    pecas: number
+    pecas_anterior: number
+    ind_pecas: number
+    dif_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    valor_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor: number
+    dif_valor: Decimal | DecimalJsLike | number | string
+    pedidos_faturado: number
+    pedidos_faturado_anterior: number
+    ind_pedidos_faturado: number
+    dif_pedidos_faturado: number
+    pecas_gerencial: number
+    pecas_gerencial_anterior: number
+    ind_pecas_gerencial: number
+    dif_pecas_gerencial: number
+    venda_gerencial: Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial: number
+    dif_venda_gerencial: Decimal | DecimalJsLike | number | string
+    pecas_faturado: Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado: number
+    dif_pecas_faturado: Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor_faturado: number
+    dif_valor_faturado: Decimal | DecimalJsLike | number | string
+    perc_valor_faturado: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    estoque?: IntFieldUpdateOperationsInput | number
+    pedidos?: IntFieldUpdateOperationsInput | number
+    ind_pedidos?: IntFieldUpdateOperationsInput | number
+    dif_pedidos?: IntFieldUpdateOperationsInput | number
+    pecas?: IntFieldUpdateOperationsInput | number
+    pecas_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas?: IntFieldUpdateOperationsInput | number
+    dif_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFieldUpdateOperationsInput | number
+    dif_valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pedidos_faturado_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFieldUpdateOperationsInput | number
+    dif_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    estoque?: IntFieldUpdateOperationsInput | number
+    pedidos?: IntFieldUpdateOperationsInput | number
+    ind_pedidos?: IntFieldUpdateOperationsInput | number
+    dif_pedidos?: IntFieldUpdateOperationsInput | number
+    pecas?: IntFieldUpdateOperationsInput | number
+    pecas_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas?: IntFieldUpdateOperationsInput | number
+    dif_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFieldUpdateOperationsInput | number
+    dif_valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pedidos_faturado_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFieldUpdateOperationsInput | number
+    dif_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCreateManyInput = {
+    key: number
+    colecao: string
+    estoque: number
+    pedidos: number
+    ind_pedidos: number
+    dif_pedidos: number
+    pecas: number
+    pecas_anterior: number
+    ind_pecas: number
+    dif_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    valor_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor: number
+    dif_valor: Decimal | DecimalJsLike | number | string
+    pedidos_faturado: number
+    pedidos_faturado_anterior: number
+    ind_pedidos_faturado: number
+    dif_pedidos_faturado: number
+    pecas_gerencial: number
+    pecas_gerencial_anterior: number
+    ind_pecas_gerencial: number
+    dif_pecas_gerencial: number
+    venda_gerencial: Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior: Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial: number
+    dif_venda_gerencial: Decimal | DecimalJsLike | number | string
+    pecas_faturado: Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado: number
+    dif_pecas_faturado: Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior: Decimal | DecimalJsLike | number | string
+    ind_valor_faturado: number
+    dif_valor_faturado: Decimal | DecimalJsLike | number | string
+    perc_valor_faturado: Decimal | DecimalJsLike | number | string
+    ultima_atualizacao: string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    estoque?: IntFieldUpdateOperationsInput | number
+    pedidos?: IntFieldUpdateOperationsInput | number
+    ind_pedidos?: IntFieldUpdateOperationsInput | number
+    dif_pedidos?: IntFieldUpdateOperationsInput | number
+    pecas?: IntFieldUpdateOperationsInput | number
+    pecas_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas?: IntFieldUpdateOperationsInput | number
+    dif_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFieldUpdateOperationsInput | number
+    dif_valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pedidos_faturado_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFieldUpdateOperationsInput | number
+    dif_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    colecao?: StringFieldUpdateOperationsInput | string
+    estoque?: IntFieldUpdateOperationsInput | number
+    pedidos?: IntFieldUpdateOperationsInput | number
+    ind_pedidos?: IntFieldUpdateOperationsInput | number
+    dif_pedidos?: IntFieldUpdateOperationsInput | number
+    pecas?: IntFieldUpdateOperationsInput | number
+    pecas_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas?: IntFieldUpdateOperationsInput | number
+    dif_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor?: IntFieldUpdateOperationsInput | number
+    dif_valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pedidos_faturado_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pedidos_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    pecas_gerencial_anterior?: IntFieldUpdateOperationsInput | number
+    ind_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_pecas_gerencial?: IntFieldUpdateOperationsInput | number
+    venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    venda_gerencial_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    dif_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    pecas_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_pecas_faturado?: IntFieldUpdateOperationsInput | number
+    dif_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_pecas_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    valor_faturado_anterior?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ind_valor_faturado?: IntFieldUpdateOperationsInput | number
+    dif_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    perc_valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    ultima_atualizacao?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateInput = {
+    key: number
+    nome: string
+    qtde: number
+    qtde_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    qtde_faturado: number
+    pecas_faturado: number
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial: number
+    valor_venda_gerencial: Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUncheckedCreateInput = {
+    key: number
+    nome: string
+    qtde: number
+    qtde_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    qtde_faturado: number
+    pecas_faturado: number
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial: number
+    valor_venda_gerencial: Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    qtde?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_faturado?: IntFieldUpdateOperationsInput | number
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    valor_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    qtde?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_faturado?: IntFieldUpdateOperationsInput | number
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    valor_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCreateManyInput = {
+    key: number
+    nome: string
+    qtde: number
+    qtde_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    qtde_faturado: number
+    pecas_faturado: number
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial: number
+    valor_venda_gerencial: Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    qtde?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_faturado?: IntFieldUpdateOperationsInput | number
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    valor_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    qtde?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_faturado?: IntFieldUpdateOperationsInput | number
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    valor_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateInput = {
+    key: number
+    nome: string
+    qtde: number
+    qtde_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    qtde_faturado: number
+    pecas_faturado: number
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial: number
+    valor_venda_gerencial: Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUncheckedCreateInput = {
+    key: number
+    nome: string
+    qtde: number
+    qtde_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    qtde_faturado: number
+    pecas_faturado: number
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial: number
+    valor_venda_gerencial: Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    qtde?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_faturado?: IntFieldUpdateOperationsInput | number
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    valor_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    qtde?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_faturado?: IntFieldUpdateOperationsInput | number
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    valor_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCreateManyInput = {
+    key: number
+    nome: string
+    qtde: number
+    qtde_pecas: number
+    valor: Decimal | DecimalJsLike | number | string
+    qtde_faturado: number
+    pecas_faturado: number
+    valor_faturado: Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial: number
+    valor_venda_gerencial: Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    qtde?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_faturado?: IntFieldUpdateOperationsInput | number
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    valor_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    qtde?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+    valor?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_faturado?: IntFieldUpdateOperationsInput | number
+    pecas_faturado?: IntFieldUpdateOperationsInput | number
+    valor_faturado?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+    qtde_venda_gerencial?: IntFieldUpdateOperationsInput | number
+    valor_venda_gerencial?: DecimalFieldUpdateOperationsInput | Decimal | DecimalJsLike | number | string
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateInput = {
+    key: number
+    id: number
+    ordem: number
+    semana: number
+    qtde_pecas: number
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUncheckedCreateInput = {
+    key: number
+    id: number
+    ordem: number
+    semana: number
+    qtde_pecas: number
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    id?: IntFieldUpdateOperationsInput | number
+    ordem?: IntFieldUpdateOperationsInput | number
+    semana?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    id?: IntFieldUpdateOperationsInput | number
+    ordem?: IntFieldUpdateOperationsInput | number
+    semana?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCreateManyInput = {
+    key: number
+    id: number
+    ordem: number
+    semana: number
+    qtde_pecas: number
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    id?: IntFieldUpdateOperationsInput | number
+    ordem?: IntFieldUpdateOperationsInput | number
+    semana?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    id?: IntFieldUpdateOperationsInput | number
+    ordem?: IntFieldUpdateOperationsInput | number
+    semana?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateInput = {
+    key: number
+    id: number
+    ordem: number
+    semana: number
+    qtde_pecas: number
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUncheckedCreateInput = {
+    key: number
+    id: number
+    ordem: number
+    semana: number
+    qtde_pecas: number
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    id?: IntFieldUpdateOperationsInput | number
+    ordem?: IntFieldUpdateOperationsInput | number
+    semana?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUncheckedUpdateInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    id?: IntFieldUpdateOperationsInput | number
+    ordem?: IntFieldUpdateOperationsInput | number
+    semana?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCreateManyInput = {
+    key: number
+    id: number
+    ordem: number
+    semana: number
+    qtde_pecas: number
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUpdateManyMutationInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    id?: IntFieldUpdateOperationsInput | number
+    ordem?: IntFieldUpdateOperationsInput | number
+    semana?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWUncheckedUpdateManyInput = {
+    key?: IntFieldUpdateOperationsInput | number
+    id?: IntFieldUpdateOperationsInput | number
+    ordem?: IntFieldUpdateOperationsInput | number
+    semana?: IntFieldUpdateOperationsInput | number
+    qtde_pecas?: IntFieldUpdateOperationsInput | number
+  }
+
   export type IntFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
     in?: number[]
@@ -19036,6 +27738,604 @@ export namespace Prisma {
     total_pecas?: SortOrder
   }
 
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    colecao?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    colecao?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    colecao?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    colecao?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    colecao?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    colecao?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+    ultima_atualizacao?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    estoque?: SortOrder
+    pedidos?: SortOrder
+    ind_pedidos?: SortOrder
+    dif_pedidos?: SortOrder
+    pecas?: SortOrder
+    pecas_anterior?: SortOrder
+    ind_pecas?: SortOrder
+    dif_pecas?: SortOrder
+    valor?: SortOrder
+    valor_anterior?: SortOrder
+    ind_valor?: SortOrder
+    dif_valor?: SortOrder
+    pedidos_faturado?: SortOrder
+    pedidos_faturado_anterior?: SortOrder
+    ind_pedidos_faturado?: SortOrder
+    dif_pedidos_faturado?: SortOrder
+    pecas_gerencial?: SortOrder
+    pecas_gerencial_anterior?: SortOrder
+    ind_pecas_gerencial?: SortOrder
+    dif_pecas_gerencial?: SortOrder
+    venda_gerencial?: SortOrder
+    venda_gerencial_anterior?: SortOrder
+    ind_venda_gerencial?: SortOrder
+    dif_venda_gerencial?: SortOrder
+    pecas_faturado?: SortOrder
+    pecas_faturado_anterior?: SortOrder
+    ind_pecas_faturado?: SortOrder
+    dif_pecas_faturado?: SortOrder
+    perc_pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    valor_faturado_anterior?: SortOrder
+    ind_valor_faturado?: SortOrder
+    dif_valor_faturado?: SortOrder
+    perc_valor_faturado?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    nome?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    nome?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    nome?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    nome?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    nome?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    nome?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    qtde?: SortOrder
+    qtde_pecas?: SortOrder
+    valor?: SortOrder
+    qtde_faturado?: SortOrder
+    pecas_faturado?: SortOrder
+    valor_faturado?: SortOrder
+    qtde_venda_gerencial?: SortOrder
+    valor_venda_gerencial?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWCountOrderByAggregateInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWAvgOrderByAggregateInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMaxOrderByAggregateInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWMinOrderByAggregateInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
+  export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWSumOrderByAggregateInput = {
+    key?: SortOrder
+    id?: SortOrder
+    ordem?: SortOrder
+    semana?: SortOrder
+    qtde_pecas?: SortOrder
+  }
+
   export type IntFieldUpdateOperationsInput = {
     set?: number
     increment?: number
@@ -19309,6 +28609,30 @@ export namespace Prisma {
      * @deprecated Use VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDefaultArgs instead
      */
     export type VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDefaultArgs instead
+     */
+    export type VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDefaultArgs instead
+     */
+    export type VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDefaultArgs instead
+     */
+    export type VW_APP_REPRESENTANTES_CHICA_MAPA_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_REPRESENTANTES_CHICA_MAPA_NEWDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDefaultArgs instead
+     */
+    export type VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDefaultArgs instead
+     */
+    export type VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWDefaultArgs<ExtArgs>
+    /**
+     * @deprecated Use VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDefaultArgs instead
+     */
+    export type VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWDefaultArgs<ExtArgs>
 
   /**
    * Batch Payload for updateMany & deleteMany & createMany

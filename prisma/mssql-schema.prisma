@@ -243,3 +243,125 @@ model VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW {
   total_solicitado           Decimal
   total_pecas                Int
 }
+
+model VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW {
+  key                       Int     @id
+  colecao                   String
+  estoque                   Int
+  pedidos                   Int
+  ind_pedidos               Int
+  dif_pedidos               Int
+  pecas                     Int
+  pecas_anterior            Int
+  ind_pecas                 Int
+  dif_pecas                 Int
+  valor                     Decimal
+  valor_anterior            Decimal
+  ind_valor                 Int
+  dif_valor                 Decimal
+  pedidos_faturado          Int
+  pedidos_faturado_anterior Int
+  ind_pedidos_faturado      Int
+  dif_pedidos_faturado      Int
+  pecas_gerencial           Int
+  pecas_gerencial_anterior  Int
+  ind_pecas_gerencial       Int
+  dif_pecas_gerencial       Int
+  venda_gerencial           Decimal
+  venda_gerencial_anterior  Decimal
+  ind_venda_gerencial       Int
+  dif_venda_gerencial       Decimal
+  pecas_faturado            Decimal
+  pecas_faturado_anterior   Decimal
+  ind_pecas_faturado        Int
+  dif_pecas_faturado        Decimal
+  perc_pecas_faturado       Decimal
+  valor_faturado            Decimal
+  valor_faturado_anterior   Decimal
+  ind_valor_faturado        Int
+  dif_valor_faturado        Decimal
+  perc_valor_faturado       Decimal
+  ultima_atualizacao        String
+}
+
+model VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW {
+  key                       Int     @id
+  colecao                   String
+  estoque                   Int
+  pedidos                   Int
+  ind_pedidos               Int
+  dif_pedidos               Int
+  pecas                     Int
+  pecas_anterior            Int
+  ind_pecas                 Int
+  dif_pecas                 Int
+  valor                     Decimal
+  valor_anterior            Decimal
+  ind_valor                 Int
+  dif_valor                 Decimal
+  pedidos_faturado          Int
+  pedidos_faturado_anterior Int
+  ind_pedidos_faturado      Int
+  dif_pedidos_faturado      Int
+  pecas_gerencial           Int
+  pecas_gerencial_anterior  Int
+  ind_pecas_gerencial       Int
+  dif_pecas_gerencial       Int
+  venda_gerencial           Decimal
+  venda_gerencial_anterior  Decimal
+  ind_venda_gerencial       Int
+  dif_venda_gerencial       Decimal
+  pecas_faturado            Decimal
+  pecas_faturado_anterior   Decimal
+  ind_pecas_faturado        Int
+  dif_pecas_faturado        Decimal
+  perc_pecas_faturado       Decimal
+  valor_faturado            Decimal
+  valor_faturado_anterior   Decimal
+  ind_valor_faturado        Int
+  dif_valor_faturado        Decimal
+  perc_valor_faturado       Decimal
+  ultima_atualizacao        String
+}
+
+model VW_APP_REPRESENTANTES_CHICA_MAPA_NEW {
+  key                   Int     @id
+  nome                  String
+  qtde                  Int
+  qtde_pecas            Int
+  valor                 Decimal
+  qtde_faturado         Int
+  pecas_faturado        Int
+  valor_faturado        Decimal
+  qtde_venda_gerencial  Int
+  valor_venda_gerencial Decimal
+}
+
+model VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW {
+  key                   Int     @id
+  nome                  String
+  qtde                  Int
+  qtde_pecas            Int
+  valor                 Decimal
+  qtde_faturado         Int
+  pecas_faturado        Int
+  valor_faturado        Decimal
+  qtde_venda_gerencial  Int
+  valor_venda_gerencial Decimal
+}
+
+model VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW {
+  key        Int @id
+  id         Int
+  ordem      Int
+  semana     Int
+  qtde_pecas Int
+}
+
+model VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW {
+  key        Int @id
+  id         Int
+  ordem      Int
+  semana     Int
+  qtde_pecas Int
+}

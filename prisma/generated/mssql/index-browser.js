@@ -353,6 +353,128 @@ exports.Prisma.VW_APP_REP_SOLICITACAO_FATURAMENTO_NEWScalarFieldEnum = {
   total_pecas: 'total_pecas'
 };
 
+exports.Prisma.VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEWScalarFieldEnum = {
+  key: 'key',
+  colecao: 'colecao',
+  estoque: 'estoque',
+  pedidos: 'pedidos',
+  ind_pedidos: 'ind_pedidos',
+  dif_pedidos: 'dif_pedidos',
+  pecas: 'pecas',
+  pecas_anterior: 'pecas_anterior',
+  ind_pecas: 'ind_pecas',
+  dif_pecas: 'dif_pecas',
+  valor: 'valor',
+  valor_anterior: 'valor_anterior',
+  ind_valor: 'ind_valor',
+  dif_valor: 'dif_valor',
+  pedidos_faturado: 'pedidos_faturado',
+  pedidos_faturado_anterior: 'pedidos_faturado_anterior',
+  ind_pedidos_faturado: 'ind_pedidos_faturado',
+  dif_pedidos_faturado: 'dif_pedidos_faturado',
+  pecas_gerencial: 'pecas_gerencial',
+  pecas_gerencial_anterior: 'pecas_gerencial_anterior',
+  ind_pecas_gerencial: 'ind_pecas_gerencial',
+  dif_pecas_gerencial: 'dif_pecas_gerencial',
+  venda_gerencial: 'venda_gerencial',
+  venda_gerencial_anterior: 'venda_gerencial_anterior',
+  ind_venda_gerencial: 'ind_venda_gerencial',
+  dif_venda_gerencial: 'dif_venda_gerencial',
+  pecas_faturado: 'pecas_faturado',
+  pecas_faturado_anterior: 'pecas_faturado_anterior',
+  ind_pecas_faturado: 'ind_pecas_faturado',
+  dif_pecas_faturado: 'dif_pecas_faturado',
+  perc_pecas_faturado: 'perc_pecas_faturado',
+  valor_faturado: 'valor_faturado',
+  valor_faturado_anterior: 'valor_faturado_anterior',
+  ind_valor_faturado: 'ind_valor_faturado',
+  dif_valor_faturado: 'dif_valor_faturado',
+  perc_valor_faturado: 'perc_valor_faturado',
+  ultima_atualizacao: 'ultima_atualizacao'
+};
+
+exports.Prisma.VW_APP_REPRESENTANTES_CHICA_RESUMO_NEWScalarFieldEnum = {
+  key: 'key',
+  colecao: 'colecao',
+  estoque: 'estoque',
+  pedidos: 'pedidos',
+  ind_pedidos: 'ind_pedidos',
+  dif_pedidos: 'dif_pedidos',
+  pecas: 'pecas',
+  pecas_anterior: 'pecas_anterior',
+  ind_pecas: 'ind_pecas',
+  dif_pecas: 'dif_pecas',
+  valor: 'valor',
+  valor_anterior: 'valor_anterior',
+  ind_valor: 'ind_valor',
+  dif_valor: 'dif_valor',
+  pedidos_faturado: 'pedidos_faturado',
+  pedidos_faturado_anterior: 'pedidos_faturado_anterior',
+  ind_pedidos_faturado: 'ind_pedidos_faturado',
+  dif_pedidos_faturado: 'dif_pedidos_faturado',
+  pecas_gerencial: 'pecas_gerencial',
+  pecas_gerencial_anterior: 'pecas_gerencial_anterior',
+  ind_pecas_gerencial: 'ind_pecas_gerencial',
+  dif_pecas_gerencial: 'dif_pecas_gerencial',
+  venda_gerencial: 'venda_gerencial',
+  venda_gerencial_anterior: 'venda_gerencial_anterior',
+  ind_venda_gerencial: 'ind_venda_gerencial',
+  dif_venda_gerencial: 'dif_venda_gerencial',
+  pecas_faturado: 'pecas_faturado',
+  pecas_faturado_anterior: 'pecas_faturado_anterior',
+  ind_pecas_faturado: 'ind_pecas_faturado',
+  dif_pecas_faturado: 'dif_pecas_faturado',
+  perc_pecas_faturado: 'perc_pecas_faturado',
+  valor_faturado: 'valor_faturado',
+  valor_faturado_anterior: 'valor_faturado_anterior',
+  ind_valor_faturado: 'ind_valor_faturado',
+  dif_valor_faturado: 'dif_valor_faturado',
+  perc_valor_faturado: 'perc_valor_faturado',
+  ultima_atualizacao: 'ultima_atualizacao'
+};
+
+exports.Prisma.VW_APP_REPRESENTANTES_CHICA_MAPA_NEWScalarFieldEnum = {
+  key: 'key',
+  nome: 'nome',
+  qtde: 'qtde',
+  qtde_pecas: 'qtde_pecas',
+  valor: 'valor',
+  qtde_faturado: 'qtde_faturado',
+  pecas_faturado: 'pecas_faturado',
+  valor_faturado: 'valor_faturado',
+  qtde_venda_gerencial: 'qtde_venda_gerencial',
+  valor_venda_gerencial: 'valor_venda_gerencial'
+};
+
+exports.Prisma.VW_APP_REPRESENTANTES_DMETAL_MAPA_NEWScalarFieldEnum = {
+  key: 'key',
+  nome: 'nome',
+  qtde: 'qtde',
+  qtde_pecas: 'qtde_pecas',
+  valor: 'valor',
+  qtde_faturado: 'qtde_faturado',
+  pecas_faturado: 'pecas_faturado',
+  valor_faturado: 'valor_faturado',
+  qtde_venda_gerencial: 'qtde_venda_gerencial',
+  valor_venda_gerencial: 'valor_venda_gerencial'
+};
+
+exports.Prisma.VW_APP_REPRESENTANTES_CHICA_SEMANA_NEWScalarFieldEnum = {
+  key: 'key',
+  id: 'id',
+  ordem: 'ordem',
+  semana: 'semana',
+  qtde_pecas: 'qtde_pecas'
+};
+
+exports.Prisma.VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEWScalarFieldEnum = {
+  key: 'key',
+  id: 'id',
+  ordem: 'ordem',
+  semana: 'semana',
+  qtde_pecas: 'qtde_pecas'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -376,7 +498,13 @@ exports.Prisma.ModelName = {
   VW_APP_VENDAS_MES_NEW: 'VW_APP_VENDAS_MES_NEW',
   VW_APP_ESTOQUE_LOJAS_NEW: 'VW_APP_ESTOQUE_LOJAS_NEW',
   VW_APP_CONTROLE_FACCOES_NEW: 'VW_APP_CONTROLE_FACCOES_NEW',
-  VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW: 'VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW'
+  VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW: 'VW_APP_REP_SOLICITACAO_FATURAMENTO_NEW',
+  VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW: 'VW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW',
+  VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW: 'VW_APP_REPRESENTANTES_CHICA_RESUMO_NEW',
+  VW_APP_REPRESENTANTES_CHICA_MAPA_NEW: 'VW_APP_REPRESENTANTES_CHICA_MAPA_NEW',
+  VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW: 'VW_APP_REPRESENTANTES_DMETAL_MAPA_NEW',
+  VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW: 'VW_APP_REPRESENTANTES_CHICA_SEMANA_NEW',
+  VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW: 'VW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW'
 };
 
 /**

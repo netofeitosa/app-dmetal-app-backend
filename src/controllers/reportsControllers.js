@@ -422,6 +422,36 @@ const getSolicitacaoFaturamento = async (_req, res) => {
   return res.status(200).json([resultData]);
 };
 
+const getRepresentanteDmetalResumo = async (_req, res) => {
+  const result = await reportsModel.getRepresentanteDmetalResumo();
+  return res.status(200).json(result);
+};
+
+const getRepresentanteChicaResumo = async (_req, res) => {
+  const result = await reportsModel.getRepresentanteChicaResumo();
+  return res.status(200).json(result);
+};
+
+const getRepresentanteDmetalMapa = async (_req, res) => {
+  const result = await reportsModel.getRepresentanteDmetalMapa();
+  return res.status(200).json(result);
+};
+
+const getRepresentanteChicaMapa = async (_req, res) => {
+  const result = await reportsModel.getRepresentanteChicaMapa();
+  return res.status(200).json(result);
+};
+
+const getRepresentanteDmetalSemana = async (_req, res) => {
+  const result = await reportsModel.getRepresentanteDmetalSemana();
+  return res.status(200).json(result);
+};
+
+const getRepresentanteChicaSemana = async (_req, res) => {
+  const result = await reportsModel.getRepresentanteChicaSemana();
+  return res.status(200).json(result);
+};
+
 module.exports = {
   getVendasLojas,
   getVendasCupom,
@@ -429,4 +459,10 @@ module.exports = {
   getEstoqueLojas,
   getControleFaccoes,
   getSolicitacaoFaturamento,
+  getRepresentanteDmetalResumo,
+  getRepresentanteChicaResumo,
+  getRepresentanteDmetalMapa,
+  getRepresentanteChicaMapa,
+  getRepresentanteDmetalSemana,
+  getRepresentanteChicaSemana,
 };

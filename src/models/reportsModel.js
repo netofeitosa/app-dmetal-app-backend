@@ -28,6 +28,30 @@ const getSolicitacaoFaturamento = async () => {
   return await prismaMSSQL.vW_APP_REP_SOLICITACAO_FATURAMENTO_NEW.findMany();
 };
 
+const getRepresentanteDmetalResumo = async () => {
+  return await prismaMSSQL.vW_APP_REPRESENTANTES_DMETAL_RESUMO_NEW.findMany();
+};
+
+const getRepresentanteChicaResumo = async () => {
+  return await prismaMSSQL.vW_APP_REPRESENTANTES_CHICA_RESUMO_NEW.findMany();
+};
+
+const getRepresentanteDmetalMapa = async () => {
+  return await prismaMSSQL.vW_APP_REPRESENTANTES_DMETAL_MAPA_NEW.findMany();
+};
+
+const getRepresentanteChicaMapa = async () => {
+  return await prismaMSSQL.vW_APP_REPRESENTANTES_CHICA_MAPA_NEW.findMany();
+};
+
+const getRepresentanteDmetalSemana = async () => {
+  return await prismaMSSQL.vW_APP_REPRESENTANTES_DMETAL_SEMANA_NEW.findMany();
+};
+
+const getRepresentanteChicaSemana = async () => {
+  return await prismaMSSQL.vW_APP_REPRESENTANTES_CHICA_SEMANA_NEW.findMany();
+};
+
 module.exports = {
   getVendasLojas,
   getVendasCupom,
@@ -35,4 +59,10 @@ module.exports = {
   getEstoqueLojas,
   getControleFaccoes,
   getSolicitacaoFaturamento,
+  getRepresentanteDmetalResumo,
+  getRepresentanteChicaResumo,
+  getRepresentanteDmetalMapa,
+  getRepresentanteChicaMapa,
+  getRepresentanteDmetalSemana,
+  getRepresentanteChicaSemana,
 };

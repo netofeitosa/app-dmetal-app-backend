@@ -32,5 +32,13 @@ router.get(
   "/solicitacaofatutamento",
   reportsControllers.getSolicitacaoFaturamento
 );
+router.get("/repdmetalresumo", reportsControllers.getRepresentanteDmetalResumo);
+router.get("/repchicaresumo", reportsControllers.getRepresentanteChicaResumo);
+
+router.get("/repdmetalmapa", reportsControllers.getRepresentanteDmetalMapa);
+router.get("/repchicamapa", reportsControllers.getRepresentanteChicaMapa);
+
+router.get("/repdmetalsemana", reportsControllers.getRepresentanteDmetalSemana);
+router.get("/repchicasemana", reportsControllers.getRepresentanteChicaSemana);
 
 module.exports = router;
