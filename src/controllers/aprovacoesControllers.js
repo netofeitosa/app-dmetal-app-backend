@@ -35,7 +35,7 @@ const postAprovacoes = async (req, res) => {
     return res.status(400).json({ error: "Registro já foi autorizado." });
   }
 
-  const aprovacao = await aprovacoesModel.postAprovacoes(
+  await aprovacoesModel.postAprovacoes(
     parseInt(registro),
     parseInt(cod_origem),
     origem,
